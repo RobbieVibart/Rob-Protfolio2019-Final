@@ -60,6 +60,7 @@ a:hover, a:active, a:focus {
 }
 
 p {
+  width: 500px;
   margin-bottom: 20px;
 }
 
@@ -310,7 +311,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-staff .role {
   color: #bfbfbf;
   margin-bottom: 30px;
-  font-weight: normal;
+  font-weight: bold;
   display: block;
 }
 
@@ -544,12 +545,12 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .intro h2 {
-  font-weight: lighter;
+  font-weight: 400;
   text-align: right;
   text-transform: uppercase;
   font-size: 24px;
   /* line-height: 55px; */
-  letter-spacing: 2;
+  letter-spacing: 2.5px;
   
 }
 @media screen and (max-width: 768px) {
@@ -574,13 +575,14 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 2em;
 }
 .fh5co-heading h2 {
-  font-size: 28px;
+  text-align: start;
+  font-size: 30px;
   margin-bottom: 20px;
   line-height: 1.5;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #000;
+  color: #828282;
 }
 .fh5co-heading h3 {
   font-size: 18px;
@@ -619,7 +621,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background-repeat: no-repeat;
   position: relative;
   width: 40%;
-  height: 350px;
+  height: 250px;
   float: left;
 }
 @media screen and (max-width: 480px) {
@@ -640,14 +642,17 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .author .desc span {
-  font-size: 13px;
+  text-align: start;
+  width: 150%;
+  font-size: 18px;
   text-transform: uppercase;
   display: block;
-  margin-bottom: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
   letter-spacing: 1px;
 }
 .author .desc .fh5co-social-icons li a {
-  color: #cabcab;
+  color: rgb(173, 160, 160);
   padding-left: 0;
   padding-right: 10px;
 }
