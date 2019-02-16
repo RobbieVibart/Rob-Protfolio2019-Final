@@ -60,8 +60,8 @@ a:hover, a:active, a:focus {
 }
 
 p {
-  width: 50%;
-  margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 h1, h2, h3, h4, h5, h6, figure {
@@ -605,38 +605,40 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .title {
-    text-align: center;
+    text-align: left;
   }
 }
 
 .author {
   width: 100%;
   float: left;
-  margin-bottom: 5em;
+  margin-bottom: 10px;
 }
 .author .author-inner {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
-  width: 40%;
+  left: 50px;
+  margin-bottom: 50px;
+  width: 35%;
   height: 250px;
   float: left;
 }
 @media screen and (max-width: 480px) {
   .author .author-inner {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 }
 .author .desc {
-  width: 60%;
+  width: 100%;
   float: left;
   padding-left: 50px;
 }
 @media screen and (max-width: 480px) {
   .author .desc {
-    width: 100%;
+    width: 60%;
     padding-left: 0;
   }
 }
@@ -646,7 +648,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 18px;
   text-transform: uppercase;
   display: block;
-  font-weight: bold;
+  font-weight: 200;
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
