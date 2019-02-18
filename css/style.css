@@ -60,7 +60,8 @@ a:hover, a:active, a:focus {
 }
 
 p {
-  margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 h1, h2, h3, h4, h5, h6, figure {
@@ -308,7 +309,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-staff .role {
   color: #bfbfbf;
   margin-bottom: 30px;
-  font-weight: normal;
+  font-weight: bold;
   display: block;
 }
 
@@ -541,9 +542,18 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .intro h2 {
+<<<<<<< HEAD
   font-size: 49px;
   line-height: 55px;
   letter-spacing: 1px;
+=======
+  font-weight: 400;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 2.5px;
+  
+>>>>>>> 7f31029ed62881695d47055e8af038540186ebd7
 }
 @media screen and (max-width: 768px) {
   .intro h2 {
@@ -567,13 +577,14 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 2em;
 }
 .fh5co-heading h2 {
-  font-size: 28px;
+  text-align: start;
+  font-size: 30px;
   margin-bottom: 20px;
   line-height: 1.5;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #000;
+  color: #828282;
 }
 .fh5co-heading h3 {
   font-size: 18px;
@@ -597,50 +608,55 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .title {
-    text-align: center;
+    text-align: left;
   }
 }
 
 .author {
   width: 100%;
   float: left;
-  margin-bottom: 5em;
+  margin-bottom: 10px;
 }
 .author .author-inner {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
-  width: 40%;
-  height: 350px;
+  left: 50px;
+  margin-bottom: 50px;
+  width: 35%;
+  height: 250px;
   float: left;
 }
 @media screen and (max-width: 480px) {
   .author .author-inner {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 }
 .author .desc {
-  width: 60%;
+  width: 100%;
   float: left;
   padding-left: 50px;
 }
 @media screen and (max-width: 480px) {
   .author .desc {
-    width: 100%;
+    width: 60%;
     padding-left: 0;
   }
 }
 .author .desc span {
-  font-size: 13px;
+  text-align: start;
+  width: 100%;
+  font-size: 18px;
   text-transform: uppercase;
   display: block;
-  margin-bottom: 20px;
+  font-weight: 200;
+  margin-bottom: 30px;
   letter-spacing: 1px;
 }
 .author .desc .fh5co-social-icons li a {
-  color: #cabcab;
+  color: rgb(173, 160, 160);
   padding-left: 0;
   padding-right: 10px;
 }
