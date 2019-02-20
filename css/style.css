@@ -92,9 +92,9 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  padding: 25px 0;
+  padding: 25px 0px;
   z-index: 1;
-  background: #edebe8;
+  background: #ffffff;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
@@ -186,8 +186,9 @@ h1, h2, h3, h4, h5, h6, figure {
   color: black;
 }
 .fh5co-nav ul {
-  padding: 0;
-  margin: 3px 0 0 0;
+  text-align: end;
+  padding: 0px;
+  margin: 3px -236px;
 }
 .fh5co-nav ul li {
   padding: 0;
