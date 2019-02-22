@@ -1,5 +1,5 @@
 $font-primary: 'Montserrat', Arial, sans-serif;
-// $font-secondary: 'Playfair Display', serif;
+$font-secondary: 'Playfair Display', serif;
 
 
 // Overrides
@@ -17,7 +17,7 @@ $brand-gray: #ccc;
 $brand-lighter: #e9e9e9;
 $brand-body-color: #818892;
 $brand-selection-color: #f9f6f0;
-$brand-overlay-color: #edebe8;
+$brand-overlay-color: #fff;	;
 $brand-bg-color: $brand-white;
 
 $input-border-focus:  $brand-primary !default;
@@ -80,7 +80,6 @@ $form-group-margin-bottom:       30px !default;
 @mixin icomoon() {
 	
 	font-family: 'icomoon';
-	speak: none;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -172,7 +171,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav {
-	position: scroll;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -200,7 +199,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		font-size: 20px;
 		margin: 0;
 		padding: 0;
-		text-transform: uppercase;
+		text-transform: lowercase;
 		font-weight: bold;
 		font-family: $font-primary;
 	}
@@ -230,7 +229,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			&.search{
 				float: left;
 				width: 83%;
-				// font-family: $font-secondary;
+				font-family: $font-secondary;
 				@include transition(.3s);
 				padding: 0;
 				margin: -5px 0 0 0;
@@ -239,7 +238,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			input[type=text]{
 				padding: 6px 10px;
 				width: 40%;
-				// border: 1px solid rgba($brand-black,.1);
+				border: 1px solid rgba($brand-black,.1);
 				border: none;
 				float: right;
 				font-size: 13px;
@@ -346,6 +345,9 @@ h1, h2, h3, h4, h5, h6, figure {
 						color: $brand-black;
 					}
 					.dropdown {
+
+					content: "";
+
 					}
 				}
 			}
