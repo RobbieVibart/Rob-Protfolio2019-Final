@@ -11,6 +11,7 @@
 * 	Template Style 
 *
 * ======================================================= */
+
 body {
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 300;
@@ -67,8 +68,9 @@ p {
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
   font-family: "Montserrat", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: bolder;
   margin: 0 0 20px 0;
+  text-transform: uppercase;
 }
 
 ::-webkit-selection {
@@ -102,9 +104,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
-.fh5co-nav .fh5co-top-logo,
-.fh5co-nav .fh5co-top-menu,
-.fh5co-nav .fh5co-top-social {
+.fh5co-nav .fh5co-top-logo, .fh5co-nav .fh5co-top-menu, .fh5co-nav .fh5co-top-social {
   float: left;
 }
 
@@ -298,7 +298,7 @@ h1, h2, h3, h4, h5, h6, figure {
   content: "";
 }
 
-.fh5co-nav ul li.active > a {
+.fh5co-nav ul li.active>a {
   color: #cabcab !important;
 }
 
@@ -428,23 +428,13 @@ h1, h2, h3, h4, h5, h6, figure {
   background: rgba(0, 0, 0, 0.05);
 }
 
-#fh5co-started,
-#fh5co-author,
-#fh5co-work,
-#fh5co-about,
-#fh5co-contact,
-#fh5co-footer {
+#fh5co-started, #fh5co-author, #fh5co-work, #fh5co-about, #fh5co-contact, #fh5co-footer {
   padding: 7em 0;
   clear: both;
 }
 
 @media screen and (max-width: 768px) {
-  #fh5co-started,
-  #fh5co-author,
-  #fh5co-work,
-  #fh5co-about,
-  #fh5co-contact,
-  #fh5co-footer {
+  #fh5co-started, #fh5co-author, #fh5co-work, #fh5co-about, #fh5co-contact, #fh5co-footer {
     padding: 3em 0;
   }
 }
@@ -600,9 +590,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .intro h2 {
-  font-size: 49px;
+  font-size: 20px;
   line-height: 55px;
   letter-spacing: 1px;
+  text-align: right;
 }
 
 @media screen and (max-width: 768px) {
@@ -727,13 +718,13 @@ h1, h2, h3, h4, h5, h6, figure {
 .skills .progress {
   border: none !important;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border-radius: 50px;
 }
 
 .skills .progress-bar {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border-radius: 50px;
   background: #cabcab !important;
 }
@@ -948,17 +939,17 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 50%;
 }
 
-#fh5co-offcanvas ul li > ul {
+#fh5co-offcanvas ul li>ul {
   padding-left: 20px;
   display: none;
 }
 
-#fh5co-offcanvas ul li.offcanvas-has-dropdown > a {
+#fh5co-offcanvas ul li.offcanvas-has-dropdown>a {
   display: block;
   position: relative;
 }
 
-#fh5co-offcanvas ul li.offcanvas-has-dropdown > a:after {
+#fh5co-offcanvas ul li.offcanvas-has-dropdown>a:after {
   position: absolute;
   right: 0px;
   font-family: 'icomoon';
@@ -1069,12 +1060,12 @@ h1, h2, h3, h4, h5, h6, figure {
   transition: all .2s ease-out;
 }
 
-.fh5co-nav-toggle.fh5co-nav-white > i {
+.fh5co-nav-toggle.fh5co-nav-white>i {
   color: #fff;
   background: #000;
 }
 
-.fh5co-nav-toggle.fh5co-nav-white > i::before, .fh5co-nav-toggle.fh5co-nav-white > i::after {
+.fh5co-nav-toggle.fh5co-nav-white>i::before, .fh5co-nav-toggle.fh5co-nav-white>i::after {
   background: #000;
 }
 
@@ -1155,7 +1146,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .btn:hover, .btn:active, .btn:focus {
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   outline: none !important;
 }
 
@@ -1279,7 +1270,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .btn.with-arrow {
@@ -1312,7 +1303,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .form-control {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   background: transparent;
   border: 2px solid rgba(0, 0, 0, 0.1);
   height: 54px;
@@ -1323,7 +1314,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .form-control:active, .form-control:focus {
   outline: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border-color: #cabcab;
 }
 
@@ -1421,9 +1412,9 @@ blockquote .person cite {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1370px;
-      grid-template-columns: 1370px;
+  grid-template-columns: 1370px;
   -ms-grid-rows: (1029px)[4];
-      grid-template-rows: repeat(4, 1029px);
+  grid-template-rows: repeat(4, 1029px);
   max-width: 1370px;
   margin: 0px auto;
 }
@@ -1447,4 +1438,5 @@ blockquote .person cite {
 .grid .grow-05 {
   background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_09.png);
 }
+
 /*# sourceMappingURL=style.css.map */
