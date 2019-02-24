@@ -113,7 +113,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav .fh5co-top-menu {
-  width: 60%;
+  text-align: right;
+  width: 80%;
 }
 
 .fh5co-nav .fh5co-top-social {
@@ -121,10 +122,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav #fh5co-logo {
-  font-size: 20px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-weight: bold;
   font-family: "Montserrat", Arial, sans-serif;
 }
@@ -1417,26 +1418,33 @@ blockquote .person cite {
 }
 
 .grid {
-  margin: auto, 0px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1371px;
-      grid-template-columns: 1371px;
+  -ms-grid-columns: 1370px;
+      grid-template-columns: 1370px;
   -ms-grid-rows: (1029px)[4];
       grid-template-rows: repeat(4, 1029px);
+  max-width: 1370px;
+  margin: 0px auto;
 }
 
 .grid .grow-01 {
   background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_03.png);
-  background-repeat: no-repeat;
 }
 
-.grid .grow-01 p {
-  -ms-grid-column: 1;
-  grid-column: 1/1;
+.grid .grow-02 {
+  background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1-Recovered_05.png);
 }
 
 .grid .grow-03 {
-  content: "";
+  background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_07.png);
+}
+
+.grid .grow-04 {
+  background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_08.png);
+}
+
+.grid .grow-05 {
+  background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_09.png);
 }
 /*# sourceMappingURL=style.css.map */
