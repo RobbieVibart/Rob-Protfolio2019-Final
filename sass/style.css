@@ -1423,8 +1423,8 @@ blockquote .person cite {
   display: grid;
   -ms-grid-columns: 1370px;
       grid-template-columns: 1370px;
-  -ms-grid-rows: (1029px)[4];
-      grid-template-rows: repeat(4, 1029px);
+  -ms-grid-rows: (1029px)[5];
+      grid-template-rows: repeat(5, 1029px);
   max-width: 1370px;
   margin: 0px auto;
 }

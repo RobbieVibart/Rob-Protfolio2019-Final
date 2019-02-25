@@ -1543,13 +1543,10 @@ blockquote {
 // Grow Grid
 // width 1371 Height 1026
 
-
-
-
 .grid {
     display: grid;
     grid-template-columns: 1370px;
-    grid-template-rows: repeat(4, 1029px);
+    grid-template-rows: repeat(5, 1029px);
     max-width: 1370px;
 	margin: 0px auto; 
 	
@@ -1570,7 +1567,7 @@ blockquote {
 	background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_08.png);
 	}
 	.grow-05 {
-	// background-color: blue;
+	// background-color: grey;
 	background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_09.png);
     }
     
