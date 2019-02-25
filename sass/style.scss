@@ -1545,20 +1545,21 @@ blockquote {
 
 .grid {
     display: grid;
-    grid-template-columns: 1370px;
+    grid-template-columns: 1170px;
     grid-template-rows: repeat(5, 1029px);
-    max-width: 1370px;
+    max-width: 1170px;
 	margin: 0px auto; 
 
 	.grow-01 {
-	// background-color: pink;
+	background-color: pink;
     // visibility: hidden;
     background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_03_Rev.png);
+    background-size: contain;
     }
 
 	.grow-02 {
-	// background-color: green;
-	background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1-Recovered_05.png);
+	background-color: green;
+	// background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1-Recovered_05.png);
     }
     
 	.grow-03 {
@@ -1582,19 +1583,19 @@ blockquote {
 .artical-grid { 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4,  1fr);
-    max-width: 1370px;
+    grid-template-rows: repeat(3, 2fr);
+    max-width: 1170px;
     margin: 0px auto; 
     
     
     .heading {
         font-family: 'Montserrat';
-        font-weight: 50;
-        padding-left: 80px;
-        padding-top: 10px;
-        grid-column: 1 / 4;
+        font-weight: 100;
+        padding-left: 40px;
+        padding-top: 40px;
+        grid-column: 2 / -1;
         grid-row: 1 / 3;
-        font-size: 60px;
+        font-size: 50px;
         
     }
     
@@ -1609,21 +1610,16 @@ blockquote {
 
         .artical-01 { 
         padding-left: 80px;
-        padding-right: 100px;
+        padding-right: 130px;
         grid-column: 1 / 3;
-        grid-row: 3 / 3;
+        grid-row: 2 / 3;
         
     }
-    
-}
 
- .lg-heading {
-    position: absolute;
-    display: block;
-    top: 20px;
-    left: 670px;
-    transform: translate(-50% -50%);
-    font-weight: 500;
-    font-family: $font-primary;
-    font-size: 500px;
+    img {
+        color: #ccc;
+        padding-left: 50px;
+        grid-columns: 1/1;
+    }
+    
 }
