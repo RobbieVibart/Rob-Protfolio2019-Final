@@ -600,8 +600,17 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000;
 }
 
+.intro strong {
+  margin-top: 50px;
+  display: block;
+  opacity: 0.2;
+  color: #ccc;
+  font-size: 150px;
+}
+
 .intro h2 {
-  font-size: 49px;
+  text-align: end;
+  font-size: 20px;
   line-height: 55px;
   letter-spacing: 1px;
 }
@@ -740,7 +749,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-started {
-  background: #cabcab;
+  background: #cccccc;
 }
 
 #fh5co-started .fh5co-heading {

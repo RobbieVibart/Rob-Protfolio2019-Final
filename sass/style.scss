@@ -703,8 +703,18 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .intro {
+
+    strong { 
+        margin-top: 50px;
+        display: block;
+        opacity: 0.2;
+        color: $brand-gray;
+        font-size: 150px;
+    }
+
     h2 {
-        font-size: 49px;
+        text-align: end;
+        font-size: 20px;
         line-height: 55px;
         letter-spacing: 1px;
 
@@ -843,7 +853,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-started {
-    background: rgba($brand-primary, 1);
+    background: rgba($brand-gray, 1);
 
     .fh5co-heading {
         margin-bottom: 20px !important;
