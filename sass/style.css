@@ -1494,8 +1494,9 @@ blockquote .person cite {
 }
 
 .artical-grid img {
-  color: #ccc;
+  color: black;
   padding-left: 50px;
-  grid-columns: 1/1;
+  -ms-grid-column: 1;
+  grid-column: 1/1;
 }
 /*# sourceMappingURL=style.css.map */

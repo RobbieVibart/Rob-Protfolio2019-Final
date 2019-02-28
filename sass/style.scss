@@ -1617,9 +1617,9 @@ blockquote {
     }
 
     img {
-        color: #ccc;
+        color:  rgba($color: #000000, $alpha: 1.0);
         padding-left: 50px;
-        grid-columns: 1/1;
+        grid-column: 1/1;
     }
     
 }
