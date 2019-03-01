@@ -1,8 +1,6 @@
-$font-primary: "Montserrat",
-Arial,
-sans-serif;
-$font-secondary: "Playfair Display",
-serif;
+$font-primary: "Montserrat", Arial, sans-serif;
+
+$font-secondary: "Playfair Display", serif;
 
 // Overrides
 $grid-gutter-width: 40px !default;
@@ -113,6 +111,7 @@ body {
 #page {
     position: relative;
     overflow-x: hidden;
+
     // overflow-y: hidden;
     width: 100%;
     height: 100%;
@@ -168,8 +167,6 @@ figure {
     font-weight: bolder;
     margin: 0 0 20px 0;
     text-transform: uppercase;
-
-
 }
 
 ::-webkit-selection {
@@ -408,7 +405,7 @@ figure {
             }
 
             &.active {
-                >a {
+                > a {
                     color: $brand-primary !important;
                 }
             }
@@ -600,7 +597,7 @@ figure {
         font-weight: 600;
 
         // color: #5d5d5d;
-
+   
     }
 
     @media screen and (max-width: $screen-sm) {
@@ -720,7 +717,6 @@ figure {
 }
 
 .intro {
-
     strong {
         margin-top: 100px;
         display: block;
@@ -1080,13 +1076,13 @@ figure {
                 }
             }
 
-            >ul {
+            > ul {
                 padding-left: 20px;
                 display: none;
             }
 
             &.offcanvas-has-dropdown {
-                >a {
+                > a {
                     display: block;
                     position: relative;
 
@@ -1177,7 +1173,6 @@ figure {
     position: fixed !important;
 
     &.active i {
-
         &::before,
         &::after {
             background: $brand-darker;
@@ -1216,7 +1211,7 @@ figure {
     }
 
     &.fh5co-nav-white {
-        >i {
+        > i {
             color: $brand-white;
             background: $brand-black;
 
@@ -1576,62 +1571,56 @@ blockquote {
 // Grow Grid
 // width 1371 Height 1026
 
-.grid {
+.artical-grid {
     display: grid;
-    grid-template-columns: 1170px;
-    grid-template-rows: repeat(5, 1029px);
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     max-width: 1170px;
+    // max-height: 1026px;
     margin: 0px auto;
 
     .grow-01 {
-        background-color: pink;
-        // visibility: hidden;
-        background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_03_Rev.png);
-        background-size: contain;
+        // background-color: pink;
+        grid-columns: 1/2;
+        // background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_03_Rev.png);
+   
     }
 
     .grow-02 {
-        background-color: green;
-        // background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1-Recovered_05.png);
+        // background-color: green;
+        background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1-Recovered_05.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .grow-03 {
         // background-color: greenyellow;
-        background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_07.png);
 
+        // background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_07.png);
+   
     }
 
     .grow-04 {
         // background-color: blue;
-        background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_08.png);
 
+        // background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_08.png);
+   
     }
 
     .grow-05 {
         // background-color: grey;
-        background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_09.png);
 
+        // background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_09.png);
+   
     }
-
-}
-
-.artical-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 2fr);
-    max-width: 1170px;
-    margin: 0px auto;
-
 
     .heading {
         font-family: 'Montserrat';
         font-weight: 100;
         padding-left: 40px;
         padding-top: 40px;
-        grid-column: 2 / -1;
-        grid-row: 1 / 3;
         font-size: 50px;
-
     }
 
     .sub-head {
@@ -1640,21 +1629,12 @@ blockquote {
         padding-bottom: 10px;
         text-transform: uppercase;
         font-weight: 500;
-
     }
 
     .artical-01 {
         padding-left: 80px;
         padding-right: 130px;
-        grid-column: 1 / 3;
+        grid-column: 1 / 2;
         grid-row: 2 / 3;
-
     }
-
-    img {
-        color:  rgba($color: #000000, $alpha: 1.0);
-        padding-left: 50px;
-        grid-column: 1/1;
-    }
-
 }
