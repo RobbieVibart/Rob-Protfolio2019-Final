@@ -1476,7 +1476,7 @@ blockquote .person cite {
 }
 
 .artical-grid .sub-head {
-  font-size: 30px;
+  font-size: 24px;
   display: block;
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -1485,7 +1485,7 @@ blockquote .person cite {
 
 .artical-grid .artical-01 {
   padding-left: 10px;
-  padding-right: 0px;
+  padding-right: 25px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
