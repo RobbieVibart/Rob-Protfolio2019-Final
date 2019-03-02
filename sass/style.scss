@@ -1576,14 +1576,17 @@ blockquote {
     grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: repeat(5, 1fr);
     max-width: 1170px;
+
     // max-height: 1026px;
     margin: 0px auto;
 
     .grow-01 {
         // background-color: pink;
-        grid-columns: 1/2;
-        // background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_03_Rev.png);
-   
+        // grid-columns: 1/2;
+        background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_03_Rev.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .grow-02 {
@@ -1597,7 +1600,10 @@ blockquote {
     .grow-03 {
         // background-color: greenyellow;
 
-        // background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_07.png);
+        background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_07.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
    
     }
 
@@ -1616,10 +1622,11 @@ blockquote {
     }
 
     .heading {
+        display: inline-block;
         font-family: 'Montserrat';
         font-weight: 100;
         padding-left: 40px;
-        padding-top: 40px;
+        // padding-top: 40px;
         font-size: 50px;
     }
 
@@ -1632,9 +1639,9 @@ blockquote {
     }
 
     .artical-01 {
-        padding-left: 80px;
-        padding-right: 130px;
+        padding-left: 10px;
+        padding-right: 0px;
         grid-column: 1 / 2;
-        grid-row: 2 / 3;
+        grid-row: 2 / 2;
     }
 }

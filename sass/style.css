@@ -1447,7 +1447,10 @@ blockquote .person cite {
 }
 
 .artical-grid .grow-01 {
-  grid-columns: 1/2;
+  background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_03_Rev.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .artical-grid .grow-02 {
@@ -1457,11 +1460,18 @@ blockquote .person cite {
   background-repeat: no-repeat;
 }
 
+.artical-grid .grow-03 {
+  background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_07.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .artical-grid .heading {
+  display: inline-block;
   font-family: 'Montserrat';
   font-weight: 100;
   padding-left: 40px;
-  padding-top: 40px;
   font-size: 50px;
 }
 
@@ -1474,13 +1484,12 @@ blockquote .person cite {
 }
 
 .artical-grid .artical-01 {
-  padding-left: 80px;
-  padding-right: 130px;
+  padding-left: 10px;
+  padding-right: 0px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  grid-row: 2 / 2;
 }
 /*# sourceMappingURL=style.css.map */
