@@ -1435,81 +1435,9 @@ blockquote .person cite {
   margin: 0 0 5px 0;
 }
 
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(5, 1fr);
-  max-width: 1170px;
-  margin: 0px auto;
-}
-
-.grid .grow-01 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_03_Rev.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.grid .grow-02 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  grid-row: 4/5;
-  background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1-Recovered_05.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.grid .grow-03 {
-  background: url(/images/Grow_images/Grow_Consult_Mock_030219Ver1_07.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.grid .grow-04 {
-  background-color: blue;
-}
-
-.grid .grow-05 {
-  background-color: grey;
-}
-
-.grid .heading {
-  display: inline-block;
-  font-family: 'Montserrat';
-  font-weight: 100;
-  padding-left: 40px;
-  font-size: 50px;
-}
-
-.grid .sub-head {
-  font-size: 30px;
+.img-responsive, .image, img {
   display: block;
-  padding-bottom: 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.grid .artical-01 {
-  padding-left: 10px;
-  padding-right: 25px;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  -ms-grid-row: 2;
-  grid-row: 2 / 2;
+  margin: 100px auto;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
