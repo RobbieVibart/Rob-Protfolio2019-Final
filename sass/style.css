@@ -1435,9 +1435,36 @@ blockquote .person cite {
   margin: 0 0 5px 0;
 }
 
-.img-responsive, .image, img {
+.img-responsive, img {
+  z-index: 20;
   display: block;
   margin: 100px auto;
   width: 100%;
+  max-width: 1140px;
+}
+
+.image-grid {
+  position: relative;
+  margin: 0px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1026px)[5];
+      grid-template-rows: repeat(5, 1026px);
+  max-width: 1140px;
+}
+
+.copy-grid {
+  z-index: 30;
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1206px)[5];
+      grid-template-rows: repeat(5, 1206px);
+  max-width: 1140px;
+  max-height: 1206px;
 }
 /*# sourceMappingURL=style.css.map */
