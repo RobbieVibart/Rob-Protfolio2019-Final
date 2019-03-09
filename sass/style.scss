@@ -1571,35 +1571,24 @@ blockquote {
 // Grow Grid
 // width 1371 Height 1026
 
-
-.img-responsive, img {
-z-index: 20;
-position: relative;
-display: block;
-margin: 100px auto;
-width: 100%;
-max-width: 1140px;
-
-
+.grid_layout {
+    display: grid;
+    grid-template-columns: minmax(auto, 1fr) minmax(360px, 1140px) minmax(auto, 1fr);
+    grid-template-rows: auto;
 }
 
-.image-grid {
-// position: relative;
-margin: 0px auto;
-display: grid;
-grid-template-columns:  1fr;
-grid-template-rows: repeat(5, 1026px);
-max-width: 1140px;
+img {
+    width: 100%;
+    object-fit: contain;
+    grid-column: 2 / 3;
 }
 
+h2 {
+    grid-column: 2;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
 
-.copy-grid, {
-display: block;
-transform: translate(44.5%, 0%);
-z-index: 30;
-position: absolute;
-display: grid;
-grid-template-columns:  repaet(2, 1fr);
-grid-template-rows: repeat(5, 1206px);
-max-width: 1140px;
+.copy-1, .copy-2, .copy-3, .copy-4, .copy-5 {
+    grid-column: 2;
 }
