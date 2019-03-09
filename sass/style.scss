@@ -1571,6 +1571,7 @@ blockquote {
 // Grow Grid
 // width 1371 Height 1026
 
+<<<<<<< HEAD
 .grid_layout {
     display: grid;
     grid-template-columns: minmax(auto, 1fr) minmax(160px, 1140px) minmax(auto, 1fr);
@@ -1582,6 +1583,35 @@ img {
     object-fit: cover;
     grid-column: 2 / 3;
 }
+=======
+.grid {
+margin: 0px auto;
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: minmax(100px, 5fr) min-content 2fr;
+max-width: 1140px;
+
+    .copy-1 {
+        align-self: center;
+        grid-row: 1;
+        grid-column: 2 / 4;
+        // background-color: yellow;
+        // background-size: cover;
+    }
+
+    img {
+        object-fit: cover;
+        grid-column:  1/ -1;
+        grid-row: 1;
+        // background-color: red;
+        width: 100%;
+    }
+
+    .header-1 {
+        font-size: 150px;
+        grid-row: 1;
+        grid-column: 2 / 4;
+>>>>>>> 1980d070fdb99eb7f3b5adb28a4dee487496d190
 
 h2 {
     grid-column: 2;
@@ -1589,6 +1619,15 @@ h2 {
     margin-top: 50px;
 }
 
+<<<<<<< HEAD
 .copy-1, .copy-2, .copy-3, .copy-4, .copy-5 {
     grid-column: 2
+=======
+    }
+>>>>>>> 1980d070fdb99eb7f3b5adb28a4dee487496d190
 }
+
+
+
+
+
