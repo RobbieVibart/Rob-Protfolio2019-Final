@@ -1583,7 +1583,7 @@ blockquote {
 }
 
 .image-1 {
-    background-color: yellowgreen;
+    // background-color: yellowgreen;
     grid-area: overlap;
     width: 100%;
     object-fit: cover;
@@ -1591,21 +1591,26 @@ blockquote {
 
 
 .header-1 {
+    margin: 1em;
     display: block;
     grid-area: overlap;
     margin-bottom: 50px;
     margin-top: 50px;
+
+   
 }
-
-
 .copy-1 {
-    display: block;
+    width: 50%;
+    margin: 6em 2em;
+    // display: inline-block;
     grid-area: overlap;
     }
 
 
+
+
     .image-2 {
-        background-color: #a9974e;
+        // background-color: #a9974e;
         grid-area: a;
         width: 100%;
         object-fit: cover;
