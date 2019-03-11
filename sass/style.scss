@@ -1570,37 +1570,37 @@ blockquote {
 
 // Grow Grid
 // width 1371 Height 1026
-.grid {
-margin: 0px auto;
-display: grid;
-grid-template-columns: repeat(6, 1fr);
-grid-template-rows: minmax(100px, 5fr) min-content 2fr;
-max-width: 1140px;
 
-    .copy-1 {
-        align-self: center;
-        grid-row: 1;
-        grid-column: 2 / 4;
-        // background-color: yellow;
-        // background-size: cover;
-    }
-
-    img {
-        object-fit: cover;
-        grid-column:  1/ -1;
-        grid-row: 1;
-        // background-color: red;
-        width: 100%;
-    }
-
-    .header-1 {
-        font-size: 150px;
-        grid-row: 1;
-        grid-column: 2 / 4;
-
-
-    }
+.grid_layout {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: minmax(auto, 1fr) minmax(160px, 800px) minmax(auto, 1fr);
+    grid-template-rows: auto, 2fr;
+    grid-template-areas: 
+    
+    "..... overlap ....."
+    
+    ;
 }
+
+img {
+    grid-area: overlap;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+h2 {
+    grid-area: overlap;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+.copy-1{
+    grid-area: overlap;
+    }
 
 
 
