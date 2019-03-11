@@ -1436,17 +1436,17 @@ blockquote .person cite {
 }
 
 .grid_layout {
-  background-color: pink;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(auto, 1fr) minmax(160px, 800px) minmax(auto, 1fr);
-      grid-template-columns: minmax(auto, 1fr) minmax(160px, 800px) minmax(auto, 1fr);
-  -ms-grid-rows: auto, 2fr;
-      grid-template-rows: auto, 2fr;
-      grid-template-areas: "..... overlap .....";
+  -ms-grid-columns: minmax(auto, 1fr) minmax(160px, 1140px) minmax(auto, 1fr);
+      grid-template-columns: minmax(auto, 1fr) minmax(160px, 1140px) minmax(auto, 1fr);
+  -ms-grid-rows: minmax(20vh, auto);
+      grid-template-rows: minmax(20vh, auto);
+      grid-template-areas: "..... overlap ....." "..... a .....";
 }
 
-img {
+.image-1 {
+  background-color: yellowgreen;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: overlap;
@@ -1455,7 +1455,8 @@ img {
      object-fit: cover;
 }
 
-h2 {
+.header-1 {
+  display: block;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: overlap;
@@ -1464,8 +1465,33 @@ h2 {
 }
 
 .copy-1 {
+  display: block;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: overlap;
+}
+
+.image-2 {
+  background-color: #a9974e;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: a;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: a;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.copy-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: a;
 }
 /*# sourceMappingURL=style.css.map */

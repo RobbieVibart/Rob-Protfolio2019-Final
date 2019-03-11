@@ -1572,37 +1572,54 @@ blockquote {
 // width 1371 Height 1026
 
 .grid_layout {
-    background-color: pink;
+    // background-color: pink;
     display: grid;
-    grid-template-columns: minmax(auto, 1fr) minmax(160px, 800px) minmax(auto, 1fr);
-    grid-template-rows: auto, 2fr;
+    grid-template-columns: minmax(auto, 1fr) minmax(160px, 1140px) minmax(auto, 1fr);
+    grid-template-rows: minmax(20vh, auto);
     grid-template-areas: 
     
     "..... overlap ....."
-    
-    ;
+    "..... a .....";
 }
 
-img {
+.image-1 {
+    background-color: yellowgreen;
     grid-area: overlap;
     width: 100%;
     object-fit: cover;
 }
 
 
-
-h2 {
+.header-1 {
+    display: block;
     grid-area: overlap;
     margin-bottom: 50px;
     margin-top: 50px;
 }
 
 
-.copy-1{
+.copy-1 {
+    display: block;
     grid-area: overlap;
     }
 
 
-
-
-
+    .image-2 {
+        background-color: #a9974e;
+        grid-area: a;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    
+    
+    .header-2 {
+        grid-area: a;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    
+    
+    .copy-2 {
+        grid-area: a;
+        }
