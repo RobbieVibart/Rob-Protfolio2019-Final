@@ -1580,8 +1580,8 @@ blockquote {
     // background-color: pink;
     display: grid;
     grid-column-gap: 1em;
-    grid-template-columns: minmax(1em, 1fr) minmax(160px, 800px) minmax(1em, 1fr);
-    grid-template-rows: repeat(5, 800px);
+    grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
+    grid-template-rows: repeat(5, 900px);
     grid-template-areas: 
     "...... text-1 ......"
     "...... text-2 ......";

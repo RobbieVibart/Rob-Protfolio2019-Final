@@ -1444,10 +1444,10 @@ blockquote .person cite {
   display: -ms-grid;
   display: grid;
   grid-column-gap: 1em;
-  -ms-grid-columns: minmax(1em, 1fr) minmax(160px, 800px) minmax(1em, 1fr);
-      grid-template-columns: minmax(1em, 1fr) minmax(160px, 800px) minmax(1em, 1fr);
-  -ms-grid-rows: (800px)[5];
-      grid-template-rows: repeat(5, 800px);
+  -ms-grid-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
+      grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
+  -ms-grid-rows: (900px)[5];
+      grid-template-rows: repeat(5, 900px);
       grid-template-areas: "...... text-1 ......" "...... text-2 ......";
 }
 
