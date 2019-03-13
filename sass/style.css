@@ -48,13 +48,13 @@ body {
 }
 
 a {
-  color: #cabcab;
+  color: #000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 a:hover, a:active, a:focus {
-  color: #cabcab;
+  color: #444;
   outline: none;
   text-decoration: none;
 }
@@ -79,17 +79,17 @@ figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #cabcab;
+  background: #000;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #cabcab;
+  background: #000;
 }
 
 ::selection {
   color: #fff;
-  background: #cabcab;
+  background: #000;
 }
 
 .fh5co-nav {
@@ -306,7 +306,7 @@ figure {
 }
 
 .fh5co-nav ul li.active > a {
-  color: #cabcab !important;
+  color: #ccc !important;
 }
 
 .fh5co-nav ul li .form-group {
@@ -374,7 +374,7 @@ figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #cabcab;
+  color: #000;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -396,7 +396,7 @@ figure {
 }
 
 .fh5co-contact-info ul li:before {
-  color: #cabcab;
+  color: #000;
   position: absolute;
   left: 0;
   top: .05em;
@@ -469,7 +469,7 @@ figure {
 .feature-center .icon {
   width: 90px;
   height: 90px;
-  background: #cabcab;
+  background: #000;
   display: table;
   text-align: center;
   margin-bottom: 30px;
@@ -575,7 +575,7 @@ figure {
 }
 
 .work:hover .desc h3 a, .work:focus .desc h3 a {
-  color: #cabcab;
+  color: #000;
 }
 
 .top-line {
@@ -732,7 +732,7 @@ figure {
 }
 
 .author .desc .fh5co-social-icons li a {
-  color: #cabcab;
+  color: #000;
   padding-left: 0;
   padding-right: 10px;
 }
@@ -752,7 +752,7 @@ figure {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 50px;
-  background: #cabcab !important;
+  background: #000 !important;
 }
 
 #fh5co-started {
@@ -961,7 +961,7 @@ figure {
   padding: 10px 6px;
   line-height: 0;
   font-size: 11px;
-  background: #cabcab;
+  background: #000;
   color: white;
   border-radius: 50%;
 }
@@ -1180,7 +1180,7 @@ figure {
 .btn-primary {
   background: #444;
   color: #fff;
-  border: 2px solid #cabcab;
+  border: 2px solid #000;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -1190,12 +1190,12 @@ figure {
 }
 
 .btn-primary.btn-outline {
-  color: #cabcab;
-  border: 2px solid #cabcab;
+  color: #000;
+  border: 2px solid #000;
 }
 
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #cabcab;
+  background: #000;
   color: #000;
 }
 
@@ -1342,7 +1342,7 @@ figure {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-color: #cabcab;
+  border-color: #000;
 }
 
 .row-pt-md {
@@ -1448,7 +1448,7 @@ blockquote .person cite {
       grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
   -ms-grid-rows: (900px)[5];
       grid-template-rows: repeat(5, 900px);
-      grid-template-areas: "...... text-1 ......" "...... text-2 ......";
+      grid-template-areas: "...... text-1 ......" "...... text-2 ......";
 }
 
 .grid-card .head-1 {
