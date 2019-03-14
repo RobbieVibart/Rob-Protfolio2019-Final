@@ -1584,7 +1584,10 @@ blockquote {
     grid-template-rows: repeat(5, 900px);
     grid-template-areas: 
     "...... text-1 ......"
-    "...... text-2 ......";
+    "...... text-2 ......"
+    "...... text-2 ......"
+    "...... text-2 ......"
+    "...... footer ......";
     
     //First section
     
@@ -1640,6 +1643,16 @@ blockquote {
         padding-top: 20em;
     
     }
+    
+}
+
+//Footer Section
+
+.footer {
+    // display: inline;
+    // max-width: 360px;
+    margin: auto 0;
+    background: pink;
 }
 
 
