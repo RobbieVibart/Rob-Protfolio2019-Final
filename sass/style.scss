@@ -1577,7 +1577,7 @@ blockquote {
 }
 
 .grid-card {
-    // background-color: pink;
+    background-color: rgba(230, 230, 250, 0.5);
     display: grid;
     grid-column-gap: 1em;
     grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
@@ -1643,17 +1643,17 @@ blockquote {
         padding-top: 20em;
     
     }
-    
+    //Footer Section
+    .footer {
+        text-align: center;
+        width: 100%;
+        // background: pink;
+        grid-column: 2;
+        align-self: end;
+        
+    }
 }
 
-//Footer Section
-
-.footer {
-    // display: inline;
-    // max-width: 360px;
-    margin: auto 0;
-    background: pink;
-}
 
 
 
