@@ -1645,14 +1645,21 @@ blockquote {
     }
     //Footer Section
     .footer {
+        display: block;
         text-align: center;
         width: 100%;
         // background: pink;
         grid-column: 2;
         align-self: end;
+
+        .btn {
+            margin-right: 5%;
+            margin-left: 5%;
+        }
         
     }
 }
+
 
 
 
