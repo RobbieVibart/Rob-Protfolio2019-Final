@@ -1,6 +1,9 @@
-$font-primary: "Montserrat", Arial, sans-serif;
+$font-primary: "Montserrat",
+Arial,
+sans-serif;
 
-$font-secondary: "Playfair Display", serif;
+$font-secondary: "Playfair Display",
+serif;
 
 // Overrides
 $grid-gutter-width: 40px !default;
@@ -405,7 +408,7 @@ figure {
             }
 
             &.active {
-                > a {
+                >a {
                     color: $brand-gray !important;
                 }
             }
@@ -597,7 +600,7 @@ figure {
         font-weight: 600;
 
         // color: #5d5d5d;
-   
+
     }
 
     @media screen and (max-width: $screen-sm) {
@@ -1076,13 +1079,13 @@ figure {
                 }
             }
 
-            > ul {
+            >ul {
                 padding-left: 20px;
                 display: none;
             }
 
             &.offcanvas-has-dropdown {
-                > a {
+                >a {
                     display: block;
                     position: relative;
 
@@ -1173,6 +1176,7 @@ figure {
     position: fixed !important;
 
     &.active i {
+
         &::before,
         &::after {
             background: $brand-darker;
@@ -1211,7 +1215,7 @@ figure {
     }
 
     &.fh5co-nav-white {
-        > i {
+        >i {
             color: $brand-white;
             background: $brand-black;
 
@@ -1303,7 +1307,9 @@ figure {
         padding: 18px 36px !important;
     }
 
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
         box-shadow: none !important;
         outline: none !important;
     }
@@ -1314,7 +1320,9 @@ figure {
     color: $brand-white;
     border: 2px solid $brand-primary;
 
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
         color: #000;
         background: rgba(black, 0.05) !important;
         border-color: lighten($brand-black, 0%) !important;
@@ -1324,7 +1332,9 @@ figure {
         color: $brand-primary;
         border: 2px solid $brand-primary;
 
-        &:hover, &:focus, &:active {
+        &:hover,
+        &:focus,
+        &:active {
             background: $brand-primary;
             color: $brand-black;
         }
@@ -1336,7 +1346,9 @@ figure {
     color: $brand-white;
     border: 2px solid $brand-success;
 
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
         background: darken($brand-success, 5%) !important;
         border-color: darken($brand-success, 5%) !important;
     }
@@ -1346,7 +1358,9 @@ figure {
         color: $brand-success;
         border: 2px solid $brand-success;
 
-        &:hover, &:focus, &:active {
+        &:hover,
+        &:focus,
+        &:active {
             background: $brand-success;
             color: $brand-white;
         }
@@ -1358,7 +1372,9 @@ figure {
     color: $brand-white;
     border: 2px solid $brand-info;
 
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
         background: darken($brand-info, 5%) !important;
         border-color: darken($brand-info, 5%) !important;
     }
@@ -1368,7 +1384,9 @@ figure {
         color: $brand-info;
         border: 2px solid $brand-info;
 
-        &:hover, &:focus, &:active {
+        &:hover,
+        &:focus,
+        &:active {
             background: $brand-info;
             color: $brand-white;
         }
@@ -1380,7 +1398,9 @@ figure {
     color: $brand-white;
     border: 2px solid $brand-warning;
 
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
         background: darken($brand-warning, 5%) !important;
         border-color: darken($brand-warning, 5%) !important;
     }
@@ -1390,7 +1410,9 @@ figure {
         color: $brand-warning;
         border: 2px solid $brand-warning;
 
-        &:hover, &:focus, &:active {
+        &:hover,
+        &:focus,
+        &:active {
             background: $brand-warning;
             color: $brand-white;
         }
@@ -1402,7 +1424,9 @@ figure {
     color: $brand-white;
     border: 2px solid $brand-danger;
 
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
         background: darken($brand-danger, 5%) !important;
         border-color: darken($brand-danger, 5%) !important;
     }
@@ -1412,7 +1436,9 @@ figure {
         color: $brand-danger;
         border: 2px solid $brand-danger;
 
-        &:hover, &:focus, &:active {
+        &:hover,
+        &:focus,
+        &:active {
             background: $brand-danger;
             color: $brand-white;
         }
@@ -1426,7 +1452,9 @@ figure {
 
     @include transition(0.3s);
 
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
         box-shadow: none;
     }
 }
@@ -1572,7 +1600,9 @@ blockquote {
 // width 1371 Height 1026
 
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -1580,45 +1610,49 @@ blockquote {
     display: grid;
     grid-column-gap: 1em;
     grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
-    grid-template-rows: repeat(5, 900px);
-    grid-template-areas: 
-    "...... text-1 ......"
-    "...... text-2 ......"
-    "...... text-2 ......"
-    "...... text-2 ......"
-    "...... footer ......";
-    
+    grid-template-rows: repeat(6, 900px);
+    grid-template-areas:
+        "...... text-1 ......"
+        "...... text-2 ......"
+        "...... text-3 ......"
+        "...... ...... ......"
+        "...... ...... ......"
+        "...... footer ......";
+
     //SECTION 1
     .head-1 {
-        grid-area: text-1;    
+        text-align: end;
+        grid-area: text-1;
         text-transform: uppercase;
         font-size: 4rem;
-        margin-bottom: 2em;
+        margin-top: 2em;
     }
 
     .image-1 {
         grid-area: text-1;
-        object-position: 2em;
-        width: 100%;
+        object-position: -2em;
+        width: 120%;
         object-fit: contain;
     }
 
     .sub-head-1 {
-        grid-area: text-1;      
-        margin-top: 4em;
+        grid-area: text-1;
+        margin-top: 3em;
         color: $brand-lighter;
         font-weight: $brand-gray;
     }
+
 
     .copy-1 {
         line-height: 2em;
         grid-area: text-1;
         margin-top: 10em;
-    
+
     }
+
     //SECTION 2
     .image-2 {
-        
+
         grid-area: text-2;
         width: 100%;
         object-fit: cover;
@@ -1626,13 +1660,13 @@ blockquote {
 
     .sub-head-2 {
         text-align: center;
-        grid-area: text-2;      
+        grid-area: text-2;
         color: $brand-lighter;
         font-weight: $brand-gray;
     }
 
     .copy-2 {
-        
+
         color: $brand-body-color;
         font-size: 1rem;
         text-align: center;
@@ -1640,7 +1674,30 @@ blockquote {
         padding-top: 20em;
 
     }
-    
+
+    //SECTION 3
+    .image-3 {
+        grid-area: text-3;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .sub-head-3 {
+        text-align: center;
+        grid-area: text-3;
+        color: $brand-lighter;
+        font-weight: $brand-gray;
+    }
+
+    .copy-3 {
+        color: $brand-body-color;
+        font-size: 1rem;
+        text-align: left;
+        grid-area: text-3;
+        // padding-top: 20em;
+
+    }
+
     //Footer Start
     .footer {
         display: block;
@@ -1649,16 +1706,12 @@ blockquote {
         // background: pink;
         grid-column: 2;
         align-self: end;
+        grid-row: 6;
 
         .btn {
             margin-bottom: 80px;
             margin-right: 5%;
             margin-left: 5%;
-        }   
+        }
     }
 }
-
-
-
-
-
