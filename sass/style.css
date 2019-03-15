@@ -1441,7 +1441,6 @@ blockquote .person cite {
 }
 
 .grid-card {
-  background-color: rgba(230, 230, 250, 0.5);
   display: -ms-grid;
   display: grid;
   grid-column-gap: 1em;
