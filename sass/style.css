@@ -1461,6 +1461,8 @@ blockquote .person cite {
   text-transform: uppercase;
   font-size: 4rem;
   margin-top: 2em;
+  margin-right: 1em;
+  color: white;
 }
 
 .grid-card .image-1 {
@@ -1477,17 +1479,20 @@ blockquote .person cite {
      object-fit: cover;
 }
 
+.grid-card .sub-head-1, .grid-card .copy-1 {
+  padding-top: 10em;
+}
+
 .grid-card .sub-head-1 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: text-1;
-  margin-top: 3em;
   color: #e9e9e9;
   font-weight: #ccc;
 }
 
 .grid-card .copy-1 {
-  margin-top: 10em;
+  margin-top: 12em;
   line-height: 2em;
   -ms-flex-item-align: top;
       -ms-grid-row-align: top;
@@ -1589,6 +1594,7 @@ blockquote .person cite {
 }
 
 .grid-card .image-4 {
+  margin-top: 10em;
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: text-4;
@@ -1607,6 +1613,20 @@ blockquote .person cite {
   grid-area: text-4;
   color: #444;
   font-weight: 400;
+}
+
+.grid-card .copy-4 {
+  width: 50%;
+  color: #818892;
+  font-size: 1em;
+  text-align: left;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: text-4;
+  padding-top: 6em;
+  margin-left: 4em;
 }
 
 .grid-card .footer {
@@ -1629,7 +1649,18 @@ blockquote .person cite {
 }
 
 .sect {
+  width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: text-1;
+  background-image: linear-gradient(45deg, #fff 60%, #ccc 0%);
+}
+
+.sect-2 {
+  z-index: -1;
   width: 100vw;
-  background-color: #f9f6f0;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  background-color: #ccc;
 }
 /*# sourceMappingURL=style.css.map */

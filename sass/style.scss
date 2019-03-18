@@ -1606,7 +1606,13 @@ blockquote {
     grid-gap: 4em 1em;
     grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
     grid-template-rows: repeat(6, 900px);
-    grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... ...... ......" "...... footer ......";
+    grid-template-areas: 
+    "...... text-1 ......"
+    "...... text-2 ......"
+    "...... text-3 ......"
+    "...... text-4 ......"
+    "...... ...... ......"
+    "...... footer ......";
 
     //SECTION 1
 
@@ -1616,8 +1622,10 @@ blockquote {
         text-transform: uppercase;
         font-size: 4rem;
         margin-top: 2em;
+        margin-right: 1em;
+        color: white;
     }
-
+    
     .image-1 {
         grid-area: text-1;
         align-self: end;
@@ -1625,18 +1633,22 @@ blockquote {
         width: 120%;
         object-fit: cover;
     }
-
+    
+    .sub-head-1, .copy-1 {
+        // background-color: pink; 
+        padding-top: 10em;
+    }
+    
     .sub-head-1 {
         // background-color: pink;
         grid-area: text-1;
-        margin-top: 3em;
         color: $brand-lighter;
         font-weight: $brand-gray;
     }
 
     .copy-1 {
         // background-color: pink;
-        margin-top: 10em;
+        margin-top: 12em;
         line-height: 2em;
         align-self: top;
         justify-self: left;
@@ -1713,6 +1725,7 @@ blockquote {
 
     //SECTION 4
     .image-4 {
+        margin-top: 10em;
         grid-area: text-4;
         width: 100%;
         object-fit: cover;
@@ -1725,6 +1738,18 @@ blockquote {
         grid-area: text-4;
         color: $brand-darker;
         font-weight: 400;
+    }
+    
+    .copy-4 {
+        width: 50%;
+        color: $brand-body-color;
+        font-size: 1em;
+        text-align: left;
+        justify-self: left;
+        grid-area: text-4;
+        padding-top: 6em;
+        // padding-right: 2em;
+        margin-left: 4em;
     }
 
     //FOOTER START
@@ -1747,6 +1772,15 @@ blockquote {
 }
 
 .sect { 
+    width: 100%;
+    grid-area: text-1;
+    // height: 100vh;
+    background-image: linear-gradient(45deg, $brand-bg-color 60%, $brand-gray 0%);
+}
+
+.sect-2 { 
+    z-index: -1;
     width: 100vw;
-    background-color: $brand-selection-color;
+    grid-row: 4;
+    background-color:  #ccc;
 }
