@@ -1651,6 +1651,7 @@ blockquote {
 
     .copy-1 {
         // background-color: pink;
+        color: white;
         margin-top: 12em;
         line-height: 2em;
         align-self: top;
@@ -1777,9 +1778,10 @@ blockquote {
 
 .sect { 
     width: 100vw;
-    grid-area: text-1;
+    // grid-area: text-1;
     // height: 100vh;
-    background-image: linear-gradient(45deg, $brand-bg-color 50%, $brand-lighter );
+    // background-image: linear-gradient(45deg, $brand-bg-color 50%, $brand-lighter );
+    background: #b12129;
 }
 
 .sect-2 { 
