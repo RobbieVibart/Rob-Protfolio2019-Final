@@ -1620,7 +1620,7 @@ blockquote {
     //SECTION 1
 
     .head-1 {
-        text-align: end;
+        text-align: start;
         grid-area: text-1;
         text-transform: uppercase;
         font-size: 4rem;
@@ -1629,40 +1629,50 @@ blockquote {
         color: white;
     }
     
+    .roles {
+        display: block;
+        margin-top: 6em 0;
+        text-transform: uppercase;
+        font-weight: 500;
+
+    }
+    
     .image-1 {
+        // background-color: pink;
+    //    z-index: 0;
         grid-area: text-1;
-        align-self: end;
-        justify-self: center;
-        width: 120%;
-        object-fit: cover;
+        width: 30vw;
+        align-self: center;
+        justify-self: end;
+        object-fit: contain;
     }
-    
-    .sub-head-1, .copy-1 {
-        // background-color: pink; 
-        padding-top: 10em;
-    }
-    
+
     .sub-head-1 {
         // background-color: pink;
         grid-area: text-1;
         color: $brand-lighter;
-        font-weight: $brand-gray;
-    }
+        margin-top: 6em;
 
+        
+    }
+    
     .copy-1 {
+        z-index: 1;
+        width: 34%;
         // background-color: pink;
         color: white;
-        margin-top: 12em;
+        margin-top: 16em;
         line-height: 2em;
         align-self: top;
         justify-self: left;
         grid-area: text-1;
     }
+    
 
     //SECTION 2
     .image-2 {
         margin-top: -100px;
-
+        z-index: -1;
         // background-color: pink;
         grid-area: text-2;
         width: 100%;
@@ -1692,6 +1702,7 @@ blockquote {
 
     //SECTION 3
     .image-3 {
+        z-index: 0;
         grid-area: text-3;
         width: 100%;
         object-fit: cover;
@@ -1707,6 +1718,7 @@ blockquote {
     }
 
     .copy-3-left {
+        z-index: 1;
         // background-color: pink;
         width: 40%;
         color: $brand-body-color;
@@ -1715,16 +1727,6 @@ blockquote {
         justify-self: left;
         padding: 8em 0;
         grid-area: text-3;
-    }
-
-    .copy-3-right {
-        color: $brand-body-color;
-        font-size: 1em;
-        text-align: right;
-        justify-self: right;
-        grid-area: text-3;
-        padding-top: 10em;
-        padding-right: 2em;
     }
 
     //SECTION 4
@@ -1742,11 +1744,11 @@ blockquote {
         grid-area: text-4;
         color: $brand-darker;
         font-weight: 400;
-        color: $brand-overlay-color;
+        color: $brand-black;
     }
     
     .copy-4 {
-        width: 50%;
+        // width: 50%;
         color: $brand-body-color;
         font-size: 1em;
         text-align: left;
@@ -1779,14 +1781,14 @@ blockquote {
 .sect { 
     width: 100vw;
     // grid-area: text-1;
-    // height: 100vh;
     // background-image: linear-gradient(45deg, $brand-bg-color 50%, $brand-lighter );
     background: #b12129;
+    
 }
 
-.sect-2 { 
-    opacity: 0.2;
+.sect-2 {
     z-index: -1;
+    opacity: 0.2;
     width: 100vw;
     grid-row: 4;
     background-color:  #ccc;
