@@ -703,7 +703,7 @@ figure {
   float: left;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 360px) {
   .author .author-inner {
     width: 100%;
     margin-bottom: 40px;
@@ -716,7 +716,7 @@ figure {
   padding-left: 50px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 360px) {
   .author .desc {
     width: 100%;
     padding-left: 0;
@@ -1453,6 +1453,12 @@ blockquote .person cite {
       grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... ...... ......" "...... footer ......";
 }
 
+@media (max-width: 360px) {
+  .grid-card {
+    grid-column-gap: 0em;
+  }
+}
+
 .grid-card .head-1 {
   text-align: start;
   -ms-grid-row: 1;
@@ -1463,6 +1469,14 @@ blockquote .person cite {
   margin-top: 2em;
   margin-right: 1em;
   color: white;
+}
+
+@media (max-width: 360px) {
+  .grid-card .head-1 {
+    font-size: 1.2em;
+    color: white;
+    text-align: left;
+  }
 }
 
 .grid-card .roles {
@@ -1494,6 +1508,12 @@ blockquote .person cite {
   margin-top: 6em;
 }
 
+@media (max-width: 360px) {
+  .grid-card .sub-head-1 {
+    font-size: 1em;
+  }
+}
+
 .grid-card .copy-1 {
   z-index: 1;
   width: 34%;
@@ -1508,6 +1528,14 @@ blockquote .person cite {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: text-1;
+}
+
+@media (max-width: 360px) {
+  .grid-card .copy-1 {
+    width: 100%;
+    font-size: 0.8em;
+    color: white;
+  }
 }
 
 .grid-card .image-2 {
