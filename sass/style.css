@@ -1456,6 +1456,10 @@ blockquote .person cite {
 @media (max-width: 360px) {
   .grid-card {
     grid-column-gap: 0em;
+    -ms-grid-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
+        grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
+    -ms-grid-rows: (668px)[6];
+        grid-template-rows: repeat(6, 668px);
   }
 }
 
@@ -1490,6 +1494,7 @@ blockquote .person cite {
 
 @media (max-width: 360px) {
   .grid-card .roles {
+    margin-top: -2em;
     text-align: center;
   }
 }
@@ -1516,8 +1521,8 @@ blockquote .person cite {
         align-self: end;
     -ms-grid-column-align: center;
         justify-self: center;
-    -o-object-position: 0 16em;
-       object-position: 0 16em;
+    -o-object-position: 0 12em;
+       object-position: 0 12em;
     height: 50%;
     width: 100%;
     -o-object-fit: contain;
@@ -1558,6 +1563,7 @@ blockquote .person cite {
 
 @media (max-width: 360px) {
   .grid-card .copy-1 {
+    line-height: 2.5rem;
     width: 100%;
     font-size: 0.9em;
     color: white;
@@ -1566,19 +1572,26 @@ blockquote .person cite {
 }
 
 .grid-card .image-2 {
-  margin-top: -100px;
-  z-index: -1;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: text-2;
+  z-index: -1;
   width: 100%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 360px) {
+  .grid-card .image-2 {
+    height: 100%;
+    -o-object-position: 0em 16em;
+       object-position: 0em 16em;
+  }
 }
 
 .grid-card .sub-head-2 {
@@ -1608,6 +1621,23 @@ blockquote .person cite {
   margin-bottom: 6em;
 }
 
+@media (max-width: 360px) {
+  .grid-card .copy-2 {
+    margin-top: 5em;
+    font-size: 0.9em;
+    line-height: 2.5rem;
+    text-align: center;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: text-2;
+  }
+}
+
 .grid-card .image-3 {
   z-index: 0;
   -ms-grid-row: 3;
@@ -1616,6 +1646,16 @@ blockquote .person cite {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 360px) {
+  .grid-card .image-3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: text-3;
+    width: 50%;
+    height: 50%;
+  }
 }
 
 .grid-card .sub-head-3 {
@@ -1642,6 +1682,15 @@ blockquote .person cite {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: text-3;
+}
+
+@media (max-width: 360px) {
+  .grid-card .copy-3-left {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
 }
 
 .grid-card .image-4 {

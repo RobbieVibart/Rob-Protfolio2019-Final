@@ -1618,8 +1618,10 @@ blockquote {
 
     @include mobile {
         grid-column-gap: 0em;
-
+        grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
+        grid-template-rows: repeat(6, 668px);
     }
+
 
     //SECTION 1
 
@@ -1646,11 +1648,11 @@ blockquote {
         margin-top: 6em 0;
         text-transform: uppercase;
         font-weight: 500;
-        
+
         @include mobile {
+            margin-top: -2em;
             text-align: center;
         }
-    
     }
 
     .image-1 {
@@ -1661,12 +1663,12 @@ blockquote {
         align-self: center;
         justify-self: end;
         object-fit: contain;
-        
+
         @include mobile {
             // background-color: pink;
             align-self: end;
             justify-self: center;
-            object-position: 0 16em;
+            object-position: 0 12em;
             height: 50%;
             width: 100%;
             object-fit: contain;
@@ -1682,14 +1684,13 @@ blockquote {
         @include mobile {
             text-align: center;
             font-size: 1.5em;
-
         }
     }
 
     .copy-1 {
+        // background-color: pink;
         z-index: 1;
         width: 34%;
-        // background-color: pink;
         color: white;
         margin-top: 16em;
         line-height: 2.5em;
@@ -1698,25 +1699,28 @@ blockquote {
         grid-area: text-1;
 
         @include mobile {
+            line-height: 2.5rem;
             width: 100%;
             font-size: 0.9em;
             color: white;
             text-align: center;
-        
         }
     }
 
     //SECTION 2
     .image-2 {
-        margin-top: -100px;
-        z-index: -1;
-
         // background-color: pink;
         grid-area: text-2;
+        z-index: -1;
         width: 100%;
         align-self: center;
         justify-self: center;
-        object-fit: cover;
+        object-fit: contain;
+
+        @include mobile {
+            height: 100%;
+            object-position: 0em 16em;
+        }
     }
 
     .sub-head-2 {
@@ -1736,6 +1740,16 @@ blockquote {
         justify-self: center;
         grid-area: text-2;
         margin-bottom: 6em;
+
+        @include mobile {
+            margin-top: 5em;
+            font-size: 0.9em;
+            line-height: 2.5rem;
+            text-align: center;
+            align-self: start;
+            justify-self: center;
+            grid-area: text-2;
+        }
     }
 
     //SECTION 3
@@ -1744,6 +1758,13 @@ blockquote {
         grid-area: text-3;
         width: 100%;
         object-fit: cover;
+
+        @include mobile {
+            // background-color: pink;
+            grid-area: text-3;
+            width: 50%;
+            height: 50%;
+        }
     }
 
     .sub-head-3 {
@@ -1756,9 +1777,8 @@ blockquote {
     }
 
     .copy-3-left {
-        z-index: 1;
-
         // background-color: pink;
+        z-index: 1;
         width: 40%;
         color: $brand-body-color;
         font-size: 1em;
@@ -1766,6 +1786,13 @@ blockquote {
         justify-self: left;
         padding: 8em 0;
         grid-area: text-3;
+
+        @include mobile {
+            width: 100%;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            text-align: center;
+        }
     }
 
     //SECTION 4
