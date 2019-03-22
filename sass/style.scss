@@ -1793,3 +1793,204 @@ blockquote {
     grid-row: 4;
     background-color:  #ccc;
 }
+
+
+.grid-card {
+    display: grid;
+    grid-gap: 4em 1em;
+    grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
+    grid-template-rows: repeat(6, 688px);
+    grid-template-areas: 
+    
+    ". text-1 ."
+    ". text-2 ."
+    ". text-3 ."
+    ". text-4 ."
+    " ........ "
+    ". footer .";
+
+    @media screen and (max-width: $screen-sm) {
+    grid-gap: 2em 1em;    
+        
+
+    }  
+}
+
+    
+    //SECTION 1
+        
+    .head-1 {
+        text-align: start;
+        grid-area: text-1;
+        text-transform: uppercase;
+        font-size: 0.5rem;
+        margin-top: 2em;
+        margin-right: 1em;
+        color: black;
+    }
+    
+    .roles {
+        display: block;
+        margin-top: 6em 0;
+        text-transform: uppercase;
+        font-weight: 500;
+
+    }
+    
+    .image-1 {
+        // background-color: pink;
+    //    z-index: 0;
+        grid-area: text-1;
+        width: 30vw;
+        align-self: center;
+        justify-self: end;
+        object-fit: contain;
+    }
+
+    .sub-head-1 {
+        // background-color: pink;
+        grid-area: text-1;
+        color: $brand-lighter;
+        margin-top: 6em;
+
+        
+    }
+    
+    .copy-1 {
+        z-index: 1;
+        width: 34%;
+        // background-color: pink;
+        color: white;
+        margin-top: 16em;
+        line-height: 2em;
+        align-self: top;
+        justify-self: left;
+        grid-area: text-1;
+    }
+    
+
+    //SECTION 2
+    .image-2 {
+        margin-top: -100px;
+        z-index: -1;
+        // background-color: pink;
+        grid-area: text-2;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        object-fit: cover;
+    }
+
+    .sub-head-2 {
+        // background-color: pink;
+        grid-area: text-2;
+        align-self: top;
+        justify-self: center;
+        color: $brand-darker;
+        font-weight: 400;
+    }
+
+    .copy-2 {
+        // background-color: pink;
+        font-size: 1em;
+        text-align: center;
+        align-self: end;
+        justify-self: center;
+        grid-area: text-2;
+        margin-bottom: 6em;
+    }
+
+    //SECTION 3
+    .image-3 {
+        z-index: 0;
+        grid-area: text-3;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .sub-head-3 {
+        margin-top: 1em;
+        justify-self: center;
+        text-align: center;
+        grid-area: text-3;
+        color: $brand-darker;
+        font-weight: 400;
+    }
+
+    .copy-3-left {
+        z-index: 1;
+        // background-color: pink;
+        width: 40%;
+        color: $brand-body-color;
+        font-size: 1em;
+        text-align: left;
+        justify-self: left;
+        padding: 8em 0;
+        grid-area: text-3;
+    }
+
+    //SECTION 4
+    .image-4 {
+        margin-top: 9.5em;
+        grid-area: text-4;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .sub-head-4 {
+        margin-top: 1em;
+        justify-self: center;
+        text-align: center;
+        grid-area: text-4;
+        color: $brand-darker;
+        font-weight: 400;
+        color: $brand-black;
+    }
+    
+    .copy-4 {
+        // width: 50%;
+        color: $brand-body-color;
+        font-size: 1em;
+        text-align: left;
+        justify-self: left;
+        grid-area: text-4;
+        padding-top: 6em;
+        // padding-right: 2em;
+        margin-left: 4em;
+    }
+
+    //FOOTER START
+    .footer {
+        display: block;
+        text-align: center;
+        width: 100%;
+
+        // background: pink;
+        grid-column: 2;
+        align-self: end;
+        grid-row: 7;
+
+        .btn {
+            margin-bottom: 80px;
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+    }
+    
+}
+        .sect { 
+            width: 100vw;
+            // grid-area: text-1;
+            // background-image: linear-gradient(45deg, $brand-bg-color 50%, $brand-lighter );
+            background: #b12129;
+            
+        }
+        
+        .sect-2 {
+            z-index: -1;
+            opacity: 0.2;
+            width: 100vw;
+            grid-row: 4;
+            background-color:  #ccc;
+    
+        }
