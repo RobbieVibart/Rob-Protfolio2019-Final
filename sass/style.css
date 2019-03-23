@@ -1450,7 +1450,7 @@ blockquote .person cite {
       grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
   -ms-grid-rows: (900px)[6];
       grid-template-rows: repeat(6, 900px);
-      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... ...... ......" "...... footer ......";
+      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... ...... ......" "...... footer ......";
 }
 
 @media (max-width: 360px) {
@@ -1464,24 +1464,37 @@ blockquote .person cite {
 }
 
 .grid-card .head-1 {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 20px;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
   text-align: start;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: text-1;
   text-transform: uppercase;
-  font-size: 4rem;
-  margin-top: 2em;
-  margin-right: 1em;
+  font-size: 12rem;
+  word-spacing: -10px;
+  letter-spacing: -2px;
   color: white;
 }
 
 @media (max-width: 360px) {
   .grid-card .head-1 {
+    word-spacing: initial;
+    letter-spacing: initial;
+    font-weight: 200;
     margin: 2em 0em;
-    font-size: 1.4em;
+    font-size: 2em;
     color: white;
     text-align: center;
-    font-weight: 700;
   }
 }
 
@@ -1504,7 +1517,7 @@ blockquote .person cite {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: text-1;
-  width: 30vw;
+  width: 65%;
   -ms-flex-item-align: center;
       align-self: center;
       justify-self: end;
@@ -1627,7 +1640,6 @@ blockquote .person cite {
 }
 
 .grid-card .image-3 {
-  z-index: 0;
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: text-3;
@@ -1658,7 +1670,6 @@ blockquote .person cite {
 }
 
 .grid-card .copy-3-left {
-  z-index: 1;
   width: 40%;
   color: #818892;
   font-size: 1em;
@@ -1689,6 +1700,18 @@ blockquote .person cite {
      object-fit: cover;
 }
 
+@media (max-width: 360px) {
+  .grid-card .image-4 {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+  }
+}
+
 .grid-card .sub-head-4 {
   margin-top: 1em;
       justify-self: center;
@@ -1710,23 +1733,24 @@ blockquote .person cite {
   -ms-grid-column: 2;
   grid-area: text-4;
   padding-top: 6em;
-  margin-left: 4em;
 }
 
 .grid-card .footer {
   display: block;
   text-align: center;
   width: 100%;
+  -ms-grid-row: 6;
   -ms-grid-column: 2;
-  grid-column: 2;
+  grid-area: footer;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-  -ms-grid-row: 7;
-  grid-row: 7;
 }
 
 .grid-card .footer .btn {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: footer;
   margin-bottom: 80px;
   margin-right: 5%;
   margin-left: 5%;
@@ -1738,12 +1762,10 @@ blockquote .person cite {
 }
 
 .sect-2 {
-  z-index: 0;
-  opacity: 0.2;
   width: 100vw;
   -ms-grid-row: 4;
   grid-row: 4;
-  background-color: #ccc;
+  background-color: rgba(218, 216, 216, 0.45);
 }
 
 .pr2_grid-card {
