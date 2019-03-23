@@ -1465,9 +1465,7 @@ blockquote .person cite {
 
 .grid-card .head-1 {
   -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
       align-self: start;
-  -ms-grid-column-align: center;
       justify-self: center;
   margin-top: 20px;
   padding: 0;
@@ -1743,14 +1741,10 @@ blockquote .person cite {
   -ms-grid-column: 2;
   grid-area: footer;
   -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
       align-self: end;
 }
 
 .grid-card .footer .btn {
-  -ms-grid-row: 6;
-  -ms-grid-column: 2;
-  grid-area: footer;
   margin-bottom: 80px;
   margin-right: 5%;
   margin-left: 5%;
@@ -1765,7 +1759,7 @@ blockquote .person cite {
   width: 100vw;
   -ms-grid-row: 4;
   grid-row: 4;
-  background-color: rgba(218, 216, 216, 0.45);
+  background-color: #ccc;
 }
 
 .pr2_grid-card {
