@@ -1857,11 +1857,11 @@ blockquote {
         width: 100%;
 
         // background: pink;
-        grid-column: 2;
+        grid-area: footer;
         align-self: end;
-        grid-row: 7;
 
         .btn {
+            // grid-area: footer;
             margin-bottom: 80px;
             margin-right: 5%;
             margin-left: 5%;
