@@ -1450,7 +1450,7 @@ blockquote .person cite {
       grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
   -ms-grid-rows: (900px)[6];
       grid-template-rows: repeat(6, 900px);
-      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... ...... ......" "...... footer ......";
+      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... ...... ......" "...... footer ......";
 }
 
 @media (max-width: 360px) {
