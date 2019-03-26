@@ -1808,8 +1808,8 @@ blockquote .person cite {
       align-self: top;
   -ms-grid-column-align: center;
       justify-self: center;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 360px) {
@@ -1900,7 +1900,7 @@ blockquote .person cite {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: text-3;
-  width: 100%;
+  width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
 }

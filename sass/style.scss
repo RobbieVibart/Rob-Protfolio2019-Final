@@ -1925,7 +1925,7 @@ blockquote {
         height: 900px;
         align-self: top;
         justify-self: center;
-        object-fit: contain;
+        object-fit: cover;
 
         @include mobile {
             // background-color: pink;
@@ -1991,7 +1991,7 @@ blockquote {
     //SECTION 3
     .pr2_image-3 {
         grid-area: text-3;
-        width: 100%;
+        width: 100vw;
         object-fit: cover;
 
         @include mobile {
