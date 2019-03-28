@@ -1866,7 +1866,6 @@ blockquote .person cite {
 
 @media (max-width: 360px) {
   .pr2_grid-card .pr2_copy-2 {
-    background-color: pink;
     padding: 0em 2.5em;
     font-size: 1.15rem;
     line-height: 2.5rem;
@@ -1883,7 +1882,7 @@ blockquote .person cite {
 }
 
 .pr2_grid-card .border {
-  border-right: #000 .5px solid;
+  border-right: #ccc 0.5px solid;
   width: 12.5em;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
@@ -1892,14 +1891,12 @@ blockquote .person cite {
 
 @media (max-width: 360px) {
   .pr2_grid-card .border {
-    border-left: #000 .5px solid;
+    border-left: #ccc 0.5px solid;
     width: 100vw;
   }
 }
 
 .pr2_grid-card .pr2_year {
-  opacity: 0.5;
-  background-color: black;
   font-size: 1em;
   color: #ccc;
   font-family: 'Oswald', sans-serif;
@@ -1913,6 +1910,18 @@ blockquote .person cite {
       justify-self: center;
   text-align: center;
   width: 100vw;
+}
+
+@media (max-width: 360px) {
+  .pr2_grid-card .pr2_year {
+    margin-bottom: 0;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: text-2;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
 }
 
 .pr2_grid-card .pr2_image-3 {
