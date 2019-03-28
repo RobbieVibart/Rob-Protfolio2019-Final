@@ -1937,9 +1937,7 @@ blockquote {
 
     //SECTION 2
     .pr2_image-2 {
-        // background-color: pink;
         grid-area: text-2;
-        z-index: -1;
         width: 100%;
         align-self: center;
         justify-self: center;
@@ -1947,7 +1945,7 @@ blockquote {
 
         @include mobile {
             height: 100%;
-            object-position: 0em 16em;
+            // object-position: 0em 16em;
         }
     }
     
@@ -2016,8 +2014,10 @@ blockquote {
     //SECTION 3
     .pr2_image-3 {
         grid-area: text-3;
-        width: 100vw;
-        object-fit: cover;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        object-fit: contain;
 
         @include mobile {
             // background-color: pink;
