@@ -1909,11 +1909,10 @@ blockquote {
         display: block;
         text-transform: uppercase;
         font-weight: 700;
-        // word-break: break-all;
-
+        
         @include mobile {
-            // margin-top: -2em;
-            text-align: left;
+        font-size: 3.5vw;
+        text-align: left;
         }
     }
 
@@ -1953,28 +1952,27 @@ blockquote {
     }
 
     .pr2_copy-2{
-        height: max-content;
+        
         // background-color: pink;
         padding: 0em 12.5em;
         width: 100%;
         line-height: 2.2em;
         grid-area: text-2;
-        font-size: 1.5vw;
+        font-size: 1.12em;
         text-align: left;
         align-self: flex-start;
         justify-self: center;
         // border-left: #000 2px solid;
 
         @include mobile {
-            // background-color: pink;
+            background-color: pink;
             padding: 0em 2.5em;
-            width: 100%;
-            font-size: 0.9em;
+            font-size: 1.15rem;
             line-height: 2.5rem;
             text-align: left;
             align-self: start;
-            justify-self: center;
-            grid-area: text-2;
+            justify-self: top;
+            grid-row: 2 / 3;
         }
     }
     
@@ -1989,35 +1987,21 @@ blockquote {
             width: 100vw;        
     }
     
-    }
+}
 
-    .scroll {
-        // background-color: pink;
-        text-transform: lowercase;
-        font-style: oblique;
-        color: white;
-        z-index: 1;
-        grid-area: text-1;
-        justify-self: center;
-        align-self: end;
-        font-family: $brand-primary;
-        font-size: 2em;
-        font-weight: 300;
-        margin-bottom: 1em;
-    }
-    
     .pr2_year {
-        // background-color: pink;
-        font-size: 1em;
-        color: $brand-gray;
-        font-family: 'Oswald', sans-serif;
-        grid-area: text-2;
-        align-self: end;
-        justify-self: center;
-        text-align: center;
-        width: 100vw;
+    opacity: 0.5;
+    background-color: black;
+    font-size: 1em;
+    color: $brand-gray;
+    font-family: 'Oswald', sans-serif;
+    grid-area: text-2;
+    align-self: end;
+    justify-self: center;
+    text-align: center;
+    width: 100vw;
 
-    }
+}
     
     //SECTION 3
     .pr2_image-3 {

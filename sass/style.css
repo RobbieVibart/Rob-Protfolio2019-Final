@@ -1792,6 +1792,7 @@ blockquote .person cite {
 
 @media (max-width: 360px) {
   .pr2_grid-card .pr2_roles {
+    font-size: 3.5vw;
     text-align: left;
   }
 }
@@ -1849,16 +1850,13 @@ blockquote .person cite {
 }
 
 .pr2_grid-card .pr2_copy-2 {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   padding: 0em 12.5em;
   width: 100%;
   line-height: 2.2em;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: text-2;
-  font-size: 1.5vw;
+  font-size: 1.12em;
   text-align: left;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -1868,19 +1866,19 @@ blockquote .person cite {
 
 @media (max-width: 360px) {
   .pr2_grid-card .pr2_copy-2 {
+    background-color: pink;
     padding: 0em 2.5em;
-    width: 100%;
-    font-size: 0.9em;
+    font-size: 1.15rem;
     line-height: 2.5rem;
     text-align: left;
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    -ms-grid-column-align: top;
+        justify-self: top;
     -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: text-2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
   }
 }
 
@@ -1899,26 +1897,9 @@ blockquote .person cite {
   }
 }
 
-.pr2_grid-card .scroll {
-  text-transform: lowercase;
-  font-style: oblique;
-  color: white;
-  z-index: 1;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: text-1;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-  font-family: #000;
-  font-size: 2em;
-  font-weight: 300;
-  margin-bottom: 1em;
-}
-
 .pr2_grid-card .pr2_year {
+  opacity: 0.5;
+  background-color: black;
   font-size: 1em;
   color: #ccc;
   font-family: 'Oswald', sans-serif;
