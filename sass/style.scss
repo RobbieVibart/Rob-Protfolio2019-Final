@@ -1978,13 +1978,13 @@ blockquote {
     }
     
     .border {
-        border-right:$brand-gray .5px solid;
+        border-right:  #295788 1px solid;
         width: 12.5em;
         grid-area: text-2;
 
         @include mobile {
             // background-color: pink;
-            border-left: $brand-gray .5px solid;
+            border-left: #295788 .5px solid;
             width: 100vw;        
         }
     
@@ -2002,9 +2002,12 @@ blockquote {
     width: 100vw;
 
     @include mobile {
+        // background-color: pink;
+        width: 80%;
         margin-bottom: 0;
         grid-area:  text-2;
         align-self: end;
+        text-align: right;
     }
 
 }
