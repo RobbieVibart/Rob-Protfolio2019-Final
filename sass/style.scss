@@ -95,7 +95,7 @@ $form-group-margin-bottom: 30px !default;
 $mobile: 360px;
 
 @mixin mobile {
-    @media (max-width: #{$mobile}) {
+    @media only screen and (max-width: 360px) {
         @content;
     }
 }
@@ -1886,7 +1886,7 @@ blockquote {
     display: grid;
     grid-gap: 4em 1em;
     grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
-    grid-template-rows: minmax(1fr, auto);
+    grid-template-rows: repeat(10, auto);
     grid-template-areas:
         "...... text-1 ......"
         "...... text-2 ......"
@@ -1898,15 +1898,15 @@ blockquote {
     @include mobile {
         grid-column-gap: 0em;
         grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-rows: repeat(10, auto);
     }
 
 
     //SECTION 1
     .pr2_roles {
         // background-color: pink;
+        // display: block;
         padding: 0em 0em;
-        display: block;
         text-transform: uppercase;
         font-weight: 700;
         
@@ -1949,43 +1949,43 @@ blockquote {
         }
     }
     
-    .pr2_copy-2{
+    .pr2_copy-2 {
         // grid-auto-flow: dense;
         // border-left: #000 2px solid;
+        // background-color: pink;
         width: 100%;
         max-height: 200%;
-        // background-color: pink;
         padding: 0em 12.5em;
         line-height: 2.2em;
         grid-area: text-2;
         font-size: 1.12em;
         text-align: left;
-        align-self: flex-start;
+        align-self: start;
         justify-self: center;
 
         @include mobile {
             // background-color: pink;
+            grid-column: 2/-1;
+            grid-row: 2;
             padding: 0em 2.5em;
             font-size: 1.15rem;
             line-height: 2.5rem;
             text-align: left;
             align-self: start;
-            justify-self: top;
-            grid-area: text-2;
+            // justify-self: top;
         }
     }
     
     .border {
         border-right:  #295788 1px solid;
-        width: 12.5em;
+        // width: 12.5em;
         grid-area: text-2;
 
         @include mobile {
             // background-color: pink;
+            // width: 100vw;        
             border-left: #295788 .5px solid;
-            width: 100vw;        
         }
-    
     }
 
 .pr2_year {
@@ -2003,7 +2003,7 @@ blockquote {
         // background-color: pink;
         width: 80%;
         margin-bottom: 0;
-        grid-area:  text-2;
+        grid-area: text-2;
         align-self: end;
         text-align: right;
     }
