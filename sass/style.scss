@@ -1902,7 +1902,7 @@ blockquote {
     @include mobile {
         grid-column-gap: 0em;
         grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
-        grid-template-rows: repeat(11, 1fr);
+        grid-template-rows: repeat(11, auto);
     }
 
 
@@ -2130,8 +2130,8 @@ blockquote {
     .pr2_image-10 {
         grid-area: text-10;
         width: 100%;
-        align-self: center;
-        justify-self: center;
+        align-self: flex-start;
+        justify-self: start;
         object-fit: contain;
 
         @include mobile {
@@ -2144,22 +2144,6 @@ blockquote {
         }
     }
     
-
-    //SECTION 4
-    .pr2_image-4 {
-        // background-color: pink;
-        grid-area: text-10;
-        width: 100%;
-        object-fit: cover;
-
-        @include mobile {
-        align-self: start;
-        justify-self: end;
-        object-fit: scale-down;
-        }
-    }
-
-
     //FOOTER START
     .footer {
         // background: pink;

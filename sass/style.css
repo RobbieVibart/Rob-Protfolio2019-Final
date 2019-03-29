@@ -1779,8 +1779,8 @@ blockquote .person cite {
     grid-column-gap: 0em;
     -ms-grid-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
         grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
-    -ms-grid-rows: (1fr)[11];
-        grid-template-rows: repeat(11, 1fr);
+    -ms-grid-rows: (auto)[11];
+        grid-template-rows: repeat(11, auto);
   }
 }
 
@@ -2127,11 +2127,10 @@ blockquote .person cite {
   -ms-grid-column: 2;
   grid-area: text-10;
   width: 100%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-grid-column-align: start;
+      justify-self: start;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -2147,27 +2146,6 @@ blockquote .person cite {
     -ms-grid-column: 2;
     grid-area: text-10;
     max-width: 360px;
-  }
-}
-
-.pr2_grid-card .pr2_image-4 {
-  -ms-grid-row: 10;
-  -ms-grid-column: 2;
-  grid-area: text-10;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media (max-width: 360px) {
-  .pr2_grid-card .pr2_image-4 {
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
-    -ms-grid-column-align: end;
-        justify-self: end;
-    -o-object-fit: scale-down;
-       object-fit: scale-down;
   }
 }
 
