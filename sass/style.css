@@ -1450,7 +1450,7 @@ blockquote .person cite {
       grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
   -ms-grid-rows: (900px)[6];
       grid-template-rows: repeat(6, 900px);
-      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... ...... ......" "...... footer ......";
+      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... ...... ......" "...... footer ......";
 }
 
 @media (max-width: 360px) {
@@ -1768,9 +1768,15 @@ blockquote .person cite {
   grid-gap: 4em 1em;
   -ms-grid-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
       grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
+<<<<<<< HEAD
   -ms-grid-rows: reapet(10, 1fr);
       grid-template-rows: reapet(10, 1fr);
       grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... text-5 ......" "...... text-6 ......" "...... text-7 ......" "...... text-8 ......" "...... text-9 ......" "...... text-10 ......" "...... footer ......";
+=======
+  -ms-grid-rows: minmax(1fr, auto);
+      grid-template-rows: minmax(1fr, auto);
+      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... ...... ......" "...... footer ......";
+>>>>>>> aa38cc54d52b06ec4bac84243160f3e6dba25b54
 }
 
 @media (max-width: 360px) {
