@@ -1886,7 +1886,7 @@ blockquote {
     display: grid;
     grid-gap: 4em 1em;
     grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
-    grid-template-rows: reapet(10, 1fr);
+    grid-template-rows: reapet(11, 1fr);
     grid-template-areas:
         "...... text-1 ......"
         "...... text-2 ......"
@@ -1897,13 +1897,12 @@ blockquote {
         "...... text-7 ......"
         "...... text-8 ......"
         "...... text-9 ......"
-        "...... text-10 ......"
-        "...... footer ......";
+        "...... text-10 ......";
 
     @include mobile {
         grid-column-gap: 0em;
         grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-rows: repeat(11, 1fr);
     }
 
 
@@ -2020,7 +2019,7 @@ blockquote {
     .pr2_image-3 {
         grid-area: text-3;
         width: 100%;
-        align-self: center;
+        align-self: top;
         justify-self: center;
         object-fit: contain;
 
@@ -2126,7 +2125,6 @@ blockquote {
             justify-self: center;
             grid-area: text-9;
             max-width: 360px;
-            
         }
     }
     .pr2_image-10 {
@@ -2149,31 +2147,32 @@ blockquote {
 
     //SECTION 4
     .pr2_image-4 {
+        // background-color: pink;
         grid-area: text-10;
         width: 100%;
         object-fit: cover;
 
         @include mobile {
-        // background-color: pink;
-
         align-self: start;
         justify-self: end;
         object-fit: scale-down;
         }
     }
 
+
     //FOOTER START
     .footer {
+        // background: pink;
         display: block;
         text-align: center;
         width: 100%;
-
-        // background: pink;
-        grid-area: footer;
+        justify-self: center;
+        grid-column: 2;
+        grid-row: 10;
         align-self: end;
-
+        
         .btn {
-            // grid-area: footer;
+            grid-row: 11;
             margin-bottom: 80px;
             margin-right: 5%;
             margin-left: 5%;

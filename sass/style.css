@@ -1450,7 +1450,7 @@ blockquote .person cite {
       grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
   -ms-grid-rows: (900px)[6];
       grid-template-rows: repeat(6, 900px);
-      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... ...... ......" "...... footer ......";
+      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... ...... ......" "...... footer ......";
 }
 
 @media (max-width: 360px) {
@@ -1737,10 +1737,11 @@ blockquote .person cite {
   display: block;
   text-align: center;
   width: 100%;
-  -ms-grid-row: 11;
+  -ms-grid-row: 6;
   -ms-grid-column: 2;
   grid-area: footer;
   -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
       align-self: end;
 }
 
@@ -1768,15 +1769,9 @@ blockquote .person cite {
   grid-gap: 4em 1em;
   -ms-grid-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
       grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
-<<<<<<< HEAD
-  -ms-grid-rows: reapet(10, 1fr);
-      grid-template-rows: reapet(10, 1fr);
-      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... text-5 ......" "...... text-6 ......" "...... text-7 ......" "...... text-8 ......" "...... text-9 ......" "...... text-10 ......" "...... footer ......";
-=======
-  -ms-grid-rows: minmax(1fr, auto);
-      grid-template-rows: minmax(1fr, auto);
-      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... ...... ......" "...... footer ......";
->>>>>>> aa38cc54d52b06ec4bac84243160f3e6dba25b54
+  -ms-grid-rows: reapet(11, 1fr);
+      grid-template-rows: reapet(11, 1fr);
+      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... text-5 ......" "...... text-6 ......" "...... text-7 ......" "...... text-8 ......" "...... text-9 ......" "...... text-10 ......";
 }
 
 @media (max-width: 360px) {
@@ -1784,8 +1779,8 @@ blockquote .person cite {
     grid-column-gap: 0em;
     -ms-grid-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
         grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
-    -ms-grid-rows: (1fr)[10];
-        grid-template-rows: repeat(10, 1fr);
+    -ms-grid-rows: (1fr)[11];
+        grid-template-rows: repeat(11, 1fr);
   }
 }
 
@@ -1936,9 +1931,9 @@ blockquote .person cite {
   -ms-grid-column: 2;
   grid-area: text-3;
   width: 100%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: top;
+      -ms-grid-row-align: top;
+      align-self: top;
   -ms-grid-column-align: center;
       justify-self: center;
   -o-object-fit: contain;
@@ -2180,15 +2175,20 @@ blockquote .person cite {
   display: block;
   text-align: center;
   width: 100%;
-  -ms-grid-row: 11;
+  -ms-grid-column-align: center;
+      justify-self: center;
   -ms-grid-column: 2;
-  grid-area: footer;
+  grid-column: 2;
+  -ms-grid-row: 10;
+  grid-row: 10;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
 }
 
 .pr2_grid-card .footer .btn {
+  -ms-grid-row: 11;
+  grid-row: 11;
   margin-bottom: 80px;
   margin-right: 5%;
   margin-left: 5%;
