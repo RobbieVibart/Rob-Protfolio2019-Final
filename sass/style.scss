@@ -1905,7 +1905,7 @@ blockquote {
     @include mobile {
         grid-column-gap: 0em;
         grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
-        grid-template-rows: repeat(3, auto-fill);
+        grid-template-rows: repeat(3, 1fr auto);
     }
 
 

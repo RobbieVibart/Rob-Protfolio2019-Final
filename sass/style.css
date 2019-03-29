@@ -1781,8 +1781,8 @@ blockquote .person cite {
     grid-column-gap: 0em;
     -ms-grid-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
         grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
-    -ms-grid-rows: (auto-fill)[3];
-        grid-template-rows: repeat(3, auto-fill);
+    -ms-grid-rows: (1fr auto)[3];
+        grid-template-rows: repeat(3, 1fr auto);
   }
 }
 
