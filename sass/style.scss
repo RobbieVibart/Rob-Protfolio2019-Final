@@ -1882,23 +1882,39 @@ blockquote {
 
 //Oda Grid
 // width 1371 Height 1026
+
+
+
 .pr2_grid-card {
     display: grid;
     grid-gap: 4em 1em;
+<<<<<<< HEAD
     grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
     grid-template-rows: repeat(10, auto);
+=======
+    grid-template-columns: minmax(1em, 1fr) minmax(360px, 1100px) minmax(1em, 1fr);
+    grid-template-rows: reapet(3, 1fr);
+>>>>>>> d39dc4f8c988c3dec2ff7c8dfd2d0063c5b76b5f
     grid-template-areas:
         "...... text-1 ......"
         "...... text-2 ......"
-        "...... text-3 ......"
-        "...... text-4 ......"
-        "...... ...... ......"
-        "...... footer ......";
+        "...... text-3 ......";
+        // "...... text-4 ......"
+        // "...... text-5 ......"
+        // "...... text-6 ......"
+        // "...... text-7 ......"
+        // "...... text-8 ......"
+        // "...... text-9 ......"
+        // "...... text-10 ......";
 
     @include mobile {
         grid-column-gap: 0em;
         grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
+<<<<<<< HEAD
         grid-template-rows: repeat(10, auto);
+=======
+        grid-template-rows: repeat(3, 1fr minmax(300px, 680px));
+>>>>>>> d39dc4f8c988c3dec2ff7c8dfd2d0063c5b76b5f
     }
 
 
@@ -2012,50 +2028,161 @@ blockquote {
 
 
     //SECTION 3
-    .pr2_image-3 {
-        grid-area: text-3;
-        width: 100%;
-        align-self: center;
-        justify-self: center;
-        object-fit: contain;
 
-        @include mobile {
-            // background-color: pink;
-            align-self: start;
-            justify-self: center;
-            grid-area: text-3;
-            max-width: 360px;
-            
-        }
-    }
-
-
-    //SECTION 4
-    .pr2_image-4 {
-        grid-area: text-4;
-        width: 100%;
+    img, .pr2_img {
         object-fit: cover;
+        grid-area: text-3;
+        justify-self: center;
+        width: 100%;
 
         @include mobile {
-        // background-color: pink;
-        align-self: start;
-        justify-self: end;
-        object-fit: scale-down;
+            width: 450px;
+            object-fit: contain;
+            grid-area: text-3;
         }
     }
 
+    // .pr2_image-3 {
+    //     grid-area: text-3;
+    //     width: 100%;
+    //     align-self: top;
+    //     justify-self: center;
+    //     object-fit: contain;
+
+    //     @include mobile {
+    //         // background-color: pink;
+    //         align-self: start;
+    //         justify-self: center;
+    //         grid-area: text-3;
+    //         max-width: 360px;
+            
+    //     }
+    // }
+    // .pr2_image-4 {
+    //     grid-area: text-4;
+    //     width: 100%;
+    //     align-self: center;
+    //     justify-self: center;
+    //     object-fit: contain;
+
+    //     @include mobile {
+    //         // background-color: pink;
+    //         align-self: start;
+    //         justify-self: center;
+    //         grid-area: text-4;
+    //         max-width: 360px;
+            
+    //     }
+    // }
+    // .pr2_image-5 {
+    //     grid-area: text-5;
+    //     width: 100%;
+    //     align-self: center;
+    //     justify-self: center;
+    //     object-fit: contain;
+
+    //     @include mobile {
+    //         // background-color: pink;
+    //         align-self: start;
+    //         justify-self: center;
+    //         grid-area: text-5;
+    //         max-width: 360px;
+            
+    //     }
+    // }
+    // .pr2_image-6 {
+    //     grid-area: text-6;
+    //     width: 100%;
+    //     align-self: center;
+    //     justify-self: center;
+    //     object-fit: contain;
+
+    //     @include mobile {
+    //         // background-color: pink;
+    //         align-self: start;
+    //         justify-self: center;
+    //         grid-area: text-6;
+    //         max-width: 360px;
+            
+    //     }
+    // }
+    // .pr2_image-7 {
+    //     grid-area: text-7;
+    //     width: 100%;
+    //     align-self: center;
+    //     justify-self: center;
+    //     object-fit: contain;
+
+    //     @include mobile {
+    //         // background-color: pink;
+    //         align-self: start;
+    //         justify-self: center;
+    //         grid-area: text-7;
+    //         max-width: 360px;
+            
+    //     }
+    // }
+    // .pr2_image-8 {
+    //     grid-area: text-8;
+    //     width: 100%;
+    //     align-self: center;
+    //     justify-self: center;
+    //     object-fit: contain;
+
+    //     @include mobile {
+    //         // background-color: pink;
+    //         align-self: start;
+    //         justify-self: center;
+    //         grid-area: text-8;
+    //         max-width: 360px;
+            
+    //     }
+    // }
+    // .pr2_image-9 {
+    //     grid-area: text-9;
+    //     width: 100%;
+    //     align-self: center;
+    //     justify-self: center;
+    //     object-fit: contain;
+
+    //     @include mobile {
+    //         // background-color: pink;
+    //         align-self: start;
+    //         justify-self: center;
+    //         grid-area: text-9;
+    //         max-width: 360px;
+    //     }
+    // }
+    // .pr2_image-10 {
+    //     grid-area: text-10;
+    //     width: 100%;
+    //     align-self: flex-start;
+    //     justify-self: start;
+    //     object-fit: contain;
+
+    //     @include mobile {
+    //         // background-color: pink;
+    //         align-self: start;
+    //         justify-self: center;
+    //         grid-area: text-10;
+    //         max-width: 360px;
+            
+    //     }
+    // }
+    
     //FOOTER START
     .footer {
+        // background: pink;
         display: block;
         text-align: center;
         width: 100%;
-
-        // background: pink;
-        grid-area: footer;
+        justify-self: center;
+        grid-column: 2;
+        grid-row: 3;
         align-self: end;
-
+        
         .btn {
-            // grid-area: footer;
+            grid-row: 3;
             margin-bottom: 80px;
             margin-right: 5%;
             margin-left: 5%;
