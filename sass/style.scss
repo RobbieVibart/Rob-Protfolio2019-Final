@@ -1886,19 +1886,24 @@ blockquote {
     display: grid;
     grid-gap: 4em 1em;
     grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
-    grid-template-rows: minmax(1fr, auto);
+    grid-template-rows: reapet(10, 1fr);
     grid-template-areas:
         "...... text-1 ......"
         "...... text-2 ......"
         "...... text-3 ......"
         "...... text-4 ......"
-        "...... ...... ......"
+        "...... text-5 ......"
+        "...... text-6 ......"
+        "...... text-7 ......"
+        "...... text-8 ......"
+        "...... text-9 ......"
+        "...... text-10 ......"
         "...... footer ......";
 
     @include mobile {
         grid-column-gap: 0em;
         grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
-        grid-template-rows: minmax(1fr, auto);
+        grid-template-rows: repeat(10, 1fr);
     }
 
 
@@ -2028,16 +2033,129 @@ blockquote {
             
         }
     }
+    .pr2_image-4 {
+        grid-area: text-4;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        object-fit: contain;
 
+        @include mobile {
+            // background-color: pink;
+            align-self: start;
+            justify-self: center;
+            grid-area: text-4;
+            max-width: 360px;
+            
+        }
+    }
+    .pr2_image-5 {
+        grid-area: text-5;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        object-fit: contain;
+
+        @include mobile {
+            // background-color: pink;
+            align-self: start;
+            justify-self: center;
+            grid-area: text-5;
+            max-width: 360px;
+            
+        }
+    }
+    .pr2_image-6 {
+        grid-area: text-6;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        object-fit: contain;
+
+        @include mobile {
+            // background-color: pink;
+            align-self: start;
+            justify-self: center;
+            grid-area: text-6;
+            max-width: 360px;
+            
+        }
+    }
+    .pr2_image-7 {
+        grid-area: text-7;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        object-fit: contain;
+
+        @include mobile {
+            // background-color: pink;
+            align-self: start;
+            justify-self: center;
+            grid-area: text-7;
+            max-width: 360px;
+            
+        }
+    }
+    .pr2_image-8 {
+        grid-area: text-8;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        object-fit: contain;
+
+        @include mobile {
+            // background-color: pink;
+            align-self: start;
+            justify-self: center;
+            grid-area: text-8;
+            max-width: 360px;
+            
+        }
+    }
+    .pr2_image-9 {
+        grid-area: text-9;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        object-fit: contain;
+
+        @include mobile {
+            // background-color: pink;
+            align-self: start;
+            justify-self: center;
+            grid-area: text-9;
+            max-width: 360px;
+            
+        }
+    }
+    .pr2_image-10 {
+        grid-area: text-10;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        object-fit: contain;
+
+        @include mobile {
+            // background-color: pink;
+            align-self: start;
+            justify-self: center;
+            grid-area: text-10;
+            max-width: 360px;
+            
+        }
+    }
+    
 
     //SECTION 4
     .pr2_image-4 {
-        grid-area: text-4;
+        grid-area: text-10;
         width: 100%;
         object-fit: cover;
 
         @include mobile {
         // background-color: pink;
+
         align-self: start;
         justify-self: end;
         object-fit: scale-down;
