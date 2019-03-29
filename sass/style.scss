@@ -1889,7 +1889,7 @@ blockquote {
     display: grid;
     grid-gap: 4em 1em;
     grid-template-columns: minmax(1em, 1fr) minmax(360px, 1100px) minmax(1em, 1fr);
-    grid-template-rows: reapet(3, auto);
+    grid-template-rows: reapet(3, 1fr);
     grid-template-areas:
         "...... text-1 ......"
         "...... text-2 ......"
@@ -1905,7 +1905,7 @@ blockquote {
     @include mobile {
         grid-column-gap: 0em;
         grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
-        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(3, auto-fill);
     }
 
 
@@ -2027,7 +2027,7 @@ blockquote {
         width: 100%;
 
         @include mobile {
-            width: 100%;
+            width: 450px;
             object-fit: contain;
             grid-area: text-3;
         }
