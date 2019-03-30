@@ -1,9 +1,6 @@
-$font-primary: "Montserrat",
-Arial,
-sans-serif;
+$font-primary: "Montserrat", Arial, sans-serif;
 
-$font-secondary: "Playfair Display",
-serif;
+$font-secondary: "Playfair Display", serif;
 
 // Overrides
 $grid-gutter-width: 40px !default;
@@ -416,7 +413,7 @@ figure {
             }
 
             &.active {
-                >a {
+                > a {
                     color: $brand-gray !important;
                 }
             }
@@ -608,7 +605,7 @@ figure {
         font-weight: 600;
 
         // color: #5d5d5d;
-
+   
     }
 
     @media screen and (max-width: $screen-sm) {
@@ -1087,13 +1084,13 @@ figure {
                 }
             }
 
-            >ul {
+            > ul {
                 padding-left: 20px;
                 display: none;
             }
 
             &.offcanvas-has-dropdown {
-                >a {
+                > a {
                     display: block;
                     position: relative;
 
@@ -1184,7 +1181,6 @@ figure {
     position: fixed !important;
 
     &.active i {
-
         &::before,
         &::after {
             background: $brand-darker;
@@ -1223,7 +1219,7 @@ figure {
     }
 
     &.fh5co-nav-white {
-        >i {
+        > i {
             color: $brand-white;
             background: $brand-black;
 
@@ -1618,13 +1614,7 @@ blockquote {
     grid-gap: 4em 1em;
     grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
     grid-template-rows: repeat(6, 900px);
-    grid-template-areas:
-        "...... text-1 ......"
-        "...... text-2 ......"
-        "...... text-3 ......"
-        "...... text-4 ......"
-        "...... ...... ......"
-        "...... footer ......";
+    grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... ...... ......" "...... footer ......";
 
     @include mobile {
         grid-column-gap: 0em;
@@ -1822,10 +1812,10 @@ blockquote {
         object-fit: cover;
 
         @include mobile {
-        // background-color: pink;
-        align-self: end;
-        justify-self: end;
-        object-fit: scale-down;
+            // background-color: pink;
+            align-self: end;
+            justify-self: end;
+            object-fit: scale-down;
         }
     }
 
@@ -1846,8 +1836,6 @@ blockquote {
         justify-self: left;
         grid-area: text-4;
         padding-top: 6em;
-        
-        
     }
 
     //FOOTER START
@@ -2124,6 +2112,7 @@ blockquote {
     background: url(/images/Oda_images/Oda_01.png);
     background-size: cover;
 }
+
 .sect-2 {
     z-index: 0;
     opacity: 0.2;
