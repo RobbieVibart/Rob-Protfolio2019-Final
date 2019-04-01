@@ -1905,7 +1905,7 @@ blockquote {
     @include mobile {
         grid-column-gap: 0em;
         grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
-        grid-template-rows: repeat(3, 1fr minmax(300px, 680px));
+        grid-template-rows: repeat(2, 1fr minmax(50px, 200px));
     }
 
 
@@ -1959,9 +1959,9 @@ blockquote {
     .pr2_copy-2{
         // grid-auto-flow: dense;
         // border-left: #000 2px solid;
+        // background-color: pink;
         width: 100%;
         max-height: 200%;
-        // background-color: pink;
         padding: 0em 12.5em;
         line-height: 2.2em;
         grid-area: text-2;
