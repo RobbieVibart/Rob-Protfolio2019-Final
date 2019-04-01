@@ -1768,8 +1768,8 @@ blockquote .person cite {
   display: -ms-grid;
   display: grid;
   grid-gap: 4em 1em;
-  -ms-grid-columns: minmax(1em, 1fr) minmax(160px, 1200px) minmax(1em, 1fr);
-      grid-template-columns: minmax(1em, 1fr) minmax(160px, 1200px) minmax(1em, 1fr);
+  -ms-grid-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
+      grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
   -ms-grid-rows: (auto-fill)[3];
       grid-template-rows: repeat(3, auto-fill);
       grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......";
@@ -1839,8 +1839,8 @@ blockquote .person cite {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media only screen and (max-width: 360px) {
@@ -1881,8 +1881,10 @@ blockquote .person cite {
 }
 
 .pr2_grid-card .pr2_year {
-  margin-bottom: 0;
+  border-top: #295788 1.5px solid;
+  margin-bottom: -50px;
   font-size: 1.5em;
+  font-weight: 100;
   color: #ccc;
   font-family: 'Oswald', sans-serif;
   -ms-grid-row: 2;
@@ -1891,16 +1893,18 @@ blockquote .person cite {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  text-align: center;
-  width: 100vw;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  height: auto;
+  text-align: right;
+  width: 100%;
 }
 
 @media only screen and (max-width: 360px) {
   .pr2_grid-card .pr2_year {
-    width: 80%;
-    margin-bottom: 0;
+    font-weight: 100;
+    width: 100%;
+    margin-bottom: -50px;
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: text-2;
@@ -1912,6 +1916,7 @@ blockquote .person cite {
 }
 
 .pr2_grid-card img, .pr2_grid-card .pr2_img {
+  background-color: pink;
   -o-object-fit: cover;
      object-fit: cover;
   -ms-grid-row: 3;
@@ -1925,8 +1930,8 @@ blockquote .person cite {
 @media only screen and (max-width: 360px) {
   .pr2_grid-card img, .pr2_grid-card .pr2_img {
     width: 360px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
     -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: text-3;

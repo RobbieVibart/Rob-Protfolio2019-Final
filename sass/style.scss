@@ -1884,7 +1884,7 @@ blockquote {
 .pr2_grid-card {
     display: grid;
     grid-gap: 4em 1em;
-    grid-template-columns: minmax(1em, 1fr) minmax(160px, 1200px) minmax(1em, 1fr);
+    grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
     grid-template-rows: repeat(3, auto-fill);
     grid-template-areas:
         "...... text-1 ......"
@@ -1943,10 +1943,10 @@ blockquote {
     //SECTION 2
     .pr2_image-2 {
         grid-area: text-3;
-        width: 100%;
+        width:100%;
         align-self: center;
         justify-self: center;
-        object-fit: cover;
+        object-fit: contain;
         
 
         @include mobile {
@@ -1993,20 +1993,26 @@ blockquote {
 //     }
 
 .pr2_year {
-    margin-bottom: 0;
+    // background-color: pink;
+    border-top: #295788 1.5px solid;
+    margin-bottom: -50px;
     font-size: 1.5em;
+    font-weight: 100;
     color: $brand-gray;
     font-family: 'Oswald', sans-serif;
     grid-area: text-2;
     align-self: end;
-    justify-self: center;
-    text-align: center;
-    width: 100vw;
+    justify-self: end;
+    height: auto;
+    text-align: right;
+    width: 100%;
+
 
     @include mobile {
         // background-color: pink;
-        width: 80%;
-        margin-bottom: 0;
+        font-weight: 100;
+        width: 100%;
+        margin-bottom: -50px;
         grid-area: text-2;
         align-self: end;
         text-align: right;
@@ -2017,6 +2023,7 @@ blockquote {
     //SECTION 3
 
     img, .pr2_img {
+        background-color: pink;
         object-fit: cover;
         grid-area: text-3;
         justify-self: center;
@@ -2024,7 +2031,7 @@ blockquote {
 
         @include mobile {
             width: 360px;
-            object-fit: cover;
+            object-fit: contain;
             grid-area: text-3;
         }
     }
