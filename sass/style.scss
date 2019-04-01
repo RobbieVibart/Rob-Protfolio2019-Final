@@ -1637,7 +1637,7 @@ blockquote {
         // background-color: pink;
         align-self: start;
         justify-self: center;
-        margin-top: 20px;
+        // margin-top: 20px;
         padding: 0;
         width: 100%;
         height: auto;
@@ -1652,7 +1652,6 @@ blockquote {
         color: $brand-body-color;
 
         @include mobile {
-            word-spacing: initial;
             letter-spacing: initial;
             font-weight: 200;
             margin: 2em 0em;
@@ -1911,14 +1910,18 @@ blockquote {
     //SECTION 1
     .pr2_roles {
         // background-color: pink;
-        // display: block;
-        padding: 0em 0em;
+        display: block;
         text-transform: uppercase;
         font-weight: 700;
         
         @include mobile {
+        // background-color: pink;
         font-size: 3.5vw;
-        text-align: left;
+        width: 100vw;
+        margin: 0 calc(-50vw + 50%);
+        font-weight: 700;
+        text-align: center;
+        
         }
     }
 
@@ -1934,7 +1937,6 @@ blockquote {
 
         @include mobile {
             // background-color: pink;
-            height: 668px;
             align-self: top;
             justify-self: center;
             object-fit: cover;
@@ -1948,10 +1950,10 @@ blockquote {
         align-self: center;
         justify-self: center;
         object-fit: contain;
+        
 
         @include mobile {
-            height: 100%;
-            // object-position: 0em 16em;
+            width: 360px;
         }
     }
     
@@ -1960,7 +1962,7 @@ blockquote {
         // border-left: #000 2px solid;
         // background-color: pink;
         // max-height: 200%;
-        // padding: 0em 12.5em;
+        padding: 0em 2rem;
         width: 100%;
         line-height: 2.2em;
         grid-area: text-2;
@@ -1971,24 +1973,23 @@ blockquote {
 
         @include mobile {
             // background-color: pink;
+            // justify-self: top;
             grid-area: text-2;
-            padding: 0em 2.5em;
             font-size: 1.5rem;
             line-height: 2.5rem;
             text-align: left;
             align-self: start;
-            // justify-self: top;
         }
     }
     
-    .border {
-        border-right:  #295788 1px solid;
-        // width: 12.5em;
+   .border_{
+        border-right:  #295788 5px solid;
+        width: 12.5em;
         grid-area: text-2;
 
         @include mobile {
             // background-color: pink;
-            // width: 100vw;        
+            width: 100%;        
             border-left: #295788 .5px solid;
         }
     }
@@ -2025,8 +2026,8 @@ blockquote {
         width: 100%;
 
         @include mobile {
-            width: 100%;
-            object-fit: contain;
+            width: 360px;
+            object-fit: cover;
             grid-area: text-3;
         }
     }
