@@ -1884,13 +1884,8 @@ blockquote {
 .pr2_grid-card {
     display: grid;
     grid-gap: 4em 1em;
-<<<<<<< HEAD
-    grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
-    grid-template-rows: repeat(3, 800px);
-=======
     grid-template-columns: minmax(1em, 1fr) minmax(160px, 1200px) minmax(1em, 1fr);
     grid-template-rows: repeat(3, auto-fill);
->>>>>>> eefc10b42c02140104b1b8b07313da6f1198713b
     grid-template-areas:
         "...... text-1 ......"
         "...... text-2 ......"
@@ -1906,11 +1901,7 @@ blockquote {
     @include mobile {
         grid-column-gap: 0em;
         grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
-<<<<<<< HEAD
-        grid-template-rows: repeat(3, 688px);
-=======
         grid-template-rows: repeat(3, auto-fill);
->>>>>>> eefc10b42c02140104b1b8b07313da6f1198713b
     }
 
 
@@ -1924,13 +1915,8 @@ blockquote {
         align-self: start;
         
         @include mobile {
-<<<<<<< HEAD
-        justify-self: start;
-        grid-area: text-2;
-=======
         // background-color: pink;
->>>>>>> eefc10b42c02140104b1b8b07313da6f1198713b
-        font-size: 3.5vw;
+        // font-size: 3.5vw;
         width: 100vw;
         margin: 0 calc(-50vw + 50%);
         font-weight: 700;
@@ -1948,11 +1934,6 @@ blockquote {
 
         @include mobile {
             // background-color: pink;
-<<<<<<< HEAD
-            grid-area: text-1;
-            height: 668px;
-=======
->>>>>>> eefc10b42c02140104b1b8b07313da6f1198713b
             align-self: top;
             justify-self: center;
             object-fit: cover;
@@ -1961,7 +1942,7 @@ blockquote {
 
     //SECTION 2
     .pr2_image-2 {
-        grid-area: text-2;
+        grid-area: text-3;
         width: 100%;
         align-self: center;
         justify-self: center;
@@ -1977,16 +1958,10 @@ blockquote {
         // grid-auto-flow: dense;
         // border-left: #000 2px solid;
         // background-color: pink;
-<<<<<<< HEAD
-        // width: 100%;
         // max-height: 200%;
         grid-area: text-2;
-        padding: 0em 12.5em;
-=======
-        // max-height: 200%;
         padding: 0em 2rem;
         width: 50%;
->>>>>>> eefc10b42c02140104b1b8b07313da6f1198713b
         line-height: 2.2em;
         font-size: 1.12em;
         text-align: left;
@@ -1996,32 +1971,15 @@ blockquote {
         @include mobile {
             // background-color: pink;
             // justify-self: top;
-<<<<<<< HEAD
-            grid-area: text-2;
-            padding: 0em 2.5em;
-            font-size: 1.15rem;
-=======
             width: 100%;
             grid-area: text-2;
             font-size: 1.5rem;
->>>>>>> eefc10b42c02140104b1b8b07313da6f1198713b
             line-height: 2.5rem;
             text-align: left;
             align-self: start;
         }
     }
     
-<<<<<<< HEAD
-    .border {
-        border-right:  #295788 1px solid;
-        grid-area: text-2;
-
-        @include mobile {
-            // background-color: pink;
-            border-left: #295788 .5px solid;
-        }
-    }
-=======
 //    .border_{
 //         border-right:  #295788 5px solid;
 //         width: 12.5em;
@@ -2033,7 +1991,6 @@ blockquote {
 //             border-left: #295788 .5px solid;
 //         }
 //     }
->>>>>>> eefc10b42c02140104b1b8b07313da6f1198713b
 
 .pr2_year {
     margin-bottom: 0;
@@ -2061,19 +2018,14 @@ blockquote {
 
     img, .pr2_img {
         object-fit: cover;
-        grid-area: text-2;
+        grid-area: text-3;
         justify-self: center;
         width: 100%;
 
         @include mobile {
             width: 360px;
-<<<<<<< HEAD
-            object-fit: contain;
-            grid-area: text-2;
-=======
             object-fit: cover;
             grid-area: text-3;
->>>>>>> eefc10b42c02140104b1b8b07313da6f1198713b
         }
     }
 
