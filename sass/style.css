@@ -1802,13 +1802,14 @@ blockquote .person cite {
 }
 
 .pr2_grid-card .pr2_image-1 {
+  background-color: #295788;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: text-1;
   width: 100vw;
-  height: 900px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 80vh;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media only screen and (max-width: 360px) {
@@ -1833,8 +1834,8 @@ blockquote .person cite {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media only screen and (max-width: 360px) {
@@ -1845,7 +1846,7 @@ blockquote .person cite {
 
 .pr2_grid-card .pr2_copy-2 {
   padding: 0em 2rem;
-  width: 100%;
+  width: 50%;
   line-height: 2.2em;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
@@ -1861,6 +1862,7 @@ blockquote .person cite {
 
 @media only screen and (max-width: 360px) {
   .pr2_grid-card .pr2_copy-2 {
+    width: 100%;
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: text-2;
@@ -1870,21 +1872,6 @@ blockquote .person cite {
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
-  }
-}
-
-.pr2_grid-card .border_ {
-  border-right: #295788 5px solid;
-  width: 12.5em;
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: text-2;
-}
-
-@media only screen and (max-width: 360px) {
-  .pr2_grid-card .border_ {
-    width: 100%;
-    border-left: #295788 .5px solid;
   }
 }
 
