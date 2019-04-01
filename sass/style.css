@@ -1453,7 +1453,7 @@ blockquote .person cite {
       grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......" "...... ...... ......" "...... footer ......";
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .grid-card {
     grid-column-gap: 0em;
     -ms-grid-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
@@ -1484,7 +1484,7 @@ blockquote .person cite {
   color: white;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .grid-card .head-1 {
     word-spacing: initial;
     letter-spacing: initial;
@@ -1503,7 +1503,7 @@ blockquote .person cite {
   font-weight: 500;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .grid-card .roles {
     margin-top: -2em;
     text-align: center;
@@ -1523,7 +1523,7 @@ blockquote .person cite {
      object-fit: contain;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .grid-card .image-1 {
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
@@ -1547,7 +1547,7 @@ blockquote .person cite {
   margin-top: 6em;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .grid-card .sub-head-1 {
     text-align: center;
     font-size: 1.5em;
@@ -1568,7 +1568,7 @@ blockquote .person cite {
   grid-area: text-1;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .grid-card .copy-1 {
     line-height: 2.5rem;
     width: 100%;
@@ -1591,7 +1591,7 @@ blockquote .person cite {
      object-fit: contain;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .grid-card .image-2 {
     height: 100%;
     -o-object-position: 0em 16em;
@@ -1622,7 +1622,7 @@ blockquote .person cite {
   margin-bottom: 6em;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .grid-card .copy-2 {
     margin-top: 5em;
     font-size: 0.9em;
@@ -1646,7 +1646,7 @@ blockquote .person cite {
      object-fit: cover;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .grid-card .image-3 {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
@@ -1679,7 +1679,7 @@ blockquote .person cite {
   grid-area: text-3;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .grid-card .copy-3-left {
     width: 100%;
     font-size: 1.5rem;
@@ -1698,7 +1698,7 @@ blockquote .person cite {
      object-fit: cover;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .grid-card .image-4 {
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
@@ -1769,31 +1769,30 @@ blockquote .person cite {
   display: -ms-grid;
   display: grid;
   grid-gap: 4em 1em;
-  -ms-grid-columns: minmax(1em, 1fr) minmax(360px, 1100px) minmax(1em, 1fr);
-      grid-template-columns: minmax(1em, 1fr) minmax(360px, 1100px) minmax(1em, 1fr);
-  -ms-grid-rows: reapet(3, 1fr);
-      grid-template-rows: reapet(3, 1fr);
+  -ms-grid-columns: minmax(1em, 1fr) minmax(160px, 1200px) minmax(1em, 1fr);
+      grid-template-columns: minmax(1em, 1fr) minmax(160px, 1200px) minmax(1em, 1fr);
+  -ms-grid-rows: (auto-fill)[3];
+      grid-template-rows: repeat(3, auto-fill);
       grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......";
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .pr2_grid-card {
     grid-column-gap: 0em;
     -ms-grid-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
         grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
-    -ms-grid-rows: (1fr minmax(50px, 200px))[2];
-        grid-template-rows: repeat(2, 1fr minmax(50px, 200px));
+    -ms-grid-rows: (auto-fill)[3];
+        grid-template-rows: repeat(3, auto-fill);
   }
 }
 
 .pr2_grid-card .pr2_roles {
   padding: 0em 0em;
-  display: block;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .pr2_grid-card .pr2_roles {
     font-size: 3.5vw;
     text-align: left;
@@ -1801,22 +1800,16 @@ blockquote .person cite {
 }
 
 .pr2_grid-card .pr2_image-1 {
-  z-index: 0;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: text-1;
   width: 100vw;
   height: 900px;
-  -ms-flex-item-align: top;
-      -ms-grid-row-align: top;
-      align-self: top;
-  -ms-grid-column-align: center;
-      justify-self: center;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .pr2_grid-card .pr2_image-1 {
     height: 668px;
     -ms-flex-item-align: top;
@@ -1843,7 +1836,7 @@ blockquote .person cite {
      object-fit: contain;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .pr2_grid-card .pr2_image-2 {
     height: 100%;
   }
@@ -1851,8 +1844,6 @@ blockquote .person cite {
 
 .pr2_grid-card .pr2_copy-2 {
   width: 100%;
-  max-height: 200%;
-  padding: 0em 12.5em;
   line-height: 2.2em;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
@@ -1860,40 +1851,37 @@ blockquote .person cite {
   font-size: 1.12em;
   text-align: left;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+      -ms-grid-row-align: start;
+      align-self: start;
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .pr2_grid-card .pr2_copy-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: text-2;
     padding: 0em 2.5em;
-    font-size: 1.15rem;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
     text-align: left;
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
-    -ms-grid-column-align: top;
-        justify-self: top;
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: text-2;
   }
 }
 
 .pr2_grid-card .border {
   border-right: #295788 1px solid;
-  width: 12.5em;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: text-2;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .pr2_grid-card .border {
     border-left: #295788 .5px solid;
-    width: 100vw;
   }
 }
 
@@ -1914,7 +1902,7 @@ blockquote .person cite {
   width: 100vw;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .pr2_grid-card .pr2_year {
     width: 80%;
     margin-bottom: 0;
@@ -1939,9 +1927,9 @@ blockquote .person cite {
   width: 100%;
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   .pr2_grid-card img, .pr2_grid-card .pr2_img {
-    width: 450px;
+    width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
     -ms-grid-row: 3;
