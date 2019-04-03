@@ -1464,6 +1464,7 @@ blockquote .person cite {
 }
 
 .grid-card .head-1 {
+  background-color: pink;
   -ms-flex-item-align: start;
       align-self: start;
       justify-self: center;
