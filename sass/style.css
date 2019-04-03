@@ -1510,6 +1510,7 @@ blockquote .person cite {
 }
 
 .grid-card .image-1 {
+  background-color: pink;
   z-index: 0;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
