@@ -1484,7 +1484,8 @@ blockquote .person cite {
 }
 
 .grid-card .pr1_image-1 {
-  background-color: #000;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, #e7e5e6), color-stop(85%, #ffffff));
+  background: linear-gradient(to top, #e7e5e6 70%, #ffffff 85%);
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: text-1;
@@ -1507,6 +1508,7 @@ blockquote .person cite {
 }
 
 .grid-card .pr1_copy-2 {
+  border-top: #000 1px solid;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: text-2;
@@ -1535,9 +1537,8 @@ blockquote .person cite {
 }
 
 .grid-card img, .grid-card .pr1_img {
-  background-color: pink;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: text-3;
