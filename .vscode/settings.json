@@ -1,12 +1,6 @@
 {
-    "bracket-pair-colorizer-2.colors": [
-        "Gold",
-        "Orchid",
-        "Gold"
-    ],
-    "bracket-pair-colorizer-2.colorMode": "Independent",
-    "bracketPairColorizer.forceIterationColorCycle": true,
-    "bracketPairColorizer.forceUniqueOpeningColor": true,
-    "bracketPairColorizer.colorMode": "Independent",
+    "bracketPairColorizer.forceIterationColorCycle": false,
+    "bracketPairColorizer.forceUniqueOpeningColor": false,
+    "bracketPairColorizer.colorMode": "Consecutive",
     "editor.matchBrackets": false
 }

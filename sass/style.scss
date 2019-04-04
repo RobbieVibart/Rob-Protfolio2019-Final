@@ -1614,251 +1614,101 @@ blockquote {
 .grid-card {
     display: grid;
     grid-gap: 4em 1em;
-    grid-template-columns: minmax(1em, 1fr) minmax(160px, 1100px) minmax(1em, 1fr);
-    grid-template-rows: repeat(6, auto-fill);
-    grid-template-areas: 
-    "...... text-1 ......"
-    "...... text-2 ......"
-    "...... text-3 ......"
-    "...... text-4 ......"
-    "...... ...... ......"
-    "...... footer ......";
-
+    grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
+    grid-template-rows: repeat(3, auto-fill);
+    grid-template-areas:
+        "...... text-1 ......"
+        "...... text-2 ......"
+        "...... text-3 ......";
+       
     @include mobile {
         grid-column-gap: 0em;
         grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
-        grid-template-rows: repeat(6, auto-fill);
+        grid-template-rows: repeat(3, auto-fill);
     }
 
 
     //SECTION 1
 
-    .head-1 {
-        background-color: pink;
+    .roles {
+        // background-color: pink;
+        display: block;
+        text-transform: uppercase;
+        font-weight: 700;
+        grid-area: text-2;
+        align-self: start;
+
+        @include mobile {
+            width: 100vw;
+            margin: 0 calc(-50vw + 50%);
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+
+    .pr1_image-1 {
+        background-color: #000;
+        grid-area: text-1;
+        width: 100vw;
+        height: 80vh;
+        object-fit: contain;
+
+        @include mobile {
+            align-self: top;
+            justify-self: center;
+            object-fit: cover;
+        }
+    }
+
+    .pr1_copy-2 {
+        // background-color: pink;
+        grid-area: text-2;
+        padding: 0em 2rem;
+        width: 50%;
+        line-height: 2.2em;
+        font-size: 1.12em;
+        text-align: left;
         align-self: start;
         justify-self: center;
-        // margin-top: 20px;
-        padding: 0;
-        width: 100%;
-        height: auto;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 200;
-        text-align: start;
-        grid-area: text-1;
-        text-transform: uppercase;
-        font-size: 12rem;
-        word-spacing: -10px;
-        letter-spacing: -2px;
-        color: $brand-body-color;
 
         @include mobile {
-            letter-spacing: initial;
-            font-weight: 200;
-            margin: 2em 0em;
-            font-size: 2em;
-            color: $brand-body-color;
-            text-align: left;
-        }
-    }
-
-    .roles {
-        display: block;
-        margin-top: 6em 0;
-        text-transform: uppercase;
-        font-weight: 500;
-
-        @include mobile {
-            color: $brand-body-color;
-            margin-top: -2em;
-            text-align: left;
-        }
-    }
-
-    .image-1 {
-        background-color: pink;
-        grid-area: text-1;
-        width: 65%;
-        align-self: center;
-        justify-self: end;
-        object-fit: contain;
-
-        @include mobile {
-            // background-color: pink;
-            align-self: end;
-            justify-self: center;
-            object-position: 0 12em;
-            height: 50%;
             width: 100%;
-            object-fit: contain;
-        }
-    }
-
-    .sub-head-1 {
-        // margin-top: 6em;
-        // background-color: pink;
-        text-align: left;
-        color: $brand-body-color;
-        grid-area: text-1;
-        color: $brand-lighter;
-
-        @include mobile {
-            text-align: left;
-            color: $brand-body-color;
-            font-size: 1.5em;
-        }
-    }
-
-    .copy-1 {
-        // background-color: pink;
-        width: 34%;
-        color: $brand-body-color;
-        margin-top: 16em;
-        line-height: 2.5em;
-        align-self: top;
-        justify-self: left;
-        grid-area: text-1;
-
-        @include mobile {
-            line-height: 2.2em;
-            width: 100%;
-            font-size: 1.12em;
-            color: $brand-body-color;
-            text-align: left;
-        }
-    }
-
-    //SECTION 2
-    .image-2 {
-        // background-color: pink;
-        grid-area: text-2;
-        z-index: -1;
-        width: 100%;
-        align-self: center;
-        justify-self: center;
-        object-fit: contain;
-
-        @include mobile {
-            height: 100%;
-            object-position: 0em 16em;
-        }
-    }
-
-    .sub-head-2 {
-        // background-color: pink;
-        grid-area: text-2;
-        align-self: top;
-        justify-self: center;
-        color: $brand-darker;
-        font-weight: 400;
-    }
-
-    .copy-2 {
-        // background-color: pink;
-        font-size: 1em;
-        text-align: center;
-        align-self: end;
-        justify-self: center;
-        grid-area: text-2;
-        margin-bottom: 6em;
-
-        @include mobile {
-            margin-top: 5em;
-            font-size: 0.9em;
-            line-height: 2.5rem;
-            text-align: center;
-            align-self: start;
-            justify-self: center;
             grid-area: text-2;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            text-align: left;
+            align-self: start;
         }
     }
 
     //SECTION 3
-    .image-3 {
-        grid-area: text-3;
-        width: 100%;
+    img, .pr1_img {
+        background-color: pink;
         object-fit: cover;
+        grid-area: text-3;
+        justify-self: center;
+        width: 100%;
 
         @include mobile {
             // background-color: pink;
+            width: 360px;
+            object-fit: contain;
             grid-area: text-3;
-            width: 50%;
-            height: 50%;
         }
     }
 
-    .sub-head-3 {
-        margin-top: 1em;
-        justify-self: center;
-        text-align: center;
-        grid-area: text-3;
-        color: $brand-darker;
-        font-weight: 400;
-    }
-
-    .copy-3-left {
-        // background-color: pink;
-        width: 40%;
-        color: $brand-body-color;
-        font-size: 1em;
-        text-align: left;
-        justify-self: left;
-        padding: 8em 0;
-        grid-area: text-3;
-
-        @include mobile {
-            width: 100%;
-            font-size: 1.5rem;
-            line-height: 2.5rem;
-            text-align: center;
-        }
-    }
-
-    //SECTION 4
-    .image-4 {
-        margin-top: 9.5em;
-        grid-area: text-4;
-        width: 100%;
-        object-fit: cover;
-
-        @include mobile {
-            // background-color: pink;
-            align-self: end;
-            justify-self: end;
-            object-fit: scale-down;
-        }
-    }
-
-    .sub-head-4 {
-        margin-top: 1em;
-        justify-self: center;
-        text-align: center;
-        grid-area: text-4;
-        color: $brand-darker;
-        font-weight: 400;
-        color: $brand-black;
-    }
-
-    .copy-4 {
-        color: $brand-body-color;
-        font-size: 1em;
-        text-align: left;
-        justify-self: left;
-        grid-area: text-4;
-        padding-top: 6em;
-    }
 
     //FOOTER START
     .footer {
         display: block;
         text-align: center;
         width: 100%;
-
-        // background: pink;
-        grid-area: footer;
+        justify-self: center;
+        grid-area: text-3;
         align-self: end;
 
         .btn {
-            // grid-area: footer;
+            grid-area: text-3;
             margin-bottom: 80px;
             margin-right: 5%;
             margin-left: 5%;
@@ -1866,12 +1716,12 @@ blockquote {
     }
 }
 
-.sect {
+.pr1_sect {
     width: 100vw;
 
 }
 
-.sect-2 {
+.pr1_sect-2 {
     width: 100vw;
     grid-row: 4;
     background-color: rgba(218, 216, 216, 0.45);
@@ -1979,17 +1829,6 @@ blockquote {
         }
     }
     
-//    .border_{
-//         border-right:  #295788 5px solid;
-//         width: 12.5em;
-//         grid-area: text-2;
-
-//         @include mobile {
-//             // background-color: pink;
-//             width: 100%;        
-//             border-left: #295788 .5px solid;
-//         }
-//     }
 
 .pr2_year {
     // background-color: pink;
@@ -2035,134 +1874,6 @@ blockquote {
         }
     }
 
-    // .pr2_image-3 {
-    //     grid-area: text-3;
-    //     width: 100%;
-    //     align-self: top;
-    //     justify-self: center;
-    //     object-fit: contain;
-
-    //     @include mobile {
-    //         // background-color: pink;
-    //         align-self: start;
-    //         justify-self: center;
-    //         grid-area: text-3;
-    //         max-width: 360px;
-            
-    //     }
-    // }
-    // .pr2_image-4 {
-    //     grid-area: text-4;
-    //     width: 100%;
-    //     align-self: center;
-    //     justify-self: center;
-    //     object-fit: contain;
-
-    //     @include mobile {
-    //         // background-color: pink;
-    //         align-self: start;
-    //         justify-self: center;
-    //         grid-area: text-4;
-    //         max-width: 360px;
-            
-    //     }
-    // }
-    // .pr2_image-5 {
-    //     grid-area: text-5;
-    //     width: 100%;
-    //     align-self: center;
-    //     justify-self: center;
-    //     object-fit: contain;
-
-    //     @include mobile {
-    //         // background-color: pink;
-    //         align-self: start;
-    //         justify-self: center;
-    //         grid-area: text-5;
-    //         max-width: 360px;
-            
-    //     }
-    // }
-    // .pr2_image-6 {
-    //     grid-area: text-6;
-    //     width: 100%;
-    //     align-self: center;
-    //     justify-self: center;
-    //     object-fit: contain;
-
-    //     @include mobile {
-    //         // background-color: pink;
-    //         align-self: start;
-    //         justify-self: center;
-    //         grid-area: text-6;
-    //         max-width: 360px;
-            
-    //     }
-    // }
-    // .pr2_image-7 {
-    //     grid-area: text-7;
-    //     width: 100%;
-    //     align-self: center;
-    //     justify-self: center;
-    //     object-fit: contain;
-
-    //     @include mobile {
-    //         // background-color: pink;
-    //         align-self: start;
-    //         justify-self: center;
-    //         grid-area: text-7;
-    //         max-width: 360px;
-            
-    //     }
-    // }
-    // .pr2_image-8 {
-    //     grid-area: text-8;
-    //     width: 100%;
-    //     align-self: center;
-    //     justify-self: center;
-    //     object-fit: contain;
-
-    //     @include mobile {
-    //         // background-color: pink;
-    //         align-self: start;
-    //         justify-self: center;
-    //         grid-area: text-8;
-    //         max-width: 360px;
-            
-    //     }
-    // }
-    // .pr2_image-9 {
-    //     grid-area: text-9;
-    //     width: 100%;
-    //     align-self: center;
-    //     justify-self: center;
-    //     object-fit: contain;
-
-    //     @include mobile {
-    //         // background-color: pink;
-    //         align-self: start;
-    //         justify-self: center;
-    //         grid-area: text-9;
-    //         max-width: 360px;
-    //     }
-    // }
-    // .pr2_image-10 {
-    //     grid-area: text-10;
-    //     width: 100%;
-    //     align-self: flex-start;
-    //     justify-self: start;
-    //     object-fit: contain;
-
-    //     @include mobile {
-    //         // background-color: pink;
-    //         align-self: start;
-    //         justify-self: center;
-    //         grid-area: text-10;
-    //         max-width: 360px;
-            
-    //     }
-    // }
-    
     //FOOTER START
     .footer {
         // background: pink;
