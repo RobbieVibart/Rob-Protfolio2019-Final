@@ -1450,7 +1450,7 @@ blockquote .person cite {
       grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
   -ms-grid-rows: (auto-fill)[3];
       grid-template-rows: repeat(3, auto-fill);
-      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......";
+      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......";
 }
 
 @media only screen and (max-width: 360px) {
@@ -1490,7 +1490,7 @@ blockquote .person cite {
   -ms-grid-column: 2;
   grid-area: text-1;
   width: 100vw;
-  height: 80vh;
+  height: 90vh;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1557,6 +1557,59 @@ blockquote .person cite {
   }
 }
 
+.grid-card .block_container {
+  color: black;
+  text-align: center;
+  width: 100%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: text-2;
+}
+
+.grid-card .block_container .block1 {
+  -webkit-box-shadow: #000 3px 3px 5px;
+          box-shadow: #000 3px 3px 5px;
+  margin: 24px 48px;
+  border-radius: 50%;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-color: #B42024;
+}
+
+.grid-card .block_container .block2 {
+  -webkit-box-shadow: #000 3px 3px 5px;
+          box-shadow: #000 3px 3px 5px;
+  margin: 24px 48px;
+  border-radius: 50%;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-color: #EB2826;
+}
+
+.grid-card .block_container .block3 {
+  -webkit-box-shadow: #000 3px 3px 5px;
+          box-shadow: #000 3px 3px 5px;
+  margin: 24px 48px;
+  border-radius: 50%;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-color: #5D5F61;
+}
+
+.grid-card .block_container .block4 {
+  -webkit-box-shadow: #000 3px 3px 5px;
+          box-shadow: #000 3px 3px 5px;
+  margin: 24px 48px;
+  border-radius: 50%;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-color: #791914;
+}
+
 .grid-card .footer {
   display: block;
   text-align: center;
@@ -1597,7 +1650,7 @@ blockquote .person cite {
       grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
   -ms-grid-rows: (auto-fill)[3];
       grid-template-rows: repeat(3, auto-fill);
-      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......";
+      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......";
 }
 
 @media only screen and (max-width: 360px) {
@@ -1637,7 +1690,7 @@ blockquote .person cite {
   -ms-grid-column: 2;
   grid-area: text-1;
   width: 100vw;
-  height: 80vh;
+  height: 90vh;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1692,6 +1745,8 @@ blockquote .person cite {
 
 @media only screen and (max-width: 360px) {
   .pr2_grid-card .pr2_copy-2 {
+    -ms-grid-column-align: top;
+        justify-self: top;
     width: 100%;
     -ms-grid-row: 2;
     -ms-grid-column: 2;
