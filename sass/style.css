@@ -1768,6 +1768,8 @@ blockquote .person cite {
 }
 
 .pr2_grid-card .border {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   margin-top: -2em;
   border-top: #295788 2px solid;
   -ms-grid-row: 2;
@@ -1781,7 +1783,6 @@ blockquote .person cite {
   .pr2_grid-card .border {
     font-weight: 100;
     width: 100%;
-    margin-bottom: -50px;
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: text-2;

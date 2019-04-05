@@ -1871,6 +1871,7 @@ blockquote {
     }
 
     .border {
+        animation-delay: 1s;
         // background-color: pink;
         margin-top: -2em;
         border-top: #295788 2px solid;
@@ -1879,10 +1880,11 @@ blockquote {
         height: 100%;
 
         @include mobile {
+            // margin-bottom: 2em;
             // background-color: pink;
             font-weight: 100;
             width: 100%;
-            margin-bottom: -50px;
+            // margin-bottom: -50px;
             grid-area: text-2;
             align-self: end;
             text-align: right;
