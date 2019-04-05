@@ -1600,7 +1600,7 @@ blockquote {
     }
 }
 
-// Grow Grid
+// GROW GRID_Pr1
 // width 1371 Height 1026
 
 *,
@@ -1742,6 +1742,12 @@ blockquote {
             background-color: #791914;
         }
     }
+    
+    .pr_image-7 {
+        width: 50%;
+        object-fit: contain;
+        margin: 0px 50px;
+    }
 
     //FOOTER START
     .footer {
@@ -1771,7 +1777,7 @@ blockquote {
     background-color: rgba(218, 216, 216, 0.45);
 }
 
-//Oda Grid
+//ODA_GRID_Pr2
 // width 1371 Height 1026
 
 .pr2_grid-card {
