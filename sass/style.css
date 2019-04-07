@@ -1657,7 +1657,7 @@ blockquote .person cite {
       grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
   -ms-grid-rows: (auto-fill)[3];
       grid-template-rows: repeat(3, auto-fill);
-      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......";
+      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......";
 }
 
 @media only screen and (max-width: 360px) {
@@ -1741,6 +1741,7 @@ blockquote .person cite {
   padding: 0em 2rem;
   width: 70%;
   line-height: 2.2em;
+  font-weight: 400;
   font-size: 1.12em;
   text-align: left;
   -ms-flex-item-align: start;
@@ -1768,14 +1769,19 @@ blockquote .person cite {
 }
 
 .pr2_grid-card img, .pr2_grid-card .pr2_img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  text-align: center;
+  background-color: pink;
+  -o-object-fit: contain;
+     object-fit: contain;
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: text-3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  width: 100%;
+  width: 80%;
 }
 
 @media only screen and (max-width: 360px) {
@@ -1789,18 +1795,15 @@ blockquote .person cite {
   }
 }
 
-.pr2_grid-card .pr2_image-2 {
-  padding: 6em 0em;
-}
-
 .pr2_grid-card .pr2_image-7 {
-  background-color: #887e6f;
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: text-3;
-  margin: 0 calc(-50vw + 50%);
-  width: 100vw;
-  height: 90vh;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1820,17 +1823,17 @@ blockquote .person cite {
 }
 
 .pr2_grid-card .footer {
-  display: block;
-  text-align: center;
-  width: 100%;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: text-3;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: block;
+  text-align: center;
+  width: 100%;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: text-3;
 }
 
 .pr2_grid-card .footer .btn {

@@ -1,6 +1,7 @@
 {
-    "bracketPairColorizer.forceIterationColorCycle": false,
     "bracketPairColorizer.forceUniqueOpeningColor": false,
     "bracketPairColorizer.colorMode": "Consecutive",
-    "editor.matchBrackets": false
+    "editor.matchBrackets": false,
+    "bracketPairColorizer.showBracketsInGutter": false,
+    
 }

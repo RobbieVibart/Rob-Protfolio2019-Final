@@ -1655,6 +1655,28 @@ blockquote {
         }
     }
 
+    // .pr1_title-block {
+    //     margin: 0;
+    //     display: block;
+    //     word-wrap: break-word;
+    //     background-color: #5D5F61;
+    //     // text-overflow: clip;
+    //     // align-self: center;
+    //     padding: 0;
+    //     text-align: left;
+    //     text-transform: uppercase;
+    //     font-style: italic; 
+    //     font-size: 32px;
+    //     z-index: 1;
+    //     font-family: $brand-primary;
+    //     color: darkgrey;
+    //     font-weight: 700;
+    //     width: 600px;
+    //     height: 10%;
+    //     border: #791914 2px solid;
+    //     grid-area: text-1;
+    // }
+
     .pr1_copy-2 {
         border-top: #000 1px solid;
 
@@ -1785,7 +1807,10 @@ blockquote {
     grid-gap: 4em 1em;
     grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
     grid-template-rows: repeat(3, auto-fill);
-    grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......";
+    grid-template-areas:
+    "...... text-1 ......"
+    "...... text-2 ......"
+    "...... text-3 ......";
 
     // "...... text-4 ......"
     // "...... text-5 ......"
@@ -1854,6 +1879,7 @@ blockquote {
         padding: 0em 2rem;
         width: 70%;
         line-height: 2.2em;
+        font-weight: 400;
         font-size: 1.12em;
         text-align: left;
         align-self: start;
@@ -1872,13 +1898,14 @@ blockquote {
 
 
     //SECTION 3
-
-    img, .pr2_img {
-        // background-color: pink;
-        object-fit: cover;
+       img, .pr2_img {
+        text-align: center;
+        background-color: pink;
+        object-fit: contain;
         grid-area: text-3;
+        align-self: center;
         justify-self: center;
-        width: 100%;
+        width: 80%;
 
         @include mobile {
             width: 360px;
@@ -1887,18 +1914,12 @@ blockquote {
         }
     }
 
-    .pr2_image-2 {
-        padding: 6em 0em;
-    }
-
-
     .pr2_image-7 {
-        background-color: #887e6f;
+        // background-color: #887e6f;
+        // margin: 0 calc(-50vw + 50%);
         grid-area: text-3;
-        // text-align: center;
-        margin: 0 calc(-50vw + 50%);
-        width: 100vw;
-        height: 90vh;
+        justify-self: center;
+        align-self: center;
         object-fit: contain;
 
         @include mobile {
@@ -1914,12 +1935,12 @@ blockquote {
     //FOOTER START
     .footer {
         // background: pink;
+        align-self: end;
+        justify-self: center;
         display: block;
         text-align: center;
         width: 100%;
-        justify-self: center;
         grid-area: text-3;
-        align-self: end;
 
         .btn {
             grid-area: text-3;
@@ -1939,3 +1960,4 @@ blockquote {
     grid-row: 4;
     background-color: rgba(218, 216, 216, 0.45);
 }
+// NOTE SM LAPTOP- (w)1366x632
