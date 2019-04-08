@@ -1938,6 +1938,39 @@ blockquote {
 
     }
 
+    .pr2_imgCont {
+        grid-area: text-3;
+        width: 100%;
+        background-color: pink;
+        
+        .pr2_image-3 {
+            align-self: left;
+        justify-self: center;
+            object-fit: contain;
+            display: inline-block;
+            width: 80%;
+    
+        }
+        .pr2_image-4 {
+            align-self: center;
+        justify-self: left;
+            object-fit: contain;
+            display: inline-block;
+            width: 80%;
+    
+        }
+        .pr2_image-5 {
+            align-self: center;
+        justify-self: center;
+            object-fit: contain;
+            display: inline-block;
+            width: 80%;
+    
+        }
+        
+    }
+
+
     //FOOTER START
     .footer {
         // background: pink;

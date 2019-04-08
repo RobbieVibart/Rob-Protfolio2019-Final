@@ -1825,6 +1825,50 @@ blockquote .person cite {
   }
 }
 
+.pr2_grid-card .pr2_imgCont {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: text-3;
+  width: 100%;
+  background-color: pink;
+}
+
+.pr2_grid-card .pr2_imgCont .pr2_image-3 {
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: inline-block;
+  width: 80%;
+}
+
+.pr2_grid-card .pr2_imgCont .pr2_image-4 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: inline-block;
+  width: 80%;
+}
+
+.pr2_grid-card .pr2_imgCont .pr2_image-5 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: inline-block;
+  width: 80%;
+}
+
 .pr2_grid-card .footer {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
