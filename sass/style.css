@@ -1438,6 +1438,8 @@ blockquote .person cite {
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1461,6 +1463,27 @@ blockquote .person cite {
     -ms-grid-rows: (auto-fill)[3];
         grid-template-rows: repeat(3, auto-fill);
   }
+}
+
+.grid-card .pr1-showcase {
+  display: -ms-grid;
+  display: grid;
+  width: 100vw;
+  height: 85vh;
+  background-image: url("/images/Grow_images/GrowBoard-Game-and-cardsVerFA.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-card .pr1_scroll {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 1em;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  color: black;
+  text-align: center;
 }
 
 .grid-card .roles {
@@ -1508,7 +1531,6 @@ blockquote .person cite {
 }
 
 .grid-card .pr1_copy-2 {
-  border-top: #000 1px solid;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: text-2;
@@ -1559,56 +1581,43 @@ blockquote .person cite {
   }
 }
 
-.grid-card .block_container {
-  color: black;
-  text-align: center;
+.grid-card .block_grid {
+  display: -ms-grid;
+  display: grid;
   width: 100%;
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: text-2;
+  margin: 0 auto;
+  padding: 0 200px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: minmax(50px, 195px);
+      grid-template-rows: minmax(50px, 195px);
 }
 
-.grid-card .block_container .block1 {
-  -webkit-box-shadow: #000 3px 3px 5px;
-          box-shadow: #000 3px 3px 5px;
-  margin: 24px 48px;
+.grid-card .block_grid .block1 {
+  width: 90%;
+  height: 90%;
   border-radius: 50%;
-  display: inline-block;
-  width: 150px;
-  height: 150px;
   background-color: #B42024;
 }
 
-.grid-card .block_container .block2 {
-  -webkit-box-shadow: #000 3px 3px 5px;
-          box-shadow: #000 3px 3px 5px;
-  margin: 24px 48px;
+.grid-card .block_grid .block2 {
+  width: 90%;
+  height: 90%;
   border-radius: 50%;
-  display: inline-block;
-  width: 150px;
-  height: 150px;
   background-color: #EB2826;
 }
 
-.grid-card .block_container .block3 {
-  -webkit-box-shadow: #000 3px 3px 5px;
-          box-shadow: #000 3px 3px 5px;
-  margin: 24px 48px;
+.grid-card .block_grid .block3 {
+  width: 90%;
+  height: 90%;
   border-radius: 50%;
-  display: inline-block;
-  width: 150px;
-  height: 150px;
   background-color: #5D5F61;
 }
 
-.grid-card .block_container .block4 {
-  -webkit-box-shadow: #000 3px 3px 5px;
-          box-shadow: #000 3px 3px 5px;
-  margin: 24px 48px;
+.grid-card .block_grid .block4 {
+  width: 90%;
+  height: 90%;
   border-radius: 50%;
-  display: inline-block;
-  width: 150px;
-  height: 150px;
   background-color: #791914;
 }
 
