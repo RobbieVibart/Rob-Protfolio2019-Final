@@ -1672,6 +1672,27 @@ blockquote .person cite {
   }
 }
 
+.pr2_grid-card .showcase {
+  display: -ms-grid;
+  display: grid;
+  background-image: url("/images/Oda_images/Oda_0001.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 80vh;
+}
+
+.pr2_grid-card .showcase .pr2_scroll {
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-bottom: 2em;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  color: white;
+  text-align: center;
+}
+
 .pr2_grid-card .pr2_roles {
   display: block;
   text-transform: uppercase;
@@ -1690,29 +1711,6 @@ blockquote .person cite {
     margin: 0 calc(-50vw + 50%);
     font-weight: 700;
     text-align: center;
-  }
-}
-
-.pr2_grid-card .pr2_image-1 {
-  background-color: #295788;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: text-1;
-  width: 100vw;
-  height: 90vh;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-@media only screen and (max-width: 360px) {
-  .pr2_grid-card .pr2_image-1 {
-    -ms-flex-item-align: top;
-        -ms-grid-row-align: top;
-        align-self: top;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 
@@ -1770,6 +1768,39 @@ blockquote .person cite {
   }
 }
 
+.pr2_grid-card .pr2_copy-3 {
+  margin: 0 0;
+  padding: 6rem 18rem;
+  width: 100%;
+  line-height: 2.2em;
+  font-weight: 400;
+  font-size: 1.12em;
+  text-align: left;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@media only screen and (max-width: 360px) {
+  .pr2_grid-card .pr2_copy-3 {
+    padding: 2.5rem 4rem;
+    -ms-grid-column-align: top;
+        justify-self: top;
+    width: 100%;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: text-2;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: left;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+}
+
 .pr2_grid-card img,
 .pr2_grid-card .pr2_img {
   text-align: center;
@@ -1796,88 +1827,6 @@ blockquote .person cite {
     -ms-grid-column: 2;
     grid-area: text-3;
   }
-}
-
-.pr2_grid-card .pr2_image-7 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: text-3;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-@media only screen and (max-width: 360px) {
-  .pr2_grid-card .pr2_image-7 {
-    width: 100%;
-    height: 360px;
-    -ms-flex-item-align: top;
-        -ms-grid-row-align: top;
-        align-self: top;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-}
-
-.pr2_grid-card .pr2_imgCont {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: text-3;
-  width: 100%;
-}
-
-.pr2_grid-card .pr2_imgCont .pr2_image-2 {
-  -ms-flex-item-align: left;
-      -ms-grid-row-align: left;
-      align-self: left;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: inline-block;
-  width: 100%;
-}
-
-.pr2_grid-card .pr2_imgCont .pr2_image-3 {
-  -ms-flex-item-align: left;
-      -ms-grid-row-align: left;
-      align-self: left;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: inline-block;
-  width: 100%;
-}
-
-.pr2_grid-card .pr2_imgCont .pr2_image-4 {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: left;
-      justify-self: left;
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: inline-block;
-  width: 80%;
-}
-
-.pr2_grid-card .pr2_imgCont .pr2_image-5 {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: inline-block;
-  width: 80%;
 }
 
 .pr2_grid-card .footer {
