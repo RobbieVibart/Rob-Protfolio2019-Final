@@ -1450,7 +1450,7 @@ blockquote .person cite {
       grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
   -ms-grid-rows: (auto-fill)[3];
       grid-template-rows: repeat(3, auto-fill);
-      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......";
+      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... footer ......";
 }
 
 @media only screen and (max-width: 360px) {
@@ -1624,9 +1624,9 @@ blockquote .person cite {
   text-align: center;
   width: 100%;
       justify-self: center;
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 2;
-  grid-area: text-3;
+  grid-area: footer;
   -ms-flex-item-align: end;
       align-self: end;
 }
@@ -1659,7 +1659,7 @@ blockquote .person cite {
       grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
   -ms-grid-rows: (auto-fill)[3];
       grid-template-rows: repeat(3, auto-fill);
-      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......";
+      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... footer ......";
 }
 
 @media only screen and (max-width: 360px) {
@@ -1832,6 +1832,18 @@ blockquote .person cite {
   width: 100%;
 }
 
+.pr2_grid-card .pr2_imgCont .pr2_image-2 {
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: inline-block;
+  width: 100%;
+}
+
 .pr2_grid-card .pr2_imgCont .pr2_image-3 {
   -ms-flex-item-align: left;
       -ms-grid-row-align: left;
@@ -1877,9 +1889,9 @@ blockquote .person cite {
   display: block;
   text-align: center;
   width: 100%;
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 2;
-  grid-area: text-3;
+  grid-area: footer;
 }
 
 .pr2_grid-card .footer .btn {

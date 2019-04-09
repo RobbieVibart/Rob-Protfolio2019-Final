@@ -1618,7 +1618,11 @@ blockquote {
     grid-gap: 4em 1em;
     grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
     grid-template-rows: repeat(3, auto-fill);
-    grid-template-areas: "...... text-1 ......""...... text-2 ......""...... text-3 ......";
+    grid-template-areas:
+    "...... text-1 ......"
+    "...... text-2 ......"
+    "...... text-3 ......"
+    "...... footer ......";
 
     @include mobile {
         grid-column-gap: 0em;
@@ -1782,7 +1786,7 @@ blockquote {
         text-align: center;
         width: 100%;
         justify-self: center;
-        grid-area: text-3;
+        grid-area: footer;
         align-self: end;
 
         .btn {
@@ -1815,7 +1819,8 @@ blockquote {
     grid-template-areas:
         "...... text-1 ......"
         "...... text-2 ......"
-        "...... text-3 ......";
+        "...... text-3 ......"
+        "...... footer ......";
 
     // "...... text-4 ......"
     // "...... text-5 ......"
@@ -1942,34 +1947,44 @@ blockquote {
         grid-area: text-3;
         width: 100%;
         // background-color: pink;
-        
+
+        .pr2_image-2 {
+            align-self: left;
+            justify-self: center;
+            object-fit: contain;
+            display: inline-block;
+            width: 100%;
+
+        }
+
         .pr2_image-3 {
             align-self: left;
             justify-self: center;
             object-fit: contain;
             display: inline-block;
             width: 100%;
-    
+
         }
+
         .pr2_image-4 {
             align-self: center;
             justify-self: left;
             object-fit: contain;
             display: inline-block;
             width: 80%;
-    
+
         }
+
         .pr2_image-5 {
             align-self: center;
             justify-self: center;
             object-fit: contain;
             display: inline-block;
             width: 80%;
-    
-        }
-        
-    }
 
+        }
+
+    }
 
     //FOOTER START
     .footer {
@@ -1979,7 +1994,7 @@ blockquote {
         display: block;
         text-align: center;
         width: 100%;
-        grid-area: text-3;
+        grid-area: footer;
 
         .btn {
             grid-area: text-3;
