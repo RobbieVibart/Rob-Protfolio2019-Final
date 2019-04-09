@@ -1830,7 +1830,6 @@ blockquote .person cite {
   -ms-grid-column: 2;
   grid-area: text-3;
   width: 100%;
-  background-color: pink;
 }
 
 .pr2_grid-card .pr2_imgCont .pr2_image-3 {
@@ -1842,7 +1841,7 @@ blockquote .person cite {
   -o-object-fit: contain;
      object-fit: contain;
   display: inline-block;
-  width: 80%;
+  width: 100%;
 }
 
 .pr2_grid-card .pr2_imgCont .pr2_image-4 {

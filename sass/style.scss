@@ -1941,19 +1941,19 @@ blockquote {
     .pr2_imgCont {
         grid-area: text-3;
         width: 100%;
-        background-color: pink;
+        // background-color: pink;
         
         .pr2_image-3 {
             align-self: left;
-        justify-self: center;
+            justify-self: center;
             object-fit: contain;
             display: inline-block;
-            width: 80%;
+            width: 100%;
     
         }
         .pr2_image-4 {
             align-self: center;
-        justify-self: left;
+            justify-self: left;
             object-fit: contain;
             display: inline-block;
             width: 80%;
@@ -1961,7 +1961,7 @@ blockquote {
         }
         .pr2_image-5 {
             align-self: center;
-        justify-self: center;
+            justify-self: center;
             object-fit: contain;
             display: inline-block;
             width: 80%;
