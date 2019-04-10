@@ -1818,7 +1818,7 @@ blockquote {
 
     @include mobile {
         grid-column-gap: 0em;
-        grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
+        grid-template-columns: minmax(1em, 1fr) minmax(160px, 460px) minmax(1em, 1fr);
         grid-template-rows: repeat(3, auto-fill);
     }
 
@@ -1867,7 +1867,7 @@ blockquote {
     }
 
 
-    .pr2_image-2 {
+    .pr2_image-2, img {
         grid-area: text-3;
         width: 100%;
         align-self: center;
@@ -1875,7 +1875,8 @@ blockquote {
         object-fit: contain;
 
         @include mobile {
-            width: 360px;
+            width: 340px;
+
         }
     }
 
@@ -1937,7 +1938,7 @@ blockquote {
         width: 100%;
 
         @include mobile {
-            width: 360px;
+            width: 460px;
             object-fit: contain;
             grid-area: text-3;
         }

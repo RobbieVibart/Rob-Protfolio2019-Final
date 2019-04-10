@@ -1674,8 +1674,8 @@ blockquote .person cite {
 @media only screen and (max-width: 360px) {
   .pr2_grid-card {
     grid-column-gap: 0em;
-    -ms-grid-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
-        grid-template-columns: minmax(1em, 1fr) minmax(160px, 360px) minmax(1em, 1fr);
+    -ms-grid-columns: minmax(1em, 1fr) minmax(160px, 460px) minmax(1em, 1fr);
+        grid-template-columns: minmax(1em, 1fr) minmax(160px, 460px) minmax(1em, 1fr);
     -ms-grid-rows: (auto-fill)[3];
         grid-template-rows: repeat(3, auto-fill);
   }
@@ -1723,7 +1723,7 @@ blockquote .person cite {
   }
 }
 
-.pr2_grid-card .pr2_image-2 {
+.pr2_grid-card .pr2_image-2, .pr2_grid-card img {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: text-3;
@@ -1738,8 +1738,8 @@ blockquote .person cite {
 }
 
 @media only screen and (max-width: 360px) {
-  .pr2_grid-card .pr2_image-2 {
-    width: 360px;
+  .pr2_grid-card .pr2_image-2, .pr2_grid-card img {
+    width: 340px;
   }
 }
 
@@ -1829,7 +1829,7 @@ blockquote .person cite {
 @media only screen and (max-width: 360px) {
   .pr2_grid-card img,
   .pr2_grid-card .pr2_img {
-    width: 360px;
+    width: 460px;
     -o-object-fit: contain;
        object-fit: contain;
     -ms-grid-row: 3;
