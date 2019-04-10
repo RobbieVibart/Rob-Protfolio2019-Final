@@ -1778,40 +1778,31 @@ blockquote .person cite {
 }
 
 .pr2_grid-card .pr2_copy-3 {
-  margin: 0 0;
-  padding: 6rem 18rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: text-3;
+  padding: 2em 10em;
   width: 100%;
   line-height: 2.2em;
   font-weight: 400;
   font-size: 1.12em;
   text-align: left;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
 @media only screen and (max-width: 360px) {
   .pr2_grid-card .pr2_copy-3 {
-    padding: 2.5rem 4rem;
-    -ms-grid-column-align: top;
-        justify-self: top;
+    padding: 2em 10em;
     width: 100%;
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: text-2;
     font-size: 1.5rem;
     line-height: 2.5rem;
-    text-align: left;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
   }
 }
 
 .pr2_grid-card img,
 .pr2_grid-card .pr2_img {
+  padding: 1em 0em;
   text-align: center;
   -o-object-fit: contain;
      object-fit: contain;
