@@ -1892,9 +1892,9 @@ blockquote {
         justify-self: center;
 
         @include mobile {
-            justify-self: top;
-            width: 100%;
             grid-area: text-2;
+            // padding: 2em 6em;
+            width: 100%;
             font-size: 1.5rem;
             line-height: 2.5rem;
             text-align: left;
@@ -1912,10 +1912,12 @@ blockquote {
         justify-self: center;
 
         @include mobile {
-            padding: 2em 10em;
+            padding: 2em 6em;
             width: 100%;
             font-size: 1.5rem;
             line-height: 2.5rem;
+            text-align: left;
+            align-self: start;
             
         }
     }
@@ -1934,7 +1936,7 @@ blockquote {
         width: 100%;
 
         @include mobile {
-            width: 560px;
+            width: 420px;
             object-fit: contain;
             grid-area: text-3;
         }

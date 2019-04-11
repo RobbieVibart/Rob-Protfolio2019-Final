@@ -1762,12 +1762,10 @@ blockquote .person cite {
 
 @media only screen and (max-width: 360px) {
   .pr2_grid-card .pr2_copy-2 {
-    -ms-grid-column-align: top;
-        justify-self: top;
-    width: 100%;
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: text-2;
+    width: 100%;
     font-size: 1.5rem;
     line-height: 2.5rem;
     text-align: left;
@@ -1793,10 +1791,14 @@ blockquote .person cite {
 
 @media only screen and (max-width: 360px) {
   .pr2_grid-card .pr2_copy-3 {
-    padding: 2em 10em;
+    padding: 2em 6em;
     width: 100%;
     font-size: 1.5rem;
     line-height: 2.5rem;
+    text-align: left;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
   }
 }
 
@@ -1820,7 +1822,7 @@ blockquote .person cite {
 @media only screen and (max-width: 360px) {
   .pr2_grid-card img,
   .pr2_grid-card .pr2_img {
-    width: 560px;
+    width: 420px;
     -o-object-fit: contain;
        object-fit: contain;
     -ms-grid-row: 3;
