@@ -1619,11 +1619,7 @@ blockquote {
   grid-gap: 4em 1em;
   grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
   grid-template-rows: repeat(3, auto-fill);
-  grid-template-areas:
-    "...... text-1 ......"
-    "...... text-2 ......"
-    "...... text-3 ......"
-    "...... footer ......";
+  grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... footer ......";
 
   @include mobile {
     grid-column-gap: 0em;
@@ -1685,14 +1681,18 @@ blockquote {
   }
 
   .pr1_copy-2 {
+    color: $brand-body-color;
+
     // background-color: pink;
     grid-area: text-2;
     padding: 0em 2rem;
     width: 50%;
     line-height: 2.2em;
     font-size: 1.12em;
+    hyphens: manual;
     text-align: left;
-    align-self: start;
+    word-spacing: 0.2rem;
+    text-justify: inter-word;
     justify-self: center;
 
     @include mobile {
@@ -1724,23 +1724,55 @@ blockquote {
 
   .block_grid {
     justify-content: center;
-    border: #000 5px solid;
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
-    grid-template-rows: repeat(auto-fit, minmax(100px, 200px));
+    // grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 200px));
+  }
+  
+  .block {
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.3);
+    height: 200px;
+    align-self: center;
+    background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.5)
+    );
   }
 
-  .block {
-    height: 200px;
-    border-radius: 50%;
+  &,
+  .itm1,
+  .itm2,
+  .itm3,
+  .itm4 {
+    text-align: center;
+    font-weight: 400;
+    color: white;
+  }
+
+  .itm1 {
     background-color: #b42024;
   }
 
-  .pr_image-7 {
-    width: 50%;
+  .itm2 {
+    background-color: #eb2826;
+  }
+
+  .itm3 {
+    background-color: #5d5f61;
+  }
+
+  .itm4 {
+    background-color: #b42024;
+  }
+
+  .pr1_image-6,
+  .pr1_image-7 {
+    // width: 50%;
+    // margin: 0px 50px;
+    padding-top: 2em;
     object-fit: contain;
-    margin: 0px 50px;
   }
 
   //FOOTER START
@@ -1779,11 +1811,7 @@ blockquote {
   grid-gap: 4em 1em;
   grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
   grid-template-rows: repeat(3, auto-fill);
-  grid-template-areas:
-    "...... text-1 ......"
-    "...... text-2 ......"
-    "...... text-3 ......"
-    "...... footer ......";
+  grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... footer ......";
 
   // "...... text-4 ......"
   // "...... text-5 ......"
@@ -1867,6 +1895,7 @@ blockquote {
 
     @include mobile {
       grid-area: text-2;
+
       // padding: 2em 6em;
       width: 100%;
       font-size: 1.5rem;
@@ -1875,6 +1904,7 @@ blockquote {
       align-self: start;
     }
   }
+
   .pr2_copy-3 {
     grid-area: text-3;
     padding: 2em 10em;

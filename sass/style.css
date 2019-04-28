@@ -1452,7 +1452,7 @@ blockquote .person cite {
       grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
   -ms-grid-rows: (auto-fill)[3];
       grid-template-rows: repeat(3, auto-fill);
-      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... footer ......";
+      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... footer ......";
 }
 
 @media only screen and (max-width: 360px) {
@@ -1531,6 +1531,7 @@ blockquote .person cite {
 }
 
 .grid-card .pr1_copy-2 {
+  color: #818892;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: text-2;
@@ -1538,9 +1539,12 @@ blockquote .person cite {
   width: 50%;
   line-height: 2.2em;
   font-size: 1.12em;
+  -webkit-hyphens: manual;
+      -ms-hyphens: manual;
+          hyphens: manual;
   text-align: left;
-  -ms-flex-item-align: start;
-      align-self: start;
+  word-spacing: 0.2rem;
+  text-justify: inter-word;
       justify-self: center;
 }
 
@@ -1585,27 +1589,55 @@ blockquote .person cite {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: #000 5px solid;
   display: -ms-grid;
   display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: (minmax(100px, 200px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
-  -ms-grid-rows: (minmax(100px, 200px))[auto-fit];
-      grid-template-rows: repeat(auto-fit, minmax(100px, 200px));
+  -ms-grid-columns: (minmax(150px, 200px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+  -ms-grid-rows: (minmax(150px, 200px))[auto-fit];
+      grid-template-rows: repeat(auto-fit, minmax(150px, 200px));
 }
 
 .grid-card .block {
+  -webkit-box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.3);
   height: 200px;
-  border-radius: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+
+.grid-card,
+.grid-card .itm1,
+.grid-card .itm2,
+.grid-card .itm3,
+.grid-card .itm4 {
+  text-align: center;
+  font-weight: 400;
+  color: white;
+}
+
+.grid-card .itm1 {
   background-color: #b42024;
 }
 
-.grid-card .pr_image-7 {
-  width: 50%;
+.grid-card .itm2 {
+  background-color: #eb2826;
+}
+
+.grid-card .itm3 {
+  background-color: #5d5f61;
+}
+
+.grid-card .itm4 {
+  background-color: #b42024;
+}
+
+.grid-card .pr1_image-6,
+.grid-card .pr1_image-7 {
+  padding-top: 2em;
   -o-object-fit: contain;
      object-fit: contain;
-  margin: 0px 50px;
 }
 
 .grid-card .footer {
@@ -1648,7 +1680,7 @@ blockquote .person cite {
       grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
   -ms-grid-rows: (auto-fill)[3];
       grid-template-rows: repeat(3, auto-fill);
-      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... footer ......";
+      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... footer ......";
 }
 
 @media only screen and (max-width: 360px) {
