@@ -1633,6 +1633,74 @@ blockquote .person cite {
   background-color: #b42024;
 }
 
+.grid-card .card-grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (minmax(150px, 300px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+  -ms-grid-rows: (minmax(150px, 300px))[auto-fill];
+      grid-template-rows: repeat(auto-fill, minmax(150px, 300px));
+}
+
+.grid-card .card1 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.grid-card .card2 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.grid-card .card3 {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.grid-card .card4 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.grid-card .card5 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.grid-card .card6 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.grid-card .card7 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.grid-card .card8 {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
 .grid-card .pr1_image-6,
 .grid-card .pr1_image-7 {
   padding-top: 2em;
