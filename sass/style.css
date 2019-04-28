@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'icomoon';
+  font-family: "icomoon";
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
@@ -173,7 +173,7 @@ figure {
   margin: -5px 0 0 0;
 }
 
-.fh5co-nav .menu-2 li input[type=text] {
+.fh5co-nav .menu-2 li input[type="text"] {
   padding: 6px 10px;
   width: 40%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -186,7 +186,7 @@ figure {
   transition: 0.3s;
 }
 
-.fh5co-nav .menu-2 li input[type=text]:focus {
+.fh5co-nav .menu-2 li input[type="text"]:focus {
   width: 100%;
   outline: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -399,8 +399,8 @@ figure {
   color: #000;
   position: absolute;
   left: 0;
-  top: .05em;
-  font-family: 'icomoon';
+  top: 0.05em;
+  font-family: "icomoon";
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -903,7 +903,7 @@ figure {
   margin: 5px 0 0 0;
 }
 
-#fh5co-offcanvas ul li input[type=text] {
+#fh5co-offcanvas ul li input[type="text"] {
   padding: 6px 10px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -915,7 +915,7 @@ figure {
   transition: 0.3s;
 }
 
-#fh5co-offcanvas ul li input[type=text]:focus {
+#fh5co-offcanvas ul li input[type="text"]:focus {
   width: 100%;
   outline: none;
 }
@@ -979,7 +979,7 @@ figure {
 #fh5co-offcanvas ul li.offcanvas-has-dropdown > a:after {
   position: absolute;
   right: 0px;
-  font-family: 'icomoon';
+  font-family: "icomoon";
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1068,23 +1068,23 @@ figure {
   width: 25px;
   height: 2px;
   color: #252525;
-  font: bold 14px/.4 Helvetica;
+  font: bold 14px/0.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
   background: #252525;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
-  content: '';
+  content: "";
   width: 25px;
   height: 2px;
   background: #252525;
   position: absolute;
   left: 0;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .fh5co-nav-toggle.fh5co-nav-white > i {
@@ -1582,43 +1582,23 @@ blockquote .person cite {
 }
 
 .grid-card .block_grid {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: #000 5px solid;
   display: -ms-grid;
   display: grid;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 200px;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: minmax(50px, 195px);
-      grid-template-rows: minmax(50px, 195px);
+  grid-gap: 20px;
+  -ms-grid-columns: (minmax(100px, 200px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+  -ms-grid-rows: (minmax(100px, 200px))[auto-fit];
+      grid-template-rows: repeat(auto-fit, minmax(100px, 200px));
 }
 
-.grid-card .block_grid .block1 {
-  width: 90%;
-  height: 90%;
+.grid-card .block {
+  height: 200px;
   border-radius: 50%;
-  background-color: #B42024;
-}
-
-.grid-card .block_grid .block2 {
-  width: 90%;
-  height: 90%;
-  border-radius: 50%;
-  background-color: #EB2826;
-}
-
-.grid-card .block_grid .block3 {
-  width: 90%;
-  height: 90%;
-  border-radius: 50%;
-  background-color: #5D5F61;
-}
-
-.grid-card .block_grid .block4 {
-  width: 90%;
-  height: 90%;
-  border-radius: 50%;
-  background-color: #791914;
+  background-color: #b42024;
 }
 
 .grid-card .pr_image-7 {
@@ -1723,7 +1703,8 @@ blockquote .person cite {
   }
 }
 
-.pr2_grid-card .pr2_image-2, .pr2_grid-card img {
+.pr2_grid-card .pr2_image-2,
+.pr2_grid-card img {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: text-3;
@@ -1738,7 +1719,8 @@ blockquote .person cite {
 }
 
 @media only screen and (max-width: 360px) {
-  .pr2_grid-card .pr2_image-2, .pr2_grid-card img {
+  .pr2_grid-card .pr2_image-2,
+  .pr2_grid-card img {
     width: 340px;
   }
 }
