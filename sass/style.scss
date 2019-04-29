@@ -1768,60 +1768,17 @@ blockquote {
     }
 
     .card-grid {
-        margin: 6em 0em;
+        // margin: 6em 0em;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
-        grid-auto-flow: row;
         
-        & img {
-            object-fit: contain;
+       .imgCard, & img {
             width: 100%;
         }
         
     }
     
-
-    .card1 {
-        grid-column: 3;
-        grid-row: 2;
-    }
-
-    .card2 {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .card3 {
-        grid-column: 4;
-        grid-row: 1;
-    }
-
-    .card4 {
-        grid-column: 3;
-        grid-row: 1;
-    }
-
-    .card5 {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .card6 {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    .card7 {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    .card8 {
-        grid-column: 4;
-        grid-row: 2;
-        
-    }
     
     .pr1_image-6,
     .pr1_image-7 {
