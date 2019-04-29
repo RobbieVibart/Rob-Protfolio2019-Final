@@ -1635,17 +1635,20 @@ blockquote .person cite {
 }
 
 .grid-card .card-grid {
+  margin: 6em 0em;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: (minmax(150px, 200px))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
+  -ms-grid-columns: (minmax(150px, 400px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 400px));
 }
 
 .grid-card .card-grid .imgCard, .grid-card .card-grid img {
-  width: 100%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 80%;
 }
 
 .grid-card .pr1_image-6,

@@ -1768,13 +1768,14 @@ blockquote {
     }
 
     .card-grid {
-        // margin: 6em 0em;
+        margin: 6em 0em;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 400px));
         
        .imgCard, & img {
-            width: 100%;
+           justify-self: center;
+            width: 80%;
         }
         
     }
