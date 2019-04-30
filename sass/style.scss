@@ -1894,7 +1894,7 @@ blockquote {
         }
     }
 
-    .pr2_copy-2 {
+    .pr2_copy-2,  {
         grid-area: text-2;
         padding: 0em 2rem;
         width: 70%;
@@ -1919,12 +1919,13 @@ blockquote {
 
     .pr2_copy-3 {
         grid-area: text-3;
-        padding: 2em 10em;
-        width: 100%;
+        padding: 0em 2em;
+        width: 70%;
         line-height: 2.2em;
         font-weight: 400;
         font-size: 1.12em;
         text-align: left;
+        align-self: center;
         justify-self: center;
 
         @include mobile {
@@ -1938,16 +1939,19 @@ blockquote {
     }
 
     //SECTION 3
-    img,
+    
     .pr2_img {
         // background-color: pink;
-        padding: 1em 0em;
         text-align: center;
         object-fit: contain;
         grid-area: text-3;
         align-self: center;
         justify-self: center;
         width: 100%;
+
+        & img {
+            padding: 2em 0em;
+        }
 
         @include mobile {
             width: 420px;
