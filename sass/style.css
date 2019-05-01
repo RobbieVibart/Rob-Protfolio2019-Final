@@ -1592,19 +1592,17 @@ blockquote .person cite {
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
-  -ms-grid-columns: (minmax(150px, 200px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
-  -ms-grid-rows: (minmax(150px, 200px))[auto-fit];
-      grid-template-rows: repeat(auto-fit, minmax(150px, 200px));
+  -ms-grid-columns: (minmax(150px, 400px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 400px));
 }
 
 .grid-card .block {
   -webkit-box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.3);
           box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.3);
-  height: 200px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  height: 300px;
+  width: 300px;
+  -ms-grid-column-align: center;
+      justify-self: center;
   background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
 }
 
@@ -1634,18 +1632,37 @@ blockquote .person cite {
   background-color: #b42024;
 }
 
-.grid-card .card-grid {
-  margin: 6em 0em;
+.grid-card .Icn_grid {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: (minmax(150px, 400px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(150px, 400px));
+  -ms-grid-columns: (minmax(150px, 300px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
 }
 
-.grid-card .card-grid .imgCard, .grid-card .card-grid img {
+.grid-card .imgIcn {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.grid-card .imgIcn img {
+  width: 100px;
+}
+
+.grid-card .card-grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (minmax(150px, 300px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+}
+
+.grid-card .card-grid .imgCard,
+.grid-card .card-grid img {
   -ms-grid-column-align: center;
       justify-self: center;
   width: 80%;
