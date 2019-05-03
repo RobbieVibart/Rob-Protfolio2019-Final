@@ -1450,18 +1450,17 @@ blockquote .person cite {
   grid-gap: 4em 1em;
   -ms-grid-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
       grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
-  -ms-grid-rows: (auto-fill)[4];
-      grid-template-rows: repeat(4, auto-fill);
-      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... text-4 ......";
+  -ms-grid-rows: (auto-fill)[3];
+      grid-template-rows: repeat(3, auto-fill);
+      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... footer ......";
 }
 
 @media only screen and (max-width: 360px) {
   .grid-card {
-    grid-column-gap: 0em;
     -ms-grid-columns: minmax(1em, 1fr) minmax(160px, 460px) minmax(1em, 1fr);
         grid-template-columns: minmax(1em, 1fr) minmax(160px, 460px) minmax(1em, 1fr);
-    -ms-grid-rows: (auto-fill)[4];
-        grid-template-rows: repeat(4, auto-fill);
+    -ms-grid-rows: (auto-fill)[3];
+        grid-template-rows: repeat(3, auto-fill);
   }
 }
 
@@ -1681,21 +1680,22 @@ blockquote .person cite {
 }
 
 .grid-card .footer {
-  -ms-grid-row: 4;
-  grid-row: 4;
-  background-color: pink;
-  text-align: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: block;
+  text-align: center;
+  width: 100%;
+  grid-area: text-4;
 }
 
 .grid-card .footer .btn {
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  grid-area: text-4;
+  margin-bottom: 80px;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .pr2_grid-card {
@@ -1861,6 +1861,51 @@ blockquote .person cite {
 
 .pr2_grid-card .pr2_img img {
   padding: 1em 0em;
+}
+
+.pr2_grid-card .pr2_img .pr2_imgs {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(150px, 1200px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1200px));
+  grid-auto-flow: row;
+}
+
+.pr2_grid-card .pr2_img .pr2_imgs .pr2_img1 {
+  width: 600px;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+@media only screen and (max-width: 360px) {
+  .pr2_grid-card .pr2_img .pr2_imgs .pr2_img1 {
+    padding: 0;
+    width: 100%;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+}
+
+.pr2_grid-card .pr2_img .pr2_imgs .pr2_img2 {
+  width: 600px;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+@media only screen and (max-width: 360px) {
+  .pr2_grid-card .pr2_img .pr2_imgs .pr2_img2 {
+    padding: 0;
+    width: 100%;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
 }
 
 @media only screen and (max-width: 360px) {
