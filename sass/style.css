@@ -1859,10 +1859,6 @@ blockquote .person cite {
   width: 100%;
 }
 
-.pr2_grid-card .pr2_img img {
-  padding: 1em 0em;
-}
-
 .pr2_grid-card .pr2_img .pr2_imgs {
   -webkit-box-pack: left;
       -ms-flex-pack: left;

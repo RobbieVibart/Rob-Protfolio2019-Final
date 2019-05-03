@@ -1947,12 +1947,7 @@ blockquote {
         align-self: center;
         justify-self: center;
         width: 100%;
-
-        & img {
-            padding: 1em 0em;
-        }
-
-
+        
         .pr2_imgs {
             justify-content: left;
             display: grid;
@@ -1990,11 +1985,6 @@ blockquote {
             grid-area: text-3;
         }
     }
-
-
-
-
-
 
     //FOOTER START
     .footer {
