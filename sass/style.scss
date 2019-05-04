@@ -1835,7 +1835,7 @@ blockquote {
         "......foot......";
 
     @include mobile {
-        grid-template-columns: minmax(1em, 1fr) minmax(360px, 460px) minmax(1em,
+        grid-template-columns: minmax(1em, 1fr) minmax(360px, 450px) minmax(1em,
             1fr);
         grid-template-rows: repeat(3, auto-fill);
     }
@@ -1845,7 +1845,7 @@ blockquote {
         background-image: url("/images/Oda_images/Oda_0001.jpg");
         background-size: cover;
         background-position: center;
-        width: 100vw;
+        width: 110vw;
         height: 80vh;
 
         
@@ -1917,7 +1917,7 @@ blockquote {
         
         @include mobile {
             padding: 0em 2em;
-            // width: 100%;
+            width: 100%;
             font-size: 1.5rem;
             line-height: 2.5rem;
             text-align: left;
