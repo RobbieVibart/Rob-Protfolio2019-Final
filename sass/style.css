@@ -1555,7 +1555,7 @@ blockquote .person cite {
     -ms-grid-column: 2;
     grid-area: text-2;
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
     text-align: left;
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
@@ -1685,6 +1685,7 @@ blockquote .person cite {
 }
 
 .grid-card .footer {
+  text-align: center;
   width: 100%;
   grid-area: text-4;
 }
@@ -1707,7 +1708,7 @@ blockquote .person cite {
       grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
   -ms-grid-rows: (auto-fill)[3];
       grid-template-rows: repeat(3, auto-fill);
-      grid-template-areas: "......text-1......" "......text-2...." "......text-3......" "......foot......";
+      grid-template-areas: "......text-1......" "......text-2...." "......text-3......" "...... footer ......";
 }
 
 @media only screen and (max-width: 360px) {
@@ -1814,7 +1815,7 @@ blockquote .person cite {
     padding: 4em 2em;
     width: 360px;
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
     text-align: left;
   }
 }
@@ -1888,12 +1889,16 @@ blockquote .person cite {
 }
 
 .pr2_grid-card .footer {
-  grid-area: foot;
-  width: 100%;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: footer;
+  text-align: center;
 }
 
 .pr2_grid-card .footer .btn {
-  grid-area: foot;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: footer;
   margin: 50px 80px;
   margin-right: 5%;
   margin-left: 5%;

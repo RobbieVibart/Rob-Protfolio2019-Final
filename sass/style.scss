@@ -95,6 +95,12 @@ $form-group-margin-bottom: 30px !default;
     -moz-osx-font-smoothing: grayscale;
 }
 
+// User Typography
+$Mob-line-height:   3rem;
+$Std-line-height:   2.2em;
+//
+
+//User Screen Size
 $mobile: 360px;
 
 @mixin mobile {
@@ -102,6 +108,7 @@ $mobile: 360px;
         @content;
     }
 }
+// 
 
 // Import
 @import "bootstrap/mixins";
@@ -1691,7 +1698,7 @@ blockquote {
         padding: 0em 2rem;
         width: 70%;
         font-weight: 400;
-        line-height: 2.2em;
+        line-height: $Std-line-height;
         font-size: 1.12em;
         text-align: left;
         align-self: start;
@@ -1701,7 +1708,7 @@ blockquote {
             width: 100%;
             grid-area: text-2;
             font-size: 1.5rem;
-            line-height: 2.5rem;
+            line-height: $Mob-line-height;
             text-align: left;
             align-self: start;
         }
@@ -1806,7 +1813,8 @@ blockquote {
 
     //FOOTER START
     .footer {
-        // background-color: pink;
+        // background-color: pink;\
+        text-align: center;
         width: 100%;
         grid-area: text-4;
 
@@ -1832,7 +1840,7 @@ blockquote {
         "......text-1......"
         "......text-2...."
         "......text-3......"
-        "......foot......";
+        "...... footer ......";
 
     @include mobile {
         grid-template-columns: minmax(1em, 1fr) minmax(360px, 800px) minmax(1em,
@@ -1887,7 +1895,7 @@ blockquote {
         grid-area: text-2;
         padding: 2em 2em;
         width: 70%;
-        line-height: 2.2em;
+        line-height: $Std-line-height;
         font-weight: 400;
         font-size: 1.12em;
         text-align: left;
@@ -1906,7 +1914,7 @@ blockquote {
             padding: 2em 2.5em;
             width: 360px;
             font-size: 1.5rem;
-            line-height: 3rem;
+            line-height: $Mob-line-height;
         }
     }
 
@@ -1915,7 +1923,7 @@ blockquote {
         grid-area: text-3;
         padding: 0em 2em;
         width: 70%;
-        line-height: 2.2em;
+        line-height: $Std-line-height;
         font-weight: 400;
         font-size: 1.12em;
         text-align: left;
@@ -1925,7 +1933,7 @@ blockquote {
             padding: 4em 2em;
             width: 360px;
             font-size: 1.5rem;
-            line-height: 2.5rem;
+            line-height: $Mob-line-height;
             text-align: left;
         }
     }
@@ -1983,11 +1991,11 @@ blockquote {
     //FOOTER START
     .footer {
         // background: pink;
-        grid-area: foot;
-        width: 100%;
+        grid-area: footer;
+        text-align: center;
         
         .btn {
-            grid-area: foot;
+            grid-area: footer;
             margin: 50px 80px;
             margin-right: 5%;
             margin-left: 5%;
