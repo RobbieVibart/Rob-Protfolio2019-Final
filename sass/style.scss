@@ -1867,14 +1867,12 @@ blockquote {
         text-transform: uppercase;
         font-weight: 700;
         grid-area: text-2;
-        align-self: start;
-
+        align-self: flex-start;
+        
         @include mobile {
-            // background-color: pink;
-            width: 100vw;
-            margin: 0 calc(-50vw + 50%);
+            width: 360px;
             font-weight: 700;
-            text-align: center;
+            text-align: start;
         }
     }
 

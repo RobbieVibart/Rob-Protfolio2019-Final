@@ -1736,16 +1736,14 @@ blockquote .person cite {
   -ms-grid-column: 2;
   grid-area: text-2;
   -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
+      align-self: flex-start;
 }
 
 @media only screen and (max-width: 360px) {
   .pr2_grid-card .pr2_roles {
-    width: 100vw;
-    margin: 0 calc(-50vw + 50%);
+    width: 360px;
     font-weight: 700;
-    text-align: center;
+    text-align: start;
   }
 }
 
