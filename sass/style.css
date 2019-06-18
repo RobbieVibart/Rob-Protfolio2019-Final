@@ -1435,266 +1435,178 @@ blockquote .person cite {
   margin: 0 0 5px 0;
 }
 
-*,
-*::before,
-*::after {
+*, ::before, ::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
+html, body {
+  font-family: "Montserrat";
+  font-size: 1em;
+  line-height: 2em;
+}
+
 .grid-card {
   display: -ms-grid;
   display: grid;
-  grid-gap: 2em 0em;
-  -ms-grid-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
-      grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
-  -ms-grid-rows: (auto-fill)[3];
-      grid-template-rows: repeat(3, auto-fill);
-      grid-template-areas: "...... text-1 ......" "...... text-2 ......" "...... text-3 ......" "...... footer ......";
+  grid: auto-flow/minmax(1rem, 1fr) minmax(100px, 6fr) minmax(1rem, 1fr);
 }
 
-@media only screen and (max-width: 360px) {
-  .grid-card {
-    -ms-grid-columns: minmax(1em, 1fr) minmax(300px, 800px) minmax(1em, 1fr);
-        grid-template-columns: minmax(1em, 1fr) minmax(300px, 800px) minmax(1em, 1fr);
-    -ms-grid-rows: (auto-fill)[3];
-        grid-template-rows: repeat(3, auto-fill);
-  }
-}
-
-.grid-card .pr1-showcase {
-  display: -ms-grid;
-  display: grid;
+.img_head {
   width: 100vw;
-  height: 85vh;
-  background-image: url("/images/Grow_images/GrowBoard-Game-and-cardsVerFA.jpg");
+  height: 400px;
   background-size: cover;
-  background-position: center;
 }
 
-.grid-card .pr1_scroll {
-  text-transform: uppercase;
-  font-weight: 700;
-  padding-bottom: 1em;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-  color: black;
-  text-align: center;
-}
-
-.grid-card .roles {
-  display: block;
-  text-transform: uppercase;
-  font-weight: 700;
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: text-2;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-}
-
-@media only screen and (max-width: 360px) {
-  .grid-card .roles {
-    width: 100vw;
-    margin: 0 calc(-50vw + 50%);
-    font-weight: 700;
-    text-align: center;
-  }
-}
-
-.grid-card .pr1_image-1 {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, #e7e5e6), color-stop(85%, #ffffff));
-  background: linear-gradient(to top, #e7e5e6 70%, #ffffff 85%);
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: text-1;
-  width: 100vw;
-  height: 90vh;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-@media only screen and (max-width: 360px) {
-  .grid-card .pr1_image-1 {
-    -ms-flex-item-align: top;
-        -ms-grid-row-align: top;
-        align-self: top;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-
-.grid-card .pr1_copy-2 {
-  color: #818892;
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: text-2;
-  padding: 0em 2rem;
-  width: 70%;
-  font-weight: 400;
-  line-height: 2.2em;
-  font-size: 1.12em;
+.head_title {
+  padding-top: 6em;
+  color: darkgray;
+  font-size: 2em;
   text-align: left;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 
-@media only screen and (max-width: 360px) {
-  .grid-card .pr1_copy-2 {
-    width: 100%;
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: text-2;
-    font-size: 1.5rem;
-    line-height: 3rem;
-    text-align: left;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
-  }
+.head_block {
+  width: 100%;
 }
 
-.grid-card img,
-.grid-card .pr1_img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  -ms-grid-row: 3;
+.roles {
+  padding-top: 4em;
+  grid-row-gap: 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(100px 1fr));
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.2em;
+  text-align: center;
   -ms-grid-column: 2;
-  grid-area: text-3;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  width: 100%;
+  -ms-grid-column-span: 1;
+  grid-column: 2/ span 1;
 }
 
-@media only screen and (max-width: 360px) {
-  .grid-card img,
-  .grid-card .pr1_img {
-    width: 420px;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    grid-area: text-3;
-  }
+.role1, .role3 {
+  padding-left: 2em;
+  text-align: left;
+  border-left: 3px solid red;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
-.grid-card .block_grid {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: (minmax(150px, 300px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
-  grid-auto-flow: column;
+.role2, .role4 {
+  padding-left: 2em;
+  text-align: left;
+  border-left: 3px solid grey;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 
-@media only screen and (max-width: 360px) {
-  .grid-card .block_grid {
-    grid-auto-flow: row;
-  }
+.tools {
+  padding: 6em 0em 6em 2em;
+  text-align: right;
+  -ms-grid-column: 2;
+  grid-column: 2;
 }
 
-.grid-card .block {
-  -webkit-box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.3);
-  height: 200px;
-  width: 200px;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+.tools i {
+  display: inline-block;
+  background-color: #f2f2f2;
+  width: 50px;
+  height: 50px;
 }
 
-.grid-card,
-.grid-card .itm1,
-.grid-card .itm2,
-.grid-card .itm3,
-.grid-card .itm4 {
+.sub_head {
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.section, .copy-1 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.swatches {
   text-align: center;
-  font-weight: 400;
-  color: white;
+  -ms-grid-column: 2;
+  grid-column: 2;
 }
 
-.grid-card .itm1 {
-  background-color: #b42024;
+.swatches .swatch {
+  text-align: center;
+  margin: 1em 2em 1em 1em;
+  display: inline-block;
+  width: 6em;
+  height: 6em;
+  background-color: pink;
 }
 
-.grid-card .itm2 {
-  background-color: #eb2826;
+.icon_img {
+  padding: 2em;
+  text-align: center;
+  -ms-grid-column: 2;
+  grid-column: 2;
 }
 
-.grid-card .itm3 {
-  background-color: #5d5f61;
+.icon_img .img1 {
+  max-width: 70%;
+  min-width: 45%;
 }
 
-.grid-card .itm4 {
-  background-color: #b42024;
+.copy-3 {
+  -ms-grid-column: 2;
+  grid-column: 2;
 }
 
-.grid-card .Icn_grid {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-grid-columns: (minmax(150px, 300px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+.icn_wrapper {
+  text-align: center;
+  padding: 3em 0em;
+  -ms-grid-column: 2;
+  grid-column: 2;
 }
 
-.grid-card .imgIcn {
-  -ms-grid-column-align: center;
-      justify-self: center;
+.icn_wrapper .icn {
+  margin-left: 1em;
+  margin-right: 0em;
+  background-color: pink;
+  display: inline-block;
+  width: 220px;
+  height: 220px;
 }
 
-.grid-card .imgIcn img {
-  width: 100px;
+.icn_wrapper, .icn_wrapper img {
+  margin: 0;
 }
 
-.grid-card .card-grid {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-grid-columns: (minmax(150px, 300px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+.copy-4 {
+  font-weight: 700;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  padding-bottom: 2em;
 }
 
-.grid-card .card-grid .imgCard,
-.grid-card .card-grid img {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  width: 80%;
-}
-
-.grid-card .pr1_image-6,
-.grid-card .pr1_image-7 {
+.img_wrapper {
   padding-top: 2em;
-  -o-object-fit: contain;
-     object-fit: contain;
+  grid-column: span 3;
 }
 
-.grid-card .footer {
-  text-align: center;
+.img_wrapper .imgs {
+  padding-top: 2em;
+}
+
+.img_wrapper, .img_wrapper img {
+  opacity: 0.5;
   width: 100%;
-  grid-area: text-4;
-}
-
-.grid-card .footer .btn {
-  grid-area: text-4;
-  margin: 50px 80px;
-  margin-right: 5%;
-  margin-left: 5%;
+  height: 25%;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .pr2_grid-card {
@@ -1732,8 +1644,6 @@ blockquote .person cite {
   display: block;
   text-transform: uppercase;
   font-weight: 700;
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: text-2;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -1749,8 +1659,6 @@ blockquote .person cite {
 
 .pr2_grid-card .pr2_image-2,
 .pr2_grid-card img {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
   grid-area: text-3;
   width: 100%;
   -o-object-fit: contain;
@@ -1765,8 +1673,6 @@ blockquote .person cite {
 }
 
 .pr2_grid-card .pr2_copy-2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: text-2;
   padding: 2em 2em;
   width: 70%;
@@ -1786,8 +1692,6 @@ blockquote .person cite {
     text-align: justify;
     text-justify: inter-word;
     text-align-last: justify;
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
     grid-area: text-2;
     padding: 2em 2.5em;
     width: 360px;
@@ -1797,8 +1701,6 @@ blockquote .person cite {
 }
 
 .pr2_grid-card .pr2_copy-3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
   grid-area: text-3;
   padding: 0em 2em;
   width: 70%;
@@ -1821,8 +1723,6 @@ blockquote .person cite {
 .pr2_grid-card .pr2_logo {
   -o-object-fit: contain;
      object-fit: contain;
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
   grid-area: text-3;
   width: 100%;
 }
@@ -1880,8 +1780,6 @@ blockquote .person cite {
     width: 360px;
     -o-object-fit: contain;
        object-fit: contain;
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
     grid-area: text-3;
   }
 }

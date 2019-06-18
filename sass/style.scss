@@ -1616,216 +1616,169 @@ blockquote {
 // GROW GRID_Pr1
 // width 1371 Height 1026
 
-*,
-*::before,
-*::after {
+//RBB INDEX --START--
+
+*, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html, body {
+    font-family: "Montserrat";
+    font-size: 1em;
+    line-height:2em;
+}
+
 .grid-card {
     display: grid;
-    grid-gap: 2em 0em;
-    grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
-    grid-template-rows: repeat(3, auto-fill);
-    grid-template-areas:
-        "...... text-1 ......"
-        "...... text-2 ......"
-        "...... text-3 ......"
-        "...... footer ......";
+    grid: auto-flow / minmax(1rem, 1fr) minmax(100px, 6fr)minmax(1rem, 1fr);
+}
 
-    @include mobile {
-        grid-template-columns: minmax(1em, 1fr) minmax(300px, 800px) minmax(1em,
-            1fr);
-        grid-template-rows: repeat(3, auto-fill);
-    }
+.img_head {
+    width: 100vw;
+    height: 400px;
+    background-size: cover;
+}
 
-    //SECTION 1
-    .pr1-showcase {
-        display: grid;
-        width: 100vw;
-        height: 85vh;
-        background-image: url("/images/Grow_images/GrowBoard-Game-and-cardsVerFA.jpg");
-        background-size: cover;
-        background-position: center;
-    }
+.head_title {
+    padding-top: 6em;
+    color: darkgray;
+    font-size: 2em;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
 
-    .pr1_scroll {
-        text-transform: uppercase;
-        font-weight: 700;
-        padding-bottom: 1em;
-        align-self: end;
-        color: black;
-        text-align: center;
-    }
+.head_block {
+    width: 100%;
+}
 
-    //SECTION 2
-    .roles {
-        // background-color: pink;
-        display: block;
-        text-transform: uppercase;
-        font-weight: 700;
-        grid-area: text-2;
-        align-self: start;
+.roles {
+    padding-top: 4em;
+    grid-row-gap: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px 1fr));
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: center;
+    grid-column: 2/ span 1;
+}
 
-        @include mobile {
-            width: 100vw;
-            margin: 0 calc(-50vw + 50%);
-            font-weight: 700;
-            text-align: center;
-        }
-    }
 
-    .pr1_image-1 {
-        background: linear-gradient(to top, #e7e5e6 70%, #ffffff 85%);
-        grid-area: text-1;
-        width: 100vw;
-        height: 90vh;
-        object-fit: contain;
+.role1, .role3 {
+    padding-left: 2em;
+    text-align: left;
+    border-left: 3px solid red;
+    grid-row: 1; 
+}
 
-        @include mobile {
-            align-self: top;
-            justify-self: center;
-            object-fit: cover;
-        }
-    }
+.role2, .role4 {
+    padding-left: 2em;
+    text-align: left;
+    border-left: 3px solid grey;
+    grid-row: 2; 
+}
 
-    .pr1_copy-2 {
-        // background-color: pink;
-        color: $brand-body-color;
-        grid-area: text-2;
-        padding: 0em 2rem;
-        width: 70%;
-        font-weight: 400;
-        line-height: $Std-line-height;
-        font-size: 1.12em;
-        text-align: left;
-        align-self: start;
-        justify-self: center;
-
-        @include mobile {
-            width: 100%;
-            grid-area: text-2;
-            font-size: 1.5rem;
-            line-height: $Mob-line-height;
-            text-align: left;
-            align-self: start;
-        }
-    }
-
-    //SECTION 3
-    img,
-    .pr1_img {
-        // background-color: pink;
-        object-fit: contain;
-        grid-area: text-3;
-        justify-self: center;
-        width: 100%;
-
-        @include mobile {
-            // background-color: pink;
-            width: 420px;
-            object-fit: contain;
-            grid-area: text-3;
-        }
-    }
-
-    .block_grid {
-        justify-content: center;
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
-        grid-auto-flow: column;
-
-        @include mobile {
-            grid-auto-flow: row;
-        }
-    }
-
-    .block {
-        box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.3);
-        height: 200px;
-        width: 200px;
-        justify-self: center;
-        background-image: linear-gradient(45deg,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0.5));
-    }
-
-    &,
-    .itm1,
-    .itm2,
-    .itm3,
-    .itm4 {
-        text-align: center;
-        font-weight: 400;
-        color: white;
-    }
-
-    .itm1 {
-        background-color: #b42024;
-    }
-
-    .itm2 {
-        background-color: #eb2826;
-    }
-
-    .itm3 {
-        background-color: #5d5f61;
-    }
-
-    .itm4 {
-        background-color: #b42024;
-    }
-
-    .Icn_grid {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
-    }
-
-    .imgIcn {
-        justify-self: center;
-
-        & img {
-            width: 100px;
-        }
-    }
-
-    .card-grid {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
-
-        .imgCard,
-        & img {
-            justify-self: center;
-            width: 80%;
-        }
-    }
-
-    .pr1_image-6,
-    .pr1_image-7 {
-        padding-top: 2em;
-        object-fit: contain;
-    }
-
-    //FOOTER START
-    .footer {
-        // background-color: pink;\
-        text-align: center;
-        width: 100%;
-        grid-area: text-4;
-
-        .btn {
-            grid-area: text-4;
-            margin: 50px 80px;
-            margin-right: 5%;
-            margin-left: 5%;
-        }
+.tools {
+    padding: 6em 0em 6em 2em;
+    text-align: right;
+    grid-column: 2;
+    
+    i {
+    display: inline-block;
+    background-color: #f2f2f2;
+    width: 50px;
+    height: 50px;
     }
 }
+
+.sub_head {
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 2em; 
+    grid-column: 2;
+}
+
+.section, .copy-1 {
+    grid-column: 2;
+}
+
+.swatches {
+    text-align: center;
+    grid-column: 2;
+    
+    .swatch {
+        text-align: center;
+        margin: 1em 2em 1em 1em;
+        display: inline-block;
+        width: 6em;
+        height: 6em;
+        background-color: pink;
+    }
+}
+
+.icon_img {
+    padding: 2em;
+    text-align: center;
+    grid-column: 2;
+    
+    .img1{
+        max-width: 70%;
+        min-width: 45%; 
+    }
+}
+
+.copy-3 {
+    grid-column: 2;
+}
+
+.icn_wrapper {
+    text-align: center;
+    padding: 3em 0em;
+    grid-column: 2;
+    
+    .icn{
+        margin-left: 1em;
+        margin-right: 0em;
+        background-color: pink;
+        display: inline-block;
+        width: 220px;
+        height: 220px;
+    }
+
+    &, img {
+        margin: 0;
+    }
+}
+
+.copy-4 {
+    font-weight: 700;
+    grid-column: 2;
+    padding-bottom: 2em;
+}
+
+.img_wrapper {
+    padding-top: 2em;
+    grid-column: span 3;
+    
+    .imgs {
+        padding-top: 2em;
+    }
+    
+    &, img {
+        opacity: 0.5;
+        width: 100%;
+        height: 25%;
+        line-height: 0;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+//RBB INDEX --END--
+
 
 //ODA_GRID_Pr2
 // width 1371 Height 1026
