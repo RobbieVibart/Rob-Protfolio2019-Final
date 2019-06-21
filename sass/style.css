@@ -1435,9 +1435,7 @@ blockquote .person cite {
   margin: 0 0 5px 0;
 }
 
-*,
-*::before,
-*::after {
+*, ::before, ::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -1619,43 +1617,56 @@ blockquote .person cite {
   margin: 0;
 }
 
-.footer {
+.img_wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.img_wrapper .img {
+  text-align: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
   width: 100%;
   grid-area: text-4;
   text-align: center;
 }
 
-.footer .btn {
+.img_wrapper .img .btn {
   grid-area: text-4;
   margin: 50px 80px;
   margin-right: 5%;
   margin-left: 5%;
 }
 
-.pr2_grid-card {
+.img_wrapper .pr2_grid-card {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   display: -ms-grid;
   display: grid;
   grid-gap: 2em 0em;
-  -ms-grid-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
-      grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
+  -ms-grid-columns: minmax(1em, 1fr) minmax(300px, 6fr) minmax(1em, 1fr);
+      grid-template-columns: minmax(1em, 1fr) minmax(300px, 6fr) minmax(1em, 1fr);
   -ms-grid-rows: (auto-fill)[3];
       grid-template-rows: repeat(3, auto-fill);
-      grid-template-areas: "......text-1......" "......text-2...." "......text-3......" "......foot......";
+      grid-template-areas: "......text-1......" "......text-2...." "......text-3......" "...... footer ......";
 }
 
 @media only screen and (max-width: 360px) {
-  .pr2_grid-card {
-    -ms-grid-columns: minmax(1em, 1fr) minmax(360px, 450px) minmax(1em, 1fr);
-        grid-template-columns: minmax(1em, 1fr) minmax(360px, 450px) minmax(1em, 1fr);
+  .img_wrapper .pr2_grid-card {
+    -ms-grid-columns: minmax(1em, 1fr) minmax(360px, 800px) minmax(1em, 1fr);
+        grid-template-columns: minmax(1em, 1fr) minmax(360px, 800px) minmax(1em, 1fr);
     -ms-grid-rows: (auto-fill)[3];
         grid-template-rows: repeat(3, auto-fill);
   }
 }
 
-.pr2_grid-card .showcase {
+.img_wrapper .pr2_grid-card .showcase {
   background-image: url("/images/Oda_images/Oda_0001.jpg");
   background-size: cover;
   background-position: center;
@@ -1663,27 +1674,25 @@ blockquote .person cite {
   height: 80vh;
 }
 
-.pr2_grid-card .pr2_roles {
+.img_wrapper .pr2_grid-card .pr2_roles {
   display: block;
   text-transform: uppercase;
   font-weight: 700;
   grid-area: text-2;
   -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
+      align-self: flex-start;
 }
 
 @media only screen and (max-width: 360px) {
-  .pr2_grid-card .pr2_roles {
-    width: 100vw;
-    margin: 0 calc(-50vw + 50%);
+  .img_wrapper .pr2_grid-card .pr2_roles {
+    width: 360px;
     font-weight: 700;
-    text-align: center;
+    text-align: start;
   }
 }
 
-.pr2_grid-card .pr2_image-2,
-.pr2_grid-card img {
+.img_wrapper .pr2_grid-card .pr2_image-2,
+.img_wrapper .pr2_grid-card img {
   grid-area: text-3;
   width: 100%;
   -o-object-fit: contain;
@@ -1691,15 +1700,15 @@ blockquote .person cite {
 }
 
 @media only screen and (max-width: 360px) {
-  .pr2_grid-card .pr2_image-2,
-  .pr2_grid-card img {
+  .img_wrapper .pr2_grid-card .pr2_image-2,
+  .img_wrapper .pr2_grid-card img {
     width: 360px;
   }
 }
 
-.pr2_grid-card .pr2_copy-2 {
+.img_wrapper .pr2_grid-card .pr2_copy-2 {
   grid-area: text-2;
-  padding: 0em 2em;
+  padding: 2em 2em;
   width: 70%;
   line-height: 2.2em;
   font-weight: 400;
@@ -1713,17 +1722,19 @@ blockquote .person cite {
 }
 
 @media only screen and (max-width: 360px) {
-  .pr2_grid-card .pr2_copy-2 {
+  .img_wrapper .pr2_grid-card .pr2_copy-2 {
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: justify;
     grid-area: text-2;
-    padding: 0em 2em;
-    width: 100%;
+    padding: 2em 2.5em;
+    width: 360px;
     font-size: 1.5rem;
-    line-height: 2.5rem;
-    text-align: left;
+    line-height: 3rem;
   }
 }
 
-.pr2_grid-card .pr2_copy-3 {
+.img_wrapper .pr2_grid-card .pr2_copy-3 {
   grid-area: text-3;
   padding: 0em 2em;
   width: 70%;
@@ -1734,46 +1745,46 @@ blockquote .person cite {
 }
 
 @media only screen and (max-width: 360px) {
-  .pr2_grid-card .pr2_copy-3 {
-    padding: 0em 2em;
-    width: 100%;
+  .img_wrapper .pr2_grid-card .pr2_copy-3 {
+    padding: 4em 2em;
+    width: 360px;
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
     text-align: left;
   }
 }
 
-.pr2_grid-card .pr2_logo {
+.img_wrapper .pr2_grid-card .pr2_logo {
   -o-object-fit: contain;
      object-fit: contain;
   grid-area: text-3;
   width: 100%;
 }
 
-.pr2_grid-card .pr2_logo > img {
+.img_wrapper .pr2_grid-card .pr2_logo > img {
   padding: 2em 0em;
 }
 
-.pr2_grid-card .pr2_logo .pr2_logos {
+.img_wrapper .pr2_grid-card .pr2_logo .pr2_logos {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: (minmax(150px, 1200px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1200px));
+  -ms-grid-columns: (minmax(360px, 1200px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1200px));
 }
 
-.pr2_grid-card .pr2_logo .pr2_logos .pr2_logo1 {
+.img_wrapper .pr2_grid-card .pr2_logo .pr2_logos .pr2_logo1 {
   width: 600px;
   -ms-grid-column: 1;
   grid-column: 1;
 }
 
 @media only screen and (max-width: 360px) {
-  .pr2_grid-card .pr2_logo .pr2_logos .pr2_logo1 {
+  .img_wrapper .pr2_grid-card .pr2_logo .pr2_logos .pr2_logo1 {
     padding: 0;
-    width: 100%;
+    width: 360px;
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 1;
@@ -1781,16 +1792,16 @@ blockquote .person cite {
   }
 }
 
-.pr2_grid-card .pr2_logo .pr2_logos .pr2_logo2 {
+.img_wrapper .pr2_grid-card .pr2_logo .pr2_logos .pr2_logo2 {
   width: 600px;
   -ms-grid-column: 2;
   grid-column: 2;
 }
 
 @media only screen and (max-width: 360px) {
-  .pr2_grid-card .pr2_logo .pr2_logos .pr2_logo2 {
+  .img_wrapper .pr2_grid-card .pr2_logo .pr2_logos .pr2_logo2 {
     padding: 0;
-    width: 100%;
+    width: 360px;
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 2;
@@ -1799,21 +1810,25 @@ blockquote .person cite {
 }
 
 @media only screen and (max-width: 360px) {
-  .pr2_grid-card .pr2_logo {
-    width: 420px;
+  .img_wrapper .pr2_grid-card .pr2_logo {
+    width: 360px;
     -o-object-fit: contain;
        object-fit: contain;
     grid-area: text-3;
   }
 }
 
-.pr2_grid-card .footer {
-  grid-area: foot;
-  width: 100%;
+.img_wrapper .pr2_grid-card .footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: footer;
+  text-align: center;
 }
 
-.pr2_grid-card .footer .btn {
-  grid-area: foot;
+.img_wrapper .pr2_grid-card .footer .btn {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: footer;
   margin: 50px 80px;
   margin-right: 5%;
   margin-left: 5%;

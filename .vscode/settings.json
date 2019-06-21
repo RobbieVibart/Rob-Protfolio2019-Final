@@ -3,5 +3,6 @@
     "bracketPairColorizer.colorMode": "Consecutive",
     "editor.matchBrackets": false,
     "bracketPairColorizer.showBracketsInGutter": false,
+    "liveServer.settings.port": 5501,
     
 }

@@ -95,6 +95,12 @@ $form-group-margin-bottom: 30px !default;
     -moz-osx-font-smoothing: grayscale;
 }
 
+// User Typography
+$Mob-line-height:   3rem;
+$Std-line-height:   2.2em;
+//
+
+//User Screen Size
 $mobile: 360px;
 
 @mixin mobile {
@@ -102,6 +108,7 @@ $mobile: 360px;
         @content;
     }
 }
+// 
 
 // Import
 @import "bootstrap/mixins";
@@ -1609,9 +1616,9 @@ blockquote {
 // GROW GRID_Pr1
 // width 1371 Height 1026
 
-*,
-*::before,
-*::after {
+//RBB INDEX --START--
+
+*, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -1777,12 +1784,18 @@ blockquote {
         padding: 0;
         margin: 0;
     }
-
 }
 
-    //FOOTER START
-    .footer {
-        // background-color: pink;
+
+.img_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-column: 2;
+    
+    .img {
+        text-align: center;
+        object-fit: cover;
+        display: block;
         width: 100%;
         grid-area: text-4;
         text-align: center;
@@ -1796,6 +1809,10 @@ blockquote {
     }
 
 
+
+//RBB INDEX --END--
+
+
 //ODA_GRID_Pr2
 // width 1371 Height 1026
 
@@ -1803,16 +1820,16 @@ blockquote {
     justify-content: center;
     display: grid;
     grid-gap: 2em 0em;
-    grid-template-columns: minmax(1em, 1fr) minmax(800px, 1200px) minmax(1em, 1fr);
+    grid-template-columns: minmax(1em, 1fr) minmax(300px, 6fr) minmax(1em, 1fr);
     grid-template-rows: repeat(3, auto-fill);
     grid-template-areas:
         "......text-1......"
         "......text-2...."
         "......text-3......"
-        "......foot......";
+        "...... footer ......";
 
     @include mobile {
-        grid-template-columns: minmax(1em, 1fr) minmax(360px, 450px) minmax(1em,
+        grid-template-columns: minmax(1em, 1fr) minmax(360px, 800px) minmax(1em,
             1fr);
         grid-template-rows: repeat(3, auto-fill);
     }
@@ -1836,14 +1853,12 @@ blockquote {
         text-transform: uppercase;
         font-weight: 700;
         grid-area: text-2;
-        align-self: start;
-
+        align-self: flex-start;
+        
         @include mobile {
-            // background-color: pink;
-            width: 100vw;
-            margin: 0 calc(-50vw + 50%);
+            width: 360px;
             font-weight: 700;
-            text-align: center;
+            text-align: start;
         }
     }
 
@@ -1862,9 +1877,9 @@ blockquote {
 
     .pr2_copy-2 {
         grid-area: text-2;
-        padding: 0em 2em;
+        padding: 2em 2em;
         width: 70%;
-        line-height: 2.2em;
+        line-height: $Std-line-height;
         font-weight: 400;
         font-size: 1.12em;
         text-align: left;
@@ -1872,13 +1887,18 @@ blockquote {
         justify-self: center;
 
         @include mobile {
-            grid-area: text-2;
-            padding: 0em 2em;
-            width: 100%;
-            font-size: 1.5rem;
-            line-height: 2.5rem;
-            text-align: left;
+            // word-spacing: -0.3rem;
+            // hyphens: auto;
+            // text-align: left;
             // align-self: start;
+            text-align: justify;
+            text-justify: inter-word;
+            text-align-last: justify;
+            grid-area: text-2;
+            padding: 2em 2.5em;
+            width: 360px;
+            font-size: 1.5rem;
+            line-height: $Mob-line-height;
         }
     }
 
@@ -1887,18 +1907,18 @@ blockquote {
         grid-area: text-3;
         padding: 0em 2em;
         width: 70%;
-        line-height: 2.2em;
+        line-height: $Std-line-height;
         font-weight: 400;
         font-size: 1.12em;
         text-align: left;
         
         @include mobile {
-            padding: 0em 2em;
-            width: 100%;
-            font-size: 1.5rem;
-            line-height: 2.5rem;
-            text-align: left;
             // align-self: start;
+            padding: 4em 2em;
+            width: 360px;
+            font-size: 1.5rem;
+            line-height: $Mob-line-height;
+            text-align: left;
         }
     }
 
@@ -1917,7 +1937,7 @@ blockquote {
         .pr2_logos {
             display: grid;
             justify-content: center;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1200px));
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1200px));
             
 
             .pr2_logo1 {
@@ -1926,7 +1946,7 @@ blockquote {
 
                 @include mobile {
                     padding: 0;
-                    width: 100%;
+                    width: 360px;
                     grid-column: 1;
                     grid-row: 1;
                 }
@@ -1938,7 +1958,7 @@ blockquote {
 
                 @include mobile {
                     padding: 0;
-                    width: 100%;
+                    width: 360px;
                     grid-column: 1;
                     grid-row: 2;
                 }
@@ -1946,7 +1966,7 @@ blockquote {
         }
 
         @include mobile {
-            width: 420px;
+            width: 360px;
             object-fit: contain;
             grid-area: text-3;
         }
@@ -1955,16 +1975,15 @@ blockquote {
     //FOOTER START
     .footer {
         // background: pink;
-        grid-area: foot;
-        width: 100%;
+        grid-area: footer;
+        text-align: center;
         
         .btn {
-            grid-area: foot;
+            grid-area: footer;
             margin: 50px 80px;
             margin-right: 5%;
             margin-left: 5%;
         }
     }
 }
-
-// NOTE SM LAPTOP- (w)1366x632
+}
