@@ -1616,24 +1616,33 @@ blockquote {
 // GROW GRID_Pr1
 // width 1371 Height 1026
 
-//RBB INDEX --START--
-
 *, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html, body {
+    font-family: "Montserrat";
+    font-size: 1em;
+    color: grey;
+    line-height: 2em;
+}
+
 .head_img {
     position: relative;
     background-image: url('/images/Grow_images/img-head.png');
-    height: 70vh;
-    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: top ;
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
 .head_title {
+    position: absolute;
     width: 100%;
     font-size: 5em;
     color: white;
@@ -1641,7 +1650,6 @@ blockquote {
     
     &, h3 {
         text-shadow: 5px 5px 10px black;
-        position: absolute;
         top: 50%;
         font-weight: 900;
         text-align: center;
@@ -1650,15 +1658,12 @@ blockquote {
 }
 
 .grid-card {
-    -ms-grid-column-align: center;
     display: grid;
-    grid: auto-flow / minmax(2px, 1fr) minmax(300px, 3fr)minmax(2px, 1fr);
+    grid: auto-flow / minmax(2px, 1fr) minmax(400px, 3fr)minmax(2px, 1fr);
+    background-color: white;
 }
 
 
-.head_block {
-    width: 100%;
-}
 
 .roles {
     color: #c2c2c2;
@@ -1669,7 +1674,7 @@ blockquote {
     font-weight: 400;
     font-size: 1.5em;
     text-align: center;
-    grid-column: 2/ span 1;
+    grid-column: 2 / span 1;
 }
 
 
@@ -1701,6 +1706,11 @@ blockquote {
     }
 }
 
+.box {
+    background-color: pink;
+    grid-column: 2;
+}
+
 .sub_head {
     color: #c2c2c2;
     font-size: 1.3em;
@@ -1708,18 +1718,24 @@ blockquote {
     grid-column: 2;
 
     & h3 {
-        padding: 0em 0.5em;
+        padding: 0.5em 0.5em;
         margin: 0;
         font-weight: 600;
     }
 }
 
-.section {
-    padding: 0em 1em;
-}
 
 .copy-1 {
+    padding: 0em 1em;
     grid-column: 2;
+}
+
+.icn_mag {
+    grid-column: 2;
+    background-position: right;
+    background-image: url("/images/Grow_images/magnifying-glass.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .copy-2 {
