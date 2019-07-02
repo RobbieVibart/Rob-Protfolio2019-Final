@@ -1453,13 +1453,24 @@ html, body {
   position: relative;
   background-image: url("/images/Grow_images/img-head.png");
   width: 100%;
-  min-height: 100vh;
-  top: -50%;
-  background-attachment: fixed;
+  height: 100vh;
+  position: fixed;
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
   overflow: hidden;
+}
+
+.img-header {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-header img {
+  width: 100%;
 }
 
 .head_title {
