@@ -1633,12 +1633,12 @@ html, body {
     position: relative;
     background-image: url('/images/Grow_images/img-head.png');
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    top: -50%;
     background-attachment: fixed;
-    background-position: top ;
+    background-position: center ;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .head_title {
@@ -1659,7 +1659,7 @@ html, body {
 
 .grid-card {
     display: grid;
-    grid: auto-flow / minmax(2px, 1fr) minmax(400px, 3fr)minmax(2px, 1fr);
+    grid: auto-flow / minmax(2px, 1fr) minmax(350px, 3fr)minmax(2px, 1fr);
     background-color: white;
 }
 
