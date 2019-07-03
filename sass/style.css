@@ -1451,36 +1451,25 @@ html, body {
 
 .head_img {
   position: relative;
+  background-color: pink;
   background-image: url("/images/Grow_images/img-head.png");
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
-  position: fixed;
   background-position: center;
-  background-size: fill;
+  background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
+  background-attachment: fixed;
 }
 
-.img-header {
-  -ms-grid-column: 2;
-  grid-column: 2;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.img-header img {
-  width: 100%;
-}
-
-.head_title {
-  position: absolute;
+.head_img .head_title {
+  position: relative;
+  max-height: 100%;
   width: 100%;
   font-size: 5em;
   color: white;
 }
 
-.head_title, .head_title h3 {
+.head_img, .head_img h3 {
   text-shadow: 5px 5px 10px black;
   top: 50%;
   font-weight: 900;
@@ -1676,6 +1665,12 @@ html, body {
   grid-column: 2;
   margin-right: 5%;
   margin-left: 5%;
+}
+
+@media (max-width: 450px) {
+  .head_img {
+    position: fixed;
+  }
 }
 
 .pr2_grid-card {
