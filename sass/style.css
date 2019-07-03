@@ -1443,9 +1443,9 @@ blockquote .person cite {
 }
 
 html, body {
+  position: relative;
   font-family: "Montserrat";
   font-size: 1em;
-  color: grey;
   line-height: 2em;
 }
 
@@ -1481,7 +1481,6 @@ html, body {
   display: -ms-grid;
   display: grid;
   grid: auto-flow/minmax(2px, 1fr) minmax(350px, 3fr) minmax(2px, 1fr);
-  background-color: white;
 }
 
 .roles {
@@ -1669,7 +1668,10 @@ html, body {
 
 @media (max-width: 450px) {
   .head_img {
+    z-index: -1;
+    position: relative;
     position: fixed;
+    background-position: top center;
   }
 }
 
