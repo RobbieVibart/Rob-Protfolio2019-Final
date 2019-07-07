@@ -1665,54 +1665,52 @@ html, body {
   margin-left: 5%;
 }
 
-.MainContainer {
-  margin: 0;
-  padding: 0;
-  -webkit-perspective: 1px;
-          perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-.ContentContainer {
-  height: 100vh;
-  position: relative;
-  display: block;
-  background-color: white;
-  z-index: 1;
-}
-
-.Content {
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 75px 0;
-}
-
-p {
-  margin: 75px 0;
-}
-
-.ParallaxContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  z-index: -1;
-  height: 100vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: translateZ(-1px) scale(2);
-          transform: translateZ(-1px) scale(2);
-  background: url("/images/Grow_images/img-head.png");
-  background-position: center;
-  background-size: cover;
+@media (min-width: 450px) {
+  .main--container {
+    margin: 0;
+    padding: 0;
+    -webkit-perspective: 1px;
+            perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  .content--container {
+    height: 50vh;
+    position: relative;
+    display: block;
+    background-color: white;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .content {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 75px 0;
+  }
+  .parallax--container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateZ(-1px) scale(2);
+            transform: translateZ(-1px) scale(2);
+    overflow: hidden;
+    background: url("/images/Grow_images/img-head.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .pr2_grid-card {

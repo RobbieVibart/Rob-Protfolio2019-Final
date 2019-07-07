@@ -1830,50 +1830,53 @@ html, body {
 
 }
 // GROW MEDIA QUERIES
-@media(max-width: 450px) {
+@media(min-width: 450px) {
+
+    .main--container {
+        margin: 0;
+        padding: 0;
+        perspective: 1px;
+        height: 100vh;
+        // width: 100vw;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transform-style: preserve-3d;
+      }
+      
+      .content--container {
+        height: 50vh;
+        position: relative;
+        display: block;
+        background-color: white;
+        z-index: 1;
+        overflow: hidden;
+      }
+      
+      .content {
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 75px 0;
+      }
+      
+      
+      
+      .parallax--container {
+        display: flex;
+        position: relative;
+        z-index: -1;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        transform: translateZ(-1px) scale(2);
+        overflow: hidden;
+        background: url("/images/Grow_images/img-head.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
 }
 
-.MainContainer {
-    margin: 0;
-    padding: 0;
-    perspective: 1px;
-    height: 100vh;
-    // width: 100vw;
-    overflow-x: hidden;
-    overflow-y: auto;
-    transform-style: preserve-3d;
-  }
-  
-  .ContentContainer {
-      height: 100vh;
-    position: relative;
-    display: block;
-    background-color: white;
-    z-index: 1;
-  }
-  
-  .Content {
-    max-width: 750px;
-    margin: 0 auto;
-    padding: 75px 0;
-  }
-  
-  p {
-    margin: 75px 0;
-  }
-  
-  .ParallaxContainer {
-    display: flex;
-    position: relative;
-    z-index: -1;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    transform: translateZ(-1px) scale(2);
-    background: url("/images/Grow_images/img-head.png");
-    background-position: center;
-    background-size: cover;
-  }
+
 //RBB INDEX --END--
 
 
