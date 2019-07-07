@@ -1671,14 +1671,14 @@ html, body {
   -webkit-perspective: 1px;
           perspective: 1px;
   height: 100vh;
-  width: 100vw;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
 
 .ContentContainer {
+  height: 100vh;
   position: relative;
   display: block;
   background-color: white;
@@ -1711,7 +1711,8 @@ p {
   -webkit-transform: translateZ(-1px) scale(2);
           transform: translateZ(-1px) scale(2);
   background: url("/images/Grow_images/img-head.png");
-  background-color: #fae4d8;
+  background-position: center;
+  background-size: cover;
 }
 
 .pr2_grid-card {

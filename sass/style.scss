@@ -1838,13 +1838,14 @@ html, body {
     padding: 0;
     perspective: 1px;
     height: 100vh;
-    width: 100vw;
+    // width: 100vw;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     transform-style: preserve-3d;
   }
   
   .ContentContainer {
+      height: 100vh;
     position: relative;
     display: block;
     background-color: white;
@@ -1870,7 +1871,8 @@ html, body {
     align-items: center;
     transform: translateZ(-1px) scale(2);
     background: url("/images/Grow_images/img-head.png");
-    background-color: rgb(250,228, 216);
+    background-position: center;
+    background-size: cover;
   }
 //RBB INDEX --END--
 
