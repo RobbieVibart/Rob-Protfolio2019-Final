@@ -1527,12 +1527,6 @@ html, body {
   font-size: 2em;
 }
 
-.box {
-  background-color: pink;
-  -ms-grid-column: 2;
-  grid-column: 2;
-}
-
 .sub_head {
   color: #c2c2c2;
   font-size: 1.3em;
@@ -1551,15 +1545,6 @@ html, body {
   padding: 0em 1em;
   -ms-grid-column: 2;
   grid-column: 2;
-}
-
-.icn_mag {
-  -ms-grid-column: 2;
-  grid-column: 2;
-  background-position: right;
-  background-image: url("/images/Grow_images/magnifying-glass.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .copy-2 {
