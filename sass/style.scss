@@ -1638,11 +1638,10 @@ html, body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    // overflow: hidden;
-
+    overflow: hidden;
+    
     .head_title {
-        position: relative;
-        max-height: 100%;
+        position: absolute;
         width: 100%;
         font-size: 5em;
         color: white;
@@ -1650,23 +1649,21 @@ html, body {
 
     &, h3 {
         text-shadow: 5px 5px 10px black;
-        top: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-weight: 900;
         text-align: center;
         text-transform: uppercase;
     }
 }
 
-
-
-
 .grid-card {
     display: grid;
     grid: auto-flow / minmax(2px, 1fr) minmax(350px, 3fr)minmax(2px, 1fr);
     background-color: white;
+    
 }
-
-
 
 .roles {
     color: #c2c2c2;
@@ -1710,12 +1707,12 @@ html, body {
 }
 
 .sub_head {
-    color: #c2c2c2;
     font-size: 1.3em;
     text-transform: uppercase;
     grid-column: 2;
-
+    
     & h3 {
+        color: #c2c2c2;
         padding: 0.5em 0.5em;
         margin: 0;
         font-weight: 600;
