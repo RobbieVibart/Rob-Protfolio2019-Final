@@ -1826,174 +1826,80 @@ html, body {
     }
 
 }
-
-
 //RBB INDEX --END--
 
 
 //ODA_GRID_Pr2
 // width 1371 Height 1026
 
+   //SECTION 1
+   .showcase {
+    background-image: url("/images/Oda_images/Oda_0001.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+
+    
+}
+
 .pr2_grid-card {
-    justify-content: center;
+    // justify-content: center;
     display: grid;
-    grid-gap: 2em 0em;
-    grid-template-columns: minmax(1em, 1fr) minmax(300px, 6fr) minmax(1em, 1fr);
-    grid-template-rows: repeat(3, auto-fill);
-    grid-template-areas:
-        "......text-1......"
-        "......text-2...."
-        "......text-3......"
-        "...... footer ......";
-
-    @include mobile {
-        grid-template-columns: minmax(1em, 1fr) minmax(360px, 800px) minmax(1em,
-            1fr);
-        grid-template-rows: repeat(3, auto-fill);
-    }
-
-    //SECTION 1
-    .showcase {
-        background-image: url("/images/Oda_images/Oda_0001.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 110vw;
-        height: 80vh;
-
-        
-    }
+    grid: auto-flow / minmax(2px, 1fr) minmax(350px, 3fr) minmax(2px, 1fr);
+    background-color: white;
 
     //SECTION 2
-
     .pr2_roles {
-        // background-color: pink;
-        display: block;
         text-transform: uppercase;
         font-weight: 700;
-        grid-area: text-2;
-        align-self: flex-start;
-        
-        @include mobile {
-            width: 360px;
-            font-weight: 700;
-            text-align: start;
-        }
+        grid-column: 2;
     }
 
     .pr2_image-2,
     img {
-        grid-area: text-3;
+        grid-column: 2;
         width: 100%;
-        // align-self: center;
-        // justify-self: center;
         object-fit: contain;
 
-        @include mobile {
-            width: 360px;
-        }
     }
 
     .pr2_copy-2 {
-        grid-area: text-2;
-        padding: 2em 2em;
-        width: 70%;
+        grid-column: 2;
         line-height: $Std-line-height;
         font-weight: 400;
         font-size: 1.12em;
         text-align: left;
-        align-self: start;
-        justify-self: center;
 
-        @include mobile {
-            // word-spacing: -0.3rem;
-            // hyphens: auto;
-            // text-align: left;
-            // align-self: start;
-            text-align: justify;
-            text-justify: inter-word;
-            text-align-last: justify;
-            grid-area: text-2;
-            padding: 2em 2.5em;
-            width: 360px;
-            font-size: 1.5rem;
-            line-height: $Mob-line-height;
-        }
     }
 
-    .pr2_copy-3 {
-        // background-color: pink;
-        grid-area: text-3;
-        padding: 0em 2em;
-        width: 70%;
-        line-height: $Std-line-height;
-        font-weight: 400;
-        font-size: 1.12em;
-        text-align: left;
-        
-        @include mobile {
-            // align-self: start;
-            padding: 4em 2em;
-            width: 360px;
-            font-size: 1.5rem;
-            line-height: $Mob-line-height;
-            text-align: left;
-        }
+    .sketch img {
+        grid-column: 1;
     }
 
     //SECTION 3
-
     .pr2_logo {
-        // background-color: pink;
-        object-fit: contain;
-        grid-area: text-3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: 2;
+    }
+    
+    .pr2_logos {
         width: 100%;
+    }
 
-        > img {
-            padding: 2em 0em;
-        }
-        
-        .pr2_logos {
-            display: grid;
-            justify-content: center;
-            grid-template-columns: repeat(auto-fit, minmax(360px, 1200px));
-            
+    .pr2_copy-3 {
+        grid-column: 2;
+    }
 
-            .pr2_logo1 {
-                width: 600px;
-                grid-column: 1;
-
-                @include mobile {
-                    padding: 0;
-                    width: 360px;
-                    grid-column: 1;
-                    grid-row: 1;
-                }
-            }
-
-            .pr2_logo2 {
-                width: 600px;
-                grid-column: 2;
-
-                @include mobile {
-                    padding: 0;
-                    width: 360px;
-                    grid-column: 1;
-                    grid-row: 2;
-                }
-            }
-        }
-
-        @include mobile {
-            width: 360px;
-            object-fit: contain;
-            grid-area: text-3;
-        }
+    .header__image, img {
+        grid-column: 1/-1;
+        width: 100%;
     }
 
     //FOOTER START
     .footer {
         background: pink;
-        display: block;
         grid-column: 2;
         text-align: center;
         
