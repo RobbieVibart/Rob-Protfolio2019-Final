@@ -104,7 +104,7 @@ $Std-line-height:   2.2em;
 $mobile: 360px;
 
 @mixin mobile {
-    @media only screen and (max-width: 360px) {
+    @media only screen and (max-width: 450px) {
         @content;
     }
 }
@@ -1631,9 +1631,8 @@ html, body {
 }
 
 .head_img {
-    position: relative;
     background-image: url('/images/Grow_images/img-head.png');
-    max-width: 100vw;
+    width: 100vw;
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -1641,7 +1640,6 @@ html, body {
     overflow: hidden;
     
     .head_title {
-        position: absolute;
         width: 100%;
         font-size: 5em;
         color: white;
@@ -1814,6 +1812,20 @@ html, body {
 
 }
 
+@include mobile {
+
+    .img_wrapper {   
+    background-color: #c14448;
+
+        .img {
+            object-fit: cover;
+            height: 100vw;
+            width: 100%;
+        }
+        
+    }
+
+}
 
 
 //RBB INDEX --END--
