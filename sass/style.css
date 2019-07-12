@@ -1342,7 +1342,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(../images/loader.gif) center no-repeat #fff;
+  background: url(/images/loader.gif) center no-repeat #fff;
 }
 
 .js .animate-box {
@@ -1462,7 +1462,7 @@ html, body {
   display: -ms-grid;
   display: grid;
   grid: auto-flow/minmax(2px, 1fr) minmax(350px, 3fr) minmax(2px, 1fr);
-  background-color: pink;
+  background-color: white;
 }
 
 .roles {
