@@ -1466,21 +1466,6 @@ html, body {
   background-color: white;
 }
 
-.role__container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  -ms-grid-column: 2;
-  grid-column: 2;
-}
-
-.role__container .role__copy {
-  padding: 2em;
-  font-size: 1em line-height 2em;
-  font-weight: 200;
-}
-
 .roles {
   color: #c2c2c2;
   padding: 2em 1em;
@@ -1706,6 +1691,21 @@ body {
   background-color: white;
 }
 
+.pr2_grid-card .role__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.pr2_grid-card .role__container .role__copy {
+  padding: 2em;
+  font-size: 1em line-height 2em;
+  font-weight: 200;
+}
+
 .pr2_grid-card .pr2_roles {
   text-transform: uppercase;
   font-weight: 700;
@@ -1727,7 +1727,7 @@ body {
   grid-column: 2;
   line-height: 2em;
   font-weight: 400;
-  font-size: 1.12em;
+  font-size: 1em;
   text-align: left;
   padding: 0em 2em;
 }
@@ -1747,6 +1747,7 @@ body {
 }
 
 .pr2_grid-card .pr2_copy-3 {
+  font-size: 1em;
   line-height: 2em;
   padding: 0em 2em;
   -ms-grid-column: 2;

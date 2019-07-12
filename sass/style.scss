@@ -1399,21 +1399,6 @@ html, body {
     
 }
 
-.role__container {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	grid-column: 2;
-
-	.role__copy {
-		padding: 2em;
-		font-size: $Std-font-size
-		line-height $Std-line-height;
-		font-weight: 200;
-	}
-}
-
-
-
 .roles {
     color: #c2c2c2;
     padding: 2em 1em;
@@ -1597,6 +1582,7 @@ body {
         width: 100%;
         font-size: 5em;
         color: white;
+
     }
 
     &, h3 {
@@ -1613,7 +1599,20 @@ body {
 .pr2_grid-card {
     display: grid;
     grid: auto-flow / minmax(2px, 1fr) minmax(350px, 3fr) minmax(2px, 1fr);
-    background-color: white;
+	background-color: white;
+	
+	.role__container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-column: 2;
+	
+		.role__copy {
+			padding: 2em;
+			font-size: $Std-font-size
+			line-height $Std-line-height;
+			font-weight: 200;
+		}
+	}
 
     //SECTION 2
     .pr2_roles {
@@ -1634,7 +1633,7 @@ body {
         grid-column: 2;
         line-height: $Std-line-height;
         font-weight: 400;
-        font-size: 1.12em;
+        font-size: $Std-font-size;
         text-align: left;
         padding: 0em 2em;
 
@@ -1652,6 +1651,7 @@ body {
     }
     
     .pr2_copy-3 {
+		font-size: $Std-font-size;
 		line-height: $Std-line-height;
         padding: 0em 2em;
         grid-column: 2;
