@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  padding: 25px 0;
+  padding: 50px 0px;
   z-index: 1;
   background: #fff;
 }
@@ -113,7 +113,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav .fh5co-top-menu {
-  width: 60%;
+  text-align: right;
+  width: 63.5%;
 }
 
 .fh5co-nav .fh5co-top-social {
@@ -202,7 +203,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav ul {
-  padding: 0;
+  padding: 0px 0px;
   margin: 3px 0 0 0;
 }
 
@@ -1465,6 +1466,21 @@ html, body {
   background-color: white;
 }
 
+.role__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.role__container .role__copy {
+  padding: 2em;
+  font-size: 1em line-height 2em;
+  font-weight: 200;
+}
+
 .roles {
   color: #c2c2c2;
   padding: 2em 1em;
@@ -1709,7 +1725,7 @@ body {
 .pr2_grid-card .pr2_copy-2 {
   -ms-grid-column: 2;
   grid-column: 2;
-  line-height: 2.2em;
+  line-height: 2em;
   font-weight: 400;
   font-size: 1.12em;
   text-align: left;
@@ -1731,6 +1747,7 @@ body {
 }
 
 .pr2_grid-card .pr2_copy-3 {
+  line-height: 2em;
   padding: 0em 2em;
   -ms-grid-column: 2;
   grid-column: 2;

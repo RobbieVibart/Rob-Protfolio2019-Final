@@ -96,7 +96,8 @@ $form-group-margin-bottom: 30px !default;
 
 // User Typography
 $Mob-line-height:   3rem;
-$Std-line-height:   2.2em;
+$Std-line-height:   2em;
+$Std-font-size: 1em;
 //
 
 //User Screen Size
@@ -189,7 +190,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 25px 0;
+	padding: 50px 0px;
 	z-index: 1;
 	background: $brand-overlay-color;
 	@media screen and (max-width: $screen-sm) {
@@ -204,7 +205,8 @@ h1, h2, h3, h4, h5, h6, figure {
 		width: 20%;
 	}
 	.fh5co-top-menu {
-		width: 60%;
+        text-align: right;
+		width: 63.5%;
 	}
 	.fh5co-top-social {
 		width: 20%;
@@ -285,7 +287,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		}
 	}
 	ul {
-		padding: 0;
+		padding: 0px 0px;
 		margin: 3px 0 0 0;
 		li {
 			padding: 0;
@@ -1348,8 +1350,7 @@ blockquote {
 	}
 }
 
-// GROW GRID_Pr1
-// width 1371 Height 1026
+// RBB--START--
 
 *, ::before, ::after {
     margin: 0;
@@ -1359,8 +1360,8 @@ blockquote {
 
 html, body {
     font-family: "Montserrat";
-    font-size: 1em;
-    line-height: 2em;
+    font-size: $Std-font-size;
+    line-height: $Std-line-height;
 }
 
 .grow__head {
@@ -1392,9 +1393,26 @@ html, body {
 .grid-card {
     display: grid;
     grid: auto-flow / minmax(2px, 1fr) minmax(350px, 3fr)minmax(2px, 1fr);
-    background-color: white;
+	background-color: white;
+	
+	
     
 }
+
+.role__container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-column: 2;
+
+	.role__copy {
+		padding: 2em;
+		font-size: $Std-font-size
+		line-height $Std-line-height;
+		font-weight: 200;
+	}
+}
+
+
 
 .roles {
     color: #c2c2c2;
@@ -1562,7 +1580,7 @@ html, body {
 body {
     font-family: "Montserrat";
     font-size: 1em;
-    line-height: 2em;
+    line-height: $Std-line-height
 }
 
    //SECTION 1
@@ -1634,6 +1652,7 @@ body {
     }
     
     .pr2_copy-3 {
+		line-height: $Std-line-height;
         padding: 0em 2em;
         grid-column: 2;
     }
