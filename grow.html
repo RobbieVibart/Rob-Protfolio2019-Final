@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
+    <head>
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
 
-<!-- Facebook and Twitter integration -->
-<meta property="og:title" content="" />
-<meta property="og:image" content="" />
-<meta property="og:url" content="" />
-<meta property="og:site_name" content="" />
-<meta property="og:description" content="" />
-<meta name="twitter:title" content="" />
-<meta name="twitter:image" content="" />
-<meta name="twitter:url" content="" />
-<meta name="twitter:card" content="" />
 
-
-<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Robert Portfolio 2019</title>
@@ -34,10 +33,9 @@
     <meta name="twitter:url" content="" />
     <meta name="twitter:card" content="" />
 
-    <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Grow_Consult_Mock_040219Ver1</title>
+        <title>RBB Board Game</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Design Portfolio 2019" />
         <meta name="Design" content="Design Portfolio 2019" />
@@ -46,18 +44,28 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
-        <!-- Ico moon -->
-        <link rel="stylesheet" href="/css/icomoon.css" />
         <!-- Animate.css -->
-        <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Icomoon Icon Fonts -->
+        <link rel="stylesheet" href="/css/icomoon.css">
         <!-- Bootstrap  -->
-        <link rel="stylesheet" href="sass/bootstrap.css" />
+        <link rel="stylesheet" href="sass/bootstrap.css">
         <!-- Theme style  -->
-        <link rel="stylesheet" href="/sass/style.css" />
-    </head>
-
+        <link rel="stylesheet" href="/sass/style.css">
+        
+        <!-- Modernizr JS -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+        
+    
+</head>
 <body>
+
     <div class="fh5co-loader"></div>
+
     <div id="page">
         <nav class="fh5co-nav" role="navigation">
             <div class="container">
@@ -82,10 +90,7 @@
             </div>
         </nav>
 
-        <div class="fh5co-loader"></div>
-
         <!-- SECTION 1 -->
-
         <div class="head_img rellax lax" data-rellax-speed="5" data-lax-opacity="0 1, vh 0">
             <h3 class="head_title rellax" data-rellax-speed="-5">RBB Board game</h3>
         </div>
@@ -233,17 +238,19 @@
                 </div>
 
         <!-- FOOTER START -->
-        <div class="footer">
-            <a href="index.html" class="btn btn-primary btn-outline lax" data-lax-preset="fadeInOut">
-                <i class="icon-chevron-left"></i> Prev </a>
-            <a href="oda.html" class="btn btn-primary btn-outline lax" data-lax-preset="fadeInOut">Next
-                <i class="icon-chevron-right"></i></a>
-        </div>
+        <footer id="fh5co-footer">
+            <div class="footer">
+                <a href="index.html" class="btn btn-primary btn-outline lax" data-lax-preset="fadeInOut">
+                    <i class="icon-chevron-left"></i> Prev </a>
+                <a href="oda.html" class="btn btn-primary btn-outline lax" data-lax-preset="fadeInOut">Next
+                    <i class="icon-chevron-right"></i></a>
+            </div>
+
+    </footer>
+    </div>
         <!-- FOOTER END -->
-        <div class="gototop js-top">
-            <a href="#" class="js-gotop">
-                <i class="icon-arrow-up2"></i></a>
-        </div>
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
     </div>
 
     <!-- jQuery -->
@@ -256,20 +263,14 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <!-- Main -->
     <script src="js/main.js"></script>
-    <!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
     <!-- Paralax -->
     <script src="/js/rellax.min.js"></script>
-    <script>
+    <!-- <script>
         var rellax = new Rellax('.rellax');
-    </script>
+    </script> -->
     <!-- <script src="js/lax.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
-    <script>
+    <!-- <script>
         window.onload = function () {
             lax.setup() // init
 
@@ -280,6 +281,6 @@
 
             window.requestAnimationFrame(updateLax)
         }
-    </script>
+    </script> -->
 </body>
 </html>
