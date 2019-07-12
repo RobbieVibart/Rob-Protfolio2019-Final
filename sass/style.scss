@@ -1562,8 +1562,7 @@ html, body {
 //RBB INDEX --END--
 
 
-//ODA_GRID_Pr2
-// width 1371 Height 1026
+//ODA --START--
 
    //SECTION 1
    .showcase {
@@ -1577,7 +1576,6 @@ html, body {
 }
 
 .pr2_grid-card {
-    // justify-content: center;
     display: grid;
     grid: auto-flow / minmax(2px, 1fr) minmax(350px, 3fr) minmax(2px, 1fr);
     background-color: white;
@@ -1606,21 +1604,17 @@ html, body {
 
     }
 
-    .sketch img {
-        grid-column: 1;
+    .sketch {
+        grid-column: 2;
     }
 
     //SECTION 3
     .pr2_logo {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         grid-column: 2;
     }
     
-    .pr2_logos {
-        width: 100%;
-    }
-
     .pr2_copy-3 {
         grid-column: 2;
     }
@@ -1634,9 +1628,7 @@ html, body {
     .footer {
         background: pink;
         grid-column: 2;
-        text-align: center;
-        
-        
+        text-align: center;   
     }
     
     .btn {

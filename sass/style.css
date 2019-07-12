@@ -1685,22 +1685,18 @@ html, body {
   text-align: left;
 }
 
-.pr2_grid-card .sketch img {
-  -ms-grid-column: 1;
-  grid-column: 1;
+.pr2_grid-card .sketch {
+  -ms-grid-column: 2;
+  grid-column: 2;
 }
 
 .pr2_grid-card .pr2_logo {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   -ms-grid-column: 2;
   grid-column: 2;
-}
-
-.pr2_grid-card .pr2_logos {
-  width: 100%;
 }
 
 .pr2_grid-card .pr2_copy-3 {
