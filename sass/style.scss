@@ -1552,9 +1552,9 @@ html, body {
     background-color: #c14448;
 
         .img {
-            object-fit: cover;
+            object-fit: contain;
             height: 100vw;
-            width: 100%;
+            width: 50%;
         }   
     }
 }
@@ -1581,7 +1581,7 @@ body {
     .head_title {
         width: 100%;
         font-size: 5em;
-        color: white;
+        color: black;
 
     }
 
@@ -1599,7 +1599,7 @@ body {
 .pr2_grid-card {
     display: grid;
     grid: auto-flow / minmax(2px, 1fr) minmax(350px, 3fr) minmax(2px, 1fr);
-	background-color: #ff0000;
+	background-color:;
 	
 	.role__container {
 		display: grid;
