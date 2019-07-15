@@ -1433,7 +1433,6 @@ html, body {
     color:black;
     display: inline-block;
     font-size: 2em;
-    
     }
 }
 
@@ -1491,13 +1490,11 @@ html, body {
         max-width: 100px;
         padding: 2em 0em;
     }
-    
 }
 
 .copy-4 {
     grid-column: 2;
     padding-bottom: 2em;
-
 }
 
 .card_wrapper {
@@ -1529,7 +1526,6 @@ html, body {
         padding: 0;
         margin: 0;
     }
-
 }
 
 .footer {
@@ -1542,7 +1538,6 @@ html, body {
         margin-right: 5%;
         margin-left: 5%;
     }
-
 }
 
 @include mobile {
@@ -1557,7 +1552,6 @@ html, body {
         }
         
     }
-
 }
 //RBB INDEX --END--
 
@@ -1572,8 +1566,6 @@ html, body {
     background-position: center;
     width: 100vw;
     height: 100vh;
-
-    
 }
 
 .pr2_grid-card {
@@ -1594,7 +1586,6 @@ html, body {
         grid-column: 2;
         width: 100%;
         object-fit: contain;
-
     }
 
     .pr2_copy-2 {
@@ -1603,7 +1594,6 @@ html, body {
         font-weight: 400;
         font-size: 1.12em;
         text-align: left;
-
     }
 
     .sketch img {
@@ -1618,7 +1608,7 @@ html, body {
     }
     
     .pr2_logos {
-        width: 100%;
+        max-width: 100%;
     }
 
     .pr2_copy-3 {
@@ -1635,8 +1625,6 @@ html, body {
         background: pink;
         grid-column: 2;
         text-align: center;
-        
-        
     }
     
     .btn {

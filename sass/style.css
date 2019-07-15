@@ -1700,7 +1700,7 @@ html, body {
 }
 
 .pr2_grid-card .pr2_logos {
-  width: 100%;
+  max-width: 100%;
 }
 
 .pr2_grid-card .pr2_copy-3 {
