@@ -96,7 +96,8 @@ $form-group-margin-bottom: 30px !default;
 
 // User Typography
 $Mob-line-height:   3rem;
-$Std-line-height:   2.2em;
+$Std-line-height:   2em;
+$Std-font-size: 1em;
 //
 
 //User Screen Size
@@ -189,7 +190,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 25px 0;
+	padding: 50px 0px;
 	z-index: 1;
 	background: $brand-overlay-color;
 	@media screen and (max-width: $screen-sm) {
@@ -204,7 +205,8 @@ h1, h2, h3, h4, h5, h6, figure {
 		width: 20%;
 	}
 	.fh5co-top-menu {
-		width: 60%;
+        text-align: right;
+		width: 63.5%;
 	}
 	.fh5co-top-social {
 		width: 20%;
@@ -285,7 +287,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		}
 	}
 	ul {
-		padding: 0;
+		padding: 0px 0px;
 		margin: 3px 0 0 0;
 		li {
 			padding: 0;
@@ -1348,8 +1350,7 @@ blockquote {
 	}
 }
 
-// GROW GRID_Pr1
-// width 1371 Height 1026
+// RBB--START--
 
 *, ::before, ::after {
     margin: 0;
@@ -1359,11 +1360,11 @@ blockquote {
 
 html, body {
     font-family: "Montserrat";
-    font-size: 1em;
-    line-height: 2em;
+    font-size: $Std-font-size;
+    line-height: $Std-line-height;
 }
 
-.head_img {
+.grow__head {
     background-image: url('/images/Grow_images/img-head.png');
     width: 100vw;
     height: 100vh;
@@ -1392,7 +1393,9 @@ html, body {
 .grid-card {
     display: grid;
     grid: auto-flow / minmax(2px, 1fr) minmax(350px, 3fr)minmax(2px, 1fr);
-    background-color: white;
+	background-color: white;
+	
+	
     
 }
 
@@ -1542,37 +1545,74 @@ html, body {
 
 @include mobile {
 
-    .img_wrapper {   
+    .img_wrapper {
     background-color: #c14448;
 
         .img {
-            object-fit: cover;
+            object-fit: contain;
             height: 100vw;
-            width: 100%;
-        }
-        
+            width: 50%;
+        }   
     }
 }
 //RBB INDEX --END--
 
 
-//ODA_GRID_Pr2
-// width 1371 Height 1026
+//ODA --START--
+body {
+    font-family: "Montserrat";
+    font-size: 1em;
+    line-height: $Std-line-height
+}
 
    //SECTION 1
-   .showcase {
+   .oda__head {
     background-image: url("/images/Oda_images/Oda_0001.jpg");
-    background-size: cover;
-    background-position: center;
     width: 100vw;
     height: 100vh;
+<<<<<<< HEAD
+=======
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    .head_title {
+        width: 100%;
+        font-size: 5em;
+        color: black;
+
+    }
+
+    &, h3 {
+        text-shadow: 5px 5px 10px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+    }
+>>>>>>> 0ca224ea0c6ffc2a7bdc565be5c00b64cf72b047
 }
 
 .pr2_grid-card {
-    // justify-content: center;
     display: grid;
     grid: auto-flow / minmax(2px, 1fr) minmax(350px, 3fr) minmax(2px, 1fr);
-    background-color: white;
+	background-color:;
+	
+	.role__container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-column: 2;
+	
+		.role__copy {
+			padding: 2em;
+			font-size: $Std-font-size
+			line-height $Std-line-height;
+			font-weight: 200;
+		}
+	}
 
     //SECTION 2
     .pr2_roles {
@@ -1592,26 +1632,37 @@ html, body {
         grid-column: 2;
         line-height: $Std-line-height;
         font-weight: 400;
-        font-size: 1.12em;
+        font-size: $Std-font-size;
         text-align: left;
+<<<<<<< HEAD
+=======
+        padding: 0em 2em;
+
+>>>>>>> 0ca224ea0c6ffc2a7bdc565be5c00b64cf72b047
     }
 
-    .sketch img {
-        grid-column: 1;
+    .sketch {
+        grid-column: 2;
     }
 
     //SECTION 3
     .pr2_logo {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         grid-column: 2;
     }
     
+<<<<<<< HEAD
     .pr2_logos {
         max-width: 100%;
     }
 
+=======
+>>>>>>> 0ca224ea0c6ffc2a7bdc565be5c00b64cf72b047
     .pr2_copy-3 {
+		font-size: $Std-font-size;
+		line-height: $Std-line-height;
+        padding: 0em 2em;
         grid-column: 2;
     }
 
@@ -1624,7 +1675,11 @@ html, body {
     .footer {
         background: pink;
         grid-column: 2;
+<<<<<<< HEAD
         text-align: center;
+=======
+        text-align: center;   
+>>>>>>> 0ca224ea0c6ffc2a7bdc565be5c00b64cf72b047
     }
     
     .btn {

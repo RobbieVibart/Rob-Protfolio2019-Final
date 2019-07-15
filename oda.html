@@ -87,11 +87,22 @@
 
 
     <div class="fh5co-loader"></div>
+   
     <!-- SECTION 1 -->
-    <header class="showcase">
-    </header>
+    <div class="oda__head lax" data-lax-opacity="0 1, vh 0">
+      <h3 class="head_title rellax" data-rellax-speed="-5">ODA<br>visual Identity</h3>
+    </div>
+
     <div class="pr2_grid-card">
       <!-- SECTION 2 -->
+      <div class="role__container">
+        <div class="role__copy">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cupiditate, quaerat eius neque obcaecati quam praesentium dicta minus, recusandae, temporibus totam ipsa animi id perferendis ad eum quis saepe? Non nostrum labore esse. Veniam iure, vero recusandae fuga ratione quam. Incidunt molestiae nobis vel harum. Molestiae eos velit odit eaque.</p>
+        </div>
+        <div class="role__copy">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dolor totam accusamus. Error eos sunt optio, sit vel commodi obcaecati beatae reiciendis. Repudiandae voluptates obcaecati neque quia ratione aliquam perspiciatis dolorem, molestiae distinctio iure velit totam voluptatibus officiis natus excepturi fugit. Aspernatur, amet quidem! Dolorum excepturi accusamus quam nisi itaque!</p>
+        </div>
+      </div>
       <div class="pr2_copy-2 animate-box">
         <p>
           <strong class="pr2_roles"> | Logo Design | Stationery | CI | Data collection |</strong>
@@ -110,18 +121,16 @@
       </div>
       <!-- SECTION 3 -->
 
-      <div>
+      <div class="sketch">
         <img src="/images/Oda_images/ODA_Sketch.png">
       </div>
       <div class="pr2_logo">
-        <div class="pr2_logos">
           <div class="pr2_logo1">
             <img src="/images/Oda_images/ODA_Logo_02.png" />
           </div>
           <div class="pr2_logo2">
             <img src="/images/Oda_images/ODA_Logo_03.png" />
           </div>
-        </div>
       </div>
 
       <div class="pr2_copy-3 animate-box">
@@ -207,18 +216,24 @@
   <script src="js/jquery.waypoints.min.js"></script>
   <!-- Main -->
   <script src="js/main.js"></script>
-  <!-- Modernizr JS -->
-  <script src="js/modernizr-2.6.2.min.js"></script>
-  <!-- FOR IE9 below -->
-  <!--[if lt IE 9]>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
   <!-- Paralax -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.8.0/rellax.min.js"></script> -->
   <script src="/js/rellax.min.js"></script>
-
   <script>
-    var rellax = new Rellax('.rellax');
+      var rellax = new Rellax('.rellax');
+  </script>
+  <!-- <script src="js/lax.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+  <script>
+      window.onload = function () {
+          lax.setup() // init
+
+          const updateLax = () => {
+              lax.update(window.scrollY)
+              window.requestAnimationFrame(updateLax)
+          }
+
+          window.requestAnimationFrame(updateLax)
+      }
   </script>
 </body>
 
