@@ -1654,7 +1654,12 @@ body {
 
 .oda__head {
   background-image: url("/images/Oda_images/Oda_0001.jpg");
+  background-image: url("/images/Oda_images/Oda_0001.jpg");
+  background-size: cover;
+  background-position: center;
   width: 100vw;
+  width: 100vw;
+  height: 100vh;
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -1669,7 +1674,7 @@ body {
 }
 
 .oda__head, .oda__head h3 {
-  text-shadow: 5px 5px 10px red;
+  text-shadow: 5px 5px 10px black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1729,7 +1734,6 @@ body {
   font-weight: 400;
   font-size: 1em;
   text-align: left;
-  padding: 0em 2em;
 }
 
 .pr2_grid-card .sketch {
@@ -1740,19 +1744,16 @@ body {
 .pr2_grid-card .pr2_logo {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   -ms-grid-column: 2;
   grid-column: 2;
 }
 
-<<<<<<< HEAD
 .pr2_grid-card .pr2_logos {
   max-width: 100%;
 }
 
-=======
->>>>>>> 0ca224ea0c6ffc2a7bdc565be5c00b64cf72b047
 .pr2_grid-card .pr2_copy-3 {
   font-size: 1em;
   line-height: 2em;
@@ -1767,7 +1768,6 @@ body {
 }
 
 .pr2_grid-card .footer {
-  background: pink;
   -ms-grid-column: 2;
   grid-column: 2;
   text-align: center;

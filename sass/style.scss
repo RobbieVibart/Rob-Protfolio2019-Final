@@ -1561,27 +1561,31 @@ html, body {
 //ODA --START--
 body {
     font-family: "Montserrat";
-    font-size: 1em;
+    font-size: $Std-font-size;
     line-height: $Std-line-height
 }
 
    //SECTION 1
    .oda__head {
     background-image: url("/images/Oda_images/Oda_0001.jpg");
+    background-image: url("/images/Oda_images/Oda_0001.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
     width: 100vw;
     height: 100vh;
-<<<<<<< HEAD
-=======
+    height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
 
+
+
     .head_title {
         width: 100%;
         font-size: 5em;
-        color: black;
-
+        color: white;
     }
 
     &, h3 {
@@ -1593,13 +1597,12 @@ body {
         text-align: center;
         text-transform: uppercase;
     }
->>>>>>> 0ca224ea0c6ffc2a7bdc565be5c00b64cf72b047
 }
 
 .pr2_grid-card {
     display: grid;
     grid: auto-flow / minmax(2px, 1fr) minmax(350px, 3fr) minmax(2px, 1fr);
-	background-color:;
+	background-color: white;
 	
 	.role__container {
 		display: grid;
@@ -1634,11 +1637,6 @@ body {
         font-weight: 400;
         font-size: $Std-font-size;
         text-align: left;
-<<<<<<< HEAD
-=======
-        padding: 0em 2em;
-
->>>>>>> 0ca224ea0c6ffc2a7bdc565be5c00b64cf72b047
     }
 
     .sketch {
@@ -1648,17 +1646,14 @@ body {
     //SECTION 3
     .pr2_logo {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         grid-column: 2;
     }
     
-<<<<<<< HEAD
     .pr2_logos {
         max-width: 100%;
     }
 
-=======
->>>>>>> 0ca224ea0c6ffc2a7bdc565be5c00b64cf72b047
     .pr2_copy-3 {
 		font-size: $Std-font-size;
 		line-height: $Std-line-height;
@@ -1673,13 +1668,9 @@ body {
 
     //FOOTER START
     .footer {
-        background: pink;
+        // background: pink;
         grid-column: 2;
-<<<<<<< HEAD
         text-align: center;
-=======
-        text-align: center;   
->>>>>>> 0ca224ea0c6ffc2a7bdc565be5c00b64cf72b047
     }
     
     .btn {
