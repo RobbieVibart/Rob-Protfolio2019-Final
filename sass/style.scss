@@ -1523,7 +1523,7 @@ html, body {
         object-position: center;
         justify-self: center;
         object-fit: cover;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         line-height: 0;
         padding: 0;
@@ -1549,9 +1549,9 @@ html, body {
     background-color: #c14448;
 
         .img {
-            object-fit: contain;
-            height: 100vw;
-            width: 50%;
+            object-fit: cover;
+            height: 60vh;
+            width: 100vw;
         }   
     }
 }
