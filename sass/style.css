@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,200,300,400,500i|Saira+Condensed:100,200,300,400,600|Saira+Extra+Condensed:100,300,400,600&display=swap");
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -1669,7 +1670,7 @@ body {
 }
 
 .oda__head, .oda__head h3 {
-  text-shadow: 5px 5px 10px red;
+  text-shadow: 5px 5px 10px black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1688,7 +1689,6 @@ body {
   display: -ms-grid;
   display: grid;
   grid: auto-flow/minmax(2px, 1fr) minmax(350px, 3fr) minmax(2px, 1fr);
-  background-color: white;
 }
 
 .pr2_grid-card .role__container {
@@ -1772,5 +1772,192 @@ body {
   margin: 50px 100px;
   margin-right: 5%;
   margin-left: 5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat";
+  font-size: 1em;
+  color: grey;
+  line-height: 2em;
+}
+
+* img {
+  max-width: 100%;
+}
+
+* p {
+  line-height: 2.2em;
+  font-size: 1em;
+}
+
+* h3 {
+  margin-top: 0;
+}
+
+.headBackground {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, #0f9999 1%, #05413c 100%);
+}
+
+.headImg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/Fnb_images/Img8.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.headerTitle {
+  display: -ms-grid;
+  display: grid;
+  word-break: keep-all;
+  place-content: center;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+  font-weight: 800;
+  font-size: 4em;
+  text-align: center;
+  height: 100vh;
+  text-shadow: 1px 1px 5px black;
+}
+
+.gridWrapper {
+  z-index: -3;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(1em, 1fr) minmax(350px, 1fr) minmax(1em, 1fr);
+      grid-template-columns: minmax(1em, 1fr) minmax(350px, 1fr) minmax(1em, 1fr);
+  background-color: rgba(211, 211, 211, 0.2);
+}
+
+.imgBlock {
+  z-index: -1;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  position: absolute;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+}
+
+.imgBlock img:nth-child(1) {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.imgBlock img:nth-child(2) {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.imgBlock img:nth-child(3) {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.imgBlock img {
+  height: 100%;
+  width: 100%;
+}
+
+.headWrapper {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  counter-reset: counter-name;
+}
+
+.headTitle {
+  position: relative;
+  text-transform: uppercase;
+  padding: 1em 0em 1em 0em;
+  font-size: 2em;
+}
+
+.headTitle::before {
+  position: absolute;
+  counter-increment: counter-name;
+  content: "0" counter(counter-name);
+  font-family: "Saira Extra Condensed";
+  font-weight: 300;
+  color: rgba(15, 153, 153, 0.1);
+  letter-spacing: -3px;
+  font-size: 8em;
+  top: .66em;
+  left: -.75em;
+}
+
+.infoWrapper {
+  margin-top: 2em;
+  padding-left: 2em;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.infoTitle {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.infoCopy {
+  text-align: left;
+}
+
+.imageWrapper {
+  z-index: -4;
+  grid-column: 1/-1;
+}
+
+.bgColorSecondary {
+  z-index: -6;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  -webkit-clip-path: polygon(0px 10%, 100% 0%, 100% 100%, 0 100%);
+          clip-path: polygon(0px 10%, 100% 0%, 100% 100%, 0 100%);
+  background-color: #ff8c00;
+}
+
+.headText {
+  place-content: center;
+  height: 100%;
+  z-index: 1;
+  color: white;
+  font-size: 4em;
+}
+
+.BgcolorPrimary {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  z-index: -5;
+  background-color: #0f9999;
 }
 /*# sourceMappingURL=style.css.map */
