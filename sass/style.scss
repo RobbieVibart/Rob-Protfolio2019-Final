@@ -1436,7 +1436,6 @@ html, body {
     color:black;
     display: inline-block;
     font-size: 2em;
-    
     }
 }
 
@@ -1494,13 +1493,11 @@ html, body {
         max-width: 100px;
         padding: 2em 0em;
     }
-    
 }
 
 .copy-4 {
     grid-column: 2;
     padding-bottom: 2em;
-
 }
 
 .card_wrapper {
@@ -1526,7 +1523,7 @@ html, body {
         object-position: center;
         justify-self: center;
         object-fit: cover;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         line-height: 0;
         padding: 0;
@@ -1552,9 +1549,9 @@ html, body {
     background-color: #c14448;
 
         .img {
-            object-fit: contain;
-            height: 100vw;
-            width: 50%;
+            object-fit: cover;
+            height: 60vh;
+            width: 100vw;
         }   
     }
 }
@@ -1564,25 +1561,35 @@ html, body {
 //ODA --START--
 body {
     font-family: "Montserrat";
-    font-size: 1em;
+    font-size: $Std-font-size;
     line-height: $Std-line-height
 }
 
    //SECTION 1
    .oda__head {
     background-image: url("/images/Oda_images/Oda_0001.jpg");
+    background-image: url("/images/Oda_images/Oda_0001.jpg");
+    background-size: cover;
+    background-position: center;
     width: 100vw;
+    width: 100vw;
+    height: 100vh;
     height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
 
+
+
     .head_title {
         width: 100%;
         font-size: 5em;
         color: white;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 81ff6c4dd8fc839a8a97b052d62070c99ddb3bf4
     }
 
     &, h3 {
@@ -1599,6 +1606,10 @@ body {
 .pr2_grid-card {
     display: grid;
     grid: auto-flow / minmax(2px, 1fr) minmax(350px, 3fr) minmax(2px, 1fr);
+<<<<<<< HEAD
+=======
+	background-color: white;
+>>>>>>> 81ff6c4dd8fc839a8a97b052d62070c99ddb3bf4
 	
 	.role__container {
 		display: grid;
@@ -1625,7 +1636,6 @@ body {
         grid-column: 2;
         width: 100%;
         object-fit: contain;
-
     }
 
     .pr2_copy-2 {
@@ -1634,8 +1644,6 @@ body {
         font-weight: 400;
         font-size: $Std-font-size;
         text-align: left;
-        padding: 0em 2em;
-
     }
 
     .sketch {
@@ -1645,10 +1653,14 @@ body {
     //SECTION 3
     .pr2_logo {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         grid-column: 2;
     }
     
+    .pr2_logos {
+        max-width: 100%;
+    }
+
     .pr2_copy-3 {
 		font-size: $Std-font-size;
 		line-height: $Std-line-height;
@@ -1663,9 +1675,9 @@ body {
 
     //FOOTER START
     .footer {
-        background: pink;
+        // background: pink;
         grid-column: 2;
-        text-align: center;   
+        text-align: center;
     }
     
     .btn {
