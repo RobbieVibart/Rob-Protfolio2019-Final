@@ -95,9 +95,18 @@ $form-group-margin-bottom: 30px !default;
 }
 
 // User Typography
-$Mob-line-height:   3rem;
-$Std-line-height:   2em;
+$Mob-line-height: 3rem;
+$Std-line-height: 2em;
 $Std-font-size: 1em;
+
+// SUB-HEADER //
+$Std-Subheader-size: 2em;
+$Std-Subheader-color:hsl(0, 0%, 76%);
+$Std-Subheader-weight: 700;
+$Std-Subheader-case: uppercase;
+$Std-Subheader-Family: "Montserrat", Arial, sans-serif;
+
+
 //
 
 //User Screen Size
@@ -1394,9 +1403,6 @@ html, body {
     display: grid;
     grid: auto-flow / minmax(2px, 1fr) minmax(350px, 3fr)minmax(2px, 1fr);
 	background-color: white;
-	
-	
-    
 }
 
 .roles {
@@ -1410,7 +1416,6 @@ html, body {
     text-align: center;
     grid-column: 2 / span 1;
 }
-
 
 .role1, .role3 {
     padding-left: .5em;
@@ -1572,8 +1577,6 @@ body {
     background-size: cover;
     background-position: center;
     width: 100vw;
-    width: 100vw;
-    height: 100vh;
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -1713,11 +1716,14 @@ body {
 
 * p {
 	line-height: 2.2em;
-	font-size: 1em;
+	font-size: $Std-font-size;
 }
 
 * h3 {
 	margin-top: 0;
+	font-size: $Std-Subheader-size;
+	color: $Std-Subheader-color;
+	font-weight: $Std-Subheader-weight;
 }
 
 .headBackground {
@@ -1756,6 +1762,7 @@ body {
 	grid-template-columns: minmax(1em, 1fr) minmax(300px, 1fr) minmax(1em, 1fr);
 	background-color: rgba(211, 211, 211, .2);
 }
+
 
 .imgBlock {
 	z-index: -1;
@@ -1798,7 +1805,10 @@ body {
 	position: relative;
 	text-transform: uppercase;
 	padding: 1em 0em 1em 0em;
-	font-size: 2em;
+	font-size: $Std-Subheader-size;
+	color: $Std-Subheader-color;
+	font-weight: $Std-Subheader-weight;
+	font-family: $Std-Subheader-Family;
 }
 
 .headTitle::before {
@@ -1854,7 +1864,6 @@ body {
 	// background-color: pink;
 
 }
-
 
 .BgcolorPrimary {
 	grid-column: 2;

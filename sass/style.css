@@ -1659,8 +1659,6 @@ body {
   background-size: cover;
   background-position: center;
   width: 100vw;
-  width: 100vw;
-  height: 100vh;
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -1809,6 +1807,9 @@ body {
 
 * h3 {
   margin-top: 0;
+  font-size: 2em;
+  color: #c2c2c2;
+  font-weight: 700;
 }
 
 .headBackground {
@@ -1907,6 +1908,9 @@ body {
   text-transform: uppercase;
   padding: 1em 0em 1em 0em;
   font-size: 2em;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
 .headTitle::before {
