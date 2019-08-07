@@ -1878,12 +1878,12 @@ body {
 @keyframes anim1 {
 	
 	from {
-		transform: translateX(-100px);
+		transform: translateY(-100px);
 		opacity: 0;
 	}
 
 	to {
-		transform: translateX(0px);
+		transform: translateY(0px);
 		opacity: 1;
 	}
 
