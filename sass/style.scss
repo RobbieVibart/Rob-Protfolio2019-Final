@@ -1870,3 +1870,21 @@ body {
 	z-index: -5;
 	background-color: #0f9999;
 }
+
+.anim {
+	opacity: 0;
+}
+
+@keyframes anim1 {
+	
+	from {
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+
+}
