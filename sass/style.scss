@@ -642,7 +642,7 @@ figure {
 	margin-bottom: 40px;
 
 	.work-grid {
-		background-size: cover;
+		background-size: fill;
 		background-position: center center;
 		background-repeat: no-repeat;
 		position: relative;
@@ -2267,14 +2267,14 @@ body {
 
 
 //OBSERVER-ANIM// --START--
-// p {
-// 	opacity: 1;
-// 	transition: opacity 2s ease-in;
-// }
+p {
+	opacity: 1;
+	transition: opacity 2s ease-in;
+}
 
-// .active {
-// 	opacity: 1;
-// }
+.active {
+	opacity: 1;
+}
 
 .right {
     // grid-column: 2 /3;
