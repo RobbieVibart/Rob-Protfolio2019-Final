@@ -1,20 +1,58 @@
-const images = document.querySelectorAll('.anim');
+// --img-OBSERVER -- START --//
+let options = {
+    root: null,
+    rootMargin: "-600px 0px 600px 0px",
+    threshold: 0, 
+};
 
-observer = new IntersectionObserver((entries) => {
+let observer = new IntersectionObserver(intersect, options);
 
-	entries.forEach(entry => {
-									
-	if(entry.intersectionRatio > 0) {
-		entry.target.style.animation = `anim1 2s forwards ease-out`;
-	}
-	else {
-		entry.target.style.animation = 'none';
-	}
-	
-	})
+document.querySelectorAll('.right').forEach(img => {
+observer.observe(img);
+// console.log('watching', img);
 
-})
-images.forEach(image => {
-	observer.observe(image)
+});
 
-})
+function intersect(entries) {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+        // console.log('intersecting');
+        // console.log(entry.time, entry.intersectionRatio);
+        entry.target.classList.add('appear');
+        } else {
+                entry.target.classList.remove('appear');
+                observer.unobserve(img);
+			}
+	}); 
+}
+// --img OBSERVER -- END --//
+
+// --COPY OBSERVER -- START --//
+
+let textOptions = {
+    root: null,
+    rootMargin: "0px 0px 0px 0px",
+    threshold: 0, 
+};
+
+let imageObserver = new IntersectionObserver(textIntersect, textOptions);
+
+document.querySelectorAll('p').forEach(p => {
+    imageObserver.observe(p);
+    console.log('watching', p);
+    
+});
+
+function textIntersect(entries) {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            // console.log('intersecting');
+            // console.log(entry.time, entry.intersectionRatio);
+            entry.target.classList.add('active');
+        } else {
+            entry.target.classList.remove('active');
+            imageObserver.unobserve(p);
+        }
+    });
+}
+// --COPY OBSERVER -- END --//

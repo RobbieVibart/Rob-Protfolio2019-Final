@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700,800,900,900i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,200,300,400,500i|Saira+Condensed:100,200,300,400,600|Saira+Extra+Condensed:100,300,400,600&display=swap");
 @font-face {
   font-family: "icomoon";
@@ -61,11 +62,13 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
-p {
-  margin-bottom: 20px;
-}
-
-h1, h2, h3, h4, h5, h6, figure {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
   color: #000;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 400;
@@ -152,7 +155,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 @media screen and (max-width: 768px) {
-  .fh5co-nav .menu-1, .fh5co-nav .menu-2 {
+  .fh5co-nav .menu-1,
+  .fh5co-nav .menu-2 {
     display: none;
   }
 }
@@ -477,7 +481,8 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 
-.feature-center p, .feature-center h3 {
+.feature-center p,
+.feature-center h3 {
   margin-bottom: 30px;
 }
 
@@ -1415,14 +1420,17 @@ blockquote .person cite {
   margin: 0 0 5px 0;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: "Montserrat";
   font-size: 1em;
   line-height: 2em;
@@ -1444,7 +1452,8 @@ html, body {
   color: white;
 }
 
-.grow__head, .grow__head h3 {
+.grow__head,
+.grow__head h3 {
   text-shadow: 5px 5px 10px black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1482,7 +1491,8 @@ html, body {
   grid-column: 2 / span 1;
 }
 
-.role1, .role3 {
+.role1,
+.role3 {
   padding-left: .5em;
   text-align: left;
   border-left: 5px solid red;
@@ -1490,7 +1500,8 @@ html, body {
   grid-row: 1;
 }
 
-.role2, .role4 {
+.role2,
+.role4 {
   padding-left: .5em;
   text-align: left;
   border-left: 5px solid grey;
@@ -1672,7 +1683,8 @@ body {
   color: white;
 }
 
-.oda__head, .oda__head h3 {
+.oda__head,
+.oda__head h3 {
   text-shadow: 5px 5px 10px black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1760,7 +1772,8 @@ body {
   grid-column: 2;
 }
 
-.pr2_grid-card .header__image, .pr2_grid-card img {
+.pr2_grid-card .header__image,
+.pr2_grid-card img {
   grid-column: 1/-1;
   width: 100%;
 }
@@ -1794,10 +1807,6 @@ body {
   font-size: 1em;
   color: grey;
   line-height: 2em;
-}
-
-* img {
-  max-width: 100%;
 }
 
 * p {
@@ -1976,29 +1985,177 @@ body {
   opacity: 0;
 }
 
-@-webkit-keyframes anim1 {
-  from {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-    opacity: 0;
+html,
+body {
+  font-family: "Montserrat";
+}
+
+@media only screen and (max-width: 450px) {
+  html .pr4-subheader,
+  body .pr4-subheader {
+    margin-top: 6em;
   }
-  to {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    opacity: 1;
+  html .pr4-subheader h3,
+  body .pr4-subheader h3 {
+    font-size: 24px;
+    font-weight: 800;
+  }
+  html p,
+  body p {
+    line-height: 3rem;
   }
 }
 
-@keyframes anim1 {
-  from {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    opacity: 1;
-  }
+.pr4-Header {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  grid-column: -1 / 1;
+  background-color: #ff6e5b;
+}
+
+.pr4-Header h2 {
+  color: white;
+  font-size: 64px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.pr4-time {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.pr4-time img {
+  height: 100%;
+  width: 100%;
+}
+
+.pr4-Container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(1em, 1fr) minmax(350px, 850px) minmax(1em, 1fr);
+      grid-template-columns: minmax(1em, 1fr) minmax(350px, 850px) minmax(1em, 1fr);
+}
+
+.align-center {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pr4-subheader {
+  margin-top: 12em;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  width: 100%;
+}
+
+.pr4-subheader h3 {
+  color: #ff6e5b;
+  font-size: 32px;
+  letter-spacing: 20%;
+  line-height: 1.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.pr4-bgBlock {
+  grid-column: -1 / 1;
+  width: 100%;
+  height: 100%;
+}
+
+.pr4-section {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  height: 100vh;
+}
+
+.pr4-section img {
+  width: 40%;
+}
+
+.pr4-copy-grid {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.pr4-imgBlock {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.pr4-imgBlock img {
+  width: 100%;
+}
+
+.pr4-imgContainer {
+  place-items: center;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.pr4-imgContainer img {
+  width: 95%;
+}
+
+.pr4-footer {
+  margin-top: 16em;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/Logo_images/Logo_All_Backdrop_opt.png");
+  background-position: bottom bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+p {
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in;
+}
+
+.active {
+  opacity: 1;
+}
+
+.right {
+  -webkit-transition: opacity 1000ms ease-in, -webkit-transform 0.5s ease-in-out;
+  transition: opacity 1000ms ease-in, -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 1000ms ease-in;
+  transition: transform 0.5s ease-in-out, opacity 1000ms ease-in, -webkit-transform 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.right.appear {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
