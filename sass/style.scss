@@ -185,9 +185,9 @@ a {
 	}
 }
 
-// p {
-// 	margin-bottom: 20px;
-// }
+p {
+	margin-bottom: 20px;
+}
 
 h1,
 h2,
@@ -1955,10 +1955,10 @@ body {
 }
 
 
-* p {
-	line-height: 2.2em;
-	font-size: $Std-font-size;
-}
+// * p {
+// 	line-height: 2.2em;
+// 	font-size: $Std-font-size;
+// }
 
 * h3 {
 	margin-top: 0;
@@ -2267,14 +2267,14 @@ body {
 
 
 //OBSERVER-ANIM// --START--
-p {
-	opacity: 0;
-	transition: opacity 2s ease-in;
-}
+// p {
+// 	opacity: 1;
+// 	transition: opacity 2s ease-in;
+// }
 
-.active {
-	opacity: 1;
-}
+// .active {
+// 	opacity: 1;
+// }
 
 .right {
     // grid-column: 2 /3;
