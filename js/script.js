@@ -1,8 +1,8 @@
 // --img-OBSERVER -- START --//
 let options = {
     root: null,
-    rootMargin: "-600px 0px 600px 0px",
-    threshold: 0, 
+    rootMargin: "150px",
+    threshold: 1, 
 };
 
 let observer = new IntersectionObserver(intersect, options);
@@ -32,7 +32,7 @@ function intersect(entries) {
 let textOptions = {
     root: null,
     rootMargin: "0px 0px 0px 0px",
-    threshold: 0, 
+    threshold: 1, 
 };
 
 let imageObserver = new IntersectionObserver(textIntersect, textOptions);
@@ -51,7 +51,7 @@ function textIntersect(entries) {
             entry.target.classList.add('active');
         } else {
             entry.target.classList.remove('active');
-            imageObserver.unobserve(p);
+            // imageObserver.unobserve(p);
         }
     });
 }
