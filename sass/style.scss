@@ -103,7 +103,7 @@ $form-group-margin-bottom: 30px !default;
 // font-family: 'Saira Extra Condensed', sans-serif;
 // font-family: 'Saira Condensed', sans-serif;
 
-$Mob-line-height: 1.6rem;
+$Mob-line-height: 1.7rem;
 $Std-line-height: 2em;
 $Std-font-size: 1em;
 
@@ -118,7 +118,7 @@ sans-serif;
 
 
 //USER SCREEN SIZE
-$mobile: 380px;
+$mobile: 340px;
 @mixin mobile {
 	@media only screen and (max-width: $mobile) {
 		@content;
@@ -2174,6 +2174,7 @@ body {
 	}
 	
 	.pr4-section {
+		width: 100%;
 		grid-column: 2;
 		height: 100vh;
 		display: flex;
@@ -2185,7 +2186,13 @@ body {
 			max-width: 70%;
 			max-height: 70%;
 		}
+		p {
+			// font-size: 8px;
+			background-color: pink;
+	
+		}
 	}
+	
 }
 //MEDIA Q// --END--
 

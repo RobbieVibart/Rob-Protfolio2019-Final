@@ -1443,7 +1443,7 @@ body {
   line-height: 2em;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 340px) {
   html .img_wrapper,
   body .img_wrapper {
     background-color: #c14448;
@@ -1818,7 +1818,7 @@ body {
   line-height: 2em;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 340px) {
   html .imageWrapper,
   body .imageWrapper {
     width: 100%;
@@ -2006,7 +2006,7 @@ body {
   font-family: "Montserrat";
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 340px) {
   html .pr4-Header,
   body .pr4-Header {
     background-image: url(/images/Logo_images/1531.png);
@@ -2032,12 +2032,13 @@ body {
   }
   html p,
   body p {
-    line-height: 1.6rem;
+    line-height: 1.7rem;
   }
 }
 
 html .pr4-section,
 body .pr4-section {
+  width: 100%;
   -ms-grid-column: 2;
   grid-column: 2;
   height: 100vh;
@@ -2060,6 +2061,11 @@ html .pr4-section img,
 body .pr4-section img {
   max-width: 70%;
   max-height: 70%;
+}
+
+html .pr4-section p,
+body .pr4-section p {
+  background-color: pink;
 }
 
 .pr4-Header {
