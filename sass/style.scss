@@ -1617,6 +1617,21 @@ body {
 	font-family: "Montserrat";
 	font-size: $Std-font-size;
 	line-height: $Std-line-height;
+// MQ Start //
+	
+@include mobile {
+
+		.img_wrapper {
+			background-color: #c14448;
+	
+			img {
+				object-fit: cover;
+				height: 100%;
+				max-width: 100%;
+			}
+		}
+	}
+// MQ Start //
 }
 
 .grow__head {
@@ -1797,19 +1812,6 @@ body {
 	}
 }
 
-@include mobile {
-
-	.img_wrapper {
-		background-color: #c14448;
-
-		.img {
-			object-fit: cover;
-			height: 60vh;
-			width: 100vw;
-		}
-	}
-}
-
 //RBB INDEX --END--
 
 
@@ -1953,6 +1955,21 @@ body {
 	font-size: 1em;
 	color: grey;
 	line-height: 2em;
+	
+	@include mobile {
+		
+		.imageWrapper {
+			
+			width: 100%;
+			
+			img {
+				max-width: 100%;
+				max-height: 100%;
+
+			}
+		}
+		
+	}
 }
 
 
