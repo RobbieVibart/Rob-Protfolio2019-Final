@@ -2144,11 +2144,20 @@ body {
 
 @include mobile {
 
+	.pr4-Header {
+		width: 100%;
+		
+		h2 {
+			font-size: 48px;
+		
+		}
+	}
+
 	.pr4-subheader {
 		margin-top: 6em;
 		
 		h3 {
-			font-size: 24px;
+			font-size: 20px;
 			font-weight: 800;
 		}
 	}

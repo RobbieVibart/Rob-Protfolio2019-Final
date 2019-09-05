@@ -2007,13 +2007,21 @@ body {
 }
 
 @media only screen and (max-width: 380px) {
+  html .pr4-Header,
+  body .pr4-Header {
+    width: 100%;
+  }
+  html .pr4-Header h2,
+  body .pr4-Header h2 {
+    font-size: 48px;
+  }
   html .pr4-subheader,
   body .pr4-subheader {
     margin-top: 6em;
   }
   html .pr4-subheader h3,
   body .pr4-subheader h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 800;
   }
   html p,
