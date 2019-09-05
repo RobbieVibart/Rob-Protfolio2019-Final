@@ -2009,13 +2009,7 @@ body {
 @media only screen and (max-width: 380px) {
   html .pr4-Header,
   body .pr4-Header {
-    background-image: url(/images/Logo_images/1531.png);
-    background-size: contain;
-    background-blend-mode: multiply;
-  }
-  html .pr4-Header,
-  body .pr4-Header {
-    max-width: 100%;
+    width: 100%;
   }
   html .pr4-Header h2,
   body .pr4-Header h2 {
@@ -2027,42 +2021,42 @@ body {
   }
   html .pr4-subheader h3,
   body .pr4-subheader h3 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 800;
   }
   html p,
   body p {
-    line-height: 1.65rem;
-  }
-  html .pr4-section,
-  body .pr4-section {
-    -ms-grid-column: 2;
-    grid-column: 2;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  html .pr4-section img,
-  body .pr4-section img {
-    max-width: 70%;
-    max-height: 70%;
+    line-height: 1.6rem;
   }
 }
 
+html .pr4-section,
+body .pr4-section {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .pr4-section img,
+body .pr4-section img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
 .pr4-Header {
-  position: relative;
-  z-index: 1;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2076,14 +2070,12 @@ body {
   height: 100vh;
   grid-column: -1 / 1;
   background-color: #ff6e5b;
-}
-
-.pr4-Header img {
-  z-index: -1;
-  opacity: 0.2;
-  position: absolute;
-  max-width: 100%;
-  height: 100%;
+  background-image: url("/images/Logo_images/1531.png");
+  background-size: contain;
+  background-position: top right;
+  background-repeat: repeat-y;
+  background-blend-mode: multiply;
+  width: 100%;
 }
 
 .pr4-Header h2 {
@@ -2196,9 +2188,9 @@ body {
 }
 
 p {
-  opacity: 1;
-  -webkit-transition: opacity 2s ease-in;
-  transition: opacity 2s ease-in;
+  opacity: 0;
+  -webkit-transition: opacity 1000ms ease-in;
+  transition: opacity 1000ms ease-in;
 }
 
 .active {

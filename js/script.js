@@ -1,8 +1,8 @@
 // --img-OBSERVER -- START --//
 let options = {
     root: null,
-    rootMargin: "150px",
-    threshold: 1, 
+    rootMargin: "-600px 0px 600px 0px",
+    threshold: 0, 
 };
 
 let observer = new IntersectionObserver(intersect, options);
@@ -16,14 +16,15 @@ observer.observe(img);
 function intersect(entries) {
     entries.forEach(entry => {
         if(entry.isIntersecting) {
-        // console.log('intersecting');
+        // console.log('is intersecting', entry);
         // console.log(entry.time, entry.intersectionRatio);
         entry.target.classList.add('appear');
-        } else {
-                entry.target.classList.remove('appear');
-                observer.unobserve(img);
-			}
-	}); 
+    } else {
+        // console.log('not intersecting', entry);
+        entry.target.classList.remove('appear');
+        observer.unobserve(img);
+    }
+}); 
 }
 // --img OBSERVER -- END --//
 
@@ -31,15 +32,15 @@ function intersect(entries) {
 
 let textOptions = {
     root: null,
-    rootMargin: "0px 0px 0px 0px",
-    threshold: 1, 
+    rootMargin: "100px 0px -300px 0px",
+    threshold: 0, 
 };
 
 let imageObserver = new IntersectionObserver(textIntersect, textOptions);
 
 document.querySelectorAll('p').forEach(p => {
     imageObserver.observe(p);
-    console.log('watching', p);
+    // console.log('watching', p);
     
 });
 

@@ -2192,6 +2192,12 @@ body {
 	height: 100vh;
 	grid-column: -1 / 1;
 	background-color: #ff6e5b;
+	background-image: url("/images/Logo_images/1531.png");
+	background-size: contain;
+	background-position:  top right;
+	background-repeat: repeat-y;
+	background-blend-mode: multiply;
+	width: 100%;
 	
 	h2 {
 		color: white;
@@ -2300,8 +2306,8 @@ body {
 
 //OBSERVER-ANIM// --START--
 p {
-	opacity: 1;
-	transition: opacity 2s ease-in;
+	opacity: 0;
+	transition: opacity 1000ms ease-in;
 }
 
 .active {
