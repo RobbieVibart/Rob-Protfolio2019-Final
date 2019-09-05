@@ -103,7 +103,7 @@ $form-group-margin-bottom: 30px !default;
 // font-family: 'Saira Extra Condensed', sans-serif;
 // font-family: 'Saira Condensed', sans-serif;
 
-$Mob-line-height: 1.65rem;
+$Mob-line-height: 1.6rem;
 $Std-line-height: 2em;
 $Std-font-size: 1em;
 
@@ -118,7 +118,7 @@ sans-serif;
 
 
 //USER SCREEN SIZE
-$mobile: 350px;
+$mobile: 380px;
 @mixin mobile {
 	@media only screen and (max-width: $mobile) {
 		@content;
@@ -2140,60 +2140,51 @@ body {
 	font-family: "Montserrat";
 	// background-color: black;
 
-	//MEDIA Q// --START--
+//MEDIA Q// --START--
 
+@include mobile {
 
-	@include mobile {
-
-		.pr4-Header {
-			background-image: url(/images/Logo_images/1531.png);
-			background-size: contain;
-			background-blend-mode: multiply;
+	.pr4-Header {
+		width: 100%;
+		
+		h2 {
+			font-size: 48px;
+		
 		}
+	}
 
-		.pr4-Header {
-			max-width: 100%;
-
-			h2 {
-				font-size: 48px;
-
-			}
+	.pr4-subheader {
+		margin-top: 6em;
+		
+		h3 {
+			font-size: 20px;
+			font-weight: 800;
 		}
-
-		.pr4-subheader {
-			margin-top: 6em;
-
-			h3 {
-				font-size: 16px;
-				font-weight: 800;
-			}
-		}
+	}
 
 		p {
 			line-height: $Mob-line-height;
 		}
-
-		.pr4-section {
-			grid-column: 2;
-			height: 100vh;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-
-			img {
-				max-width: 70%;
-				max-height: 70%;
-			}
+	}
+	
+	.pr4-section {
+		grid-column: 2;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	
+		img {
+			max-width: 70%;
+			max-height: 70%;
 		}
-
-		//MEDIA Q// --END--
 	}
 }
+//MEDIA Q// --END--
+
 
 .pr4-Header {
-	position: relative;
-	z-index: 1;
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -2201,15 +2192,6 @@ body {
 	height: 100vh;
 	grid-column: -1 / 1;
 	background-color: #ff6e5b;
-
-
-	img {
-		z-index: -1;
-		opacity: 0.2;
-		position: absolute;
-		max-width: 100%;
-		height: 100%;
-	}
 	
 	h2 {
 		color: white;
