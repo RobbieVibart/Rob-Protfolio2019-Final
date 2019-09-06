@@ -119,6 +119,7 @@ sans-serif;
 
 //USER SCREEN SIZE
 $mobile: 380px;
+
 @mixin mobile {
 	@media only screen and (max-width: $mobile) {
 		@content;
@@ -1602,7 +1603,7 @@ blockquote {
 	}
 }
 
-// GROW--START--
+//GROW// --START--
 
 *,
 ::before,
@@ -1617,13 +1618,13 @@ body {
 	font-family: "Montserrat";
 	font-size: $Std-font-size;
 	line-height: $Std-line-height;
-// MQ Start //
-	
-@include mobile {
+
+	// MQ Start //
+	@include mobile {
 
 		.img_wrapper {
 			background-color: #c14448;
-	
+
 			img {
 				object-fit: cover;
 				height: 100%;
@@ -1631,7 +1632,8 @@ body {
 			}
 		}
 	}
-// MQ Start //
+
+	// MQ end //
 }
 
 .grow__head {
@@ -1671,7 +1673,7 @@ body {
 .sub_head {
 	text-transform: uppercase;
 	grid-column: 2;
-	
+
 	& h3 {
 		padding: 1em 0em 1em 0em;
 		margin: 0;
@@ -1779,17 +1781,16 @@ body {
 
 }
 
-//GROW--END--
+//GROW// --END--
 
+//ODA// --START--
 
-//ODA --START--
 body {
 	font-family: "Montserrat";
 	font-size: $Std-font-size;
 	line-height: $Std-line-height
 }
 
-//SECTION 1
 .oda__head {
 	background-image: url("/images/Oda_images/Oda_0001.jpg");
 	background-image: url("/images/Oda_images/Oda_0001.jpg");
@@ -1838,7 +1839,6 @@ body {
 		}
 	}
 
-	//SECTION 2
 	.pr2_roles {
 		text-transform: uppercase;
 		font-weight: 700;
@@ -1864,7 +1864,6 @@ body {
 		grid-column: 2;
 	}
 
-	//SECTION 3
 	.pr2_logo {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -1888,10 +1887,8 @@ body {
 		width: 100%;
 	}
 
-	//FOOTER START
 	.footer {
 		margin: 50px 0px;
-		// background: pink;
 		grid-column: 2;
 		text-align: center;
 	}
@@ -1904,10 +1901,9 @@ body {
 	}
 }
 
-// --RBB END --
+//ODA// --END--
 
-
-// FNB//--START--
+//FNB// --START--
 
 *,
 *::before,
@@ -1923,28 +1919,25 @@ body {
 	font-size: 1em;
 	color: grey;
 	line-height: 2em;
-	
+
+	// MQ Start
 	@include mobile {
-		
+
 		.imageWrapper {
-			
+
 			width: 100%;
-			
+
 			img {
 				max-width: 100%;
 				max-height: 100%;
 
 			}
 		}
-		
+
 	}
 }
 
-
-// * p {
-// 	line-height: 2.2em;
-// 	font-size: $Std-font-size;
-// }
+// MQ End
 
 * h3 {
 	margin-top: 0;
@@ -1961,7 +1954,7 @@ body {
 
 .headImg {
 	width: 100%;
-	height: 100vh;
+	height: 10vh;
 	background-image: url('/images/Fnb_images/Img8.png');
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -2076,7 +2069,7 @@ body {
 	position: absolute;
 	width: 100%;
 	height: 20%;
-	clip-path: polygon(0px 10%, 100% 0%, 100% 100%, 0 100% );
+	clip-path: polygon(0px 10%, 100% 0%, 100% 100%, 0 100%);
 	background-color: #ff8c00;
 
 }
@@ -2103,7 +2096,7 @@ body {
 	margin: 200px 0px;
 }
 
-// FNB//--END--
+//FNB// --END--
 
 //LOGOFOLOIO// --START--
 
@@ -2112,33 +2105,32 @@ body {
 	font-family: "Montserrat";
 	// background-color: black;
 
-//MEDIA Q// --START--
+	//MEDIA Q// --START--
+	@include mobile {
 
-@include mobile {
+		.pr4-Header {
+			width: 100%;
 
-	.pr4-Header {
-		width: 100%;
-		
-		h2 {
-			font-size: 48px;
-		
+			h2 {
+				font-size: 48px;
+
+			}
 		}
-	}
 
-	.pr4-subheader {
-		margin-top: 6em;
-		
-		h3 {
-			font-size: 20px;
-			font-weight: 800;
+		.pr4-subheader {
+			margin-top: 6em;
+
+			h3 {
+				font-size: 20px;
+				font-weight: 800;
+			}
 		}
-	}
 
 		p {
 			line-height: $Mob-line-height;
 		}
 	}
-	
+
 	.pr4-section {
 		grid-column: 2;
 		height: 100vh;
@@ -2146,14 +2138,15 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	
+
 		img {
 			max-width: 70%;
 			max-height: 70%;
 		}
 	}
 }
-//MEDIA Q// --END--
+
+//--MEDIA Q// --END--
 
 
 .pr4-Header {
@@ -2166,11 +2159,11 @@ body {
 	background-color: #ff6e5b;
 	background-image: url("/images/Logo_images/1531.png");
 	background-size: contain;
-	background-position:  top right;
+	background-position: top right;
 	background-repeat: repeat-y;
 	background-blend-mode: multiply;
 	width: 100%;
-	
+
 	h2 {
 		color: white;
 		font-size: 64px;
@@ -2182,7 +2175,7 @@ body {
 
 .pr4-time {
 	grid-column: 2;
-	
+
 	img {
 		height: 100%;
 		width: 100%;
@@ -2201,7 +2194,7 @@ body {
 	font-family: 'Saira Extra Condensed', sans-serif;
 	grid-column: 2;
 	width: 100%;
-	
+
 
 	h3 {
 		color: #ff6e5b;
@@ -2241,7 +2234,7 @@ body {
 	img {
 		width: 95%;
 	}
-} 
+}
 
 .pr4-imgContainer {
 	grid-column: 2;
@@ -2267,18 +2260,7 @@ body {
 	margin: 200px 0px;
 }
 
-
-// .cover {
-// 	z-index: 999;
-// 	position: fixed;
-// 	width: 100%;
-// 	height: 300px;
-// 	margin: 0 auto;
-// 	background-color: rgba(255, 150, 150,0.7);
-	
-// }
-
-
+//LOGOFOLOIO// --END--
 
 //OBSERVER-ANIM// --START--
 .fade_up {
@@ -2288,19 +2270,19 @@ body {
 }
 
 .fade_up.active {
-	
+
 	transform: translateY(0px);
 	opacity: 1;
 }
 
 .right {
-    // grid-column: 2 /3;
-    transition: opacity 1000ms ease-in;
-    opacity: 0;
+	// grid-column: 2 /3;
+	transition: opacity 1000ms ease-in;
+	opacity: 0;
 }
 
 .right.appear {
-    opacity: 1;
+	opacity: 1;
 }
+
 //OBSERVER-ANIM// --END--
-//LOGOFOLOIO// --END--
