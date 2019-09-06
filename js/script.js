@@ -32,13 +32,13 @@ function intersect(entries) {
 
 let textOptions = {
     root: null,
-    rootMargin: "100px 0px -300px 0px",
+    rootMargin: "-200px 0px -200px 0px",
     threshold: 0, 
 };
 
 let imageObserver = new IntersectionObserver(textIntersect, textOptions);
 
-document.querySelectorAll('p').forEach(p => {
+document.querySelectorAll('.fade').forEach(p => {
     imageObserver.observe(p);
     // console.log('watching', p);
     
