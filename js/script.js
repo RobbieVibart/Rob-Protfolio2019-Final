@@ -38,7 +38,7 @@ let textOptions = {
 
 let imageObserver = new IntersectionObserver(textIntersect, textOptions);
 
-document.querySelectorAll('.fade').forEach(p => {
+document.querySelectorAll('.fade_up').forEach(p => {
     imageObserver.observe(p);
     // console.log('watching', p);
     

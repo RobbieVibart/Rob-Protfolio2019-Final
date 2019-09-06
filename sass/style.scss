@@ -1602,7 +1602,7 @@ blockquote {
 	}
 }
 
-// RBB--START--
+// GROW--START--
 
 *,
 ::before,
@@ -1744,20 +1744,16 @@ body {
 }
 
 .img_wrapper {
-	place-content: center;
+	z-index: 0;
+	position: relative;
+	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(85%, 1fr));
 	grid-column: 2;
-	width: 100%;
-	
-	.img {
-		background-color: #c14448;
-		object-position: center;
-		justify-self: center;
-		object-fit: fill;
-		max-width: 100%;
-		height: 100%;
-		line-height: 0;
-		padding: 0;
-		margin: 0;
+	// width: 100%;
+
+	img {
+		width: 100%;
 	}
 }
 
@@ -1773,7 +1769,17 @@ body {
 	}
 }
 
-//RBB INDEX --END--
+.pr-1bgColor {
+	z-index: -1;
+	position: absolute;
+	justify-self: center;
+	width: 100vw;
+	height: 100%;
+	background-color: #c14448;
+
+}
+
+//GROW--END--
 
 
 //ODA --START--
@@ -1884,6 +1890,7 @@ body {
 
 	//FOOTER START
 	.footer {
+		margin: 50px 0px;
 		// background: pink;
 		grid-column: 2;
 		text-align: center;
@@ -2092,6 +2099,10 @@ body {
 	opacity: 0;
 }
 
+.footer {
+	margin: 200px 0px;
+}
+
 // FNB//--END--
 
 //LOGOFOLOIO// --START--
@@ -2252,6 +2263,10 @@ body {
 	background-repeat: no-repeat;
 }
 
+.footer {
+	margin: 200px 0px;
+}
+
 
 // .cover {
 // 	z-index: 999;
@@ -2266,18 +2281,21 @@ body {
 
 
 //OBSERVER-ANIM// --START--
-.fade {
+.fade_up {
 	opacity: 0;
-	transition: opacity 1000ms ease-in;
+	transform: translateY(-20px);
+	transition: transform 0.5s ease-in-out, opacity 1000ms ease-in;
 }
 
-.fade.active {
+.fade_up.active {
+	
+	transform: translateY(0px);
 	opacity: 1;
 }
 
 .right {
     // grid-column: 2 /3;
-    transition: transform 0.5s ease-in-out, opacity 1000ms ease-in;
+    transition: opacity 1000ms ease-in;
     opacity: 0;
 }
 
