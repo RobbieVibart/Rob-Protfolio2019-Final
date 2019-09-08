@@ -572,7 +572,7 @@ figure {
 #fh5co-about,
 #fh5co-contact,
 #fh5co-footer {
-	padding: 7em 0;
+	padding: 2em 0;
 	clear: both;
 
 	@media screen and (max-width: $screen-sm) {
@@ -1637,6 +1637,8 @@ body {
 }
 
 .grow__head {
+	position: relative;
+	z-index: 1;
 	background-image: url('/images/Grow_images/img-head.png');
 	width: 100vw;
 	height: 100vh;
@@ -1663,12 +1665,26 @@ body {
 	}
 }
 
+.pr2-headBg {
+	z-index: -1;
+	opacity: 0.9;
+	background-blend-mode: multiply;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #c14448;
+
+}
+
 .grid-card {
 	display: grid;
 	grid: auto-flow / minmax(2px, 1fr) minmax(350px, 3fr)minmax(2px, 1fr);
 	background-color: white;
 }
 
+.copy {
+	grid-column: 2;
+}
 
 .sub_head {
 	text-transform: uppercase;
@@ -1760,7 +1776,7 @@ body {
 }
 
 .footer {
-	margin: 50px 0px;
+	margin: 160px 0px;
 	grid-column: 2;
 	text-align: center;
 
@@ -1785,14 +1801,33 @@ body {
 
 //ODA// --START--
 
-body {
+html, body {
 	font-family: "Montserrat";
-	font-size: $Std-font-size;
-	line-height: $Std-line-height
-}
+
+	// MQ Start //
+
+	@include mobile {
+
+		.oda__head {
+			width: 100%;
+			font-size: 52px;
+			font-weight: 900;
+			line-height: 64px;
+		}
+		
+		img {
+				height: 100%;
+				max-width: 100%;
+			}
+		}
+		
+	}
+
+	// MQ end //
 
 .oda__head {
-	background-image: url("/images/Oda_images/Oda_0001.jpg");
+	z-index: 1;
+	position: relative;
 	background-image: url("/images/Oda_images/Oda_0001.jpg");
 	background-size: cover;
 	background-position: center;
@@ -1803,16 +1838,14 @@ body {
 	background-repeat: no-repeat;
 	overflow: hidden;
 
-
-
 	.head_title {
 		width: 100%;
-		font-size: 5em;
+		font-size: 64px;
 		color: white;
 	}
 
 	&,
-	h3 {
+	h2 {
 		text-shadow: 5px 5px 10px black;
 		display: flex;
 		justify-content: center;
@@ -1823,27 +1856,25 @@ body {
 	}
 }
 
+.overlay_background {
+	background-blend-mode: color-burn;
+	z-index: -1;
+	position: absolute;
+	opacity: 0.8;
+	width: 100%;
+	height: 100%;
+	background-color: #285783;
+
+}
+
 .pr2_grid-card {
 	display: grid;
-	grid: auto-flow / minmax(2px, 1fr) minmax(300px, 3fr) minmax(2px, 1fr);
+	grid: auto-flow / minmax(2px, 1fr) minmax(350px, 800px) minmax(2px, 1fr);
 
-	.role__container {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		grid-column: 2;
-
-		.role__copy {
-			padding: 2em;
-			font-size: $Std-font-size line-height $Std-line-height;
-			font-weight: 200;
-		}
+	img {
+		max-width: 100%;
 	}
-
-	.pr2_roles {
-		text-transform: uppercase;
-		font-weight: 700;
-		grid-column: 2;
-	}
+}
 
 	.pr2_image-2,
 	img {
@@ -1860,18 +1891,11 @@ body {
 		text-align: left;
 	}
 
-	.sketch {
-		grid-column: 2;
-	}
-
 	.pr2_logo {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 		grid-column: 2;
-	}
-
-	.pr2_logos {
-		max-width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(380px, 800px));
+		// grid-template-rows: repeat(2, 1fr);
 	}
 
 	.pr2_copy-3 {
@@ -1883,23 +1907,21 @@ body {
 
 	.header__image,
 	img {
-		grid-column: 1/-1;
-		width: 100%;
+		grid-column: 2;
+		max-width: 100%;
 	}
 
 	.footer {
-		margin: 50px 0px;
+		margin: 160px 0px;
 		grid-column: 2;
 		text-align: center;
 	}
 
 	.btn {
 		grid-column: 2;
-		margin: 50px 100px;
 		margin-right: 5%;
 		margin-left: 5%;
 	}
-}
 
 //ODA// --END--
 
@@ -2025,6 +2047,7 @@ body {
 	position: relative;
 	text-transform: uppercase;
 	padding: 1em 0em 1em 0em;
+	grid-column: 2;
 	font-size: $Std-Subheader-size;
 	color: $Std-Subheader-color;
 	font-weight: $Std-Subheader-weight;
@@ -2093,7 +2116,7 @@ body {
 }
 
 .footer {
-	margin: 200px 0px;
+	margin: 160px 0px;
 }
 
 //FNB// --END--
@@ -2257,7 +2280,7 @@ body {
 }
 
 .footer {
-	margin: 200px 0px;
+	margin: 160px 0px;
 }
 
 //LOGOFOLOIO// --END--
@@ -2270,13 +2293,11 @@ body {
 }
 
 .fade_up.active {
-
 	transform: translateY(0px);
 	opacity: 1;
 }
 
 .right {
-	// grid-column: 2 /3;
 	transition: opacity 1000ms ease-in;
 	opacity: 0;
 }
