@@ -1653,10 +1653,6 @@ html, body {
     font-weight: 900;
     line-height: 64px;
   }
-  html img, body img {
-    height: 100%;
-    max-width: 100%;
-  }
 }
 
 .oda__head {
@@ -1794,10 +1790,20 @@ body {
   body .imageWrapper {
     grid-column: 1/-1;
   }
-  html .imageWrapper img,
-  body .imageWrapper img {
-    max-width: 100%;
-    max-height: 100%;
+  html .align_center,
+  body .align_center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  html .align_center img,
+  body .align_center img {
+    width: 100%;
   }
 }
 
@@ -1942,10 +1948,6 @@ body {
   grid-column: 1/-1;
 }
 
-.imageWrapper img {
-  max-width: 50%;
-}
-
 .align_center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1957,8 +1959,11 @@ body {
       align-self: center;
 }
 
+.align_center img {
+  width: 30%;
+}
+
 .bgColorSecondary {
-  height: 300px;
   -webkit-clip-path: polygon(0px 10%, 100% 0%, 100% 100%, 0 100%);
           clip-path: polygon(0px 10%, 100% 0%, 100% 100%, 0 100%);
   background-color: #ff8c00;
