@@ -1954,7 +1954,7 @@ body {
 
 .headImg {
 	width: 100%;
-	height: 10vh;
+	height: 100vh;
 	background-image: url('/images/Fnb_images/Img8.png');
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -2017,7 +2017,7 @@ body {
 .headWrapper {
 	grid-column: 2;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-template-columns: 1fr;
 	counter-reset: counter-name;
 }
 
@@ -2062,6 +2062,11 @@ body {
 .imageWrapper {
 	z-index: -4;
 	grid-column: 1/-1;
+
+	img{
+		max-width:50%;
+		// height: 50%;
+	}
 }
 
 .bgColorSecondary {
@@ -2088,12 +2093,8 @@ body {
 	background-color: #0f9999;
 }
 
-.anim {
-	opacity: 0;
-}
-
 .footer {
-	margin: 200px 0px;
+	margin: 160px 0px;
 }
 
 //FNB// --END--

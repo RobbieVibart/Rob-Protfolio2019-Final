@@ -1882,8 +1882,8 @@ body {
   grid-column: 2;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   counter-reset: counter-name;
 }
 
@@ -1931,6 +1931,10 @@ body {
   grid-column: 1/-1;
 }
 
+.imageWrapper img {
+  max-width: 50%;
+}
+
 .bgColorSecondary {
   z-index: -6;
   position: absolute;
@@ -1956,12 +1960,8 @@ body {
   background-color: #0f9999;
 }
 
-.anim {
-  opacity: 0;
-}
-
 .footer {
-  margin: 200px 0px;
+  margin: 160px 0px;
 }
 
 html,
