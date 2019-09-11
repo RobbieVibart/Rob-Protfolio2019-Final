@@ -2276,7 +2276,7 @@ body {
 .pr4-imgContainer {
     grid-column: 2;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 850px));
 
     img {
         max-width: 85%;
