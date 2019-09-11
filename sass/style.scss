@@ -1790,7 +1790,7 @@ body {
 }
 
 .footer {
-    margin: 160px 0px;
+    margin: 50px 0px;
     grid-column: 2;
     text-align: center;
 
@@ -1918,9 +1918,8 @@ img {
 }
 
 .footer {
-    margin: 160px 0px;
+    margin: 165px 0px;
     grid-column: 2;
-    text-align: center;
 }
 
 .btn {
@@ -2303,7 +2302,7 @@ body {
 //OBSERVER-ANIM// --START--
 .fade_up {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(20px);
     transition: transform 0.5s ease-in-out, opacity 1000ms ease-in;
 }
 

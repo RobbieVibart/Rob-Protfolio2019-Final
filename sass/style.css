@@ -1619,7 +1619,7 @@ body {
 }
 
 .footer {
-  margin: 160px 0px;
+  margin: 50px 0px;
   -ms-grid-column: 2;
   grid-column: 2;
   text-align: center;
@@ -1755,10 +1755,9 @@ img {
 }
 
 .footer {
-  margin: 160px 0px;
+  margin: 165px 0px;
   -ms-grid-column: 2;
   grid-column: 2;
-  text-align: center;
 }
 
 .btn {
@@ -2182,8 +2181,8 @@ body .pr4-section img {
 
 .fade_up {
   opacity: 0;
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
   -webkit-transition: opacity 1000ms ease-in, -webkit-transform 0.5s ease-in-out;
   transition: opacity 1000ms ease-in, -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, opacity 1000ms ease-in;
