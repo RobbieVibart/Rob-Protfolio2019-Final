@@ -633,6 +633,14 @@ figure {
   top: 1px;
 }
 
+.intro .headSect {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 .fh5co-heading {
   margin-bottom: 5em;
 }
@@ -1653,6 +1661,10 @@ html, body {
     font-weight: 900;
     line-height: 64px;
   }
+  html p, body p {
+    line-height: 2.1em;
+    font-weight: 400;
+  }
 }
 
 .oda__head {
@@ -1735,8 +1747,9 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
@@ -2026,7 +2039,7 @@ body {
   }
   html p,
   body p {
-    line-height: 1.6rem;
+    line-height: 2.1em;
   }
 }
 

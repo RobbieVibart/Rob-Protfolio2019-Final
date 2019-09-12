@@ -98,9 +98,11 @@ $form-group-margin-bottom: 30px !default;
 // font-family: 'Saira Extra Condensed', sans-serif;
 // font-family: 'Saira Condensed', sans-serif;
 
-$Mob-line-height: 1.6rem;
 $Std-line-height: 2em;
 $Std-font-size: 1em;
+$Mob-line-height: 2.1em;
+$Mob-padding: 0em 2em;
+$Mob-weight: 400;
 
 // SUB-HEADER //
 $Std-Subheader-size: 2em;
@@ -285,8 +287,6 @@ figure {
                 float: left;
                 width: 83%;
 
-                // font-family: $font-secondary;
-
                 @include transition(0.3s);
 
                 padding: 0;
@@ -296,8 +296,6 @@ figure {
             input[type=text] {
                 padding: 6px 10px;
                 width: 40%;
-
-                // border: 1px solid rgba($brand-black,.1);
                 border: none;
                 float: right;
                 font-size: 13px;
@@ -624,9 +622,6 @@ figure {
         font-size: 15px;
         letter-spacing: 1px;
         font-weight: 600;
-
-        // color: #5d5d5d;
-   
     }
 
     @media screen and (max-width: $screen-sm) {
@@ -769,6 +764,15 @@ figure {
             }
         }
     }
+
+    .headSect {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        // grid-template-rows: 100px;
+        // background-color: pink;     
+     }
+     
 }
 
 .fh5co-heading {
@@ -1826,6 +1830,11 @@ html, body {
             font-weight: 900;
             line-height: 64px;
         }
+
+        p {
+            line-height: $Mob-line-height;
+            font-weight: 400;
+        }
     }
 }
 
@@ -1898,7 +1907,7 @@ img {
 .pr2_logo {
     grid-column: 2;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     background-color:  hsl(209, 53%, 15%);
@@ -1911,9 +1920,10 @@ img {
 .pr2_copy-3 {
     font-size: $Std-font-size;
     line-height: $Std-line-height;
-    padding: 0em 2em;
+    padding: $Mob-padding;
     grid-column: 2;
 }
+
 // DATE - 120919 - WIP //
 .pr2-imgBackground {
     grid-column: 1;
@@ -2114,15 +2124,11 @@ body {
     img {
         width: 30%
     }
-
-
 }
 
 .bgColorSecondary {
     clip-path: polygon(0px 10%, 100% 0%, 100% 100%, 0 100%);
     background-color: #ff8c00;
-    
-
 }
 
 .headText {
@@ -2134,7 +2140,6 @@ body {
 }
 
 .BgcolorPrimary {
-	// position: absolute;
 	grid-column: 2;
 	z-index: 0;
 	background-color: #0f9999;
@@ -2142,7 +2147,6 @@ body {
 
 .footer {
     grid-column: 2;
-    // height: 100%;
 	margin: 160px 0px;
 }
 
