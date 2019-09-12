@@ -1863,13 +1863,12 @@ html, body {
 }
 
 .overlay_background {
-    background-blend-mode: color-burn;
     z-index: -1;
     position: absolute;
     opacity: 0.8;
     width: 100%;
     height: 100%;
-    background-color: #285783;
+    background: radial-gradient(circle,  hsl(209, 53%, 34%) 1%, hsl(209, 53%, 5%) 100%);
 }
 
 .pr2_grid-card {
@@ -1898,10 +1897,15 @@ img {
 
 .pr2_logo {
     grid-column: 2;
+    justify-content: center;
+    align-content: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 800px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color:  hsl(209, 53%, 15%);
 
-    // grid-template-rows: repeat(2, 1fr);
+    img {
+        width: 100%;
+    }
 }
 
 .pr2_copy-3 {
@@ -1909,6 +1913,12 @@ img {
     line-height: $Std-line-height;
     padding: 0em 2em;
     grid-column: 2;
+}
+// DATE - 120919 - WIP //
+.pr2-imgBackground {
+    grid-column: 1;
+    width: 100%;
+    background-color: hsl(209, 53%, 34%);
 }
 
 .header__image,
@@ -2049,7 +2059,7 @@ body {
 	grid-column: 2;
 	display: grid;
 	grid-template-columns: 1fr;
-	counter-reset: counter-name;
+	// counter-reset: counter-name;
 }
 
 .headTitle {
@@ -2063,14 +2073,14 @@ body {
 }
 
 .headTitle::before {
-    position: absolute;
-    counter-increment: counter-name;
-    content: "0" counter(counter-name);
+    // position: absolute;
+    // counter-increment: counter-name;
+    content: "_";
     font-family: "Saira Extra Condensed";
-    font-weight: 300;
-    color: rgba(15, 153, 153, 0.1);
+    // font-weight: 300;
+    color: hsl(180, 82%, 33%);
     letter-spacing: -3px;
-    font-size: 8em;
+    font-size: 2em;
     top: .66em;
     left: -.75em;
 }
@@ -2189,19 +2199,17 @@ body {
 //--MEDIA Q// --END--
 
 .pr4-Header {
+    position: relative;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     grid-column: -1 / 1;
-    background-color: #ff6e5b;
     background-image: url("/images/Logo_images/1531.png");
     background-size: contain;
     background-position: top right;
     background-repeat: repeat-y;
-    background-blend-mode: multiply;
-    width: 100%;
 
     h2 {
         color: white;
@@ -2210,6 +2218,16 @@ body {
         font-weight: 800;
         text-transform: uppercase;
     }
+}
+
+.pr4-headBackground {
+    // background-blend-mode: multiply;
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background:radial-gradient(circle, hsl(7, 100%, 68%) 1%, hsl(6, 74%, 15%) 100%);
+
 }
 
 .pr4-time {

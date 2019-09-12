@@ -1693,13 +1693,12 @@ html, body {
 }
 
 .overlay_background {
-  background-blend-mode: color-burn;
   z-index: -1;
   position: absolute;
   opacity: 0.8;
   width: 100%;
   height: 100%;
-  background-color: #285783;
+  background: radial-gradient(circle, #295885 1%, #060d14 100%);
 }
 
 .pr2_grid-card {
@@ -1733,10 +1732,20 @@ img {
 .pr2_logo {
   -ms-grid-column: 2;
   grid-column: 2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(380px, 800px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(380px, 800px));
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background-color: #12273b;
+}
+
+.pr2_logo img {
+  width: 100%;
 }
 
 .pr2_copy-3 {
@@ -1745,6 +1754,13 @@ img {
   padding: 0em 2em;
   -ms-grid-column: 2;
   grid-column: 2;
+}
+
+.pr2-imgBackground {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  width: 100%;
+  background-color: #295885;
 }
 
 .header__image,
@@ -1899,7 +1915,6 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  counter-reset: counter-name;
 }
 
 .headTitle {
@@ -1914,14 +1929,11 @@ body {
 }
 
 .headTitle::before {
-  position: absolute;
-  counter-increment: counter-name;
-  content: "0" counter(counter-name);
+  content: "_";
   font-family: "Saira Extra Condensed";
-  font-weight: 300;
-  color: rgba(15, 153, 153, 0.1);
+  color: #0f9999;
   letter-spacing: -3px;
-  font-size: 8em;
+  font-size: 2em;
   top: .66em;
   left: -.75em;
 }
@@ -2045,6 +2057,7 @@ body .pr4-section img {
 }
 
 .pr4-Header {
+  position: relative;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2057,13 +2070,10 @@ body .pr4-section img {
           align-items: center;
   height: 100vh;
   grid-column: -1 / 1;
-  background-color: #ff6e5b;
   background-image: url("/images/Logo_images/1531.png");
   background-size: contain;
   background-position: top right;
   background-repeat: repeat-y;
-  background-blend-mode: multiply;
-  width: 100%;
 }
 
 .pr4-Header h2 {
@@ -2072,6 +2082,14 @@ body .pr4-section img {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.pr4-headBackground {
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, #ff6f5c 1%, #43100a 100%);
 }
 
 .pr4-time {
