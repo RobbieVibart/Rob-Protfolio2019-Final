@@ -773,6 +773,7 @@ figure {
     }
 
     .intro__head {
+        padding: $Mob-padding;
         justify-content: center;
         align-items: center;
         height: 100vh;
@@ -781,7 +782,7 @@ figure {
         // grid-template-rows: 100px;
     }
 
-    // All_REV_Ver14 __WIP //
+    // All_REV_Ver15 __WIP //
     h2::before {
         content: "_";
         font-family: "Saira Extra Condensed";

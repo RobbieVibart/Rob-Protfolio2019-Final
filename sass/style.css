@@ -637,6 +637,7 @@ figure {
 }
 
 .intro .intro__head {
+  padding: 0em 2em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
