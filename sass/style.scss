@@ -744,12 +744,15 @@ figure {
 }
 
 .intro {
-    h2 {
-        font-size: 49px;
-        line-height: 55px;
-        letter-spacing: 1px;
-
-        @media screen and (max-width: $screen-sm) {
+        h2 {
+        text-transform: uppercase;
+        padding: 1em 0em 1em 0em;
+        font-size: $Std-Subheader-size;
+        color: $Std-Subheader-color;
+        font-weight: $Std-Subheader-weight;
+        font-family: $Std-Subheader-Family;
+        
+            @media screen and (max-width: $screen-sm) {
             font-size: 30px;
             line-height: 45px;
         }
@@ -765,14 +768,24 @@ figure {
         }
     }
 
-    .headSect {
+    .intro__head {
+        justify-content: center;
+        align-items: center;
         height: 100vh;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         // grid-template-rows: 100px;
-        // background-color: pink;     
      }
      
+     h2::before {
+        content: "_";
+        font-family: "Saira Extra Condensed";
+        background: linear-gradient(to left, hsl(180, 82%, 33%) 1%, rgba(5, 65, 60, 1) 100%);
+        background-size: 100%;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 4em;
+    }
 }
 
 .fh5co-heading {

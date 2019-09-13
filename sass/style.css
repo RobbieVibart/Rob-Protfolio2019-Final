@@ -611,9 +611,12 @@ figure {
 }
 
 .intro h2 {
-  font-size: 49px;
-  line-height: 55px;
-  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 1em 0em 1em 0em;
+  font-size: 2em;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -633,12 +636,29 @@ figure {
   top: 1px;
 }
 
-.intro .headSect {
+.intro .intro__head {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.intro h2::before {
+  content: "_";
+  font-family: "Saira Extra Condensed";
+  background: -webkit-gradient(linear, right top, left top, color-stop(1%, #0f9999), to(#05413c));
+  background: linear-gradient(to left, #0f9999 1%, #05413c 100%);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4em;
 }
 
 .fh5co-heading {
