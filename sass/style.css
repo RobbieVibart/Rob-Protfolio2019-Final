@@ -656,6 +656,7 @@ figure {
   background: -webkit-gradient(linear, right top, left top, color-stop(1%, #0f9999), to(#05413c));
   background: linear-gradient(to left, #0f9999 1%, #05413c 100%);
   background-size: cover;
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-size: 4em;

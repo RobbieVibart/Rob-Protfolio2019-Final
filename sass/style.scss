@@ -781,12 +781,14 @@ figure {
         // grid-template-rows: 100px;
     }
 
-    // All_REV_Ver13 //
+    // All_REV_Ver14 __WIP //
     h2::before {
         content: "_";
         font-family: "Saira Extra Condensed";
         background: linear-gradient(to left, hsl(180, 82%, 33%) 1%, rgba(5, 65, 60, 1) 100%);
         background-size: cover;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
         font-size: 4em;
