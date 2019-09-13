@@ -655,9 +655,9 @@ figure {
   font-family: "Saira Extra Condensed";
   background: -webkit-gradient(linear, right top, left top, color-stop(1%, #0f9999), to(#05413c));
   background: linear-gradient(to left, #0f9999 1%, #05413c 100%);
-  background-size: 100%;
+  background-size: cover;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   font-size: 4em;
 }
 
@@ -1670,18 +1670,21 @@ body {
   background-color: #c14448;
 }
 
-html, body {
+html,
+body {
   font-family: "Montserrat";
 }
 
 @media only screen and (max-width: 380px) {
-  html .oda__head, body .oda__head {
+  html .oda__head,
+  body .oda__head {
     width: 100%;
     font-size: 52px;
     font-weight: 900;
     line-height: 64px;
   }
-  html p, body p {
+  html p,
+  body p {
     line-height: 2.1em;
     font-weight: 400;
   }

@@ -1,4 +1,6 @@
-$font-primary: "Montserrat", Arial, sans-serif;
+$font-primary: "Montserrat",
+Arial,
+sans-serif;
 
 // $font-secondary: "Playfair Display", serif;
 
@@ -109,7 +111,9 @@ $Std-Subheader-size: 2em;
 $Std-Subheader-color: hsl(0, 0%, 76%);
 $Std-Subheader-weight: 700;
 $Std-Subheader-case: uppercase;
-$Std-Subheader-Family: "Montserrat", Arial, sans-serif;
+$Std-Subheader-Family: "Montserrat",
+Arial,
+sans-serif;
 
 //USER SCREEN SIZE
 $mobile: 380px;
@@ -432,7 +436,7 @@ figure {
             }
 
             &.active {
-                > a {
+                >a {
                     color: $brand-primary !important;
                 }
             }
@@ -744,15 +748,15 @@ figure {
 }
 
 .intro {
-        h2 {
+    h2 {
         text-transform: uppercase;
         padding: 1em 0em 1em 0em;
         font-size: $Std-Subheader-size;
         color: $Std-Subheader-color;
         font-weight: $Std-Subheader-weight;
         font-family: $Std-Subheader-Family;
-        
-            @media screen and (max-width: $screen-sm) {
+
+        @media screen and (max-width: $screen-sm) {
             font-size: 30px;
             line-height: 45px;
         }
@@ -775,15 +779,16 @@ figure {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         // grid-template-rows: 100px;
-     }
-     
-     h2::before {
+    }
+
+    // All_REV_Ver13 //
+    h2::before {
         content: "_";
         font-family: "Saira Extra Condensed";
         background: linear-gradient(to left, hsl(180, 82%, 33%) 1%, rgba(5, 65, 60, 1) 100%);
-        background-size: 100%;
+        background-size: cover;
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: transparent;
         font-size: 4em;
     }
 }
@@ -1116,13 +1121,13 @@ figure {
                 }
             }
 
-            > ul {
+            >ul {
                 padding-left: 20px;
                 display: none;
             }
 
             &.offcanvas-has-dropdown {
-                > a {
+                >a {
                     display: block;
                     position: relative;
 
@@ -1213,6 +1218,7 @@ figure {
     position: fixed !important;
 
     &.active i {
+
         &::before,
         &::after {
             background: $brand-darker;
@@ -1251,7 +1257,7 @@ figure {
     }
 
     &.fh5co-nav-white {
-        > i {
+        >i {
             color: $brand-white;
             background: $brand-black;
 
@@ -1831,7 +1837,8 @@ body {
 
 //ODA// --START--
 
-html, body {
+html,
+body {
     font-family: "Montserrat";
 
     // MQ Start //
@@ -1890,7 +1897,7 @@ html, body {
     opacity: 0.8;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle,  hsl(209, 53%, 34%) 1%, hsl(209, 53%, 5%) 100%);
+    background: radial-gradient(circle, hsl(209, 53%, 34%) 1%, hsl(209, 53%, 5%) 100%);
 }
 
 .pr2_grid-card {
@@ -1923,7 +1930,7 @@ img {
     align-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    background-color:  hsl(209, 53%, 15%);
+    background-color: hsl(209, 53%, 15%);
 
     img {
         width: 100%;
@@ -1981,18 +1988,18 @@ body {
     line-height: 2em;
 
     // MQ Start
-   
+
     @include mobile {
-        
+
         .imageWrapper {
             grid-column: 1/-1;
         }
-        
+
         .align_center {
             display: flex;
             justify-content: center;
             align-self: center;
-        
+
             img {
                 width: 100%
             }
@@ -2016,12 +2023,12 @@ body {
 }
 
 .headImg {
-	width: 100%;
-	height: 100vh;
-	background-image: url('/images/Fnb_images/Img8.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/Fnb_images/Img8.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .headerTitle {
@@ -2072,17 +2079,17 @@ body {
     }
 
     img {
-		// place-content: center;
+        // place-content: center;
         height: 100%;
         max-width: 100%;
     }
 }
 
 .headWrapper {
-	grid-column: 2;
-	display: grid;
-	grid-template-columns: 1fr;
-	// counter-reset: counter-name;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    // counter-reset: counter-name;
 }
 
 .headTitle {
@@ -2124,9 +2131,9 @@ body {
 }
 
 .imageWrapper {
-	z-index: -2;
+    z-index: -2;
     grid-column: 1/-1;
-   
+
 }
 
 .align_center {
@@ -2153,14 +2160,14 @@ body {
 }
 
 .BgcolorPrimary {
-	grid-column: 2;
-	z-index: 0;
-	background-color: #0f9999;
+    grid-column: 2;
+    z-index: 0;
+    background-color: #0f9999;
 }
 
 .footer {
     grid-column: 2;
-	margin: 160px 0px;
+    margin: 160px 0px;
 }
 
 //FNB// --END--
@@ -2243,7 +2250,7 @@ body {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background:radial-gradient(circle, hsl(7, 100%, 68%) 1%, hsl(6, 74%, 15%) 100%);
+    background: radial-gradient(circle, hsl(7, 100%, 68%) 1%, hsl(6, 74%, 15%) 100%);
 
 }
 
