@@ -651,16 +651,46 @@ figure {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.intro h2::before {
-  content: "_";
+.intro h2::after {
+  z-index: -1;
+  content: "2019";
   font-family: "Saira Extra Condensed";
-  background: -webkit-gradient(linear, right top, left top, color-stop(1%, #0f9999), to(#05413c));
-  background: linear-gradient(to left, #0f9999 1%, #05413c 100%);
+  background: linear-gradient(45deg, #ff8c00 1%, #05413c 100%);
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 4em;
+  font-size: 5.5em;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+
+.intro strong {
+  color: black;
+  background: linear-gradient(45deg, #ff8c00 1%, #05413c 100%);
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 900;
+}
+
+.intro .btnResume {
+  margin-top: 10px;
+  border: 2px solid black;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 0;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-transform: uppercase;
+}
+
+.intro .btnResume:hover {
+  background: black;
+  border: 2px solid black;
+  color: #fff;
 }
 
 .fh5co-heading {

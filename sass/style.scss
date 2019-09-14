@@ -749,16 +749,19 @@ figure {
 
 .intro {
     h2 {
+        
         text-transform: uppercase;
         padding: 1em 0em 1em 0em;
         font-size: $Std-Subheader-size;
         color: $Std-Subheader-color;
         font-weight: $Std-Subheader-weight;
         font-family: $Std-Subheader-Family;
+        // line-height: 2em;
 
         @media screen and (max-width: $screen-sm) {
             font-size: 30px;
             line-height: 45px;
+
         }
 
         .fh5co-highlight {
@@ -779,20 +782,51 @@ figure {
         height: 100vh;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        // grid-template-rows: 100px;
     }
-
-    // All_REV_Ver15 __WIP //
-    h2::before {
-        content: "_";
+    
+    h2::after {
+        z-index: -1;
+        content: "2019";
         font-family: "Saira Extra Condensed";
-        background: linear-gradient(to left, hsl(180, 82%, 33%) 1%, rgba(5, 65, 60, 1) 100%);
+        background: linear-gradient(45deg, #ff8c00 1%, rgba(5, 65, 60, 1) 100%);
         background-size: cover;
         -moz-background-clip: text;
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-        font-size: 4em;
+        font-size: 5.5em;
+        font-weight: 900;
+        letter-spacing: -5px;
+    }
+
+    strong {
+        color: black;
+        background: linear-gradient(45deg, #ff8c00 1%, rgba(5, 65, 60, 1) 100%);
+        background-size: cover;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 900;
+        }
+
+    .btnResume {
+        margin-top: 10px;
+        border: 2px solid rgba(black, 1);
+        color: rgba(black, 1);
+        font-size: 14px;
+        font-weight: 600;
+        padding: 10px 0;
+        padding-left: 35px;
+        padding-right: 35px;
+        text-transform: uppercase;
+        // margin-left: 60%;
+         
+        &:hover {
+            background: black;
+            border: 2px solid rgba(black, 1);
+            color: #fff;
+        }
     }
 }
 
