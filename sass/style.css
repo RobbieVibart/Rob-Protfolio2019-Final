@@ -2265,6 +2265,20 @@ body .pr4-section img {
   margin: 160px 0px;
 }
 
+.pdf__container {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.pdf__container object {
+  background-color: pink;
+  width: 100vw;
+  height: 100vh;
+}
+
 .fade_up {
   opacity: 0;
   -webkit-transform: translateY(20px);

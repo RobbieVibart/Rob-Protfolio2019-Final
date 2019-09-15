@@ -776,6 +776,7 @@ figure {
     }
 
     .intro__head {
+        // background-color: pink;
         padding: $Mob-padding;
         justify-content: center;
         align-items: center;
@@ -2377,6 +2378,20 @@ body {
 }
 
 //LOGOFOLOIO// --END--
+//PDF// --START--
+.pdf__container {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+    object {
+        background-color: pink;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+//PDF// --END--
 
 //OBSERVER-ANIM// --START--
 .fade_up {
