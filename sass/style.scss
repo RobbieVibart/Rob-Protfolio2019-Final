@@ -785,24 +785,10 @@ figure {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
     // --WIP-- 13//
-    h2::after {
-        z-index: -1;
-        content: "2019";
-        font-family: "Saira Extra Condensed";
-        background: linear-gradient(45deg, #ff8c00 1%, rgba(5, 65, 60, 1) 100%);
-        background-size: cover;
-        -moz-background-clip: text;
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        font-size: 5.5em;
-        font-weight: 900;
-        letter-spacing: -5px;
-    }
 
-    strong {
-        color: black;
-        background: linear-gradient(45deg, #ff8c00 1%, rgba(5, 65, 60, 1) 100%);
+    .intro__sub-1 {
+        // color: black;
+        background: linear-gradient(45deg, #6a00ff 1%, rgba(5, 65, 60, 1) 100%);
         background-size: cover;
         -moz-background-clip: text;
         -webkit-background-clip: text;
@@ -810,6 +796,21 @@ figure {
         color: transparent;
         font-weight: 900;
         }
+   
+        .intro__sub-2 {
+        // color: black;
+        font-family: 'Saira Extra Condensed', sans-serif;
+        background: linear-gradient(45deg, #6a00ff 10%, hsl(65, 100%, 20%) 100%);
+        background-size: cover;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 900;
+        font-size: 6em;
+        // letter-spacing: -12px;
+        
+     }
 
     .btnResume {
         margin-top: 10px;
@@ -821,7 +822,6 @@ figure {
         padding-left: 35px;
         padding-right: 35px;
         text-transform: uppercase;
-        // margin-left: 60%;
          
         &:hover {
             background: black;
@@ -1978,7 +1978,6 @@ img {
 .pr2_copy-3 {
     font-size: $Std-font-size;
     line-height: $Std-line-height;
-    padding: $Mob-padding;
     grid-column: 2;
 }
 
@@ -2099,8 +2098,6 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 850px));
 
-    // grid-template-rows: repeat(3, 1fr);
-
     img:nth-child(1) {
         grid-row: 2;
         grid-column: 3;
@@ -2117,7 +2114,6 @@ body {
     }
 
     img {
-        // place-content: center;
         height: 100%;
         max-width: 100%;
     }
@@ -2127,7 +2123,6 @@ body {
     grid-column: 2;
     display: grid;
     grid-template-columns: 1fr;
-    // counter-reset: counter-name;
 }
 
 .headTitle {
@@ -2141,11 +2136,8 @@ body {
 }
 
 .headTitle::before {
-    // position: absolute;
-    // counter-increment: counter-name;
     content: "_";
     font-family: "Saira Extra Condensed";
-    // font-weight: 300;
     color: hsl(180, 82%, 33%);
     letter-spacing: -3px;
     font-size: 2em;
@@ -2377,7 +2369,9 @@ body {
 }
 
 //LOGOFOLOIO// --END--
+
 //PDF// --START--
+
 .pdf__container {
     padding: 0;
     margin: 0;
@@ -2390,6 +2384,7 @@ body {
         height: 100vh;
     }
 }
+
 //PDF// --END--
 
 //OBSERVER-ANIM// --START--

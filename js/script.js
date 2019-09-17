@@ -28,7 +28,7 @@
 // }
 // // --img OBSERVER -- END -- OLD//
 
-// // --COPY OBSERVER -- START -- OLD//
+// // --COPY OBSERVER FADEIN -- START --//
 
 let fadeOptions = {
     root: null,
@@ -56,7 +56,7 @@ function fadeIntersect(entries) {
         }
     });
 }
-// // --COPY OBSERVER -- END --  OLD//
+// // --COPY OBSERVER FADEIN -- END --//
 
 
 // --COPY-OBSERVER -- START --//
@@ -90,36 +90,4 @@ function intersect(entries) {
 			}
 	}); 
 }
-
-// --COPY OBSERVER -- END --//
-
-// --IMAGE OBSERVER -- START --//
-
-// let textOptions = {
-//     root: null,
-//     rootMargin: "0px 0px 0px 0px",
-//     threshold: 0, 
-// };
-
-// let imageObserver = new IntersectionObserver(textIntersect, textOptions);
-
-// document.querySelectorAll('div, .left').forEach(p => {
-// imageObserver.observe(p);
-// // console.log('watching', p);
-
-// });
-
-// function textIntersect(entries) {
-//     entries.forEach(entry => {
-//         if(entry.isIntersecting) {
-//         // console.log('intersecting');
-//         // console.log(entry.time, entry.intersectionRatio);
-//         entry.target.classList.add('appearLeft');
-//         } else {
-// 				entry.target.classList.remove('appearLeft');
-//                 // imageObserver.unobserve(p);
-// 			}
-//     });
-// }
-// --IMAGE OBSERVER -- END --//
-
+// --COPY-OBSERVER -- END --//

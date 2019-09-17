@@ -651,28 +651,24 @@ figure {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.intro h2::after {
-  z-index: -1;
-  content: "2019";
-  font-family: "Saira Extra Condensed";
-  background: linear-gradient(45deg, #ff8c00 1%, #05413c 100%);
+.intro .intro__sub-1 {
+  background: linear-gradient(45deg, #6a00ff 1%, #05413c 100%);
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 5.5em;
   font-weight: 900;
-  letter-spacing: -5px;
 }
 
-.intro strong {
-  color: black;
-  background: linear-gradient(45deg, #ff8c00 1%, #05413c 100%);
+.intro .intro__sub-2 {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  background: linear-gradient(45deg, #6a00ff 10%, #5e6600 100%);
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-weight: 900;
+  font-size: 6em;
 }
 
 .intro .btnResume {
@@ -1819,7 +1815,6 @@ img {
 .pr2_copy-3 {
   font-size: 1em;
   line-height: 2em;
-  padding: 0em 2em;
   -ms-grid-column: 2;
   grid-column: 2;
 }
