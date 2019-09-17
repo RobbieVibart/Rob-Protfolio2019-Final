@@ -7,7 +7,7 @@ let options = {
 
 let observer = new IntersectionObserver(intersect, options);
 
-document.querySelectorAll('.right').forEach(img => {
+document.querySelectorAll('div, .right').forEach(img => {
 observer.observe(img);
 // console.log('watching', img);
 
@@ -18,11 +18,11 @@ function intersect(entries) {
         if(entry.isIntersecting) {
         // console.log('is intersecting', entry);
         // console.log(entry.time, entry.intersectionRatio);
-        entry.target.classList.add('appear');
+        entry.target.classList.add('appearRight');
     } else {
         // console.log('not intersecting', entry);
-        entry.target.classList.remove('appear');
-        observer.unobserve(img);
+        entry.target.classList.remove('appearRight');
+        // observer.unobserve(img);
     }
 }); 
 }
@@ -32,13 +32,13 @@ function intersect(entries) {
 
 let textOptions = {
     root: null,
-    rootMargin: "-100px 0px -100px 0px",
-    threshold: 0, 
+    rootMargin: "0px 0px 0px 0px",
+    threshold: 1, 
 };
 
 let imageObserver = new IntersectionObserver(textIntersect, textOptions);
 
-document.querySelectorAll('.fade_up').forEach(p => {
+document.querySelectorAll(' div, .left').forEach(p => {
     imageObserver.observe(p);
     // console.log('watching', p);
     
@@ -49,9 +49,9 @@ function textIntersect(entries) {
         if(entry.isIntersecting) {
             // console.log('intersecting');
             // console.log(entry.time, entry.intersectionRatio);
-            entry.target.classList.add('active');
+            entry.target.classList.add('appearLeft');
         } else {
-            entry.target.classList.remove('active');
+            entry.target.classList.remove('appearLeft');
             // imageObserver.unobserve(p);
         }
     });

@@ -2406,11 +2406,24 @@ body {
 }
 
 .right {
-    transition: opacity 1000ms ease-in;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out, opacity 1000ms ease-in;
     opacity: 0;
 }
 
-.right.appear {
+.appearRight {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.left {
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out, opacity 1000ms ease-in;
+    opacity: 0;
+}
+
+.appearLeft {
+    transform: translateX(0);
     opacity: 1;
 }
 
