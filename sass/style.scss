@@ -2283,7 +2283,6 @@ body {
 }
 
 .pr4-headBackground {
-    // background-blend-mode: multiply;
     z-index: -1;
     position: absolute;
     width: 100vw;
@@ -2406,25 +2405,26 @@ body {
 }
 
 .right {
-    transform: translateX(-100%);
-    transition: transform 0.5s ease-in-out, opacity 1000ms ease-in;
-    opacity: 0;
-}
-
-.appearRight {
-    transform: translateX(0);
-    opacity: 1;
+// background-color: $bgColor;
+transform: translateX(100%);
+transition: transform 0.5s ease-in-out, opacity 1000ms ease-in-out;
+opacity: 0;
 }
 
 .left {
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in-out, opacity 1000ms ease-in;
-    opacity: 0;
+transform: translateX(-100%);
+transition: transform 0.5s ease-in-out, opacity 1000ms ease-in;
+opacity: 0;
 }
 
-.appearLeft {
-    transform: translateX(0);
-    opacity: 1;
+.left.appearLeft {
+opacity: 1;
+transform: translateX(0%);
 }
 
-//OBSERVER-ANIM// --END--
+.right.appearRight {
+opacity: 1;
+transform: translateX(0%);
+}
+
+//-ANIM// --END--

@@ -2296,6 +2296,16 @@ body .pr4-section img {
 }
 
 .right {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: opacity 1000ms ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: opacity 1000ms ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 1000ms ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 1000ms ease-in-out, -webkit-transform 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.left {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: opacity 1000ms ease-in, -webkit-transform 0.5s ease-in-out;
@@ -2305,25 +2315,15 @@ body .pr4-section img {
   opacity: 0;
 }
 
-.appearRight {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+.left.appearLeft {
   opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
-.left {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: opacity 1000ms ease-in, -webkit-transform 0.5s ease-in-out;
-  transition: opacity 1000ms ease-in, -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, opacity 1000ms ease-in;
-  transition: transform 0.5s ease-in-out, opacity 1000ms ease-in, -webkit-transform 0.5s ease-in-out;
-  opacity: 0;
-}
-
-.appearLeft {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+.right.appearRight {
   opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 /*# sourceMappingURL=style.css.map */
