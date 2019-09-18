@@ -2090,6 +2090,7 @@ body {
   html p,
   body p {
     line-height: 2.1em;
+    padding: 0em 2em;
   }
 }
 
@@ -2121,7 +2122,6 @@ body .pr4-section img {
 
 .pr4-Header {
   position: relative;
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2133,9 +2133,9 @@ body .pr4-section img {
           align-items: center;
   height: 100vh;
   grid-column: -1 / 1;
-  background-image: url("/images/Logo_images/1531.png");
-  background-size: contain;
-  background-position: top right;
+  background-image: url("/images/Logo_images/1590.png");
+  background-size: cover;
+  background-position: center center;
   background-repeat: repeat-y;
 }
 
@@ -2153,6 +2153,7 @@ body .pr4-section img {
   width: 100vw;
   height: 100vh;
   background: radial-gradient(circle, #ff6f5c 1%, #43100a 100%);
+  mix-blend-mode: multiply;
 }
 
 .pr4-time {
