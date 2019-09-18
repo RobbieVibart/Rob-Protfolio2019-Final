@@ -2133,6 +2133,7 @@ body {
     color: $Std-Subheader-color;
     font-weight: $Std-Subheader-weight;
     font-family: $Std-Subheader-Family;
+    text-align: left;
 }
 
 .headTitle::before {
@@ -2202,7 +2203,7 @@ body {
 
 //FNB// --END--
 
-//LOGOFOLOIO// --START--
+//LOGOFOLIO// --START--
 
 html,
 body {
@@ -2228,6 +2229,7 @@ body {
                 font-weight: 800;
             }
         }
+        
 
         p {
             line-height: $Mob-line-height;
@@ -2238,7 +2240,7 @@ body {
 
     .pr4-section {
         grid-column: 2;
-        height: 100vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2249,8 +2251,15 @@ body {
             max-height: 70%;
         }
     }
+    
+    .pr4-imgBlock {
+        grid-column: 2;
+    
+        &, img {
+            max-width: 100%;
+        }
+    }
 }
-
 //--MEDIA Q// --END--
 
 .pr4-Header {
@@ -2284,15 +2293,6 @@ body {
     mix-blend-mode: multiply;
 }
 
-.pr4-time {
-    grid-column: 2;
-
-    img {
-        height: 100%;
-        width: 100%;
-    }
-}
-
 .pr4-Container {
     display: grid;
     grid-template-columns: minmax(1em, 1fr) minmax(350px, 850px) minmax(1em, 1fr);
@@ -2312,7 +2312,16 @@ body {
         line-height: 1.5em;
         font-weight: 800;
         text-transform: uppercase;
+        
+        
     }
+    p {
+        display: inline;
+        padding: 0;
+        margin: 0;
+        font-style: italic;
+        color: #ccc;
+         }
 }
 
 .pr4-bgBlock {
@@ -2340,8 +2349,9 @@ body {
 .pr4-imgBlock {
     grid-column: 2;
 
-    img {
-        width: 95%;
+    &, img {
+        max-width: 100%;
+        height: 50vh;
     }
 }
 
@@ -2369,7 +2379,7 @@ body {
     margin: 160px 0px;
 }
 
-//LOGOFOLOIO// --END--
+//LOGOFOLIO// --END--
 
 //PDF// --START--
 
