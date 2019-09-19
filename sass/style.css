@@ -704,13 +704,13 @@ figure {
   }
   .intro .intro__sub-1 {
     padding: 0em;
-    margin: 0em 0em;
+    margin: 1em 0em;
     padding: 0em 1em;
-    font-size: 52px;
+    font-size: 2.3rem;
   }
   .intro .intro__sub-2 {
     padding: 0em 1em;
-    font-size: 5em;
+    font-size: 6em;
     margin: 0;
     padding: 0;
   }
