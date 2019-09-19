@@ -747,7 +747,7 @@ figure {
     }
 }
 
-// All_REV_Ver21
+// All_REV_Ver23
 
 .intro {
     
@@ -809,14 +809,13 @@ figure {
      }
 
     .btnResume {
-        margin-top: 10px;
         border: 2px solid rgba(black, 1);
         color: rgba(black, 1);
         font-size: 14px;
         font-weight: 600;
-        padding: 10px 0;
-        padding-left: 35px;
-        padding-right: 35px;
+        padding: 20px 0;
+        padding-left: 70px;
+        padding-right: 70px;
         text-transform: uppercase;
          
         &:hover {
@@ -826,7 +825,7 @@ figure {
         }
     }
 
-    // ALL_REV_Ver21
+    // ALL_REV_Ver23
 
 // INDEX MQ --START-- //
     @include mobile {
@@ -986,7 +985,7 @@ figure {
 }
 
 #fh5co-started {
-    background: rgba($brand-primary, 1);
+    background: $brand-gray;
 
     .fh5co-heading {
         margin-bottom: 20px !important;
@@ -1003,20 +1002,19 @@ figure {
     }
 
     .btn {
+        text-transform: uppercase;
         margin-top: 20px;
-        border: 3px solid rgba(#8c7961, 1);
-        color: rgba(#8c7961, 1);
-        font-size: 20px;
-
-        // text-transform: uppercase;
-        font-weight: 400;
+        border: 3px solid black;
+        color:  black;
+        font-size: 14px;
+        font-weight: 600;
         padding: 20px 0;
         padding-left: 70px;
         padding-right: 70px;
 
         &:hover {
-            background: #8c7961 !important;
-            border: 3px solid rgba(#8c7961, 1) !important;
+            background: black !important;
+            border: 3px solid  black !important;
             color: #fff;
         }
     }
@@ -1439,7 +1437,7 @@ figure {
 }
 
 .btn-primary {
-    background: $brand-primary;
+    background: $brand-gray;
     color: $brand-white;
     border: 2px solid $brand-primary;
 
@@ -1492,7 +1490,7 @@ figure {
 
 .btn-info {
     background: $brand-info;
-    color: $brand-white;
+    color: $brand-black;
     border: 2px solid $brand-info;
 
     &:hover,

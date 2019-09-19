@@ -668,14 +668,13 @@ figure {
 }
 
 .intro .btnResume {
-  margin-top: 10px;
   border: 2px solid black;
   color: black;
   font-size: 14px;
   font-weight: 600;
-  padding: 10px 0;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding: 20px 0;
+  padding-left: 70px;
+  padding-right: 70px;
   text-transform: uppercase;
 }
 
@@ -838,7 +837,7 @@ figure {
 }
 
 #fh5co-started {
-  background: black;
+  background: #ccc;
 }
 
 #fh5co-started .fh5co-heading {
@@ -856,19 +855,20 @@ figure {
 }
 
 #fh5co-started .btn {
+  text-transform: uppercase;
   margin-top: 20px;
-  border: 3px solid #8c7961;
-  color: #8c7961;
-  font-size: 20px;
-  font-weight: 400;
+  border: 3px solid black;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
   padding: 20px 0;
   padding-left: 70px;
   padding-right: 70px;
 }
 
 #fh5co-started .btn:hover {
-  background: #8c7961 !important;
-  border: 3px solid #8c7961 !important;
+  background: black !important;
+  border: 3px solid  black !important;
   color: #fff;
 }
 
@@ -1259,7 +1259,7 @@ figure {
 }
 
 .btn-primary {
-  background: #000;
+  background: #ccc;
   color: #fff;
   border: 2px solid #000;
 }
@@ -1304,7 +1304,7 @@ figure {
 
 .btn-info {
   background: #5bc0de;
-  color: #fff;
+  color: #000;
   border: 2px solid #5bc0de;
 }
 
