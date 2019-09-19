@@ -694,7 +694,7 @@ figure {
   }
   .intro .intro__head {
     height: 100%;
-    padding: 0em 2em;
+    padding: 0em 1em;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -704,21 +704,21 @@ figure {
   }
   .intro .intro__sub-1 {
     padding: 0em;
-    margin: 1em 0em;
-    padding: 0em 2em;
-    font-size: 1em;
+    margin: 0em 0em;
+    padding: 0em 1em;
+    font-size: 52px;
   }
   .intro .intro__sub-2 {
-    display: block;
-    padding: 0em 2em;
-    font-size: 6em;
+    padding: 0em 1em;
+    font-size: 5em;
     margin: 0;
     padding: 0;
   }
   .intro .intro__copy {
     color: inherit;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 2.1em;
+    padding: 0em 1em;
   }
 }
 
@@ -2124,7 +2124,7 @@ body {
   html p,
   body p {
     line-height: 2.1em;
-    padding: 0em 2em;
+    padding: 0em 1em;
   }
 }
 

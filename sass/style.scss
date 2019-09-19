@@ -103,8 +103,8 @@ $form-group-margin-bottom: 30px !default;
 $Std-line-height: 2em;
 $Std-font-size: 1em;
 $Mob-line-height: 2.1em;
-$Mob-padding: 0em 2em;
-$Mob-weight: 400;
+$Mob-padding: 0em 1em;
+$Mob-weight: 500;
 
 // SUB-HEADER //
 $Std-Subheader-size: 2em;
@@ -825,6 +825,9 @@ figure {
             color: #fff;
         }
     }
+
+    // ALL_REV_Ver21
+
 // INDEX MQ --START-- //
     @include mobile {
         h2 {
@@ -844,23 +847,24 @@ figure {
         
         .intro__sub-1 {
             padding: 0em;
-            margin: 1em 0em;
+            margin: 0em 0em;
             padding: $Mob-padding;
-            font-size: 1em;
+            font-size: 52px;
         }
         
         .intro__sub-2 {
-            display: block;
             padding: $Mob-padding;
-            font-size: 6em;
+            font-size: 5em;
             margin: 0;
             padding: 0;
+
         }
 
         .intro__copy {
             color: inherit;
             font-weight: $Mob-weight;
             line-height: $Mob-line-height;
+            padding: $Mob-padding;
         }
     }
 }
