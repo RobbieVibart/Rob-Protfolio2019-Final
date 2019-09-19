@@ -619,13 +619,6 @@ figure {
   font-family: "Montserrat", Arial, sans-serif;
 }
 
-@media screen and (max-width: 768px) {
-  .intro h2 {
-    font-size: 30px;
-    line-height: 45px;
-  }
-}
-
 .intro h2 .fh5co-highlight {
   display: block;
   font-size: 16px;
@@ -637,7 +630,6 @@ figure {
 }
 
 .intro .intro__head {
-  padding: 0em 2em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -668,7 +660,11 @@ figure {
   background-clip: text;
   color: transparent;
   font-weight: 900;
-  font-size: 6em;
+  font-size: 12em;
+}
+
+.intro .intro__copy {
+  color: inherit;
 }
 
 .intro .btnResume {
@@ -687,6 +683,43 @@ figure {
   background: black;
   border: 2px solid black;
   color: #fff;
+}
+
+@media only screen and (max-width: 380px) {
+  .intro h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0em;
+    margin: 0em;
+  }
+  .intro .intro__head {
+    height: 100%;
+    padding: 0em 2em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .intro .intro__sub-1 {
+    padding: 0em;
+    margin: 1em 0em;
+    padding: 0em 2em;
+    font-size: 1em;
+  }
+  .intro .intro__sub-2 {
+    display: block;
+    padding: 0em 2em;
+    font-size: 6em;
+    margin: 0;
+    padding: 0;
+  }
+  .intro .intro__copy {
+    color: inherit;
+    font-weight: 400;
+    line-height: 2.1em;
+  }
 }
 
 .fh5co-heading {
