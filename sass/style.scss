@@ -247,9 +247,6 @@ figure {
         float: left;
     }
 
-    // ALL_REV_Ver28
-
-
     .fh5co-top-logo {
         width: 20%;
     }
@@ -457,10 +454,9 @@ figure {
                     }
                 }
             }
-
+   // ALL_REV_Ver29
             &.active {
                 >a {
-                    padding-bottom: 0.5rem; 
                     border-bottom: 2px solid $Std-Colour;
                     color: $brand-gray !important;
                 }
@@ -1808,12 +1804,11 @@ body {
 
 .pr2-headBg {
     z-index: -1;
-    opacity: 0.9;
-    background-blend-mode: multiply;
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: #c14448;
+    mix-blend-mode: multiply;
 }
 
 .grid-card {
@@ -1999,6 +1994,9 @@ body {
     width: 100%;
     height: 100%;
     background: radial-gradient(circle, hsl(209, 53%, 34%) 1%, hsl(209, 53%, 5%) 100%);
+// ALL_REV_Ver30
+
+    mix-blend-mode: multiply;
 }
 
 .pr2_grid-card {
@@ -2120,6 +2118,7 @@ body {
     width: 100vw;
     height: 100vh;
     background: radial-gradient(circle, #0f9999 1%, rgba(5, 65, 60, 1) 100%);
+    
 }
 
 .headImg {
