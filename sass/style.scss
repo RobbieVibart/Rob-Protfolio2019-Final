@@ -247,8 +247,17 @@ figure {
         float: left;
     }
 
+    // ALL_REV_Ver27
+
+
     .fh5co-top-logo {
         width: 35%;
+    }
+
+    @include mobile {
+        .fh5co-top-logo {
+            width: 80%;
+        }
     }
 
     .fh5co-top-menu {
@@ -759,7 +768,6 @@ figure {
     }
 }
 
-// All_REV_Ver23
 
 .intro {
     
@@ -879,6 +887,7 @@ figure {
             line-height: $Mob-line-height;
             padding: $Mob-padding;
         }
+
     }
 }
 // INDEX MQ --END-- //
@@ -1015,8 +1024,6 @@ figure {
             color: darken($brand-primary, 40%);
         }
     }
-
-   // ALL_REV_Ver25
     
    .btn {
         text-transform: uppercase;
@@ -1405,7 +1412,7 @@ figure {
     top: 10px;
 
     // top: 100px;
-    // left: -100px;;
+    // left: -100px;
     z-index: 21;
     padding: 6px 0 0 0;
     display: block;
