@@ -91,7 +91,7 @@ $form-group-margin-bottom: 30px !default;
     -moz-osx-font-smoothing: grayscale;
 }
 
-// User Typography
+// USER TYPOGRAPHY
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700,800,900,900i&display=swap");
 
 @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,200,300,400,500i|Saira+Condensed:100,200,300,400,600|Saira+Extra+Condensed:100,300,400,600&display=swap");
@@ -106,7 +106,7 @@ $Mob-line-height: 2.1em;
 $Mob-padding: 0em 1em;
 $Mob-weight: 500;
 
-// SUB-HEADER //
+// USER SUB-HEADER //
 $Std-Subheader-size: 2em;
 $Std-Subheader-color: hsl(0, 0%, 76%);
 $Std-Subheader-weight: 700;
@@ -114,6 +114,14 @@ $Std-Subheader-case: uppercase;
 $Std-Subheader-Family: "Montserrat",
 Arial,
 sans-serif;
+
+// USER COLOURS --=> 
+// INDEX // 
+$Std-Colour: hsl(265, 100%, 50%);
+$Std-Secondary: hsl(65, 100%, 50%);
+
+
+
 
 //USER SCREEN SIZE
 $mobile: 380px;
@@ -782,8 +790,7 @@ figure {
     }
 
     .intro__sub-1 {
-        background: linear-gradient(45deg, #6a00ff 1%, rgba(5, 65, 60, 1) 100%);
-        background-size: cover;
+        background: linear-gradient(45deg, $Std-Colour 1%, $Std-Secondary 100%);
         -moz-background-clip: text;
         -webkit-background-clip: text;
         background-clip: text;
@@ -793,8 +800,7 @@ figure {
    
         .intro__sub-2 {
         font-family: 'Saira Extra Condensed', sans-serif;
-        background: linear-gradient(45deg, #6a00ff 10%, hsl(65, 100%, 20%) 100%);
-        background-size: cover;
+        background: linear-gradient(45deg, $Std-Colour 10%, $Std-Secondary 100%);
         -moz-background-clip: text;
         -webkit-background-clip: text;
         background-clip: text;
@@ -809,8 +815,8 @@ figure {
      }
 
     .btnResume {
-        border: 2px solid rgba(black, 1);
-        color: rgba(black, 1);
+        border: 2px solid $Std-Colour;
+        color: $Std-Colour;
         font-size: 14px;
         font-weight: 600;
         padding: 20px 0;
@@ -819,13 +825,17 @@ figure {
         text-transform: uppercase;
          
         &:hover {
-            background: black;
+            background: $Std-Colour;
             border: 2px solid rgba(black, 1);
             color: #fff;
         }
     }
 
-    // ALL_REV_Ver23
+    .seperator { 
+        margin-top: 1em;
+        padding-top: 1em;
+        border-top: 2px solid $Std-Colour;
+    }
 
 // INDEX MQ --START-- //
     @include mobile {
@@ -1001,7 +1011,9 @@ figure {
         }
     }
 
-    .btn {
+   // ALL_REV_Ver25
+    
+   .btn {
         text-transform: uppercase;
         margin-top: 20px;
         border: 3px solid black;
@@ -1009,8 +1021,8 @@ figure {
         font-size: 14px;
         font-weight: 600;
         padding: 20px 0;
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 40px;
+        padding-right: 40px;
 
         &:hover {
             background: black !important;
@@ -1121,7 +1133,6 @@ figure {
                 float: left;
                 width: 100%;
 
-                // font-family: $font-secondary;
                 @include transition(0.3s);
 
                 padding: 0;

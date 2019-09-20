@@ -644,8 +644,7 @@ figure {
 }
 
 .intro .intro__sub-1 {
-  background: linear-gradient(45deg, #6a00ff 1%, #05413c 100%);
-  background-size: cover;
+  background: linear-gradient(45deg, #6a00ff 1%, #eaff00 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -654,8 +653,7 @@ figure {
 
 .intro .intro__sub-2 {
   font-family: 'Saira Extra Condensed', sans-serif;
-  background: linear-gradient(45deg, #6a00ff 10%, #5e6600 100%);
-  background-size: cover;
+  background: linear-gradient(45deg, #6a00ff 10%, #eaff00 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -668,8 +666,8 @@ figure {
 }
 
 .intro .btnResume {
-  border: 2px solid black;
-  color: black;
+  border: 2px solid #6a00ff;
+  color: #6a00ff;
   font-size: 14px;
   font-weight: 600;
   padding: 20px 0;
@@ -679,9 +677,15 @@ figure {
 }
 
 .intro .btnResume:hover {
-  background: black;
+  background: #6a00ff;
   border: 2px solid black;
   color: #fff;
+}
+
+.intro .seperator {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 2px solid #6a00ff;
 }
 
 @media only screen and (max-width: 380px) {
@@ -862,8 +866,8 @@ figure {
   font-size: 14px;
   font-weight: 600;
   padding: 20px 0;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 #fh5co-started .btn:hover {
