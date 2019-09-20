@@ -251,7 +251,7 @@ figure {
 
 
     .fh5co-top-logo {
-        width: 35%;
+        width: 20%;
     }
 
     @include mobile {
@@ -368,21 +368,23 @@ figure {
             list-style: none;
             display: inline-block;
             font-family: $font-primary;
-
+// Navigation Style //
             a {
                 text-transform: uppercase;
                 letter-spacing: 2px;
-                font-size: 12px;
+                font-size: 16px;
                 padding: 30px 10px;
-                color: rgba(0, 0, 0, 0.9);
+                color: $Std-Colour;
 
                 @include transition(0.5s);
 
                 &:hover,
                 &:focus,
                 &:active {
-                    color: rgba(0, 0, 0, 1);
+                    color:$brand-gray;
                 }
+
+                
             }
 
             &.has-dropdown {
@@ -458,7 +460,9 @@ figure {
 
             &.active {
                 >a {
-                    color: $brand-primary !important;
+                    padding-bottom: 0.5rem; 
+                    border-bottom: 2px solid $Std-Colour;
+                    color: $brand-gray !important;
                 }
             }
 

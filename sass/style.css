@@ -119,7 +119,7 @@ figure {
 }
 
 .fh5co-nav .fh5co-top-logo {
-  width: 35%;
+  width: 20%;
 }
 
 @media only screen and (max-width: 380px) {
@@ -236,15 +236,15 @@ figure {
 .fh5co-nav ul li a {
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 16px;
   padding: 30px 10px;
-  color: rgba(0, 0, 0, 0.9);
+  color: #693190;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active {
-  color: black;
+  color: #ccc;
 }
 
 .fh5co-nav ul li.has-dropdown {
@@ -315,7 +315,9 @@ figure {
 }
 
 .fh5co-nav ul li.active > a {
-  color: #000 !important;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #693190;
+  color: #ccc !important;
 }
 
 .fh5co-nav ul li .form-group {
