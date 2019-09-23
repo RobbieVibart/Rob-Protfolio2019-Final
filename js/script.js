@@ -45,14 +45,17 @@ document.querySelectorAll('.fade_up').forEach(p => {
 });
 
 function fadeIntersect(entries) {
+    
     entries.forEach(entry => {
         if(entry.isIntersecting) {
             // console.log('intersecting');
             // console.log(entry.time, entry.intersectionRatio);
             entry.target.classList.add('active');
+            
         } else {
             entry.target.classList.remove('active');
             // imageObserver.unobserve(p);
+            
         }
     });
 }

@@ -122,6 +122,8 @@ sans-serif;
 // INDEX // 
 $Std-Colour: hsl(275, 49%, 38%);
 $Std-Secondary: hsl(65, 100%, 50%);
+
+//All_REV_Ver31//
 // WORK COLOURS --=>
 // WORK //
 $Grow-Color:  hsl(358, 50%, 51%);
@@ -459,7 +461,6 @@ figure {
                     }
                 }
             }
-   // ALL_REV_Ver29
             &.active {
                 >a {
                     border-bottom: 2px solid $Std-Colour;
@@ -669,7 +670,7 @@ figure {
     margin-bottom: 40px;
 
     .work-grid {
-        background-size: 150%;
+        background-size: 200%;
         background-position: center center;
         background-repeat: no-repeat;
         position: relative;
@@ -683,22 +684,19 @@ figure {
             height: 300px;
             width: 100.1%;
             opacity: 0;
-            // background: rgba($brand-darker, 0.8);
-           
-
-           &.grow{
-            background: rgba($Grow-Color, 0.8);
-           }
-           &.oda{
-            background: rgba($Oda-Color, 0.8);
-           }
-           &.fnb{
-            background: rgba($Oda-Color, 0.8);
-           }
-           &.logo{
-            background: rgba($Logo-Color, 0.8);
-           }
             
+            &.grow{
+                background: rgba($Grow-Color, 0.8);
+            }
+            &.oda{
+                background: rgba($Oda-Color, 0.8);
+            }
+            &.fnb{
+                background: rgba($Oda-Color, 0.8);
+            }
+            &.logo{
+                background: rgba($Logo-Color, 0.8);
+            }
 
             @include transition(0.3s);
 
@@ -1943,6 +1941,7 @@ body {
     height: 100%;
     background-color: #c14448;
 }
+// All_REV_Ver32
 
 //GROW// --END--
 
@@ -2014,8 +2013,6 @@ body {
         width: 100%;
         height: 100%;
         background: radial-gradient(circle, hsl(209, 53%, 34%) 1%, hsl(209, 53%, 5%) 100%);
-    // ALL_REV_Ver30
-
         mix-blend-mode: multiply;
     }
 
