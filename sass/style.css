@@ -1642,6 +1642,26 @@ body {
   font-weight: 700;
 }
 
+.pr1-headTitle {
+  text-transform: uppercase;
+  padding: 1em 0em 1em 0em;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  font-size: 2em;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-family: "Montserrat", Arial, sans-serif;
+  text-align: left;
+}
+
+.pr1-headTitle.pr1-headTitle:before {
+  content: "_";
+  font-family: "Saira Extra Condensed";
+  color: #c14448;
+  letter-spacing: -2em;
+  font-size: 3em;
+}
+
 .copy-1 {
   padding: 0em 1em;
   -ms-grid-column: 2;
@@ -1830,6 +1850,28 @@ body .overlay_background {
   height: 100%;
   background: radial-gradient(circle, #295885 1%, #060d14 100%);
   mix-blend-mode: multiply;
+}
+
+html .pr2-headTitle,
+body .pr2-headTitle {
+  text-transform: uppercase;
+  padding: 1em 0em 1em 0em;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  font-size: 2em;
+  color: #c2c2c2;
+  font-weight: 700;
+  font-family: "Montserrat", Arial, sans-serif;
+  text-align: left;
+}
+
+html .pr2-headTitle.pr2-headTitle::before,
+body .pr2-headTitle.pr2-headTitle::before {
+  content: "_";
+  font-family: "Saira Extra Condensed";
+  color: #295885;
+  letter-spacing: -2em;
+  font-size: 3em;
 }
 
 html .pr2_grid-card,
@@ -2061,7 +2103,7 @@ body {
       grid-template-columns: 1fr;
 }
 
-.headTitle {
+.pr3-headTitle {
   text-transform: uppercase;
   padding: 1em 0em 1em 0em;
   -ms-grid-column: 2;
@@ -2073,14 +2115,12 @@ body {
   text-align: left;
 }
 
-.headTitle::before {
+.pr3-headTitle.pr3-headTitle:before {
   content: "_";
   font-family: "Saira Extra Condensed";
   color: #0f9999;
-  letter-spacing: -3px;
-  font-size: 2em;
-  top: .66em;
-  left: -.75em;
+  letter-spacing: -2em;
+  font-size: 3em;
 }
 
 .infoWrapper {
@@ -2152,6 +2192,11 @@ body {
 }
 
 @media only screen and (max-width: 380px) {
+  html,
+  body {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
   html .pr4-Header,
   body .pr4-Header {
     width: 100%;
@@ -2167,51 +2212,48 @@ body {
   html .pr4-subheader h3,
   body .pr4-subheader h3 {
     font-size: 20px;
-    font-weight: 800;
   }
-  html p,
-  body p {
+  html .pr4-subheader p,
+  body .pr4-subheader p {
     line-height: 2.1em;
-    padding: 0em 0.8em;
+    font-size: 1em;
+    font-weight: 500;
   }
-}
-
-html .pr4-section,
-body .pr4-section {
-  -ms-grid-column: 2;
-  grid-column: 2;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-html .pr4-section img,
-body .pr4-section img {
-  max-width: 70%;
-  max-height: 70%;
-}
-
-html .pr4-imgBlock,
-body .pr4-imgBlock {
-  -ms-grid-column: 2;
-  grid-column: 2;
-}
-
-html .pr4-imgBlock, html .pr4-imgBlock img,
-body .pr4-imgBlock,
-body .pr4-imgBlock img {
-  max-width: 100%;
+  html .pr4-section,
+  body .pr4-section {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  html .pr4-section img,
+  body .pr4-section img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+  html .pr4-imgBlock,
+  body .pr4-imgBlock {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  html .pr4-imgBlock,
+  html .pr4-imgBlock img,
+  body .pr4-imgBlock,
+  body .pr4-imgBlock img {
+    max-width: 100%;
+  }
 }
 
 .pr4-Header {
@@ -2332,12 +2374,15 @@ body .pr4-imgBlock img {
   grid-column: 2;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(350px, 850px))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(350px, 850px));
+  -ms-grid-columns: (minmax(350px, 800px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 800px));
 }
 
-.pr4-imgContainer img {
-  max-width: 85%;
+.pr4-imgContainer div, .pr4-imgContainer img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 80%;
 }
 
 .pr4-footer {

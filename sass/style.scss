@@ -105,6 +105,8 @@ $form-group-margin-bottom: 30px !default;
 
 $Std-line-height: 2em;
 $Std-font-size: 1em;
+
+//USER Mobile//
 $Mob-line-height: 2.1em;
 $Mob-padding: 0em 0.8em;
 $Mob-weight: 500;
@@ -1820,7 +1822,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #c14448;
+    background-color: $Grow-Color;
     mix-blend-mode: multiply;
 }
 
@@ -1845,6 +1847,25 @@ body {
         font-size: $Std-Subheader-size;
         font-family: $Std-Subheader-Family;
         font-weight: $Std-Subheader-weight;
+    }
+}
+
+.pr1-headTitle {
+    text-transform: uppercase;
+    padding: 1em 0em 1em 0em;
+    grid-column: 2;
+    font-size: $Std-Subheader-size;
+    color: $Std-Subheader-color;
+    font-weight: $Std-Subheader-weight;
+    font-family: $Std-Subheader-Family;
+    text-align: left;
+
+    &.pr1-headTitle:before {
+        content: "_";
+        font-family: "Saira Extra Condensed";
+        color:$Grow-Color;
+        letter-spacing: -2em;
+        font-size: 3em;
     }
 }
 
@@ -2014,6 +2035,25 @@ body {
         height: 100%;
         background: radial-gradient(circle, hsl(209, 53%, 34%) 1%, hsl(209, 53%, 5%) 100%);
         mix-blend-mode: multiply;
+    }
+
+    .pr2-headTitle {
+        text-transform: uppercase;
+        padding: 1em 0em 1em 0em;
+        grid-column: 2;
+        font-size: $Std-Subheader-size;
+        color: $Std-Subheader-color;
+        font-weight: $Std-Subheader-weight;
+        font-family: $Std-Subheader-Family;
+        text-align: left;
+    
+        &.pr2-headTitle::before {
+            content: "_";
+            font-family: "Saira Extra Condensed";
+            color:$Oda-Color;
+            letter-spacing: -2em;
+            font-size: 3em;
+        }
     }
 
     .pr2_grid-card {
@@ -2204,7 +2244,7 @@ body {
     grid-template-columns: 1fr;
 }
 
-.headTitle {
+.pr3-headTitle {
     text-transform: uppercase;
     padding: 1em 0em 1em 0em;
     grid-column: 2;
@@ -2213,17 +2253,19 @@ body {
     font-weight: $Std-Subheader-weight;
     font-family: $Std-Subheader-Family;
     text-align: left;
+
+    &.pr3-headTitle:before {
+        content: "_";
+        font-family: "Saira Extra Condensed";
+        color:$Fnb-Color;
+        letter-spacing: -2em;
+        font-size: 3em;
+        // top: .66em;
+        // left: 7.5em;
+    }
 }
 
-.headTitle::before {
-    content: "_";
-    font-family: "Saira Extra Condensed";
-    color: hsl(180, 82%, 33%);
-    letter-spacing: -3px;
-    font-size: 2em;
-    top: .66em;
-    left: -.75em;
-}
+
 
 .infoWrapper {
     margin-top: 2em;
@@ -2288,10 +2330,10 @@ html,
 body {
     font-family: "Montserrat";
 
-    // background-color: black;
-
     //MEDIA Q// --START--
     @include mobile {
+        grid-column: 2;
+
         .pr4-Header {
             width: 100%;
 
@@ -2305,45 +2347,47 @@ body {
 
             h3 {
                 font-size: 20px;
-                font-weight: 800;
+                // font-weight: 800;
+            }
+
+            p {
+                line-height: $Mob-line-height;
+                font-size: $Std-font-size;
+                font-weight: 500;
             }
         }
-        
 
-        p {
-            line-height: $Mob-line-height;
-            padding: $Mob-padding;
-        }
-    }
-
-
-    .pr4-section {
-        grid-column: 2;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            max-width: 70%;
-            max-height: 70%;
-        }
-    }
+        .pr4-section {
+            grid-column: 2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
     
-    .pr4-imgBlock {
-        grid-column: 2;
+            img {
+                max-width: 70%;
+                max-height: 70%;
+            }
+        }
     
-        &, img {
-            max-width: 100%;
+        .pr4-imgBlock {
+            grid-column: 2;
+    
+            &,
+            img {
+                max-width: 100%;
+            }
         }
     }
 }
+
+
+    
 //--MEDIA Q// --END--
 
 .pr4-Header {
     position: relative;
-    // text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2435,12 +2479,15 @@ body {
 }
 
 .pr4-imgContainer {
+    // background-color: pink;
     grid-column: 2;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 850px));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 800px));
 
-    img {
-        max-width: 85%;
+    div, img {
+        // justify-content: center;
+        align-self: center;
+        width: 80%;
     }
 }
 
