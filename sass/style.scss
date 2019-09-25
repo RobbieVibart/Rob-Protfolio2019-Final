@@ -820,28 +820,42 @@ figure {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
-
+//All_REV_Ver34
     .intro__sub-1 {
-        background: linear-gradient(30deg, $Std-Colour 30%, $Std-Secondary 70%);
+        background: linear-gradient(45deg, $Grow-Color 25%, $Oda-Color 50%, $Fnb-Color 75%, $Logo-Color 100%);
         -moz-background-clip: text;
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
         font-weight: 900;
+        background-size: 400%;
+        animation: bg-anim 8s infinite alternate; 
     }
    
         .intro__sub-2 {
         font-family: 'Big Shoulders Display', cursive;
-        background: linear-gradient(45deg, $Std-Colour 10%, $Std-Secondary 100%);
+        background: linear-gradient(45deg, $Grow-Color 25%, $Oda-Color 50%, $Fnb-Color 75%, $Logo-Color 100%);
         -moz-background-clip: text;
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
         font-weight: 300;
         font-size: 12em;
-        letter-spacing: -2£rem;
+        letter-spacing: -1rem;
+        background-size: 400%;
+        background-repeat: no-repeat;
+        animation: bg-anim 8s infinite alternate; 
      }
-
+    
+    @keyframes bg-anim {
+        0% {
+            background-position: left;
+        }
+        100% {
+            background-position: right;
+        }
+    }
+    
      .intro__copy {
          color: inherit;
          
@@ -2458,6 +2472,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // margin-bottom: 200px;
 
     img {
         max-width: 50%;
