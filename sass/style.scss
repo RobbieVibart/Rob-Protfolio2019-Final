@@ -111,6 +111,9 @@ $Mob-line-height: 2.1em;
 $Mob-padding: 0em 0.8em;
 $Mob-weight: 500;
 
+// USER HEADER //
+$Std-Header: 5em;
+
 // USER SUB-HEADER //
 $Std-Subheader-size: 2em;
 $Std-Subheader-color: hsl(0, 0%, 76%);
@@ -1788,7 +1791,7 @@ body {
     // MQ Start //
     @include mobile {
         .img_wrapper {
-            background-color: #c14448;
+            background-color: $Grow-Color;
 
             img {
                 object-fit: cover;
@@ -1974,7 +1977,7 @@ body {
     justify-self: center;
     width: 100vw;
     height: 100%;
-    background-color: #c14448;
+    background-color: $Grow-Color;
 }
 // All_REV_Ver32
 
@@ -2024,8 +2027,7 @@ body {
         overflow: hidden;
 
         .head_title {
-            width: 100%;
-            font-size: 64px;
+            font-size: $Std-Header;
             color: white;
         }
 
@@ -2072,10 +2074,10 @@ body {
 
     .pr2_grid-card {
         display: grid;
-        grid: (auto-flow / minmax(2px, 1fr)) minmax(350px, 800px) minmax(2px, 1fr);
+        grid: (auto-flow / minmax(2px, 1fr)) minmax(350px, 850px) minmax(2px, 1fr);
 
         img {
-            max-width: 100%;
+            width: 100%;
         }
     }
 
@@ -2113,13 +2115,6 @@ body {
         grid-column: 2;
     }
 
-    .pr2-imgBackground {
-        
-        grid-column: 2;
-        width: 100%;
-        background-color: hsl(209, 53%, 34%);
-    }
-
     .header__image,
     img {
         grid-column: 2;
@@ -2136,6 +2131,13 @@ body {
         margin-right: 5%;
         margin-left: 5%;
     }
+}
+// All_REV_Ver36 -- DATE280919 //
+
+.pr2-imgBackground {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, $Oda-Color 80%, white 20%);
 }
 //ODA// --END--
 
