@@ -970,18 +970,21 @@ figure {
 }
 
 .author {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 100%;
-    float: left;
-    margin-bottom: 5em;
+    // float: left;
+    // margin-bottom: 5em;
 
     .author-inner {
         background-size: cover;
         background-position: top center;
         background-repeat: no-repeat;
         position: relative;
-        width: 40%;
-        height: 350px;
-        float: left;
+        width: 100%;
+        height: 500px;
+        // float: left;
+        background-image: url(https://source.unsplash.com/user/erondu/500x500);
 
         @media screen and (max-width: $screen-xs) {
             width: 100%;
@@ -990,13 +993,17 @@ figure {
     }
 
     .desc {
-        width: 60%;
+        width: 100%;
         float: left;
         padding-left: 50px;
 
         @media screen and (max-width: $screen-xs) {
             width: 100%;
-            padding-left: 0;
+            padding-left: 0px;
+
+            .desc {
+             padding-left: 0;   
+            }
         }
 
         span {
@@ -2428,7 +2435,7 @@ body {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: radial-gradient(circle, hsl(7, 100%, 68%) 1%, hsl(6, 74%, 15%) 100%);
+    background: radial-gradiend(circle, hsl(7, 100%, 68%) 1%, hsl(6, 74%, 15%) 100%);
     mix-blend-mode: multiply;
 }
 
