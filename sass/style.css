@@ -830,8 +830,9 @@ figure {
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
-  width: 100%;
-  height: 500px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
   background-image: url(https://source.unsplash.com/user/erondu/500x500);
 }
 
@@ -851,7 +852,6 @@ figure {
 @media screen and (max-width: 360px) {
   .author .desc {
     width: 100%;
-    padding-left: 0px;
   }
   .author .desc .desc {
     padding-left: 0;
@@ -1813,7 +1813,7 @@ body {
   html .oda__head,
   body .oda__head {
     width: 100%;
-    font-size: 52px;
+    font-size: 1em;
     font-weight: 900;
     line-height: 64px;
   }

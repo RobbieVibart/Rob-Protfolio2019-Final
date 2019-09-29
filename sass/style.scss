@@ -973,17 +973,15 @@ figure {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 100%;
-    // float: left;
-    // margin-bottom: 5em;
-
+// WIP --WIP DATE 300919 //
     .author-inner {
         background-size: cover;
         background-position: top center;
         background-repeat: no-repeat;
         position: relative;
-        width: 100%;
-        height: 500px;
-        // float: left;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
         background-image: url(https://source.unsplash.com/user/erondu/500x500);
 
         @media screen and (max-width: $screen-xs) {
@@ -999,8 +997,7 @@ figure {
 
         @media screen and (max-width: $screen-xs) {
             width: 100%;
-            padding-left: 0px;
-
+//WIP --DATE 290919
             .desc {
              padding-left: 0;   
             }
@@ -2001,7 +1998,7 @@ body {
     @include mobile {
         .oda__head {
             width: 100%;
-            font-size: 52px;
+            font-size: 1em;
             font-weight: 900;
             line-height: 64px;
         }
