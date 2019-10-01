@@ -833,7 +833,9 @@ figure {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background-image: url(https://source.unsplash.com/user/erondu/500x500);
+  background-color: grey;
+  mix-blend-mode: multiply;
+  background-image: url(/images/20190929_173139.jpg);
 }
 
 @media screen and (max-width: 360px) {
