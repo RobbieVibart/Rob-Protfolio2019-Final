@@ -822,7 +822,6 @@ figure {
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  width: 100%;
 }
 
 .author .author-inner {
@@ -830,25 +829,23 @@ figure {
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background-color: grey;
-  mix-blend-mode: multiply;
-  background-image: url(/images/20190929_173139.jpg);
+  width: 100%;
+  height: 620px;
+  background-image: url(/images/ProfilePic.jpg);
 }
 
 @media screen and (max-width: 360px) {
   .author .author-inner {
     width: 100%;
     margin-bottom: 40px;
+    margin: 0;
+    padding: 0;
   }
 }
 
 .author .desc {
+  margin-top: 0;
   width: 100%;
-  float: left;
-  padding-left: 50px;
 }
 
 @media screen and (max-width: 360px) {
@@ -856,7 +853,7 @@ figure {
     width: 100%;
   }
   .author .desc .desc {
-    padding-left: 0;
+    padding: 0em 0.8em;
   }
 }
 
@@ -875,6 +872,7 @@ figure {
 }
 
 .skills h3 {
+  margin-bottom: 4em;
   font-size: 16px;
 }
 
