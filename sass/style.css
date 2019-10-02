@@ -2314,7 +2314,7 @@ body {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background: radial-gradiend(circle, #ff6f5c 1%, #43100a 100%);
+  background: radial-gradient(circle, #ff6f5c 1%, #ff6f5c 100%);
   mix-blend-mode: multiply;
 }
 
@@ -2336,7 +2336,7 @@ body {
 }
 
 .pr4-subheader h3 {
-  color: #ff6e5b;
+  color: #ff6f5c;
   font-size: 32px;
   letter-spacing: 20%;
   line-height: 1.5em;

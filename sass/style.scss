@@ -2427,13 +2427,13 @@ body {
         text-transform: uppercase;
     }
 }
-
+// WIP DATE 021019 //
 .pr4-headBackground {
     z-index: -1;
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: radial-gradiend(circle, hsl(7, 100%, 68%) 1%, hsl(6, 74%, 15%) 100%);
+    background: radial-gradient(circle, $Logo-Color 1%, $Logo-Color 100%);
     mix-blend-mode: multiply;
 }
 
@@ -2450,7 +2450,7 @@ body {
     width: 100%;
 
     h3 {
-        color: #ff6e5b;
+        color: $Logo-Color;
         font-size: 32px;
         letter-spacing: 20%;
         line-height: 1.5em;
