@@ -972,8 +972,9 @@ figure {
 .author {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    // width: 100%;
-// WIP --WIP DATE 300919 //
+
+    // WIP --WIP DATE 011019 //
+
     .author-inner {
         background-size: cover;
         background-position: top center;
@@ -998,7 +999,6 @@ figure {
         @media screen and (max-width: $screen-xs) {
             width: 100%;
             
-//WIP --DATE 290919
             .desc {
                 padding: $Mob-padding;
             }
@@ -2138,7 +2138,6 @@ body {
         margin-left: 5%;
     }
 }
-// All_REV_Ver36 -- DATE280919 //
 
 .pr2-imgBackground {
     width: 100%;
