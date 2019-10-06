@@ -972,7 +972,7 @@ figure {
 .author {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
+    // WIP DATE 061019 //
     // WIP --WIP DATE 011019 //
 
     .author-inner {
@@ -993,6 +993,8 @@ figure {
     }
 
     .desc {
+        // grid-column: 2;
+        margin-left: 4em;
         margin-top: 0;
         width: 100%;
 
@@ -1000,7 +1002,11 @@ figure {
             width: 100%;
             
             .desc {
-                padding: $Mob-padding;
+                margin-left: 0;
+                padding-left: 0em;
+                width: 100%;
+                grid-column: 2;
+                // padding: $Mob-padding;
             }
         }
 
