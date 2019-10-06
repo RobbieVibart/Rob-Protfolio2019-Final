@@ -981,7 +981,7 @@ figure {
         background-repeat: no-repeat;
         position: relative;
         width: 100%;
-        height: 620px;
+        height: 100%;
         background-image: url(/images/ProfilePic.jpg);
 
         @media screen and (max-width: $screen-xs) {
@@ -997,6 +997,8 @@ figure {
         margin-left: 4em;
         margin-top: 0;
         width: 100%;
+        height: 100%;
+
 
         @media screen and (max-width: $screen-xs) {
             width: 100%;
@@ -1783,6 +1785,28 @@ blockquote {
         }
     }
 }
+// PRIMARY STYLE //
+
+.headTitle {
+    text-transform: uppercase;
+    padding: 0em;
+    grid-column: 2;
+    font-size: $Std-Subheader-size;
+    color: $Std-Subheader-color;
+    font-weight: $Std-Subheader-weight;
+    font-family: $Std-Subheader-Family;
+    text-align: left;
+
+    &.headTitle:before {
+        content: "_";
+        font-family: "Saira Extra Condensed";
+        color:$Std-Colour;
+        letter-spacing: -2em;
+        font-size: 3em;
+    }
+}
+
+
 
 //GROW// --START--
 
