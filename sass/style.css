@@ -844,6 +844,7 @@ figure {
 }
 
 .author .desc {
+  margin-left: 4em;
   margin-top: 0;
   width: 100%;
 }
@@ -853,6 +854,7 @@ figure {
     width: 100%;
   }
   .author .desc .desc {
+    margin-left: 0em;
     padding: 0em 0.8em;
   }
 }

@@ -993,6 +993,7 @@ figure {
     }
 
     .desc {
+        margin-left: 4em;
         margin-top: 0;
         width: 100%;
 
@@ -1000,6 +1001,7 @@ figure {
             width: 100%;
             
             .desc {
+                margin-left: 0em;
                 padding: $Mob-padding;
             }
         }
