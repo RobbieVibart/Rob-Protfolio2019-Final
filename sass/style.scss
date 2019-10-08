@@ -989,26 +989,25 @@ figure {
             margin-bottom: 40px;
             margin: 0;
             padding: 0;
+            // grid-column: 2;
         }
     }
 
     .desc {
-        // grid-column: 2;
         margin-left: 4em;
-        margin-top: 0;
-        width: 100%;
+        // margin-top: 0;
+        width: 350px;
         height: 100%;
 
-
+    // WIP DATE 071019 //
         @media screen and (max-width: $screen-xs) {
             width: 100%;
             
             .desc {
-                margin-left: 0;
+                // margin-left: 0px;
                 padding-left: 0em;
                 width: 100%;
-                grid-column: 2;
-                // padding: $Mob-padding;
+                padding: $Mob-padding;
             }
         }
 
