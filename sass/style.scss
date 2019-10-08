@@ -962,7 +962,7 @@ figure {
 }
 
 .title {
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
 
     @media screen and (max-width: $screen-sm) {
         text-align: center;
@@ -970,8 +970,10 @@ figure {
 }
 
 .author {
+    // width: 100%;
+    // height: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     // WIP DATE 061019 //
     // WIP --WIP DATE 011019 //
 
@@ -986,28 +988,36 @@ figure {
 
         @media screen and (max-width: $screen-xs) {
             width: 100%;
+            height: 450px;
             margin-bottom: 40px;
             margin: 0;
             padding: 0;
-            // grid-column: 2;
+        }
+
+        .author-inner {
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-image: url(/images/ProfilePic.jpg);
         }
     }
 
     .desc {
         margin-left: 4em;
-        // margin-top: 0;
-        width: 350px;
-        height: 100%;
+        margin-top: 0;
+        // width: 350px;
+        // height: 100%;
 
     // WIP DATE 071019 //
+    // WIP DATE 081019 //
         @media screen and (max-width: $screen-xs) {
-            width: 100%;
+            // width: 350px;
             
             .desc {
-                // margin-left: 0px;
+                margin-left: 0px;
                 padding-left: 0em;
-                width: 100%;
-                padding: $Mob-padding;
+                // width: 50%;
+                // padding: $Mob-padding;
             }
         }
 

@@ -807,10 +807,6 @@ figure {
   font-family: "Montserrat", Arial, sans-serif;
 }
 
-.title {
-  margin-bottom: 40px;
-}
-
 @media screen and (max-width: 768px) {
   .title {
     text-align: center;
@@ -820,8 +816,8 @@ figure {
 .author {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .author .author-inner {
@@ -837,26 +833,29 @@ figure {
 @media screen and (max-width: 360px) {
   .author .author-inner {
     width: 100%;
+    height: 450px;
     margin-bottom: 40px;
     margin: 0;
     padding: 0;
   }
 }
 
+.author .author-inner .author-inner {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: url(/images/ProfilePic.jpg);
+}
+
 .author .desc {
   margin-left: 4em;
-  width: 350px;
-  height: 100%;
+  margin-top: 0;
 }
 
 @media screen and (max-width: 360px) {
-  .author .desc {
-    width: 100%;
-  }
   .author .desc .desc {
+    margin-left: 0px;
     padding-left: 0em;
-    width: 100%;
-    padding: 0em 0.8em;
   }
 }
 
