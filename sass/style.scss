@@ -962,20 +962,12 @@ figure {
 }
 
 .title {
-    // margin-bottom: 40px;
-
-    @media screen and (max-width: $screen-sm) {
-        text-align: center;
-    }
+    margin-bottom: 0px;
 }
 
 .author {
-    // width: 100%;
-    // height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    // WIP DATE 061019 //
-    // WIP --WIP DATE 011019 //
 
     .author-inner {
         background-size: cover;
@@ -985,37 +977,11 @@ figure {
         background-image: url(/images/ProfilePic.jpg);
         width: 100%;
         height: 650px;
-
-        @media screen and (max-width: $screen-xs) {
-
-            .author-inner {
-                background-size: cover;
-                background-position: top center;
-                background-repeat: no-repeat;
-                background-image: url(/images/ProfilePic.jpg);
-                width: 100%;
-                height: 250px;
-            }
-        }
-        
     }
 
     .desc {
         margin-left: 4em;
         margin-top: 0;
-
-    // WIP DATE 071019 //
-    // WIP DATE 081019 //
-        @media screen and (max-width: $screen-xs) {
-            // max-width: 350px;
-            
-            .desc {
-                margin-left: 0px;
-                padding-left: 0em;
-                // width: 50%;
-                // padding: $Mob-padding;
-            }
-        }
 
         span {
             font-size: 13px;
@@ -1035,8 +1001,27 @@ figure {
             }
         }
     }
-}
+// WIP DATE 101019 //
+ // MQ Start //
+    @include mobile {
 
+            .author-inner {
+                background-size: cover;
+                background-position: top center;
+                background-repeat: no-repeat;
+                background-image: url(/images/ProfilePic.jpg);
+                width: 100%;
+                height: 650px;
+        }
+        
+        .desc {
+            margin-left: 0px;
+            padding: $Mob-padding;
+        }
+    }
+// MQ end //
+}
+// WIP DATE 101019 //
 .skills {
     h3 {
         margin-bottom: 4em;
@@ -1055,7 +1040,7 @@ figure {
 
         @include border-radius(50px);
 
-        background: $brand-primary !important;
+        background: $Std-Colour!important;
     }
 }
 
@@ -1066,8 +1051,8 @@ figure {
         margin-bottom: 20px !important;
 
         h2 {
-            color: $brand-white;
-            color: darken($brand-primary, 40%);
+            color: $Std-Colour;
+            color: darken($Std-Colour, 40%);
             margin-bottom: 20px !important;
         }
 
@@ -1791,7 +1776,6 @@ blockquote {
     }
 }
 // PRIMARY STYLE //
-// WIP DATE 061019 //
 .headTitle {
     text-transform: uppercase;
     padding: 0em;
@@ -2163,7 +2147,7 @@ body {
     }
 
     .footer {
-        margin: 165px 0px;
+        margin: 50px 0px;
         grid-column: 2;
     }
 
@@ -2375,7 +2359,7 @@ body {
 
 .footer {
     grid-column: 2;
-    margin: 160px 0px;
+    margin: 50px 0px;
 }
 
 //FNB// --END--
@@ -2462,7 +2446,7 @@ body {
         text-transform: uppercase;
     }
 }
-// WIP DATE 021019 //
+
 .pr4-headBackground {
     z-index: -1;
     position: absolute;
@@ -2559,7 +2543,7 @@ body {
 }
 
 .footer {
-    margin: 160px 0px;
+    margin: 50px 0px;
 }
 
 //LOGOFOLIO// --END--
