@@ -2269,6 +2269,7 @@ body {
   html .pr4-subheader,
   body .pr4-subheader {
     margin-top: 6em;
+    text-align: center;
   }
   html .pr4-subheader h3,
   body .pr4-subheader h3 {
@@ -2313,8 +2314,18 @@ body {
   html .pr4-imgBlock img,
   body .pr4-imgBlock,
   body .pr4-imgBlock img {
-    max-width: 100%;
+    width: 100%;
   }
+}
+
+html .pr4-footer,
+body .pr4-footer {
+  width: 100%;
+  height: 350px;
+  background-image: url("/images/Logo_images/Logo_All_Backdrop_opt.png");
+  background-position: bottom bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .pr4-Header {
@@ -2363,8 +2374,8 @@ body {
 }
 
 .pr4-subheader {
-  margin-top: 12em;
-  font-family: 'Saira Extra Condensed', sans-serif;
+  text-align: center;
+  font-family: "Montserrat", Arial, sans-serif;
   -ms-grid-column: 2;
   grid-column: 2;
   width: 100%;
@@ -2392,6 +2403,7 @@ body {
 }
 
 .pr4-section {
+  text-align: center;
   -ms-grid-column: 2;
   grid-column: 2;
   height: 100vh;
@@ -2408,11 +2420,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 200px 0;
 }
 
 .pr4-section img {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 90%;
+  max-height: 90%;
 }
 
 .pr4-copy-grid {
