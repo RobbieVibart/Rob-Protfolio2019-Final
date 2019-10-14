@@ -2041,9 +2041,8 @@ body {
     @include mobile {
         .oda__head {
             width: 100%;
-            font-size: 0.5em;
+            font-size: 0.8em;
             font-weight: 900;
-            line-height: 64px;
         }
 
         .pr2_copy-2 {
@@ -2406,7 +2405,7 @@ body {
 
         .pr4-subheader {
             margin-top: 6em;
-            text-align: center;
+            text-align: left;
 
             h3 {
                 font-size: 20px;
@@ -2417,16 +2416,17 @@ body {
                 line-height: $Mob-line-height;
                 font-size: $Std-font-size;
                 font-weight: 500;
+                text-align: left;
             }
         }
 
         .pr4-section {
             grid-column: 2;
-            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: left;
     
             img {
                 max-width: 80%;
@@ -2441,15 +2441,6 @@ body {
             img {
             width: 100%;
             }
-        }
-
-        .pr4-footer {
-            width: 100%;
-            height: 350px;
-            background-image: url("/images/Logo_images/Logo_All_Backdrop_opt.png");
-            background-position: bottom bottom;
-            background-size: cover;
-            background-repeat: no-repeat;
         }
     }
 }
@@ -2529,7 +2520,6 @@ body {
     grid-column: 2;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 200px 0;
