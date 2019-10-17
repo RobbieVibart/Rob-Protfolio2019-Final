@@ -1,34 +1,3 @@
-// // --img-OBSERVER -- START -- OLD//
-// let options = {
-//     root: null,
-//     rootMargin: "-600px 0px 600px 0px",
-//     threshold: 0, 
-// };
-
-// let observer = new IntersectionObserver(intersect, options);
-
-// document.querySelectorAll('div, .right').forEach(img => {
-// observer.observe(img);
-// // console.log('watching', img);
-
-// });
-
-// function intersect(entries) {
-//     entries.forEach(entry => {
-//         if(entry.isIntersecting) {
-//         // console.log('is intersecting', entry);
-//         // console.log(entry.time, entry.intersectionRatio);
-//         entry.target.classList.add('appearRight');
-//     } else {
-//         // console.log('not intersecting', entry);
-//         entry.target.classList.remove('appearRight');
-//         // observer.unobserve(img);
-//     }
-// }); 
-// }
-// // --img OBSERVER -- END -- OLD//
-
-// // --COPY OBSERVER FADEIN -- START --//
 
 let fadeOptions = {
     root: null,
@@ -94,3 +63,14 @@ function intersect(entries) {
 	}); 
 }
 // --COPY-OBSERVER -- END --//
+
+// SMOOTH SCROLL --START-- //
+$(function() {
+    $('a[href*=#]').on('click', function(event) {
+        event.preventDefault();
+        $('html, body').animate({ scrollTop : 
+            
+            $($(this).attr('href')).offset().top}, 800, 'linear');
+        });
+    });
+// SMOOTH SCROLL --END-- //
