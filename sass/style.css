@@ -752,7 +752,6 @@ figure {
 }
 
 .intro .icon-chevron-with-circle-down {
-  margin: 1.5em 0;
   font-size: 2em;
   color: #693190;
   cursor: pointer;
@@ -760,8 +759,6 @@ figure {
           animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-transition: ease-in-out;
-  transition: ease-in-out;
 }
 
 @media only screen and (max-width: 380px) {

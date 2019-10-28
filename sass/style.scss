@@ -904,13 +904,11 @@ figure {
     }
         
     .icon-chevron-with-circle-down {
-        margin: 1.5em 0;
         font-size: 2em;
         color: $Std-Colour;
         cursor: pointer;
         animation-duration: 1s;
         animation-iteration-count: infinite;
-        transition: ease-in-out;
         
 }
 
@@ -2617,8 +2615,7 @@ transition: transform 0.5s ease-in-out, opacity 1000ms ease-in;
 opacity: 0;
 }
 
-.left.appearLeft {
-opacity: 1;
+.left.appearLeft { opacity: 1;
 transform: translateX(0%);
 }
 
