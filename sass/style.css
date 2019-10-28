@@ -745,21 +745,23 @@ figure {
 }
 
 .intro .scroll {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+  display: block;
   width: 100%;
   height: 200px;
 }
 
-.intro .scroll .icon-chevron-with-circle-down:before {
-  content: "\e92d";
+.intro .icon-chevron-with-circle-down {
+  margin: 1.5em 0;
   font-size: 2em;
   color: #693190;
   cursor: pointer;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
 }
 
 @media only screen and (max-width: 380px) {
@@ -791,6 +793,9 @@ figure {
     font-weight: 500;
     line-height: 2.1em;
     padding: 0em 0.8em;
+  }
+  .intro .scroll {
+    margin: 2em 0;
   }
 }
 
