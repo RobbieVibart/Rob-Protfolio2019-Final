@@ -1,8 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700,800,900,900i&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Display:300,400,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,200,300,400,500i|Saira+Condensed:100,200,300,400,600|Saira+Extra+Condensed:100,300,400,600&display=swap");
 @font-face {
-  font-family: "icomoon";
+  font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
@@ -48,7 +45,7 @@ body {
   left: 0;
   z-index: 101;
   background: rgba(0, 0, 0, 0.7);
-  content: "";
+  content: '';
 }
 
 a {
@@ -182,7 +179,7 @@ figure {
   margin: -5px 0 0 0;
 }
 
-.fh5co-nav .menu-2 li input[type=text] {
+.fh5co-nav .menu-2 li input[type='text'] {
   padding: 6px 10px;
   width: 40%;
   border: none;
@@ -194,7 +191,7 @@ figure {
   transition: 0.3s;
 }
 
-.fh5co-nav .menu-2 li input[type=text]:focus {
+.fh5co-nav .menu-2 li input[type='text']:focus {
   width: 100%;
   outline: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -272,7 +269,7 @@ figure {
   bottom: 100%;
   left: 40px;
   border: solid transparent;
-  content: " ";
+  content: ' ';
   height: 0;
   width: 0;
   position: absolute;
@@ -310,7 +307,7 @@ figure {
 }
 
 .fh5co-nav ul li.has-dropdown:hover .dropdown, .fh5co-nav ul li.has-dropdown:focus .dropdown {
-  content: "";
+  content: '';
 }
 
 .fh5co-nav ul li.active > a {
@@ -408,8 +405,8 @@ figure {
   color: #000;
   position: absolute;
   left: 0;
-  top: .05em;
-  font-family: "icomoon";
+  top: 0.05em;
+  font-family: 'icomoon';
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -422,22 +419,22 @@ figure {
 
 .fh5co-contact-info ul li.address:before {
   font-size: 30px;
-  content: "\e9d1";
+  content: '\e9d1';
 }
 
 .fh5co-contact-info ul li.phone:before {
   font-size: 23px;
-  content: "\e9f4";
+  content: '\e9f4';
 }
 
 .fh5co-contact-info ul li.email:before {
   font-size: 23px;
-  content: "\e9da";
+  content: '\e9da';
 }
 
 .fh5co-contact-info ul li.url:before {
   font-size: 23px;
-  content: "\e9af";
+  content: '\e9af';
 }
 
 .fh5co-bg-section {
@@ -939,7 +936,7 @@ figure {
 
 #fh5co-started .btn:hover {
   background: black !important;
-  border: 3px solid  black !important;
+  border: 3px solid black !important;
   color: #fff;
 }
 
@@ -1055,7 +1052,7 @@ figure {
   margin: 5px 0 0 0;
 }
 
-#fh5co-offcanvas ul li input[type=text] {
+#fh5co-offcanvas ul li input[type='text'] {
   padding: 6px 10px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1067,7 +1064,7 @@ figure {
   transition: 0.3s;
 }
 
-#fh5co-offcanvas ul li input[type=text]:focus {
+#fh5co-offcanvas ul li input[type='text']:focus {
   width: 100%;
   outline: none;
 }
@@ -1131,7 +1128,7 @@ figure {
 #fh5co-offcanvas ul li.offcanvas-has-dropdown > a:after {
   position: absolute;
   right: 0px;
-  font-family: "icomoon";
+  font-family: 'icomoon';
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1140,7 +1137,7 @@ figure {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: "\e921";
+  content: '\e921';
   font-size: 20px;
   color: rgba(255, 255, 255, 0.2);
   -webkit-transition: 0.5s;
@@ -1220,12 +1217,12 @@ figure {
   width: 25px;
   height: 2px;
   color: #252525;
-  font: bold 14px/.4 Helvetica;
+  font: bold 14px/0.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
   background: #252525;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
@@ -1235,8 +1232,8 @@ figure {
   background: #252525;
   position: absolute;
   left: 0;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .fh5co-nav-toggle.fh5co-nav-white > i {
@@ -1539,7 +1536,7 @@ blockquote {
 }
 
 blockquote p {
-  font-family: "Georgia", Times;
+  font-family: 'Georgia', Times;
   font-style: italic;
   font-size: 20px;
   line-height: 1.5;
@@ -1600,8 +1597,8 @@ blockquote .person cite {
 }
 
 .headTitle.headTitle:before {
-  content: "_";
-  font-family: "Saira Extra Condensed";
+  content: '_';
+  font-family: 'Saira Extra Condensed';
   color: #693190;
   letter-spacing: -2em;
   font-size: 3em;
@@ -1618,7 +1615,7 @@ blockquote .person cite {
 
 html,
 body {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 1em;
   line-height: 2em;
 }
@@ -1721,8 +1718,8 @@ body {
 }
 
 .pr1-headTitle.pr1-headTitle:before {
-  content: "_";
-  font-family: "Saira Extra Condensed";
+  content: '_';
+  font-family: 'Saira Extra Condensed';
   color: #c14448;
   letter-spacing: -2em;
   font-size: 3em;
@@ -1843,7 +1840,7 @@ body {
 
 html,
 body {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
 @media only screen and (max-width: 380px) {
@@ -1931,8 +1928,8 @@ body .pr2-headTitle {
 
 html .pr2-headTitle.pr2-headTitle::before,
 body .pr2-headTitle.pr2-headTitle::before {
-  content: "_";
-  font-family: "Saira Extra Condensed";
+  content: '_';
+  font-family: 'Saira Extra Condensed';
   color: #295885;
   letter-spacing: -2em;
   font-size: 3em;
@@ -2042,7 +2039,7 @@ body .btn {
 
 html,
 body {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 1em;
   color: grey;
   line-height: 2em;
@@ -2178,8 +2175,8 @@ body {
 }
 
 .pr3-headTitle.pr3-headTitle:before {
-  content: "_";
-  font-family: "Saira Extra Condensed";
+  content: '_';
+  font-family: 'Saira Extra Condensed';
   color: #0f9999;
   letter-spacing: -2em;
   font-size: 3em;
@@ -2250,7 +2247,7 @@ body {
 
 html,
 body {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
 @media only screen and (max-width: 380px) {
@@ -2434,7 +2431,8 @@ body {
   grid-column: 2;
 }
 
-.pr4-imgBlock, .pr4-imgBlock img {
+.pr4-imgBlock,
+.pr4-imgBlock img {
   max-width: 100%;
   height: 50vh;
 }
@@ -2448,7 +2446,8 @@ body {
       grid-template-columns: repeat(auto-fill, minmax(350px, 850px));
 }
 
-.pr4-imgContainer div, .pr4-imgContainer img {
+.pr4-imgContainer div,
+.pr4-imgContainer img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -2471,6 +2470,60 @@ body {
   background-color: pink;
   width: 100vw;
   height: 100vh;
+}
+
+.page-main {
+  margin-top: 4em;
+  width: 100%;
+  min-height: 800px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(375px, 2fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(375px, 2fr));
+}
+
+.page-main .page-container {
+  padding: 0em 3em 0em 3em;
+}
+
+.page-container,
+.page-body {
+  margin: 0em;
+  font-weight: 300;
+  font-size: 1em;
+  color: #444;
+  line-height: 2em;
+  text-align: right;
+}
+
+.page-title {
+  text-align: left;
+}
+
+.img-container {
+  width: 100%;
+  min-height: 100%;
+}
+
+.img-container,
+.page-btn {
+  text-align: center;
+}
+
+.page-btn {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  color: #693190;
+  padding: 5px 32px 5px 32px;
+  background: none;
+  border-color: #693190;
+  border-width: 2px;
+  border-radius: 4px;
+}
+
+.page-btn:hover {
+  color: #fff;
+  background: #693190;
 }
 
 .fade_up {
