@@ -651,6 +651,7 @@ figure {
 }
 
 .intro .intro__head {
+  margin: 4em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -742,6 +743,7 @@ figure {
 }
 
 .intro .scroll {
+  margin-top: 6em;
   text-align: center;
   display: block;
   width: 100%;
