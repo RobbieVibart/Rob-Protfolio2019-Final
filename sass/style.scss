@@ -130,7 +130,7 @@ $Fnb-Color: hsl(180, 82%, 33%);
 $Logo-Color: hsl(7, 100%, 68%);
 
 //USER SCREEN SIZE
-$mobile: 380px;
+$mobile: 350px;
 
 @mixin mobile {
 	@media only screen and (max-width: $mobile) {
@@ -783,11 +783,11 @@ figure {
 .intro {
 	h2 {
 		text-transform: uppercase;
-		padding: 1em 0em 1em 0em;
 		font-size: $Std-Subheader-size;
 		color: $Std-Subheader-color;
 		font-weight: $Std-Subheader-weight;
 		font-family: $Std-Subheader-Family;
+		line-height: 67px;
 
 		.fh5co-highlight {
 			display: block;
@@ -800,14 +800,25 @@ figure {
 		}
 	}
 
-	.intro__head {
-		margin: 4em;
-		justify-content: center;
-		align-items: center;
-		height: 70vh;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	.intro_head {
+		color: #5e5e5e;
+		font-size: 4.5em;
+		letter-spacing: -4px;
+		font-weight: 900;
+		border-radius: 1px solid black;
 	}
+
+	.intro__head {
+		padding-top: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		justify-content: top;
+		align-items: flex-start;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		grid-column-gap: 6em;
+	}
+
 	//All_REV_Ver34
 	.intro__sub-1 {
 		background: linear-gradient(45deg, $Grow-Color 25%, $Oda-Color 50%, $Fnb-Color 75%, $Logo-Color 100%);
@@ -816,11 +827,12 @@ figure {
 		background-clip: text;
 		color: transparent;
 		font-weight: 900;
-		background-size: 400%;
+		background-size: cover;
 		animation: bg-anim 8s infinite alternate;
 	}
 
 	.intro__sub-2 {
+		text-align: center;
 		font-family: 'Big Shoulders Display', cursive;
 		background: linear-gradient(45deg, $Grow-Color 25%, $Oda-Color 50%, $Fnb-Color 75%, $Logo-Color 100%);
 		-moz-background-clip: text;
@@ -828,8 +840,8 @@ figure {
 		background-clip: text;
 		color: transparent;
 		font-weight: 300;
-		font-size: 12em;
-		letter-spacing: -1rem;
+		font-size: 6em;
+		letter-spacing: -2.1rem;
 		background-size: 400%;
 		background-repeat: no-repeat;
 		animation: bg-anim 8s infinite alternate;
@@ -845,6 +857,7 @@ figure {
 	}
 
 	.intro__copy {
+		margin-left: 1em;
 		color: inherit;
 	}
 
@@ -879,11 +892,9 @@ figure {
 
 	// WIP DATE 281019 //
 	.scroll {
-		margin-top: 6em;
-		text-align: center;
-		display: block;
-		width: 100%;
-		height: 200px;
+		display: contents;
+		height: 50px;
+		border: 1px solid black;
 	}
 
 	.icon-chevron-with-circle-down {
@@ -892,31 +903,24 @@ figure {
 		cursor: pointer;
 		animation-duration: 1s;
 		animation-iteration-count: infinite;
+		text-align: center;
 	}
 
 	// INDEX MQ --START-- //
 	@include mobile {
-		h2 {
+		.intro_head {
+			width: 100%;
+			margin: 0;
+			font-size: 4em;
 			text-align: center;
-			text-transform: uppercase;
-			padding: 0em;
-			margin: 0em;
-		}
-
-		.intro__head {
-			height: 100%;
-			padding: $Mob-padding;
-			display: grid;
-			grid-template-columns: 1fr;
-			grid-template-rows: 1fr;
 		}
 
 		.intro__sub-1 {
-			font-size: 2.3rem;
+			font-size: 2.5rem;
 		}
 
 		.intro__sub-2 {
-			font-size: 6em;
+			font-size: 3em;
 			padding: 0;
 		}
 
@@ -924,10 +928,18 @@ figure {
 			color: inherit;
 			font-weight: $Mob-weight;
 			line-height: $Mob-line-height;
-			padding: $Mob-padding;
+			padding: 0em 1em;
+			margin: 2em 0em;
 		}
-		.scroll {
-			margin: 2em 0;
+
+		.seperator {
+			margin-bottom: 6em;
+		}
+
+		.btnResume {
+			text-align: center;
+			padding: 1.5 2em;
+			margin: 0em 1em;
 		}
 	}
 }
