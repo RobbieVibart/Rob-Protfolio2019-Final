@@ -130,7 +130,7 @@ $Fnb-Color: hsl(180, 82%, 33%);
 $Logo-Color: hsl(7, 100%, 68%);
 
 //USER SCREEN SIZE
-$mobile: 350px;
+$mobile: 378px;
 
 @mixin mobile {
 	@media only screen and (max-width: $mobile) {

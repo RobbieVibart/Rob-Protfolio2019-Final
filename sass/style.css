@@ -118,7 +118,7 @@ figure {
   width: 20%;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 378px) {
   .fh5co-nav .fh5co-top-logo {
     width: 80%;
   }
@@ -771,7 +771,7 @@ figure {
   text-align: center;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 378px) {
   .intro .intro_head {
     width: 100%;
     margin: 0;
@@ -879,7 +879,7 @@ figure {
   padding-right: 10px;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 378px) {
   .author .author-inner {
     background-size: cover;
     background-position: top center;
@@ -1629,7 +1629,7 @@ body {
   line-height: 2em;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 378px) {
   html .img_wrapper,
   body .img_wrapper {
     background-color: #c14448;
@@ -1852,7 +1852,7 @@ body {
   font-family: 'Montserrat';
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 378px) {
   html .oda__head,
   body .oda__head {
     width: 100%;
@@ -2054,7 +2054,7 @@ body {
   line-height: 2em;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 378px) {
   html .imageWrapper,
   body .imageWrapper {
     grid-column: 1/-1;
@@ -2259,7 +2259,7 @@ body {
   font-family: 'Montserrat';
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 378px) {
   html,
   body {
     -ms-grid-column: 2;
