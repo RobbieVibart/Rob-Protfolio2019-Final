@@ -133,7 +133,7 @@ $Logo-Color: hsl(7, 100%, 68%);
 $mobile: 350px;
 
 @mixin mobile {
-	@media only screen and (max-width: $mobile) {
+	@media only screen and (min-width: $mobile) {
 		@content;
 	}
 }
