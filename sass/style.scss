@@ -1515,21 +1515,21 @@ figure {
 }
 
 .btn-primary {
-	background: $brand-gray;
-	color: $brand-white;
-	border: 2px solid $brand-primary;
+	background: $brand-white;
+	color: $Std-Colour;
+	border: 2px solid $Std-Colour;
 
 	&:hover,
 	&:focus,
 	&:active {
-		background: lighten($brand-primary, 5%) !important;
-		border-color: lighten($brand-primary, 5%) !important;
+		background: $Std-Colour !important;
+		border-color: none !important;
 	}
 
 	&.btn-outline {
-		background: transparent;
-		color: $brand-primary;
-		border: 2px solid $brand-primary;
+		background: none;
+		color: $brand-white;
+		border: 2px solid $Std-Colour;
 
 		&:hover,
 		&:focus,

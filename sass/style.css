@@ -1336,20 +1336,20 @@ figure {
 }
 
 .btn-primary {
-  background: #ccc;
-  color: #fff;
-  border: 2px solid #000;
+  background: #fff;
+  color: #693190;
+  border: 2px solid #693190;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #0d0d0d !important;
-  border-color: #0d0d0d !important;
+  background: #693190 !important;
+  border-color: none !important;
 }
 
 .btn-primary.btn-outline {
-  background: transparent;
-  color: #000;
-  border: 2px solid #000;
+  background: none;
+  color: #fff;
+  border: 2px solid #693190;
 }
 
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
