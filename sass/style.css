@@ -1343,7 +1343,7 @@ figure {
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #693190 !important;
-  border-color: none !important;
+  border-color: #693190 !important;
 }
 
 .btn-primary.btn-outline {
@@ -1360,18 +1360,18 @@ figure {
 .btn-success {
   background: #5cb85c;
   color: #fff;
-  border: 2px solid #5cb85c;
+  border: 2px solid #693190;
 }
 
 .btn-success:hover, .btn-success:focus, .btn-success:active {
   background: #4cae4c !important;
-  border-color: #4cae4c !important;
+  border-color: #5b2b7d !important;
 }
 
 .btn-success.btn-outline {
   background: transparent;
   color: #5cb85c;
-  border: 2px solid #5cb85c;
+  border: 2px solid #693190;
 }
 
 .btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
@@ -1386,14 +1386,14 @@ figure {
 }
 
 .btn-info:hover, .btn-info:focus, .btn-info:active {
-  background: #46b8da !important;
-  border-color: #46b8da !important;
+  background: #5b2b7d !important;
+  border-color: #5b2b7d !important;
 }
 
 .btn-info.btn-outline {
   background: transparent;
   color: #5bc0de;
-  border: 2px solid #5bc0de;
+  border: 2px solid #693190;
 }
 
 .btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
@@ -1408,14 +1408,14 @@ figure {
 }
 
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active {
-  background: #eea236 !important;
-  border-color: #eea236 !important;
+  background: #5b2b7d !important;
+  border-color: #5b2b7d !important;
 }
 
 .btn-warning.btn-outline {
   background: transparent;
   color: #f0ad4e;
-  border: 2px solid #f0ad4e;
+  border: 2px solid #693190;
 }
 
 .btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active {
@@ -1424,14 +1424,14 @@ figure {
 }
 
 .btn-danger {
-  background: #d9534f;
+  background: #693190;
   color: #fff;
-  border: 2px solid #d9534f;
+  border: 2px solid #693190;
 }
 
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active {
-  background: #d43f3a !important;
-  border-color: #d43f3a !important;
+  background: #5b2b7d !important;
+  border-color: #5b2b7d !important;
 }
 
 .btn-danger.btn-outline {
@@ -1447,7 +1447,7 @@ figure {
 
 .btn-outline {
   background: none;
-  border: 2px solid gray;
+  border: 2px solid #e3d1ef;
   font-size: 16px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1500,7 +1500,7 @@ figure {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-color: #000;
+  border-color: #693190;
 }
 
 .row-pt-md {

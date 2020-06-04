@@ -1523,7 +1523,7 @@ figure {
 	&:focus,
 	&:active {
 		background: $Std-Colour !important;
-		border-color: none !important;
+		border-color: $Std-Colour !important;
 	}
 
 	&.btn-outline {
@@ -1543,19 +1543,19 @@ figure {
 .btn-success {
 	background: $brand-success;
 	color: $brand-white;
-	border: 2px solid $brand-success;
+	border: 2px solid $Std-Colour;
 
 	&:hover,
 	&:focus,
 	&:active {
 		background: darken($brand-success, 5%) !important;
-		border-color: darken($brand-success, 5%) !important;
+		border-color: darken($Std-Colour, 5%) !important;
 	}
 
 	&.btn-outline {
 		background: transparent;
 		color: $brand-success;
-		border: 2px solid $brand-success;
+		border: 2px solid $Std-Colour;
 
 		&:hover,
 		&:focus,
@@ -1574,14 +1574,14 @@ figure {
 	&:hover,
 	&:focus,
 	&:active {
-		background: darken($brand-info, 5%) !important;
-		border-color: darken($brand-info, 5%) !important;
+		background: darken($Std-Colour, 5%) !important;
+		border-color: darken($Std-Colour, 5%) !important;
 	}
 
 	&.btn-outline {
 		background: transparent;
 		color: $brand-info;
-		border: 2px solid $brand-info;
+		border: 2px solid $Std-Colour;
 
 		&:hover,
 		&:focus,
@@ -1600,14 +1600,14 @@ figure {
 	&:hover,
 	&:focus,
 	&:active {
-		background: darken($brand-warning, 5%) !important;
-		border-color: darken($brand-warning, 5%) !important;
+		background: darken($Std-Colour, 5%) !important;
+		border-color: darken($Std-Colour, 5%) !important;
 	}
 
 	&.btn-outline {
 		background: transparent;
 		color: $brand-warning;
-		border: 2px solid $brand-warning;
+		border: 2px solid $Std-Colour;
 
 		&:hover,
 		&:focus,
@@ -1619,15 +1619,15 @@ figure {
 }
 
 .btn-danger {
-	background: $brand-danger;
+	background: $Std-Colour;
 	color: $brand-white;
-	border: 2px solid $brand-danger;
+	border: 2px solid $Std-Colour;
 
 	&:hover,
 	&:focus,
 	&:active {
-		background: darken($brand-danger, 5%) !important;
-		border-color: darken($brand-danger, 5%) !important;
+		background: darken($Std-Colour, 5%) !important;
+		border-color: darken($Std-Colour, 5%) !important;
 	}
 
 	&.btn-outline {
@@ -1646,7 +1646,7 @@ figure {
 
 .btn-outline {
 	background: none;
-	border: 2px solid lighten($brand-black, 50%);
+	border: 2px solid lighten($Std-Colour, 50%);
 	font-size: 16px;
 
 	@include transition(0.3s);
@@ -1699,7 +1699,7 @@ figure {
 	&:focus {
 		outline: none;
 		box-shadow: none;
-		border-color: $brand-primary;
+		border-color: $Std-Colour;
 	}
 }
 
