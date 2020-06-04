@@ -1310,8 +1310,8 @@ figure {
 }
 
 .btn {
-  margin-right: 4px;
-  margin-bottom: 4px;
+  margin-right: 0px;
+  margin-bottom: 0px;
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1348,7 +1348,7 @@ figure {
 
 .btn-primary.btn-outline {
   background: none;
-  color: #fff;
+  color: #693190;
   border: 2px solid #693190;
 }
 
@@ -1833,8 +1833,8 @@ body {
 .footer .btn {
   -ms-grid-column: 2;
   grid-column: 2;
-  margin-right: 5%;
-  margin-left: 5%;
+  margin-right: 0%;
+  margin-left: 0%;
 }
 
 .pr-1bgColor {
@@ -2028,7 +2028,7 @@ body .btn {
   -ms-grid-column: 2;
   grid-column: 2;
   margin-right: 5%;
-  margin-left: 5%;
+  margin-left: 0%;
 }
 
 .pr2-imgBackground {
