@@ -651,11 +651,37 @@ figure {
 }
 
 .intro .intro_head {
-  color: #5e5e5e;
-  font-size: 4.5em;
-  letter-spacing: -4px;
+  color: #444;
+  font-size: 3em;
+  letter-spacing: -2px;
   font-weight: 900;
-  border-radius: 1px solid black;
+  line-height: 1em;
+  background: linear-gradient(45deg, #c14448 10%, #295885 40%, #0f9999 55%, #ff6f5c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  background-size: contain;
+  -webkit-animation: bg-anim 8s infinite alternate;
+          animation: bg-anim 8s infinite alternate;
+}
+
+@-webkit-keyframes bg-anim {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes bg-anim {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 .intro .intro__head {
@@ -698,17 +724,8 @@ figure {
   letter-spacing: -2.1rem;
   background-size: 400%;
   background-repeat: no-repeat;
-  -webkit-animation: bg-anim 8s infinite alternate;
-          animation: bg-anim 8s infinite alternate;
-}
-
-@-webkit-keyframes bg-anim {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
+  -webkit-animation: bg-anim 2s infinite alternate;
+          animation: bg-anim 2s infinite alternate;
 }
 
 @keyframes bg-anim {
@@ -773,10 +790,12 @@ figure {
 
 @media only screen and (max-width: 378px) {
   .intro .intro_head {
-    width: 100%;
+    height: 68vh;
     margin: 0;
-    font-size: 4em;
+    font-size: 2em;
     text-align: center;
+    padding: 0em 0.5em;
+    letter-spacing: -1px;
   }
   .intro .intro__sub-1 {
     font-size: 2.5rem;

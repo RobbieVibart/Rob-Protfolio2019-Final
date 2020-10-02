@@ -801,11 +801,28 @@ figure {
 	}
 
 	.intro_head {
-		color: #5e5e5e;
-		font-size: 4.5em;
-		letter-spacing: -4px;
+		color: $brand-darker;
+		font-size: 3em;
+		letter-spacing: -2px;
 		font-weight: 900;
-		border-radius: 1px solid black;
+		line-height: 1em;
+		background: linear-gradient(45deg, $Grow-Color 10%, $Oda-Color 40%, $Fnb-Color 55%, $Logo-Color 100%);
+		-moz-background-clip: text;
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		font-weight: 900;
+		background-size: contain;
+		animation: bg-anim 8s infinite alternate;
+
+		@keyframes bg-anim {
+			0% {
+				background-position: left;
+			}
+			100% {
+				background-position: right;
+			}
+		}
 	}
 
 	.intro__head {
@@ -844,7 +861,7 @@ figure {
 		letter-spacing: -2.1rem;
 		background-size: 400%;
 		background-repeat: no-repeat;
-		animation: bg-anim 8s infinite alternate;
+		animation: bg-anim 2s infinite alternate;
 	}
 
 	@keyframes bg-anim {
@@ -909,10 +926,12 @@ figure {
 	// INDEX MQ --START-- //
 	@include mobile {
 		.intro_head {
-			width: 100%;
+			height: 68vh;
 			margin: 0;
-			font-size: 4em;
+			font-size: 2em;
 			text-align: center;
+			padding: 0em 0.5em;
+			letter-spacing: -1px;
 		}
 
 		.intro__sub-1 {
